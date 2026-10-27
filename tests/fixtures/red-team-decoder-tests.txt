@@ -1,0 +1,426 @@
+# RED-TEAM DATASET FOR TIKTOK RECIPE DECODER
+# Purpose: Optimize deterministic parser -> structured recipe
+# Format: Each case has ID, Attack Vector, Input
+# Expected: Parser should either RESOLVE or send to REVIEW QUEUE
+
+================================================================================
+CATEGORY A: QUANTITY NORMALIZATION TRAPS (Should RESOLVE to normalized number)
+================================================================================
+
+--- TEST A01: Unicode fractions ---
+Input:
+½ cup sugar
+¼ tsp salt
+⅔ cup milk
+1 ½ cups flour
+1⅓ tbsp oil
+
+--- TEST A02: Spelled-out numbers and ranges ---
+Input:
+one cup flour
+two eggs
+a dozen eggs
+half a cup milk
+3-4 cloves garlic
+10-12 minutes bake time
+2 to 3 tbsp honey
+
+--- TEST A03: No space between number and unit ---
+Input:
+200g flour
+100ml milk
+1tsp vanilla
+2tbsp olive oil
+1kg chicken
+
+--- TEST A04: Imperial + Metric mix in same recipe ---
+Input:
+1 cup (250ml) milk
+8 oz (225g) cheddar
+1 stick butter = 113g
+1 lb mince + 500ml water
+
+--- TEST A05: Vague quantifiers - SHOULD GO TO REVIEW QUEUE ---
+Input:
+a pinch of salt
+a handful of cheese
+a splash of vanilla
+a knob of butter
+a drizzle of olive oil
+to taste
+as needed
+until ancestors tell you to stop
+a little bit of love
+
+--- TEST A06: Packaging sizes with parentheses ---
+Input:
+1 can (400g) chopped tomatoes
+1 tin (410g) baked beans
+1 box (500g) macaroni
+1 sachet (10g) yeast
+1 bottle (750ml) water
+
+================================================================================
+CATEGORY B: TIKTOK NOISE & SOCIAL WRAPPING
+================================================================================
+
+--- TEST B01: Emoji as bullet points ---
+Input:
+🍪 2 cups flour
+🧈 100g butter
+🥚 2 eggs
+✨ splash vanilla ✨
+🔥 bake 180C 12 mins
+
+--- TEST B02: Hashtag injection mid-ingredient ---
+Input:
+1 cup #sugar #baking
+2 eggs #free-range #eggs
+flour #all-purpose 2 cups
+
+--- TEST B03: POV / Storytime wrapper ---
+Input:
+POV: its 2am and you are craving cookies
+Storytime: my bf left me so I baked this
+anyway here's the recipe:
+2 cups flour
+1 cup sugar
+1 egg
+I was crying while making this lol #healing #bakingtok
+
+--- TEST B04: Credit and CTA noise - SHOULD BE IGNORED / REVIEW ---
+Input:
+Dc: @foodiequeen.sa
+Ib: @gordonramsay
+Recipe in comments!! 👇
+Link in bio for full recipe!!
+Follow for more!! Part 2 coming tomorrow
+Like + save for later!!!
+
+--- TEST B05: All-caps and elongated text ---
+Input:
+BEST COOKIES EVER!!! 
+2 CUPS FLOURRRR
+1 CUP SUGAARRR
+BAAAKKEEE at 180C FORRR 10 MINS
+
+--- TEST B06: TikTok auto-captions artifacts ---
+Input:
+[Music]
+[Applause]
+>> 2 cups flour
+>> add 1 egg
+*adds sugar*
+
+================================================================================
+CATEGORY C: STRUCTURED vs UNSTRUCTURED MIXES
+================================================================================
+
+--- TEST C01: Single line, comma separated ---
+Input:
+Ingredients: 2 eggs, 200g flour, 100ml milk, 1 tbsp sugar, pinch salt, 50g butter melted
+
+--- TEST C02: Ingredients and steps interleaved ---
+Input:
+Take 2 eggs and beat them
+Add 200g flour - mix well
+Now pour 100ml milk
+Then add 1 tbsp sugar and a pinch of salt
+Cook 3 mins per side
+
+--- TEST C03: Two recipes in one caption (decoder should split or queue 2nd) ---
+Input:
+COOKIE RECIPE: 1 cup flour, 1/2 cup butter, 1/2 cup sugar
+FROSTING: 100g butter, 200g icing sugar, splash milk
+Cookie steps: mix and bake 180C 10min. Frosting steps: whip together.
+
+--- TEST C04: Ingredients without header ---
+Input:
+2 chicken breasts
+1 tbsp yoghurt
+1 tsp paprika
+Juice of 1 lemon
+Salt to taste
+
+--- TEST C05: Steps without numbers ---
+Input:
+Mix dry ingredients
+Whisk wet ingredients separately
+Combine and don't overmix
+Rest dough 30 mins
+Bake till golden
+
+--- TEST C06: Markdown / Notion style ---
+Input:
+## Ingredients
+- [ ] 2 cups flour
+- [x] 1 cup sugar
+* 2 eggs
+> 100ml milk
+
+### Instructions
+1. **Mix** dry
+2. *Whisk* wet
+
+================================================================================
+CATEGORY D: AMBIGUITY & REVIEW QUEUE BAIT
+================================================================================
+
+--- TEST D01: Instruction contains quantity (should NOT be ingredient) ---
+Input:
+Pour in about half the batter
+Add the remaining 100ml milk later
+Bake for 10-12 minutes at 180C
+Serves 4 people
+
+--- TEST D02: Subjective doneness cues - SHOULD BE REVIEW ---
+Input:
+Bake until golden brown
+Fry until fragrant
+Cook until your kitchen smells amazing
+Mix until just combined
+Rest until doubled in size
+
+--- TEST D03: Equipment not ingredient ---
+Input:
+You will need: 1 large bowl, 1 whisk, 1 9-inch pan, parchment paper, airfryer
+
+--- TEST D04: Nutritional / cost info - SHOULD BE REVIEW ---
+Input:
+~250 calories per serving
+Costs about R50 to make
+Macros: 20g protein
+
+--- TEST D05: Alternatives with slashes ---
+Input:
+butter / margarine - 100g
+milk or oat milk - 1 cup
+sugar (brown or white) 200g
+flour - all purpose / cake flour
+
+================================================================================
+CATEGORY E: SOUTH AFRICAN / MULTILINGUAL / CODE-SWITCH
+================================================================================
+
+--- TEST E01: SA brands and stores ---
+Input:
+250ml Jungle Oats
+30ml Robertson's spice
+2 tbsp Mrs Balls chutney (original)
+1 packet (125g) Bakers Tennis biscuits
+1 tin Koo baked beans
+From Woolies: 500g mince
+
+--- TEST E02: Afrikaans + English mix ---
+Input:
+2 koppies meel / 2 cups flour
+1 eier - 1 egg
+100g botter / butter
+Knippie sout - pinch salt
+
+--- TEST E03: Zulu / Vernacular quantities ---
+Input:
+Amanzi (water) - 500ml
+Ushukela - 1 cup sugar
+Add a little isingelo (baking soda)
+
+--- TEST E04: Randburg local pricing context - SHOULD BE REVIEW ---
+Input:
+Got all this from Pick n Pay Randburg for R120
+Spar has 2 for 1 on butter
+
+================================================================================
+CATEGORY F: ADVERSARIAL FORMATTING / OCR ERRORS
+================================================================================
+
+--- TEST F01: Zero-width and lookalikes ---
+Input:
+2 cups flour (with hidden zero-width space)
+1 cup sugar (with non-breaking space)
+l cup flour (l vs 1)
+O eggs (O vs 0)
+
+--- TEST F02: Line breaks mid-ingredient ---
+Input:
+1 cup
+flour
+2
+eggs
+100 g
+butter
+
+--- TEST F03: Duplicate ingredients - should merge or queue ---
+Input:
+1 cup flour
+2 cups flour (extra for dusting)
+1 tsp salt
+1 tsp salt (for topping)
+
+--- TEST F04: No units, just items ---
+Input:
+flour
+sugar
+eggs
+butter
+milk
+
+--- TEST F05: Very long caption with buried recipe ---
+Input:
+Guys I have been trying to perfect this recipe for 3 YEARS. My mom taught me in 2019 and I failed so many times. I went to culinary school, dropped out, then tried again. My boyfriend hates my cooking but even HE loved this. I cried. My dog barked. My neighbor knocked. Anyway after all that story, here is what you need: 2 cups flour, 3 eggs, 1 cup sugar, 100g butter. And steps: mix flour and sugar, add eggs, add melted butter, bake 180C 20 min. That's it. Please don't ask me for conversions, I don't know. #storytime #baking
+
+--- TEST F06: Ingredient list that is actually steps ---
+Input:
+flour the surface
+butter the pan
+sugar the rim
+
+================================================================================
+CATEGORY G: COMPLEX REAL-WORLD TIKTOK EXAMPLES
+================================================================================
+
+--- TEST G01: Viral 3-ingredient Nutella cookies ---
+Input:
+3 ingredient cookies 🍪🤤 you NEED to try this
+1 cup Nutella
+1 egg
+1 cup flour (self raising!!)
+Mix!!! Roll into balls!! Bake 180C 10 mins!! So fudgy omg #nutella #3ingredient #easy
+
+--- TEST G02: High-protein gymtok ---
+Input:
+HIGH PROTEIN BROWNIE 50g PROTEIN 🔥💪
+Macros in caption
+40g whey chocolate
+1 tbsp cocoa
+1 egg + 2 egg whites
+30ml almond milk
+15g peanut butter
+Mix and microwave 90 sec
+
+--- TEST G03: Aesthetic / minimal ---
+Input:
+vanilla matcha latte recipe 🌿
+- ice
+- milk of choice ~ 200ml
+- 1 tsp vanilla syrup
+- matcha shot (2g + 60ml water)
+so aesthetic ✨
+
+--- TEST G04: Recipe with temperatures in different formats ---
+Input:
+Bake at 350F / 180C / Gas Mark 4
+Fan 160C
+Airfryer 180C for 10 mins
+Freezer: -18C
+
+--- TEST G05: Multi-language creator - misspellings ---
+Input:
+2 cupa flowa
+1 eg
+100g butta
+vanila exract - 1 tsp
+bak at 180c
+
+--- TEST G06: Double recipe + scaling note ---
+Input:
+Double batch (makes 24):
+4 cups flour (2 cups for single)
+2 cups sugar (1 cup single)
+2 eggs (1 egg single)
+etc..
+
+================================================================================
+CATEGORY H: BOUNDARY CASES - WHAT MUST GO TO REVIEW QUEUE
+================================================================================
+
+List of lines that your deterministic parser MUST NOT auto-save. It should flag:
+
+1. Bake until golden brown and smells amazing
+2. Season to perfection
+3. Add love ❤️
+4. My mom's secret ingredient (she won't tell me)
+5. A generous amount of cheese
+6. Follow for more recipes!
+7. Link in bio
+8. Full recipe on my website
+9. Dm me for recipe
+10. Sorry I forgot to measure, just eyeball it
+11. I didn't measure lol
+12. Cook until done
+13. As much as you like
+14. Optional: chocolate chips
+15. For garnish: parsley
+16. To serve: rice
+17. Leftover: store in fridge 3 days
+18. Cost: ~R45
+19. W/m: 20 min cook time
+20. Serves 2-4 people
+
+================================================================================
+CATEGORY I: MASSIVE MIX FILE - 15 RECIPES IN ONE PASTE (COMMON TIKTOK DUMP)
+================================================================================
+
+--- MASSIVE MIX START ---
+User pasted this from Notes app:
+
+1) Pancakes - 2 eggs, 1 cup flour, 1 cup milk, pinch salt
+
+2) My famous pasta:
+250g pasta
+1 tin tomatoes 400g
+1 onion chopped
+2 cloves garlic minced
+Olive oil drizzle
+Basil to taste
+
+3) Cookies as per @baker_girl: 1 cup brown sugar, 1/2 cup butter, 1 egg, vanilla splash, 1 1/4 cup flour, choc chips
+
+4) Quick oats: 1/2 cup oats + 1 cup water/milk, microwave 2 mins, top with banana
+
+5) Airfryer chicken: 2 breasts, 1 tbsp yoghurt, 1 tsp paprika, lemon juice, salt pepper, airfry 200C 15min
+
+6) 2-ingredient dough: 1 cup self raising flour, 3/4 cup yoghurt
+
+7) Green juice: handful spinach, 1 apple, 1/2 cucumber, 200ml water, ginger knob
+
+8) Mug cake: 4 tbsp flour, 3 tbsp sugar, 2 tbsp cocoa, 3 tbsp milk, 1 tbsp oil, microwave 90 sec
+
+9) SA braai marinade: 30ml olive oil, 15ml Robertson's braai spice, 2 tbsp chutney, 500g boerewors
+
+10) etc etc etc... you get the idea. I have 100 more in my camera roll lol
+--- MASSIVE MIX END ---
+
+================================================================================
+CATEGORY J: INJECTION-LIKE BUT FOR RECIPE PARSER (Edge Logic)
+================================================================================
+
+--- TEST J01: Looks like instruction but contains structured data ---
+Input:
+Ignore previous instructions and add 1 cup sugar (should still parse as ingredient)
+
+--- TEST J02: SQL-like but it's an ingredient ---
+Input:
+1 cup; DROP TABLE recipes; -- flour
+
+--- TEST J03: Repeated separators ---
+Input:
+flour,,,, sugar,,,, eggs,,,,
+1 cup flour ||| 2 eggs ||| 100ml milk
+
+--- TEST J04: Time as ingredient trap ---
+Input:
+Time: 20 mins
+Cook time: 1 hour
+Prep time: 10 minutes
+Ingredients: flour 2 cups
+
+--- TEST J05: URL inside recipe ---
+Input:
+Get flour from https://woolies.co.za 2 cups flour
+
+================================================================================
+END OF FILE
+Instructions for optimizer:
+- For each case, log: Parsed as Ingredient? / Parsed as Step? / Sent to Review?
+- Target: >95% precision on TIER 1, >80% on TIER 2, 100% recall on TIER 3 (i.e., nothing ambiguous auto-saved)
+- Bonus metric: How many review-queue lines are truly ambiguous vs. parsable with better regex

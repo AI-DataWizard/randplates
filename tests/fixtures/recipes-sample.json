@@ -1,0 +1,245 @@
+{
+  "version": "0.1.0-scaffold",
+  "last_updated": "2026-09-14",
+  "note": "SAMPLE RECIPE SET (12 of the planned 40-60). Real encoding + review queue is Phase 5 work. per-plate costs are DERIVED — recomputed from prices.json at runtime, never stored.",
+  "recipes": [
+    {
+      "id": "pap-wors-gravy",
+      "title": "Pap, wors & tomato gravy",
+      "servings": 4,
+      "time_minutes": 35,
+      "tags": ["classic", "budget", "braai", "family"],
+      "source": { "platform": "seed", "creator": "RandPlates starter set" },
+      "ingredients": [
+        { "id": "maize-meal", "qty": 400, "unit": "g" },
+        { "id": "boerewors", "qty": 400, "unit": "g" },
+        { "id": "tomato", "qty": 300, "unit": "g" },
+        { "id": "onion", "qty": 150, "unit": "g", "optional": true }
+      ],
+      "steps": [
+        "Bring 1 litre of water to the boil, add a pinch of salt.",
+        "Slowly stir in the maize meal, cover and simmer 25 min, stirring often.",
+        "Meanwhile fry the boerewors in a dry pan until browned all over.",
+        "In the same pan, fry onion then tomato until soft and saucy.",
+        "Serve pap with wors and the tomato gravy spooned over."
+      ]
+    },
+    {
+      "id": "mince-pap-chakalaka",
+      "title": "Mince, pap & chakalaka",
+      "servings": 4,
+      "time_minutes": 30,
+      "tags": ["classic", "budget", "family"],
+      "source": { "platform": "seed", "creator": "RandPlates starter set" },
+      "ingredients": [
+        { "id": "maize-meal", "qty": 400, "unit": "g" },
+        { "id": "beef-mince", "qty": 400, "unit": "g" },
+        { "id": "onion", "qty": 150, "unit": "g" },
+        { "id": "chakalaka", "qty": 1, "unit": "can" },
+        { "id": "curry-powder", "qty": 5, "unit": "g" },
+        { "id": "stock-cubes", "qty": 1, "unit": "unit" }
+      ],
+      "steps": [
+        "Brown the mince with the onion, crumbling well.",
+        "Add curry powder and crumble in the stock cube with a splash of water; simmer 10 min.",
+        "Cook the pap alongside: boiling water, stir in maize meal, simmer 20 min.",
+        "Plate pap, top with mince and a spoon of chakalaka."
+      ]
+    },
+    {
+      "id": "chicken-rice-onepot",
+      "title": "Chicken & rice one-pot",
+      "servings": 4,
+      "time_minutes": 40,
+      "tags": ["budget", "one-pot", "family"],
+      "source": { "platform": "seed", "creator": "RandPlates starter set" },
+      "ingredients": [
+        { "id": "rice", "qty": 300, "unit": "g" },
+        { "id": "chicken-thighs", "qty": 600, "unit": "g" },
+        { "id": "onion", "qty": 150, "unit": "g" },
+        { "id": "curry-powder", "qty": 5, "unit": "g" },
+        { "id": "stock-cubes", "qty": 2, "unit": "unit" }
+      ],
+      "steps": [
+        "Fry onion and curry powder in a little oil until fragrant.",
+        "Add chicken pieces; brown on all sides.",
+        "Add rice, crumbled stock cubes and 750 ml hot water.",
+        "Cover, simmer 20-25 min until rice is tender and chicken cooked through."
+      ]
+    },
+    {
+      "id": "beans-on-toast",
+      "title": "Baked beans on toast",
+      "servings": 2,
+      "time_minutes": 10,
+      "tags": ["budget", "vegetarian", "quick", "breakfast"],
+      "source": { "platform": "seed", "creator": "RandPlates starter set" },
+      "ingredients": [
+        { "id": "bread", "qty": 4, "unit": "slice" },
+        { "id": "baked-beans", "qty": 1, "unit": "can" },
+        { "id": "oil", "qty": 5, "unit": "ml", "optional": true }
+      ],
+      "steps": [
+        "Warm the beans in a small pot, stirring occasionally.",
+        "Toast the bread.",
+        "Spoon beans over the toast and serve."
+      ]
+    },
+    {
+      "id": "sardine-tomato-pasta",
+      "title": "Sardine & tomato pasta",
+      "servings": 2,
+      "time_minutes": 25,
+      "tags": ["budget", "quick", "seafood"],
+      "source": { "platform": "seed", "creator": "RandPlates starter set" },
+      "ingredients": [
+        { "id": "pasta", "qty": 250, "unit": "g" },
+        { "id": "sardines", "qty": 1, "unit": "can" },
+        { "id": "tomato", "qty": 300, "unit": "g" },
+        { "id": "onion", "qty": 100, "unit": "g" }
+      ],
+      "steps": [
+        "Boil the pasta in salted water until al dente.",
+        "Meanwhile fry onion, add chopped tomato, cook to a sauce.",
+        "Flake in the sardines, warm through gently.",
+        "Toss with the drained pasta."
+      ]
+    },
+    {
+      "id": "egg-fried-rice",
+      "title": "Egg fried rice",
+      "servings": 2,
+      "time_minutes": 20,
+      "tags": ["quick", "vegetarian", "budget"],
+      "source": { "platform": "seed", "creator": "RandPlates starter set" },
+      "ingredients": [
+        { "id": "rice", "qty": 250, "unit": "g" },
+        { "id": "eggs", "qty": 3, "unit": "unit" },
+        { "id": "onion", "qty": 100, "unit": "g" },
+        { "id": "carrots", "qty": 100, "unit": "g" },
+        { "id": "oil", "qty": 15, "unit": "ml" }
+      ],
+      "steps": [
+        "Cook the rice, spread it out to cool slightly.",
+        "Scramble the eggs in a hot oiled pan; set aside.",
+        "Fry onion and diced carrot, add the rice and toss well.",
+        "Return the egg, season with salt, toss and serve."
+      ]
+    },
+    {
+      "id": "cabbage-carrot-fry",
+      "title": "Braised cabbage & carrot",
+      "servings": 4,
+      "time_minutes": 20,
+      "tags": ["vegetarian", "quick", "side", "vegan"],
+      "source": { "platform": "seed", "creator": "RandPlates starter set" },
+      "ingredients": [
+        { "id": "cabbage", "qty": 0.5, "unit": "unit" },
+        { "id": "carrots", "qty": 200, "unit": "g" },
+        { "id": "oil", "qty": 15, "unit": "ml" },
+        { "id": "stock-cubes", "qty": 1, "unit": "unit", "optional": true }
+      ],
+      "steps": [
+        "Shred the cabbage, slice the carrots thin.",
+        "Fry in oil on high heat 3 min, tossing.",
+        "Crumble in the stock cube, splash of water, cover and braise 8 min."
+      ]
+    },
+    {
+      "id": "tomato-soup-toast",
+      "title": "Fresh tomato soup & toast",
+      "servings": 2,
+      "time_minutes": 25,
+      "tags": ["vegetarian", "budget", "vegan"],
+      "source": { "platform": "seed", "creator": "RandPlates starter set" },
+      "ingredients": [
+        { "id": "tomato", "qty": 600, "unit": "g" },
+        { "id": "onion", "qty": 150, "unit": "g" },
+        { "id": "stock-cubes", "qty": 1, "unit": "unit" },
+        { "id": "bread", "qty": 4, "unit": "slice" },
+        { "id": "sugar", "qty": 2, "unit": "g", "optional": true }
+      ],
+      "steps": [
+        "Fry onion until soft, add chopped tomatoes and crumbled stock cube.",
+        "Simmer 15 min until tomatoes collapse.",
+        "Blend or mash smooth; season (pinch of sugar kills acidity).",
+        "Serve with toasted bread."
+      ]
+    },
+    {
+      "id": "boerie-rolls",
+      "title": "Boerewors rolls",
+      "servings": 4,
+      "time_minutes": 15,
+      "tags": ["braai", "quick", "classic"],
+      "source": { "platform": "seed", "creator": "RandPlates starter set" },
+      "ingredients": [
+        { "id": "boerewors", "qty": 500, "unit": "g" },
+        { "id": "bread", "qty": 4, "unit": "slice" },
+        { "id": "chakalaka", "qty": 1, "unit": "can", "optional": true }
+      ],
+      "steps": [
+        "Grill or braai the boerewors, turning until done.",
+        "Butter the bread or toast it lightly.",
+        "Fill with wors and a spoon of chakalaka."
+      ]
+    },
+    {
+      "id": "pap-milk-breakfast",
+      "title": "Pap & milk breakfast",
+      "servings": 2,
+      "time_minutes": 15,
+      "tags": ["breakfast", "vegetarian", "budget", "quick"],
+      "source": { "platform": "seed", "creator": "RandPlates starter set" },
+      "ingredients": [
+        { "id": "maize-meal", "qty": 200, "unit": "g" },
+        { "id": "milk", "qty": 400, "unit": "ml" },
+        { "id": "sugar", "qty": 10, "unit": "g", "optional": true }
+      ],
+      "steps": [
+        "Make a soft pap with boiling water and the maize meal.",
+        "Stir in the milk and simmer 2 min until creamy.",
+        "Sweeten to taste and serve warm."
+      ]
+    },
+    {
+      "id": "mince-on-toast",
+      "title": "Mince on toast",
+      "servings": 2,
+      "time_minutes": 20,
+      "tags": ["quick", "budget"],
+      "source": { "platform": "seed", "creator": "RandPlates starter set" },
+      "ingredients": [
+        { "id": "beef-mince", "qty": 250, "unit": "g" },
+        { "id": "bread", "qty": 4, "unit": "slice" },
+        { "id": "onion", "qty": 100, "unit": "g" },
+        { "id": "curry-powder", "qty": 3, "unit": "g" },
+        { "id": "tomato", "qty": 150, "unit": "g", "optional": true }
+      ],
+      "steps": [
+        "Brown mince with onion and curry powder.",
+        "Add a splash of water, simmer 10 min.",
+        "Spoon over toast."
+      ]
+    },
+    {
+      "id": "cheesy-potato-mash",
+      "title": "Cheesy potato mash",
+      "servings": 4,
+      "time_minutes": 30,
+      "tags": ["vegetarian", "side", "comfort"],
+      "source": { "platform": "seed", "creator": "RandPlates starter set" },
+      "ingredients": [
+        { "id": "potatoes", "qty": 1000, "unit": "g" },
+        { "id": "milk", "qty": 100, "unit": "ml" },
+        { "id": "cheese", "qty": 100, "unit": "g" },
+        { "id": "salt", "qty": 2, "unit": "g" }
+      ],
+      "steps": [
+        "Boil peeled, quartered potatoes in salted water 20 min until soft.",
+        "Mash with warm milk until smooth.",
+        "Fold through the grated cheese, season and serve."
+      ]
+    }
+  ]
+}

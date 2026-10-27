@@ -1,0 +1,32 @@
+{
+  "version": "0.1.0-scaffold",
+  "last_updated": "2026-09-14",
+  "note": "SAMPLE REGISTRY (scaffold). Real ~150-item registry is Phase 0/5 work. Tiers are the matcher weights per PRD §9.1: protein 3 / staple 2 / veg 1 / garnish 0.5.",
+  "items": [
+    { "id": "maize-meal", "name": "Maize meal", "aliases": ["pap", "mielie meal", "mealie meal", "putu", "porridge"], "aisle": "starches", "unit_basis": { "qty": 2500, "unit": "g" }, "tier": 2, "shelf_life_days": 180 },
+    { "id": "rice", "name": "White rice", "aliases": ["rys", "rice"], "aisle": "starches", "unit_basis": { "qty": 2000, "unit": "g" }, "tier": 2, "shelf_life_days": 365 },
+    { "id": "bread", "name": "Sliced white bread", "aliases": ["brood", "loaf", "toast"], "aisle": "starches", "unit_basis": { "qty": 1, "unit": "unit" }, "tier": 2, "shelf_life_days": 5 },
+    { "id": "pasta", "name": "Macaroni / pasta", "aliases": ["pasta", "macaroni", "noedels", "noodles"], "aisle": "starches", "unit_basis": { "qty": 500, "unit": "g" }, "tier": 2, "shelf_life_days": 365 },
+    { "id": "flour", "name": "Cake wheat flour", "aliases": ["flour", "meel"], "aisle": "starches", "unit_basis": { "qty": 2500, "unit": "g" }, "tier": 2, "shelf_life_days": 180 },
+    { "id": "potatoes", "name": "Potatoes", "aliases": ["aartappels", "spuds"], "aisle": "veg", "unit_basis": { "qty": 1000, "unit": "g" }, "tier": 1, "shelf_life_days": 21 },
+    { "id": "sugar", "name": "White sugar", "aliases": ["suiker"], "aisle": "other", "unit_basis": { "qty": 1000, "unit": "g" }, "tier": 0.5, "shelf_life_days": 730 },
+    { "id": "oil", "name": "Sunflower cooking oil", "aliases": ["oil", "olie", "vegetable oil"], "aisle": "other", "unit_basis": { "qty": 750, "unit": "ml" }, "tier": 0.5, "shelf_life_days": 270 },
+    { "id": "salt", "name": "Salt", "aliases": ["sout", "table salt"], "aisle": "spices", "unit_basis": { "qty": 500, "unit": "g" }, "tier": 0.5, "shelf_life_days": 730 },
+    { "id": "curry-powder", "name": "Curry powder", "aliases": ["kerrie", "masala"], "aisle": "spices", "unit_basis": { "qty": 100, "unit": "g" }, "tier": 0.5, "shelf_life_days": 365 },
+    { "id": "stock-cubes", "name": "Stock cubes", "aliases": ["stock", "bouillon", "sous houer"], "aisle": "spices", "unit_basis": { "qty": 10, "unit": "unit" }, "tier": 0.5, "shelf_life_days": 365 },
+    { "id": "beef-mince", "name": "Beef mince", "aliases": ["mince", "ground beef"], "aisle": "proteins", "unit_basis": { "qty": 1000, "unit": "g" }, "tier": 3, "shelf_life_days": 3 },
+    { "id": "chicken-thighs", "name": "Chicken thighs / pieces", "aliases": ["chicken", "hoender", "chicken pieces"], "aisle": "proteins", "unit_basis": { "qty": 1000, "unit": "g" }, "tier": 3, "shelf_life_days": 2 },
+    { "id": "boerewors", "name": "Boerewors", "aliases": ["wors", "braai pack", "sausage"], "aisle": "proteins", "unit_basis": { "qty": 1000, "unit": "g" }, "tier": 3, "shelf_life_days": 3 },
+    { "id": "eggs", "name": "Eggs", "aliases": ["eiers", "eier"], "aisle": "proteins", "unit_basis": { "qty": 30, "unit": "unit" }, "tier": 3, "shelf_life_days": 21 },
+    { "id": "milk", "name": "Full-cream milk", "aliases": ["melk"], "aisle": "dairy", "unit_basis": { "qty": 1000, "unit": "ml" }, "tier": 2, "shelf_life_days": 7 },
+    { "id": "cheese", "name": "Cheddar cheese", "aliases": ["kaas", "cheddar"], "aisle": "dairy", "unit_basis": { "qty": 400, "unit": "g" }, "tier": 2, "shelf_life_days": 30 },
+    { "id": "baked-beans", "name": "Baked beans in tomato sauce", "aliases": ["beans", "bone", "baked beans"], "aisle": "tinned", "unit_basis": { "qty": 1, "unit": "can" }, "tier": 2, "shelf_life_days": 540 },
+    { "id": "sardines", "name": "Tinned sardines", "aliases": ["sardyne", "pilchards", "tin fish"], "aisle": "tinned", "unit_basis": { "qty": 1, "unit": "can" }, "tier": 2, "shelf_life_days": 730 },
+    { "id": "chakalaka", "name": "Chakalaka (tinned)", "aliases": ["chakalaka", "relish"], "aisle": "tinned", "unit_basis": { "qty": 1, "unit": "can" }, "tier": 1, "shelf_life_days": 540 },
+    { "id": "onion", "name": "Onions", "aliases": ["uil", "onions", "pye"], "aisle": "veg", "unit_basis": { "qty": 1000, "unit": "g" }, "tier": 1, "shelf_life_days": 30 },
+    { "id": "tomato", "name": "Tomatoes", "aliases": ["tamatie", "tomatoes"], "aisle": "veg", "unit_basis": { "qty": 1000, "unit": "g" }, "tier": 1, "shelf_life_days": 7 },
+    { "id": "cabbage", "name": "Cabbage", "aliases": ["kool", "green cabbage"], "aisle": "veg", "unit_basis": { "qty": 1, "unit": "unit" }, "tier": 1, "shelf_life_days": 14 },
+    { "id": "carrots", "name": "Carrots", "aliases": ["wortels", "carrot"], "aisle": "veg", "unit_basis": { "qty": 1000, "unit": "g" }, "tier": 1, "shelf_life_days": 21 },
+    { "id": "spinach", "name": "Spinach / morogo", "aliases": ["morogo", "imifino", "spinach"], "aisle": "veg", "unit_basis": { "qty": 1, "unit": "bunch" }, "tier": 1, "shelf_life_days": 4 }
+  ]
+}

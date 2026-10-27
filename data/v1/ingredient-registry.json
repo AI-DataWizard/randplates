@@ -1,0 +1,4200 @@
+[
+  {
+    "id": "maize-meal",
+    "name": "Maize meal",
+    "aliases": [
+      "i-maize meal",
+      "i-mealie meal",
+      "impuphu",
+      "maiz meal",
+      "maize meal",
+      "mealie meal",
+      "mielie pap",
+      "mielie papm",
+      "mieliemeel",
+      "mieliepap",
+      "mieliepapp",
+      "pap",
+      "pap poridge",
+      "pap porridge",
+      "papa",
+      "phofo",
+      "super maize meal",
+      "ufula"
+    ],
+    "aisle": "starches",
+    "tier": 2,
+    "shelf_life": "long",
+    "unit_basis": {
+      "qty": 2500,
+      "unit": "g"
+    }
+  },
+  {
+    "id": "samp",
+    "name": "Samp",
+    "aliases": [
+      "i-samp",
+      "isamp",
+      "isijingi",
+      "samp",
+      "samp with beans",
+      "stampmielies"
+    ],
+    "aisle": "starches",
+    "tier": 2,
+    "shelf_life": "long",
+    "unit_basis": {
+      "qty": 500,
+      "unit": "g"
+    }
+  },
+  {
+    "id": "maize-rice",
+    "name": "Maize rice",
+    "aliases": [
+      "i-maize rice",
+      "irayisi lommbila",
+      "maize rice",
+      "mielie rice",
+      "mielie rice small",
+      "mielierys",
+      "raese ya poone",
+      "stamp"
+    ],
+    "aisle": "starches",
+    "tier": 2,
+    "shelf_life": "long",
+    "unit_basis": {
+      "qty": 500,
+      "unit": "g"
+    }
+  },
+  {
+    "id": "maltabella",
+    "name": "Maltabella",
+    "aliases": [
+      "amabele",
+      "i-maltabella",
+      "mabela porridge",
+      "mabelas",
+      "mabele",
+      "maltabella",
+      "maltabella porridge",
+      "soft porridge maltabella",
+      "sorghum porridge"
+    ],
+    "aisle": "starches",
+    "tier": 2,
+    "shelf_life": "long",
+    "unit_basis": {
+      "qty": 1000,
+      "unit": "g"
+    }
+  },
+  {
+    "id": "white-rice",
+    "name": "White rice",
+    "aliases": [
+      "i-white rice",
+      "irayisi elimhlophe",
+      "long grain white rice",
+      "raese e tshweu",
+      "spekkos white rice",
+      "tastic white rice",
+      "white rice",
+      "witrys"
+    ],
+    "aisle": "starches",
+    "tier": 2,
+    "shelf_life": "long",
+    "unit_basis": {
+      "qty": 2000,
+      "unit": "g"
+    }
+  },
+  {
+    "id": "brown-rice",
+    "name": "Brown rice",
+    "aliases": [
+      "brown rice",
+      "bruinrys",
+      "tastic brown rice",
+      "unpolished rice",
+      "whole grain rice"
+    ],
+    "aisle": "starches",
+    "tier": 2,
+    "shelf_life": "medium",
+    "unit_basis": {
+      "qty": 1000,
+      "unit": "g"
+    }
+  },
+  {
+    "id": "parboiled-rice",
+    "name": "Parboiled rice",
+    "aliases": [
+      "converted rice",
+      "easy cook rice",
+      "i-parboiled rice",
+      "irayisi",
+      "parboiled rice",
+      "parboiled rys",
+      "spekkos parboiled",
+      "tastic parboiled rice",
+      "voorafgekookte rys"
+    ],
+    "aisle": "starches",
+    "tier": 2,
+    "shelf_life": "long",
+    "unit_basis": {
+      "qty": 2000,
+      "unit": "g"
+    }
+  },
+  {
+    "id": "basmati-rice",
+    "name": "Basmati rice",
+    "aliases": [
+      "basmati",
+      "basmati rice",
+      "basmatirys",
+      "indian rice",
+      "long grain basmati",
+      "tastic basmati"
+    ],
+    "aisle": "starches",
+    "tier": 2,
+    "shelf_life": "long",
+    "unit_basis": {
+      "qty": 1000,
+      "unit": "g"
+    }
+  },
+  {
+    "id": "rice-and-beans-mix",
+    "name": "Rice and beans mix",
+    "aliases": [
+      "beans and rice mix",
+      "curry rice mix",
+      "i-rice and beans",
+      "irayisi namabhontshisi",
+      "rice and beans",
+      "rice and peas mix",
+      "rys en bone",
+      "rys en bone mengsel",
+      "tastic rice and lentils"
+    ],
+    "aisle": "starches",
+    "tier": 2,
+    "shelf_life": "long",
+    "unit_basis": {
+      "qty": 250,
+      "unit": "g"
+    }
+  },
+  {
+    "id": "white-bread",
+    "name": "White bread",
+    "aliases": [
+      "albany white",
+      "blue ribbon white",
+      "bohobe bo bosweu",
+      "i-white bread",
+      "isinkwa esimhlophe",
+      "isonka esimhlophe",
+      "sliced white bread",
+      "white bread",
+      "white loaf",
+      "witbrood"
+    ],
+    "aisle": "starches",
+    "tier": 2,
+    "shelf_life": "short",
+    "unit_basis": {
+      "qty": 700,
+      "unit": "g"
+    }
+  },
+  {
+    "id": "brown-bread",
+    "name": "Brown bread",
+    "aliases": [
+      "albany brown",
+      "blue ribbon brown",
+      "brown bread",
+      "brown loaf",
+      "bruinbrood",
+      "sliced brown bread"
+    ],
+    "aisle": "starches",
+    "tier": 2,
+    "shelf_life": "short",
+    "unit_basis": {
+      "qty": 700,
+      "unit": "g"
+    }
+  },
+  {
+    "id": "wholewheat-bread",
+    "name": "Wholewheat bread",
+    "aliases": [
+      "bohobe ba wholewheat",
+      "brown wholewheat loaf",
+      "bruinbrood",
+      "health bread",
+      "i-brown bread",
+      "isinkwa se-wholewheat",
+      "isonka se-wholewheat",
+      "volkorenbrood",
+      "whole wheat bread",
+      "wholemeal bread",
+      "wholewheat bread"
+    ],
+    "aisle": "starches",
+    "tier": 2,
+    "shelf_life": "short",
+    "unit_basis": {
+      "qty": 700,
+      "unit": "g"
+    }
+  },
+  {
+    "id": "cake-flour",
+    "name": "Cake flour",
+    "aliases": [
+      "all purpose cake flour",
+      "cake flour",
+      "cake wheat flour",
+      "koekmeel",
+      "snowflake cake flour"
+    ],
+    "aisle": "starches",
+    "tier": 2,
+    "shelf_life": "long",
+    "unit_basis": {
+      "qty": 2500,
+      "unit": "g"
+    }
+  },
+  {
+    "id": "bread-flour",
+    "name": "Bread flour",
+    "aliases": [
+      "bread flour",
+      "bread wheat flour",
+      "broodmeel",
+      "snowflake bread flour",
+      "strong flour",
+      "white bread flour"
+    ],
+    "aisle": "starches",
+    "tier": 2,
+    "shelf_life": "long",
+    "unit_basis": {
+      "qty": 2500,
+      "unit": "g"
+    }
+  },
+  {
+    "id": "self-raising-flour",
+    "name": "Self-raising flour",
+    "aliases": [
+      "i-self-raising flour",
+      "raising flour",
+      "self raising flour",
+      "self-raising flour",
+      "selfrysmeel",
+      "snowflake self raising"
+    ],
+    "aisle": "starches",
+    "tier": 2,
+    "shelf_life": "long",
+    "unit_basis": {
+      "qty": 1000,
+      "unit": "g"
+    }
+  },
+  {
+    "id": "wholewheat-flour",
+    "name": "Wholewheat flour",
+    "aliases": [
+      "brown flour",
+      "bruinmeel",
+      "i-wholewheat flour",
+      "nutty wheat flour",
+      "ufula we-brown",
+      "volkorenmeel",
+      "whole wheat flour",
+      "wholemeal flour",
+      "wholewheat flour"
+    ],
+    "aisle": "starches",
+    "tier": 2,
+    "shelf_life": "medium",
+    "unit_basis": {
+      "qty": 1000,
+      "unit": "g"
+    }
+  },
+  {
+    "id": "macaroni",
+    "name": "Macaroni",
+    "aliases": [
+      "elbow macaroni",
+      "fatti's and moni's macaroni",
+      "i-macaroni",
+      "i-pasta",
+      "macaroni",
+      "pasta macaroni",
+      "pypies"
+    ],
+    "aisle": "starches",
+    "tier": 2,
+    "shelf_life": "long",
+    "unit_basis": {
+      "qty": 500,
+      "unit": "g"
+    }
+  },
+  {
+    "id": "spaghetti",
+    "name": "Spaghetti",
+    "aliases": [
+      "fatti's spaghetti",
+      "i-pasta",
+      "i-spaghetti",
+      "long pasta",
+      "pasta spaghetti",
+      "spag",
+      "spaghetti"
+    ],
+    "aisle": "starches",
+    "tier": 2,
+    "shelf_life": "long",
+    "unit_basis": {
+      "qty": 500,
+      "unit": "g"
+    }
+  },
+  {
+    "id": "penne",
+    "name": "Penne",
+    "aliases": [
+      "i-pasta",
+      "i-penne",
+      "pasta tubes",
+      "penne",
+      "penne pasta",
+      "penne rigate"
+    ],
+    "aisle": "starches",
+    "tier": 2,
+    "shelf_life": "long",
+    "unit_basis": {
+      "qty": 500,
+      "unit": "g"
+    }
+  },
+  {
+    "id": "rolled-oats",
+    "name": "Rolled oats",
+    "aliases": [
+      "breakfast oats",
+      "hawermout",
+      "i-oats",
+      "i-rolled oats",
+      "jungle oats",
+      "oats rolled",
+      "old fashioned oats",
+      "rolled oats"
+    ],
+    "aisle": "starches",
+    "tier": 2,
+    "shelf_life": "long",
+    "unit_basis": {
+      "qty": 1000,
+      "unit": "g"
+    }
+  },
+  {
+    "id": "instant-oats",
+    "name": "Instant oats",
+    "aliases": [
+      "i-oats",
+      "i-oats esheshayo",
+      "instant oats",
+      "instant porridge oats",
+      "jungle instant oats",
+      "kits oats",
+      "kits-hawermout",
+      "oatso easy",
+      "quick oats"
+    ],
+    "aisle": "starches",
+    "tier": 2,
+    "shelf_life": "long",
+    "unit_basis": {
+      "qty": 500,
+      "unit": "g"
+    }
+  },
+  {
+    "id": "instant-noodles",
+    "name": "Instant noodles",
+    "aliases": [
+      "2 minute noodles",
+      "i-2-minute noodles",
+      "i-noodles",
+      "indomie noodles",
+      "instant noodles",
+      "kitsnoedels",
+      "maggi noodles",
+      "noodles"
+    ],
+    "aisle": "starches",
+    "tier": 2,
+    "shelf_life": "long",
+    "unit_basis": {
+      "qty": 73,
+      "unit": "g"
+    }
+  },
+  {
+    "id": "instant-mash",
+    "name": "Instant mash",
+    "aliases": [
+      "amashed potato",
+      "i-mash",
+      "instant mash",
+      "instant mashed potato",
+      "kits mash",
+      "kits-aartappelpuree",
+      "mash",
+      "mash n spice",
+      "smash"
+    ],
+    "aisle": "starches",
+    "tier": 2,
+    "shelf_life": "long",
+    "unit_basis": {
+      "qty": 125,
+      "unit": "g"
+    }
+  },
+  {
+    "id": "sorghum-meal",
+    "name": "Sorghum meal",
+    "aliases": [
+      "amabele",
+      "amabele",
+      "i-sorghum meal",
+      "mabelameel",
+      "mabele",
+      "mabele meal",
+      "sorghum meal",
+      "sorghum porridge meal",
+      "sorghummeel"
+    ],
+    "aisle": "starches",
+    "tier": 2,
+    "shelf_life": "long",
+    "unit_basis": {
+      "qty": 1000,
+      "unit": "g"
+    }
+  },
+  {
+    "id": "instant-maize-porridge",
+    "name": "Instant maize porridge",
+    "aliases": [
+      "i-instant pap",
+      "i-porridge esheshayo",
+      "instant maize porridge",
+      "instant pap",
+      "instant porridge",
+      "instant soft porridge",
+      "jungle instant porridge",
+      "kitsmieliepap",
+      "kitspap",
+      "morvite",
+      "motoho o potlakileng"
+    ],
+    "aisle": "starches",
+    "tier": 2,
+    "shelf_life": "long",
+    "unit_basis": {
+      "qty": 1000,
+      "unit": "g"
+    }
+  },
+  {
+    "id": "tinned-sardines-tomato",
+    "name": "Tinned sardines in tomato sauce",
+    "aliases": [
+      "ama-sardines",
+      "di-sardines",
+      "i-sardines",
+      "lucky star sardines tomato",
+      "sardientjies",
+      "sardines in tomato",
+      "sardines tomato sauce",
+      "sardynes",
+      "tin fish tomato",
+      "tinned sardines"
+    ],
+    "aisle": "protein-tinned",
+    "tier": 3,
+    "shelf_life": "long",
+    "unit_basis": {
+      "qty": 120,
+      "unit": "g"
+    }
+  },
+  {
+    "id": "tinned-sardines-chilli",
+    "name": "Tinned sardines in chilli sauce",
+    "aliases": [
+      "ama-sardines",
+      "di-sardines",
+      "i-pilchards",
+      "i-sardines",
+      "lucky star sardines chilli",
+      "sardientjies",
+      "sardines chilli sauce",
+      "sardines in chilli",
+      "tin fish chilli",
+      "tinned sardines chilli"
+    ],
+    "aisle": "protein-tinned",
+    "tier": 3,
+    "shelf_life": "long",
+    "unit_basis": {
+      "qty": 120,
+      "unit": "g"
+    }
+  },
+  {
+    "id": "pilchards-tomato",
+    "name": "Tinned pilchards in tomato sauce",
+    "aliases": [
+      "ama-pilchards",
+      "i-pilchards",
+      "lucky star pilchards tomato",
+      "pilchards",
+      "pilchards in tomato",
+      "pilchards tomato sauce",
+      "sardientjies",
+      "tin fish pilchards",
+      "tinned pilchards"
+    ],
+    "aisle": "protein-tinned",
+    "tier": 3,
+    "shelf_life": "long",
+    "unit_basis": {
+      "qty": 400,
+      "unit": "g"
+    }
+  },
+  {
+    "id": "pilchards-chilli",
+    "name": "Tinned pilchards in chilli sauce",
+    "aliases": [
+      "ama-pilchards",
+      "i-pilchards",
+      "lucky star pilchards chilli",
+      "pilchards",
+      "pilchards chilli sauce",
+      "pilchards in chilli",
+      "sardientjies",
+      "tinned pilchards chilli"
+    ],
+    "aisle": "protein-tinned",
+    "tier": 3,
+    "shelf_life": "long",
+    "unit_basis": {
+      "qty": 400,
+      "unit": "g"
+    }
+  },
+  {
+    "id": "tinned-tuna",
+    "name": "Tinned tuna in water",
+    "aliases": [
+      "i-tuna",
+      "lucky star tuna",
+      "tin tuna",
+      "tine tuna",
+      "tinned tuna",
+      "tinnie tuna",
+      "tuna",
+      "tuna chunks",
+      "tuna in water",
+      "tuna oiled",
+      "tuna wtr"
+    ],
+    "aisle": "protein-tinned",
+    "tier": 3,
+    "shelf_life": "long",
+    "unit_basis": {
+      "qty": 170,
+      "unit": "g"
+    }
+  },
+  {
+    "id": "tinned-tuna-tomato",
+    "name": "Tinned tuna in tomato sauce",
+    "aliases": [
+      "i-tuna",
+      "lucky star tuna tomato",
+      "tinned tuna tomato",
+      "tuna",
+      "tuna in tomato",
+      "tuna tomato sauce"
+    ],
+    "aisle": "protein-tinned",
+    "tier": 3,
+    "shelf_life": "long",
+    "unit_basis": {
+      "qty": 170,
+      "unit": "g"
+    }
+  },
+  {
+    "id": "tinned-mackerel-tomato",
+    "name": "Tinned mackerel in tomato sauce",
+    "aliases": [
+      "i-mackerel",
+      "lucky star mackerel tomato",
+      "mackerel in tomato",
+      "mackerel tomato sauce",
+      "makriel",
+      "tinned mackerel"
+    ],
+    "aisle": "protein-tinned",
+    "tier": 3,
+    "shelf_life": "long",
+    "unit_basis": {
+      "qty": 400,
+      "unit": "g"
+    }
+  },
+  {
+    "id": "tinned-mackerel-chilli",
+    "name": "Tinned mackerel in chilli sauce",
+    "aliases": [
+      "i-mackerel",
+      "inhlanzi",
+      "lucky star mackerel chilli",
+      "mackerel chilli sauce",
+      "mackerel in chilli",
+      "makriel",
+      "tinned mackerel chilli",
+      "tinnie makriel"
+    ],
+    "aisle": "protein-tinned",
+    "tier": 3,
+    "shelf_life": "long",
+    "unit_basis": {
+      "qty": 400,
+      "unit": "g"
+    }
+  },
+  {
+    "id": "vienna-sausages",
+    "name": "Tinned vienna sausages",
+    "aliases": [
+      "amaviennas",
+      "di-viennas",
+      "i-viennas",
+      "lucky star viennas",
+      "sausages in brine",
+      "tinned viennas",
+      "vienna sausages",
+      "viennas",
+      "weense worsies"
+    ],
+    "aisle": "protein-tinned",
+    "tier": 3,
+    "shelf_life": "long",
+    "unit_basis": {
+      "qty": 200,
+      "unit": "g"
+    }
+  },
+  {
+    "id": "corned-beef",
+    "name": "Tinned corned beef",
+    "aliases": [
+      "bull brand corned beef",
+      "bully beef",
+      "corn beef",
+      "corned beef",
+      "korniervleis",
+      "tinned corned beef"
+    ],
+    "aisle": "protein-tinned",
+    "tier": 3,
+    "shelf_life": "long",
+    "unit_basis": {
+      "qty": 300,
+      "unit": "g"
+    }
+  },
+  {
+    "id": "baked-beans",
+    "name": "Baked beans in tomato sauce",
+    "aliases": [
+      "baked beans",
+      "baked beens",
+      "beans in tomato sauce",
+      "gebakte bone",
+      "koo baked beans",
+      "rhodes baked beans",
+      "tin beans tomato"
+    ],
+    "aisle": "protein-tinned",
+    "tier": 3,
+    "shelf_life": "long",
+    "unit_basis": {
+      "qty": 410,
+      "unit": "g"
+    }
+  },
+  {
+    "id": "baked-beans-with-sausage",
+    "name": "Baked beans with sausage",
+    "aliases": [
+      "baked beans with sausage",
+      "beans and sausage",
+      "gebakte bone met wors",
+      "koo beans and sausage",
+      "sausage and beans tin"
+    ],
+    "aisle": "protein-tinned",
+    "tier": 3,
+    "shelf_life": "long",
+    "unit_basis": {
+      "qty": 410,
+      "unit": "g"
+    }
+  },
+  {
+    "id": "butter-beans",
+    "name": "Tinned butter beans",
+    "aliases": [
+      "botterbone",
+      "butter beans",
+      "butterbeans",
+      "koo butter beans",
+      "large white beans",
+      "tinned butter beans"
+    ],
+    "aisle": "protein-tinned",
+    "tier": 3,
+    "shelf_life": "long",
+    "unit_basis": {
+      "qty": 410,
+      "unit": "g"
+    }
+  },
+  {
+    "id": "kidney-beans-curry",
+    "name": "Tinned kidney beans in curry sauce",
+    "aliases": [
+      "beans curry sauce",
+      "curried kidney beans",
+      "i-kidney beans",
+      "kidney beans curry",
+      "kidney beans in curry",
+      "koo kidney beans curry",
+      "niertjieboontjies",
+      "rooi bone"
+    ],
+    "aisle": "protein-tinned",
+    "tier": 3,
+    "shelf_life": "long",
+    "unit_basis": {
+      "qty": 410,
+      "unit": "g"
+    }
+  },
+  {
+    "id": "sugar-beans",
+    "name": "Tinned sugar beans",
+    "aliases": [
+      "amabhontshisi",
+      "dinawa",
+      "i-sugar beans",
+      "koo sugar beans",
+      "speckled beans",
+      "sugar beans",
+      "sugarbeans",
+      "suikerbone",
+      "tinned sugar beans"
+    ],
+    "aisle": "protein-tinned",
+    "tier": 3,
+    "shelf_life": "long",
+    "unit_basis": {
+      "qty": 410,
+      "unit": "g"
+    }
+  },
+  {
+    "id": "chickpeas",
+    "name": "Tinned chickpeas",
+    "aliases": [
+      "chick peas tin",
+      "chickpeas",
+      "garbanzo beans",
+      "kikkererwte",
+      "koo chickpeas",
+      "tinned chickpeas"
+    ],
+    "aisle": "protein-tinned",
+    "tier": 3,
+    "shelf_life": "long",
+    "unit_basis": {
+      "qty": 400,
+      "unit": "g"
+    }
+  },
+  {
+    "id": "mixed-bean-salad",
+    "name": "Mixed bean salad",
+    "aliases": [
+      "bean salad",
+      "gemengde boontjieslaai",
+      "i-mixed bean salad",
+      "isaladi lamabhontshisi",
+      "koo bean salad",
+      "mixed bean salad",
+      "mixed beans tin",
+      "three bean salad"
+    ],
+    "aisle": "protein-tinned",
+    "tier": 3,
+    "shelf_life": "long",
+    "unit_basis": {
+      "qty": 410,
+      "unit": "g"
+    }
+  },
+  {
+    "id": "four-bean-mix",
+    "name": "Four bean mix",
+    "aliases": [
+      "4 bean mix",
+      "four bean mix",
+      "four beans tin",
+      "koo four bean mix",
+      "mixed beans 4 way",
+      "vierboonmengsel"
+    ],
+    "aisle": "protein-tinned",
+    "tier": 3,
+    "shelf_life": "long",
+    "unit_basis": {
+      "qty": 410,
+      "unit": "g"
+    }
+  },
+  {
+    "id": "chakalaka-beans",
+    "name": "Chakalaka beans",
+    "aliases": [
+      "chakalaka beans",
+      "chakalaka with beans",
+      "chakalakabone",
+      "koo chakalaka beans",
+      "rhodes chakalaka beans",
+      "spicy beans chakalaka"
+    ],
+    "aisle": "protein-tinned",
+    "tier": 3,
+    "shelf_life": "long",
+    "unit_basis": {
+      "qty": 410,
+      "unit": "g"
+    }
+  },
+  {
+    "id": "tinned-lentils",
+    "name": "Tinned lentils",
+    "aliases": [
+      "ama-lentils",
+      "brown lentils tinned",
+      "di-lentils",
+      "i-lentils",
+      "koo lentils",
+      "lensies",
+      "lentil tin",
+      "lentils tin",
+      "tinned lentils"
+    ],
+    "aisle": "protein-tinned",
+    "tier": 3,
+    "shelf_life": "long",
+    "unit_basis": {
+      "qty": 400,
+      "unit": "g"
+    }
+  },
+  {
+    "id": "soya-mince",
+    "name": "Soya mince",
+    "aliases": [
+      "i-soya mince",
+      "imana soya mince",
+      "isoya",
+      "knorrox soya mince",
+      "sojagehakt",
+      "soya",
+      "soya mince",
+      "soya mince packet",
+      "soya mince tomato"
+    ],
+    "aisle": "protein-tinned",
+    "tier": 3,
+    "shelf_life": "long",
+    "unit_basis": {
+      "qty": 200,
+      "unit": "g"
+    }
+  },
+  {
+    "id": "soya-chunks",
+    "name": "Soya chunks",
+    "aliases": [
+      "i-soya chunks",
+      "imana soya chunks",
+      "isoya",
+      "knorrox soya chunks",
+      "sojastukke",
+      "soya",
+      "soya chunks",
+      "soya cubes",
+      "soya pieces"
+    ],
+    "aisle": "protein-tinned",
+    "tier": 3,
+    "shelf_life": "long",
+    "unit_basis": {
+      "qty": 200,
+      "unit": "g"
+    }
+  },
+  {
+    "id": "soup-mix",
+    "name": "Dry soup mix",
+    "aliases": [
+      "dro\u00eb sop",
+      "dry soup mix",
+      "i-dry soup",
+      "i-soup mix",
+      "knorrox soup mix",
+      "packet soup mix",
+      "royco soup mix",
+      "sopmengsel",
+      "soup mix"
+    ],
+    "aisle": "protein-tinned",
+    "tier": 3,
+    "shelf_life": "long",
+    "unit_basis": {
+      "qty": 50,
+      "unit": "g"
+    }
+  },
+  {
+    "id": "tinned-meatballs-tomato",
+    "name": "Tinned meatballs in tomato sauce",
+    "aliases": [
+      "ama-meatballs",
+      "frikkadelle",
+      "i-meatballs",
+      "koo meatballs",
+      "meat balls tomato sauce",
+      "meatballs in tomato",
+      "meatballs tin",
+      "tinned meatballs"
+    ],
+    "aisle": "protein-tinned",
+    "tier": 3,
+    "shelf_life": "long",
+    "unit_basis": {
+      "qty": 410,
+      "unit": "g"
+    }
+  },
+  {
+    "id": "curried-beans",
+    "name": "Curried beans",
+    "aliases": [
+      "beans curry tin",
+      "curried beans",
+      "curry beans",
+      "kerrieboontjies",
+      "koo curried beans",
+      "rhodes curry beans"
+    ],
+    "aisle": "protein-tinned",
+    "tier": 3,
+    "shelf_life": "long",
+    "unit_basis": {
+      "qty": 410,
+      "unit": "g"
+    }
+  },
+  {
+    "id": "whole-chicken",
+    "name": "Whole chicken",
+    "aliases": [
+      "chicken whole",
+      "fresh whole chicken",
+      "full chicken",
+      "heel hoender",
+      "i-whole chicken",
+      "inkukhu ephelele",
+      "kgoho e felletseng",
+      "whole bird",
+      "whole chicken"
+    ],
+    "aisle": "protein-fresh",
+    "tier": 3,
+    "shelf_life": "short",
+    "unit_basis": {
+      "qty": 1500,
+      "unit": "g"
+    }
+  },
+  {
+    "id": "chicken-thighs",
+    "name": "Chicken thighs",
+    "aliases": [
+      "chicken thigh pack",
+      "chicken thighs",
+      "chicken thighs bone-in",
+      "hoenderdyies",
+      "thigh pieces",
+      "thighs"
+    ],
+    "aisle": "protein-fresh",
+    "tier": 3,
+    "shelf_life": "short",
+    "unit_basis": {
+      "qty": 1000,
+      "unit": "g"
+    }
+  },
+  {
+    "id": "chicken-breasts",
+    "name": "Chicken breasts",
+    "aliases": [
+      "breasts",
+      "chicken breast",
+      "chicken breast pack",
+      "chicken breasts",
+      "chicken fillets fresh",
+      "hoenderborsies"
+    ],
+    "aisle": "protein-fresh",
+    "tier": 3,
+    "shelf_life": "short",
+    "unit_basis": {
+      "qty": 1000,
+      "unit": "g"
+    }
+  },
+  {
+    "id": "chicken-wings",
+    "name": "Chicken wings",
+    "aliases": [
+      "chicken wing pack",
+      "chicken wings",
+      "fresh wings",
+      "hoendervlerkies",
+      "sticky wings pack",
+      "wings"
+    ],
+    "aisle": "protein-fresh",
+    "tier": 3,
+    "shelf_life": "short",
+    "unit_basis": {
+      "qty": 1000,
+      "unit": "g"
+    }
+  },
+  {
+    "id": "chicken-livers",
+    "name": "Chicken livers",
+    "aliases": [
+      "amaliver",
+      "chicken liver pack",
+      "chicken livers",
+      "chickn livers",
+      "chiken livers",
+      "fresh livers",
+      "hoenderlewertjies",
+      "isibindi",
+      "livers"
+    ],
+    "aisle": "protein-fresh",
+    "tier": 3,
+    "shelf_life": "short",
+    "unit_basis": {
+      "qty": 500,
+      "unit": "g"
+    }
+  },
+  {
+    "id": "chicken-giblets",
+    "name": "Chicken giblets",
+    "aliases": [
+      "chicken giblets",
+      "chicken gizzards",
+      "giblet mix",
+      "giblets",
+      "hoenderingewande",
+      "izingingila"
+    ],
+    "aisle": "protein-fresh",
+    "tier": 3,
+    "shelf_life": "short",
+    "unit_basis": {
+      "qty": 500,
+      "unit": "g"
+    }
+  },
+  {
+    "id": "beef-mince",
+    "name": "Beef mince",
+    "aliases": [
+      "beef mince",
+      "beef mince regular",
+      "beef minse",
+      "beesmaalvleis",
+      "bif mince",
+      "ground beef",
+      "lean mince",
+      "mince"
+    ],
+    "aisle": "protein-fresh",
+    "tier": 3,
+    "shelf_life": "short",
+    "unit_basis": {
+      "qty": 500,
+      "unit": "g"
+    }
+  },
+  {
+    "id": "beef-stewing-pieces",
+    "name": "Beef stewing pieces",
+    "aliases": [
+      "beef chunks",
+      "beef stew",
+      "beef stew meat",
+      "beesvleisblokkies",
+      "stew pieces",
+      "stewing beef"
+    ],
+    "aisle": "protein-fresh",
+    "tier": 3,
+    "shelf_life": "short",
+    "unit_basis": {
+      "qty": 1000,
+      "unit": "g"
+    }
+  },
+  {
+    "id": "lamb-stewing-pieces",
+    "name": "Lamb stewing pieces",
+    "aliases": [
+      "i-lamb",
+      "inyama ye-lamb",
+      "lamb chunks",
+      "lamb pieces",
+      "lamb stew",
+      "lamb stew meat",
+      "lamsbredievleis",
+      "nama ya konyana",
+      "skaapvleis",
+      "stewing lamb"
+    ],
+    "aisle": "protein-fresh",
+    "tier": 3,
+    "shelf_life": "short",
+    "unit_basis": {
+      "qty": 1000,
+      "unit": "g"
+    }
+  },
+  {
+    "id": "mutton-stewing-pieces",
+    "name": "Mutton stewing pieces",
+    "aliases": [
+      "i-mutton",
+      "inyama yemvu",
+      "mutton",
+      "mutton chunks",
+      "mutton pieces",
+      "mutton stew",
+      "mutton stew meat",
+      "nama ya nku",
+      "skaapvleis",
+      "stewing mutton"
+    ],
+    "aisle": "protein-fresh",
+    "tier": 3,
+    "shelf_life": "short",
+    "unit_basis": {
+      "qty": 1000,
+      "unit": "g"
+    }
+  },
+  {
+    "id": "pork-chops",
+    "name": "Pork chops",
+    "aliases": [
+      "chops",
+      "i-pork chops",
+      "pork chop pack",
+      "pork chops",
+      "pork chops fresh",
+      "pork loin chops",
+      "tjops",
+      "varktjops"
+    ],
+    "aisle": "protein-fresh",
+    "tier": 3,
+    "shelf_life": "short",
+    "unit_basis": {
+      "qty": 1000,
+      "unit": "g"
+    }
+  },
+  {
+    "id": "pork-sausages",
+    "name": "Pork sausages",
+    "aliases": [
+      "breakfast sausages",
+      "i-pork sausages",
+      "pork bangers",
+      "pork sausage",
+      "pork sausages",
+      "sausages",
+      "varkworsies",
+      "worsies"
+    ],
+    "aisle": "protein-fresh",
+    "tier": 3,
+    "shelf_life": "short",
+    "unit_basis": {
+      "qty": 500,
+      "unit": "g"
+    }
+  },
+  {
+    "id": "boerewors",
+    "name": "Boerewors",
+    "aliases": [
+      "boerewors",
+      "boerewors roll",
+      "beef boerewors",
+      "wors",
+      "sausage boerewors"
+    ],
+    "aisle": "protein-fresh",
+    "tier": 3,
+    "shelf_life": "short",
+    "unit_basis": {
+      "qty": 500,
+      "unit": "g"
+    }
+  },
+  {
+    "id": "bacon",
+    "name": "Bacon",
+    "aliases": [
+      "back bacon",
+      "bacon",
+      "bacon rashers",
+      "bekone",
+      "eskort bacon",
+      "ibhekoni",
+      "spek",
+      "streaky bacon",
+      "ubhekoni"
+    ],
+    "aisle": "protein-fresh",
+    "tier": 3,
+    "shelf_life": "short",
+    "unit_basis": {
+      "qty": 200,
+      "unit": "g"
+    }
+  },
+  {
+    "id": "polony",
+    "name": "Polony",
+    "aliases": [
+      "baloney",
+      "enterprise polony",
+      "french polony",
+      "garlic polony",
+      "i-polony",
+      "polonie",
+      "polony"
+    ],
+    "aisle": "protein-fresh",
+    "tier": 3,
+    "shelf_life": "medium",
+    "unit_basis": {
+      "qty": 1000,
+      "unit": "g"
+    }
+  },
+  {
+    "id": "ham",
+    "name": "Ham",
+    "aliases": [
+      "cooked ham",
+      "enterprise ham",
+      "ham",
+      "ham slices",
+      "i-ham",
+      "sliced ham"
+    ],
+    "aisle": "protein-fresh",
+    "tier": 3,
+    "shelf_life": "short",
+    "unit_basis": {
+      "qty": 200,
+      "unit": "g"
+    }
+  },
+  {
+    "id": "hake-fillets",
+    "name": "Hake fillets",
+    "aliases": [
+      "cape hake fillets",
+      "fresh hake",
+      "hake",
+      "hake fillet",
+      "hake fillets",
+      "i-hake",
+      "inhlanzi ye-hake",
+      "stokvisfilette"
+    ],
+    "aisle": "protein-fresh",
+    "tier": 3,
+    "shelf_life": "short",
+    "unit_basis": {
+      "qty": 500,
+      "unit": "g"
+    }
+  },
+  {
+    "id": "fish-fingers",
+    "name": "Fish fingers",
+    "aliases": [
+      "breaded fish fingers",
+      "fish fingers",
+      "fish sticks",
+      "hake fish fingers",
+      "icy sea fish fingers",
+      "visvingers"
+    ],
+    "aisle": "frozen",
+    "tier": 3,
+    "shelf_life": "long",
+    "unit_basis": {
+      "qty": 400,
+      "unit": "g"
+    }
+  },
+  {
+    "id": "frozen-mixed-vegetables",
+    "name": "Frozen mixed vegetables",
+    "aliases": [
+      "bevrore gemengde groente",
+      "frozen mix veg",
+      "frozen mixed veg",
+      "frozen mixed vegg",
+      "gevriesde gemengde groente",
+      "i-mixed veg",
+      "imifino efriziwe",
+      "imifuno efriziwe",
+      "mccain mixed vegetables",
+      "meroho efriziwe",
+      "mixed veg",
+      "veg mix frozen"
+    ],
+    "aisle": "frozen",
+    "tier": 1,
+    "shelf_life": "long",
+    "unit_basis": {
+      "qty": 1000,
+      "unit": "g"
+    }
+  },
+  {
+    "id": "frozen-peas",
+    "name": "Frozen peas",
+    "aliases": [
+      "amaphizi efriziwe",
+      "bevrore ertjies",
+      "dipisi tse friziwe",
+      "frozen peas",
+      "frozen peaz",
+      "garden peas frozen",
+      "gevriesde ertjies",
+      "i-frozen peas",
+      "mccain peas",
+      "peas frozen",
+      "petit pois frozen"
+    ],
+    "aisle": "frozen",
+    "tier": 1,
+    "shelf_life": "long",
+    "unit_basis": {
+      "qty": 1000,
+      "unit": "g"
+    }
+  },
+  {
+    "id": "frozen-chips",
+    "name": "Frozen chips",
+    "aliases": [
+      "chips frozen",
+      "frozen chips",
+      "frozen french fries",
+      "gevriesde slaptjips",
+      "mccain chips",
+      "slap chips frozen"
+    ],
+    "aisle": "frozen",
+    "tier": 2,
+    "shelf_life": "long",
+    "unit_basis": {
+      "qty": 1000,
+      "unit": "g"
+    }
+  },
+  {
+    "id": "frozen-puff-pastry",
+    "name": "Frozen puff pastry",
+    "aliases": [
+      "bevrore skilferkorsdeeg",
+      "frozen pastry",
+      "frozen puff pastry",
+      "i-puff pastry",
+      "pastry sheets frozen",
+      "puff pastry",
+      "today puff pastry"
+    ],
+    "aisle": "frozen",
+    "tier": 2,
+    "shelf_life": "long",
+    "unit_basis": {
+      "qty": 400,
+      "unit": "g"
+    }
+  },
+  {
+    "id": "frozen-chopped-spinach",
+    "name": "Frozen chopped spinach",
+    "aliases": [
+      "chopped spinach frozen",
+      "frozen morogo",
+      "frozen spinach",
+      "gevriesde gekapte spinasie",
+      "mccain spinach",
+      "spinach frozen"
+    ],
+    "aisle": "frozen",
+    "tier": 1,
+    "shelf_life": "long",
+    "unit_basis": {
+      "qty": 600,
+      "unit": "g"
+    }
+  },
+  {
+    "id": "ice-cream",
+    "name": "Ice cream",
+    "aliases": [
+      "aese kerimi",
+      "dairymaid ice cream",
+      "frozen ice cream",
+      "i-ice cream",
+      "ice cream",
+      "ola ice cream",
+      "roomys",
+      "u-ayisikhilimu",
+      "u-ayisikrimu",
+      "vanilla ice cream"
+    ],
+    "aisle": "frozen",
+    "tier": 0.5,
+    "shelf_life": "long",
+    "unit_basis": {
+      "qty": 2,
+      "unit": "l"
+    }
+  },
+  {
+    "id": "frozen-pizza",
+    "name": "Frozen pizza",
+    "aliases": [
+      "bevrore pizza",
+      "dr oetker pizza",
+      "frozen piza",
+      "frozen pizza",
+      "gevriesde pizza",
+      "i-frozen pizza",
+      "i-pizza efriziwe",
+      "margherita frozen pizza",
+      "pizza e friziwe",
+      "pizza frozen",
+      "wheaty pizza frozen"
+    ],
+    "aisle": "frozen",
+    "tier": 2,
+    "shelf_life": "long",
+    "unit_basis": {
+      "qty": 1,
+      "unit": "unit"
+    }
+  },
+  {
+    "id": "fresh-milk",
+    "name": "Fresh milk",
+    "aliases": [
+      "clover fresh milk",
+      "fresh milk",
+      "full cream fresh milk",
+      "full cream mil",
+      "full cream milc",
+      "full cream mle",
+      "full-cream milk",
+      "fullcream milk",
+      "low fat fresh milk",
+      "parmalat fresh milk",
+      "vars melk"
+    ],
+    "aisle": "dairy",
+    "tier": 2,
+    "shelf_life": "short",
+    "unit_basis": {
+      "qty": 1,
+      "unit": "l"
+    }
+  },
+  {
+    "id": "long-life-milk",
+    "name": "Long life milk",
+    "aliases": [
+      "clover long life milk",
+      "full cream long life",
+      "i-long life milk",
+      "langleeftydmelk",
+      "lebese le sa boleng",
+      "long life milk",
+      "parmalat everfresh",
+      "ubisi olungaboli",
+      "uht milk",
+      "uht-melk"
+    ],
+    "aisle": "dairy",
+    "tier": 2,
+    "shelf_life": "long",
+    "unit_basis": {
+      "qty": 1,
+      "unit": "l"
+    }
+  },
+  {
+    "id": "amasi",
+    "name": "Amasi",
+    "aliases": [
+      "amasi",
+      "amassi",
+      "clover amasi",
+      "maas",
+      "mafi",
+      "parmalat maas",
+      "sour milk",
+      "soured milk"
+    ],
+    "aisle": "dairy",
+    "tier": 2,
+    "shelf_life": "short",
+    "unit_basis": {
+      "qty": 1,
+      "unit": "kg"
+    }
+  },
+  {
+    "id": "plain-yoghurt",
+    "name": "Plain yoghurt",
+    "aliases": [
+      "clover plain yoghurt",
+      "double cream plain yoghurt",
+      "gewone jogurt",
+      "i-plain yoghurt",
+      "i-yoghurt",
+      "parmalat plain yoghurt",
+      "plain jogurt",
+      "plain yoghurt",
+      "plain yogurt",
+      "yoghurt"
+    ],
+    "aisle": "dairy",
+    "tier": 2,
+    "shelf_life": "short",
+    "unit_basis": {
+      "qty": 500,
+      "unit": "g"
+    }
+  },
+  {
+    "id": "flavoured-yoghurt",
+    "name": "Flavoured yoghurt",
+    "aliases": [
+      "clover fruits of the forest",
+      "danone flavoured yoghurt",
+      "flavored yoghurt",
+      "flavoured yoghurt",
+      "fruit yoghurt",
+      "gekeurde jogurt"
+    ],
+    "aisle": "dairy",
+    "tier": 1,
+    "shelf_life": "short",
+    "unit_basis": {
+      "qty": 100,
+      "unit": "g"
+    }
+  },
+  {
+    "id": "drinking-yoghurt",
+    "name": "Drinking yoghurt",
+    "aliases": [
+      "clover drinking yoghurt",
+      "drinking yoghurt",
+      "drinking yogurt",
+      "drinkjogurt",
+      "parmalat drinking yoghurt",
+      "yogi sip"
+    ],
+    "aisle": "dairy",
+    "tier": 1,
+    "shelf_life": "short",
+    "unit_basis": {
+      "qty": 500,
+      "unit": "ml"
+    }
+  },
+  {
+    "id": "buttermilk",
+    "name": "Buttermilk",
+    "aliases": [
+      "buttermilk",
+      "clover buttermilk",
+      "cultured buttermilk",
+      "karringmelk",
+      "low fat buttermilk",
+      "parmalat buttermilk"
+    ],
+    "aisle": "dairy",
+    "tier": 2,
+    "shelf_life": "short",
+    "unit_basis": {
+      "qty": 500,
+      "unit": "ml"
+    }
+  },
+  {
+    "id": "evaporated-milk",
+    "name": "Evaporated milk",
+    "aliases": [
+      "evap milk",
+      "evaporated milk",
+      "ideal evaporated milk",
+      "nestle ideal milk",
+      "unsweetened evaporated milk",
+      "verdampte melk"
+    ],
+    "aisle": "dairy",
+    "tier": 2,
+    "shelf_life": "long",
+    "unit_basis": {
+      "qty": 385,
+      "unit": "g"
+    }
+  },
+  {
+    "id": "condensed-milk",
+    "name": "Condensed milk",
+    "aliases": [
+      "condense milk",
+      "condensed milk",
+      "ideal condensed milk",
+      "kondensmelk",
+      "nestle condensed milk",
+      "sweetened condensed milk"
+    ],
+    "aisle": "dairy",
+    "tier": 0.5,
+    "shelf_life": "long",
+    "unit_basis": {
+      "qty": 385,
+      "unit": "g"
+    }
+  },
+  {
+    "id": "fresh-cream",
+    "name": "Fresh cream",
+    "aliases": [
+      "clover fresh cream",
+      "fresh cream",
+      "parmalat fresh cream",
+      "pouring cream",
+      "vars room",
+      "whipping cream"
+    ],
+    "aisle": "dairy",
+    "tier": 0.5,
+    "shelf_life": "short",
+    "unit_basis": {
+      "qty": 250,
+      "unit": "ml"
+    }
+  },
+  {
+    "id": "sour-cream",
+    "name": "Sour cream",
+    "aliases": [
+      "clover sour cream",
+      "cultured sour cream",
+      "i-sour cream",
+      "kherimi e bolila",
+      "parmalat sour cream",
+      "sour cream",
+      "sourcream",
+      "suurroom",
+      "ukhilimu omuncu"
+    ],
+    "aisle": "dairy",
+    "tier": 0.5,
+    "shelf_life": "short",
+    "unit_basis": {
+      "qty": 250,
+      "unit": "ml"
+    }
+  },
+  {
+    "id": "fresh-custard",
+    "name": "Fresh custard",
+    "aliases": [
+      "clover fresh custard",
+      "fresh custard",
+      "parmalat custard",
+      "ultramel custard",
+      "vanilla custard",
+      "vars vla"
+    ],
+    "aisle": "dairy",
+    "tier": 0.5,
+    "shelf_life": "short",
+    "unit_basis": {
+      "qty": 500,
+      "unit": "ml"
+    }
+  },
+  {
+    "id": "cheddar-cheese",
+    "name": "Cheddar cheese",
+    "aliases": [
+      "cheddar",
+      "cheddar cheese",
+      "cheddarkaas",
+      "clover cheddar",
+      "fairview cheddar",
+      "mature cheddar"
+    ],
+    "aisle": "dairy",
+    "tier": 3,
+    "shelf_life": "medium",
+    "unit_basis": {
+      "qty": 400,
+      "unit": "g"
+    }
+  },
+  {
+    "id": "mozzarella-cheese",
+    "name": "Mozzarella cheese",
+    "aliases": [
+      "i-mozzarella",
+      "lancewood mozzarella",
+      "mozzarella",
+      "mozzarella block",
+      "mozzarella cheese",
+      "mozzarellakaas",
+      "parmalat mozzarella",
+      "ushizi we-mozzarella"
+    ],
+    "aisle": "dairy",
+    "tier": 3,
+    "shelf_life": "medium",
+    "unit_basis": {
+      "qty": 200,
+      "unit": "g"
+    }
+  },
+  {
+    "id": "gouda-cheese",
+    "name": "Gouda cheese",
+    "aliases": [
+      "clover gouda",
+      "fairview gouda",
+      "gouda",
+      "gouda cheese",
+      "goudakaas",
+      "i-gouda cheese",
+      "smoked gouda",
+      "ushizi we-gouda"
+    ],
+    "aisle": "dairy",
+    "tier": 3,
+    "shelf_life": "medium",
+    "unit_basis": {
+      "qty": 400,
+      "unit": "g"
+    }
+  },
+  {
+    "id": "feta-cheese",
+    "name": "Feta cheese",
+    "aliases": [
+      "clover feta",
+      "danish feta",
+      "fairview feta",
+      "feta",
+      "feta cheese",
+      "fetakaas"
+    ],
+    "aisle": "dairy",
+    "tier": 3,
+    "shelf_life": "medium",
+    "unit_basis": {
+      "qty": 200,
+      "unit": "g"
+    }
+  },
+  {
+    "id": "cottage-cheese",
+    "name": "Cottage cheese",
+    "aliases": [
+      "cottage cheese",
+      "cottage cheez",
+      "fairview cottage cheese",
+      "lancewood cottage cheese",
+      "low fat cottage cheese",
+      "maaskaas",
+      "plain cottage cheese"
+    ],
+    "aisle": "dairy",
+    "tier": 3,
+    "shelf_life": "short",
+    "unit_basis": {
+      "qty": 250,
+      "unit": "g"
+    }
+  },
+  {
+    "id": "cream-cheese",
+    "name": "Cream cheese",
+    "aliases": [
+      "cream cheese",
+      "fairview cream cheese",
+      "lancewood cream cheese",
+      "medium fat cream cheese",
+      "plain cream cheese",
+      "roomkaas"
+    ],
+    "aisle": "dairy",
+    "tier": 3,
+    "shelf_life": "short",
+    "unit_basis": {
+      "qty": 250,
+      "unit": "g"
+    }
+  },
+  {
+    "id": "halloumi-cheese",
+    "name": "Halloumi cheese",
+    "aliases": [
+      "fairview halloumi",
+      "grilling cheese",
+      "halloumi",
+      "halloumi cheese",
+      "halloumikaas",
+      "i-halloumi",
+      "ushizi we-halloumi",
+      "woolworths halloumi"
+    ],
+    "aisle": "dairy",
+    "tier": 3,
+    "shelf_life": "medium",
+    "unit_basis": {
+      "qty": 200,
+      "unit": "g"
+    }
+  },
+  {
+    "id": "processed-cheese-slices",
+    "name": "Processed cheese slices",
+    "aliases": [
+      "cheese slices",
+      "clover cheese slices",
+      "i-cheese slices",
+      "kaasskywe",
+      "parmalat cheese slices",
+      "processed cheese slices",
+      "sliced cheese",
+      "smeltkaas",
+      "ushizi"
+    ],
+    "aisle": "dairy",
+    "tier": 3,
+    "shelf_life": "medium",
+    "unit_basis": {
+      "qty": 200,
+      "unit": "g"
+    }
+  },
+  {
+    "id": "butter",
+    "name": "Butter",
+    "aliases": [
+      "botoro",
+      "botter",
+      "butter",
+      "clover butter",
+      "ibhotela",
+      "ibhotolo",
+      "salted butter",
+      "unsalted butter",
+      "woolworths butter"
+    ],
+    "aisle": "dairy",
+    "tier": 0.5,
+    "shelf_life": "medium",
+    "unit_basis": {
+      "qty": 500,
+      "unit": "g"
+    }
+  },
+  {
+    "id": "margarine",
+    "name": "Margarine",
+    "aliases": [
+      "botoro",
+      "botter",
+      "brick margarine",
+      "i-margarine",
+      "ibhotela",
+      "margarine",
+      "rama margarine",
+      "stork margarine",
+      "tub margarine"
+    ],
+    "aisle": "dairy",
+    "tier": 0.5,
+    "shelf_life": "medium",
+    "unit_basis": {
+      "qty": 500,
+      "unit": "g"
+    }
+  },
+  {
+    "id": "eggs",
+    "name": "Eggs",
+    "aliases": [
+      "amaqanda",
+      "amaqanda",
+      "eggs",
+      "eiers",
+      "free range eggs",
+      "jumbo eggs",
+      "large eggs",
+      "mahe"
+    ],
+    "aisle": "dairy",
+    "tier": 3,
+    "shelf_life": "medium",
+    "unit_basis": {
+      "qty": 6,
+      "unit": "unit"
+    }
+  },
+  {
+    "id": "powdered-milk",
+    "name": "Powdered milk",
+    "aliases": [
+      "full cream milk powder",
+      "i-powdered milk",
+      "klim milk powder",
+      "lebese la phofo",
+      "milk powder",
+      "nido milk powder",
+      "poeiermelk",
+      "powdered milk",
+      "ubisi oluyimpuphu"
+    ],
+    "aisle": "dairy",
+    "tier": 2,
+    "shelf_life": "long",
+    "unit_basis": {
+      "qty": 500,
+      "unit": "g"
+    }
+  },
+  {
+    "id": "flavoured-milk",
+    "name": "Flavoured milk",
+    "aliases": [
+      "chocolate milk",
+      "flavoured milk",
+      "gekeurde melk",
+      "parmalat flavoured milk",
+      "steri stumpie",
+      "strawberry milk"
+    ],
+    "aisle": "dairy",
+    "tier": 1,
+    "shelf_life": "long",
+    "unit_basis": {
+      "qty": 350,
+      "unit": "ml"
+    }
+  },
+  {
+    "id": "onions",
+    "name": "Onions",
+    "aliases": [
+      "anyanisi",
+      "brown onions",
+      "eiee",
+      "o-anyanisi",
+      "onion",
+      "spanish onions",
+      "u-anyanisi",
+      "uie",
+      "uie",
+      "white onions"
+    ],
+    "aisle": "veg",
+    "tier": 1,
+    "shelf_life": "medium",
+    "unit_basis": {
+      "qty": 1,
+      "unit": "kg"
+    }
+  },
+  {
+    "id": "tomatoes",
+    "name": "Tomatoes",
+    "aliases": [
+      "amatamati",
+      "ditamati",
+      "iitumato",
+      "jam tomatoes",
+      "o-tamatisi",
+      "roma tomatoes",
+      "tamati",
+      "tamatie",
+      "tamaties",
+      "tomato",
+      "tomato loose",
+      "tomatoe",
+      "tomoto",
+      "utamatisi"
+    ],
+    "aisle": "veg",
+    "tier": 1,
+    "shelf_life": "short",
+    "unit_basis": {
+      "qty": 1,
+      "unit": "kg"
+    }
+  },
+  {
+    "id": "potatoes",
+    "name": "Potatoes",
+    "aliases": [
+      "aartappels",
+      "aartappels",
+      "amazambane",
+      "baby potatoes",
+      "ditapole",
+      "potato",
+      "potato bag",
+      "white potatoes"
+    ],
+    "aisle": "veg",
+    "tier": 2,
+    "shelf_life": "medium",
+    "unit_basis": {
+      "qty": 2,
+      "unit": "kg"
+    }
+  },
+  {
+    "id": "sweet-potatoes",
+    "name": "Sweet potatoes",
+    "aliases": [
+      "batata",
+      "bhatata",
+      "orange sweet potato",
+      "patats",
+      "soetaartappels",
+      "sweet potato",
+      "tapole e monate",
+      "ubhatata",
+      "white sweet potato"
+    ],
+    "aisle": "veg",
+    "tier": 2,
+    "shelf_life": "medium",
+    "unit_basis": {
+      "qty": 1,
+      "unit": "kg"
+    }
+  },
+  {
+    "id": "cabbage",
+    "name": "Cabbage",
+    "aliases": [
+      "cabbage head",
+      "cabbagee",
+      "green cabbage",
+      "ikhabishi",
+      "khabeche",
+      "khabichi",
+      "kool",
+      "red cabbage",
+      "white cabbage"
+    ],
+    "aisle": "veg",
+    "tier": 1,
+    "shelf_life": "medium",
+    "unit_basis": {
+      "qty": 1,
+      "unit": "unit"
+    }
+  },
+  {
+    "id": "carrots",
+    "name": "Carrots",
+    "aliases": [
+      "baby carrots",
+      "carots",
+      "carrot",
+      "carrot bag",
+      "carrots loose",
+      "carrotss",
+      "iikharothi",
+      "karote",
+      "ukhaphothi",
+      "wortels"
+    ],
+    "aisle": "veg",
+    "tier": 1,
+    "shelf_life": "medium",
+    "unit_basis": {
+      "qty": 1,
+      "unit": "kg"
+    }
+  },
+  {
+    "id": "butternut",
+    "name": "Butternut",
+    "aliases": [
+      "butternut cut",
+      "butternut pumpkin",
+      "butternut squah",
+      "butternut squash",
+      "diphutse",
+      "ithanga",
+      "squash butternut"
+    ],
+    "aisle": "veg",
+    "tier": 1,
+    "shelf_life": "medium",
+    "unit_basis": {
+      "qty": 1,
+      "unit": "kg"
+    }
+  },
+  {
+    "id": "beetroot",
+    "name": "Beetroot",
+    "aliases": [
+      "baby beetroot",
+      "beetroot bunch",
+      "beetroot fresh",
+      "beets",
+      "beetwortel",
+      "bitrute",
+      "ibhithiluthi"
+    ],
+    "aisle": "veg",
+    "tier": 1,
+    "shelf_life": "medium",
+    "unit_basis": {
+      "qty": 1,
+      "unit": "kg"
+    }
+  },
+  {
+    "id": "spinach",
+    "name": "Spinach",
+    "aliases": [
+      "baby spinach",
+      "imifino",
+      "ispinashi",
+      "marog",
+      "morogo",
+      "sepeneche",
+      "spenach",
+      "spinashi",
+      "spinasie",
+      "spynach",
+      "swiss chard"
+    ],
+    "aisle": "veg",
+    "tier": 1,
+    "shelf_life": "short",
+    "unit_basis": {
+      "qty": 1,
+      "unit": "bunch"
+    }
+  },
+  {
+    "id": "green-pepper",
+    "name": "Green pepper",
+    "aliases": [
+      "bell pepper",
+      "green peppers",
+      "groen soetrissie",
+      "groenrissie",
+      "i-green pepper",
+      "pelepele e tala",
+      "pepper green",
+      "robot peppers",
+      "upelepele oluhlaza"
+    ],
+    "aisle": "veg",
+    "tier": 1,
+    "shelf_life": "short",
+    "unit_basis": {
+      "qty": 3,
+      "unit": "unit"
+    }
+  },
+  {
+    "id": "green-chillies",
+    "name": "Green chillies",
+    "aliases": [
+      "birds eye chilli",
+      "chilli green",
+      "fresh chillies",
+      "green chilli",
+      "groen chillies",
+      "groen rissies",
+      "i-green chilli",
+      "pelepele e tala",
+      "upelepele oluhlaza"
+    ],
+    "aisle": "veg",
+    "tier": 0.5,
+    "shelf_life": "short",
+    "unit_basis": {
+      "qty": 50,
+      "unit": "g"
+    }
+  },
+  {
+    "id": "baby-marrow",
+    "name": "Baby marrow",
+    "aliases": [
+      "amabolose",
+      "babamarrow",
+      "baby marrows",
+      "courgette",
+      "marrow baby",
+      "zucchini"
+    ],
+    "aisle": "veg",
+    "tier": 1,
+    "shelf_life": "short",
+    "unit_basis": {
+      "qty": 500,
+      "unit": "g"
+    }
+  },
+  {
+    "id": "green-beans",
+    "name": "Green beans",
+    "aliases": [
+      "beans green",
+      "dinawa tse tala",
+      "fine beans",
+      "green bean loose",
+      "groenboontjies",
+      "i-green beans",
+      "imibhede",
+      "snitboontjies",
+      "sugar beans green?"
+    ],
+    "aisle": "veg",
+    "tier": 1,
+    "shelf_life": "short",
+    "unit_basis": {
+      "qty": 400,
+      "unit": "g"
+    }
+  },
+  {
+    "id": "garlic",
+    "name": "Garlic",
+    "aliases": [
+      "fresh garlic",
+      "garlic bulb",
+      "garlic cloves",
+      "garlic loose",
+      "igalikhi",
+      "knoffel",
+      "konofolo"
+    ],
+    "aisle": "veg",
+    "tier": 0.5,
+    "shelf_life": "medium",
+    "unit_basis": {
+      "qty": 1,
+      "unit": "unit"
+    }
+  },
+  {
+    "id": "spring-onions",
+    "name": "Spring onions",
+    "aliases": [
+      "green onions",
+      "i-spring onion",
+      "lente-uie",
+      "scallions",
+      "shallots spring",
+      "sprietuie",
+      "spring onion bunch",
+      "u-anyanisi oluhlaza"
+    ],
+    "aisle": "veg",
+    "tier": 0.5,
+    "shelf_life": "short",
+    "unit_basis": {
+      "qty": 1,
+      "unit": "bunch"
+    }
+  },
+  {
+    "id": "bananas",
+    "name": "Bananas",
+    "aliases": [
+      "banana",
+      "banana bunch",
+      "bananas loose",
+      "bananna",
+      "cavendish bananas",
+      "iibhanana",
+      "libanana",
+      "piesangs",
+      "ubhanana"
+    ],
+    "aisle": "fruit",
+    "tier": 1,
+    "shelf_life": "short",
+    "unit_basis": {
+      "qty": 1,
+      "unit": "kg"
+    }
+  },
+  {
+    "id": "apples",
+    "name": "Apples",
+    "aliases": [
+      "appels",
+      "apple",
+      "appls",
+      "apula",
+      "fuji apples",
+      "gala apples",
+      "golden delicious",
+      "granny smith",
+      "iapile",
+      "liapole"
+    ],
+    "aisle": "fruit",
+    "tier": 1,
+    "shelf_life": "medium",
+    "unit_basis": {
+      "qty": 1,
+      "unit": "kg"
+    }
+  },
+  {
+    "id": "oranges",
+    "name": "Oranges",
+    "aliases": [
+      "ama-orange",
+      "amawolintshi",
+      "di-orange",
+      "dinamune",
+      "lemoene",
+      "navel oranges",
+      "orange",
+      "orange bag",
+      "oranje",
+      "valencia oranges"
+    ],
+    "aisle": "fruit",
+    "tier": 1,
+    "shelf_life": "medium",
+    "unit_basis": {
+      "qty": 1,
+      "unit": "kg"
+    }
+  },
+  {
+    "id": "naartjies",
+    "name": "Naartjies",
+    "aliases": [
+      "ama-naartjies",
+      "clementine",
+      "di-naartjies",
+      "mandarin",
+      "naartjie",
+      "naartjie bag",
+      "naatjie",
+      "soft citrus"
+    ],
+    "aisle": "fruit",
+    "tier": 1,
+    "shelf_life": "medium",
+    "unit_basis": {
+      "qty": 1,
+      "unit": "kg"
+    }
+  },
+  {
+    "id": "avocado",
+    "name": "Avocado",
+    "aliases": [
+      "avo",
+      "avocado ripe",
+      "avocados",
+      "avokado",
+      "avokhado",
+      "fuerte avocado",
+      "hass avocado",
+      "iavokhado"
+    ],
+    "aisle": "fruit",
+    "tier": 1,
+    "shelf_life": "short",
+    "unit_basis": {
+      "qty": 1,
+      "unit": "unit"
+    }
+  },
+  {
+    "id": "lemons",
+    "name": "Lemons",
+    "aliases": [
+      "amalimune",
+      "dilamunu",
+      "fresh lemons",
+      "iilamuni",
+      "ilamula",
+      "lamunu",
+      "lemmon",
+      "lemon",
+      "lemon bag",
+      "lemon loose",
+      "suurlemoens"
+    ],
+    "aisle": "fruit",
+    "tier": 0.5,
+    "shelf_life": "medium",
+    "unit_basis": {
+      "qty": 500,
+      "unit": "g"
+    }
+  },
+  {
+    "id": "watermelon",
+    "name": "Watermelon",
+    "aliases": [
+      "ikhabe",
+      "lehapu",
+      "seedless watermelon",
+      "waatlemoen",
+      "watermelon quarter",
+      "watermelon slice",
+      "watermelon whole"
+    ],
+    "aisle": "fruit",
+    "tier": 1,
+    "shelf_life": "short",
+    "unit_basis": {
+      "qty": 1,
+      "unit": "unit"
+    }
+  },
+  {
+    "id": "coriander",
+    "name": "Fresh coriander",
+    "aliases": [
+      "cilantro",
+      "coriander bunch",
+      "coriander fresh",
+      "dhania",
+      "fresh dhania",
+      "koljander"
+    ],
+    "aisle": "veg",
+    "tier": 0.5,
+    "shelf_life": "short",
+    "unit_basis": {
+      "qty": 1,
+      "unit": "bunch"
+    }
+  },
+  {
+    "id": "parsley",
+    "name": "Fresh parsley",
+    "aliases": [
+      "curly parsley",
+      "flat leaf parsley",
+      "i-parsley",
+      "parsley bunch",
+      "parsley fresh",
+      "pietersielie"
+    ],
+    "aisle": "veg",
+    "tier": 0.5,
+    "shelf_life": "short",
+    "unit_basis": {
+      "qty": 1,
+      "unit": "bunch"
+    }
+  },
+  {
+    "id": "mint",
+    "name": "Fresh mint",
+    "aliases": [
+      "fresh mint bunch",
+      "i-mint",
+      "iminti",
+      "ment",
+      "mint fresh",
+      "mint leaves",
+      "spearmint"
+    ],
+    "aisle": "veg",
+    "tier": 0.5,
+    "shelf_life": "short",
+    "unit_basis": {
+      "qty": 1,
+      "unit": "bunch"
+    }
+  },
+  {
+    "id": "table-salt",
+    "name": "Table salt",
+    "aliases": [
+      "cerebos salt",
+      "fine salt",
+      "iodated salt",
+      "isawuti",
+      "ityuwa",
+      "letswai",
+      "salt",
+      "sout",
+      "sout",
+      "tafelsout",
+      "usawoti"
+    ],
+    "aisle": "spices",
+    "tier": 0.5,
+    "shelf_life": "long",
+    "unit_basis": {
+      "qty": 500,
+      "unit": "g"
+    }
+  },
+  {
+    "id": "black-pepper",
+    "name": "Black pepper",
+    "aliases": [
+      "black pepper powder",
+      "ground black pepper",
+      "pepper black",
+      "robertsons black pepper",
+      "swartpeper"
+    ],
+    "aisle": "spices",
+    "tier": 0.5,
+    "shelf_life": "long",
+    "unit_basis": {
+      "qty": 50,
+      "unit": "g"
+    }
+  },
+  {
+    "id": "curry-powder",
+    "name": "Curry powder",
+    "aliases": [
+      "curry",
+      "curry powd",
+      "hot curry powder",
+      "kerriepoeier",
+      "mild curry powder",
+      "rajah curry powder",
+      "rajah mild & spicy?"
+    ],
+    "aisle": "spices",
+    "tier": 0.5,
+    "shelf_life": "long",
+    "unit_basis": {
+      "qty": 100,
+      "unit": "g"
+    }
+  },
+  {
+    "id": "chilli-powder",
+    "name": "Chilli powder",
+    "aliases": [
+      "cayenne pepper",
+      "chili powder",
+      "chilli spice",
+      "ground chillies",
+      "rissiepoeier"
+    ],
+    "aisle": "spices",
+    "tier": 0.5,
+    "shelf_life": "long",
+    "unit_basis": {
+      "qty": 50,
+      "unit": "g"
+    }
+  },
+  {
+    "id": "paprika",
+    "name": "Paprika",
+    "aliases": [
+      "ground paprika",
+      "i-paprika",
+      "paprka",
+      "robertsons paprika",
+      "smoked paprika",
+      "sweet paprika"
+    ],
+    "aisle": "spices",
+    "tier": 0.5,
+    "shelf_life": "long",
+    "unit_basis": {
+      "qty": 50,
+      "unit": "g"
+    }
+  },
+  {
+    "id": "ground-cumin",
+    "name": "Ground cumin",
+    "aliases": [
+      "cumin powder",
+      "gemaalde komyn",
+      "ground jeera",
+      "i-cumin",
+      "i-jeera",
+      "jeera",
+      "jeera powder",
+      "komyn"
+    ],
+    "aisle": "spices",
+    "tier": 0.5,
+    "shelf_life": "long",
+    "unit_basis": {
+      "qty": 40,
+      "unit": "g"
+    }
+  },
+  {
+    "id": "ground-coriander",
+    "name": "Ground coriander",
+    "aliases": [
+      "coriander ground",
+      "coriander powder",
+      "dhania",
+      "dhania powder",
+      "gemaalde koljander",
+      "ground dhania",
+      "i-coriander",
+      "idhania"
+    ],
+    "aisle": "spices",
+    "tier": 0.5,
+    "shelf_life": "long",
+    "unit_basis": {
+      "qty": 40,
+      "unit": "g"
+    }
+  },
+  {
+    "id": "turmeric",
+    "name": "Turmeric",
+    "aliases": [
+      "borrie",
+      "ground turmeric",
+      "haldi",
+      "i-turmeric",
+      "iboroshu",
+      "turmeric powder",
+      "turmerik"
+    ],
+    "aisle": "spices",
+    "tier": 0.5,
+    "shelf_life": "long",
+    "unit_basis": {
+      "qty": 50,
+      "unit": "g"
+    }
+  },
+  {
+    "id": "ground-cinnamon",
+    "name": "Ground cinnamon",
+    "aliases": [
+      "cinnamon",
+      "cinnamon ground",
+      "cinnamon powder",
+      "cinnamon spice",
+      "cinnamoon",
+      "gemaalde kaneel",
+      "i-cinnamon",
+      "isinamoni",
+      "kaneel",
+      "sinamone"
+    ],
+    "aisle": "spices",
+    "tier": 0.5,
+    "shelf_life": "long",
+    "unit_basis": {
+      "qty": 40,
+      "unit": "g"
+    }
+  },
+  {
+    "id": "garam-masala",
+    "name": "Garam masala",
+    "aliases": [
+      "garam masala powder",
+      "garam masala spice",
+      "i-garam masala",
+      "masala mix",
+      "rajah garam masala"
+    ],
+    "aisle": "spices",
+    "tier": 0.5,
+    "shelf_life": "long",
+    "unit_basis": {
+      "qty": 50,
+      "unit": "g"
+    }
+  },
+  {
+    "id": "mixed-herbs",
+    "name": "Mixed herbs",
+    "aliases": [
+      "dried mixed herbs",
+      "gemengde kruie",
+      "herb mix",
+      "i-mixed herbs",
+      "italian herbs",
+      "robertsons mixed herbs"
+    ],
+    "aisle": "spices",
+    "tier": 0.5,
+    "shelf_life": "long",
+    "unit_basis": {
+      "qty": 18,
+      "unit": "g"
+    }
+  },
+  {
+    "id": "braai-spice",
+    "name": "Braai spice",
+    "aliases": [
+      "barbecue spice",
+      "braai seasoning",
+      "braaikruidery",
+      "chicken spice",
+      "robertsons chicken spice",
+      "six gun grill"
+    ],
+    "aisle": "spices",
+    "tier": 0.5,
+    "shelf_life": "long",
+    "unit_basis": {
+      "qty": 100,
+      "unit": "g"
+    }
+  },
+  {
+    "id": "stock-cubes",
+    "name": "Stock cubes",
+    "aliases": [
+      "aftrekselblokkies",
+      "ama-cubes",
+      "beef stock cubes",
+      "chicken stock cubes",
+      "i-stock cubes",
+      "knorrox cubes",
+      "stock cube"
+    ],
+    "aisle": "pantry",
+    "tier": 0.5,
+    "shelf_life": "long",
+    "unit_basis": {
+      "qty": 6,
+      "unit": "unit"
+    }
+  },
+  {
+    "id": "soup-powder",
+    "name": "Soup powder",
+    "aliases": [
+      "brown onion soup",
+      "i-soup",
+      "i-soup powder",
+      "knorr soup powder",
+      "oxtail soup",
+      "soppoeier",
+      "soup packet"
+    ],
+    "aisle": "pantry",
+    "tier": 0.5,
+    "shelf_life": "long",
+    "unit_basis": {
+      "qty": 50,
+      "unit": "g"
+    }
+  },
+  {
+    "id": "tomato-paste",
+    "name": "Tomato paste",
+    "aliases": [
+      "all gold tomato paste",
+      "i-paste",
+      "i-tomato paste",
+      "tamatiepasta",
+      "tomato paste tin",
+      "tomato paste tube",
+      "tomato puree"
+    ],
+    "aisle": "pantry",
+    "tier": 0.5,
+    "shelf_life": "long",
+    "unit_basis": {
+      "qty": 70,
+      "unit": "g"
+    }
+  },
+  {
+    "id": "tomato-sauce",
+    "name": "Tomato sauce",
+    "aliases": [
+      "all gold tomato sauce",
+      "i-sauce",
+      "i-tomato sauce",
+      "ketchup",
+      "tamatiesous",
+      "tomato ketchup",
+      "tomato sauce bottle"
+    ],
+    "aisle": "pantry",
+    "tier": 0.5,
+    "shelf_life": "long",
+    "unit_basis": {
+      "qty": 700,
+      "unit": "ml"
+    }
+  },
+  {
+    "id": "mayonnaise",
+    "name": "Mayonnaise",
+    "aliases": [
+      "creamy mayo",
+      "i-mayonnaise",
+      "mayo",
+      "nola mayonnaise",
+      "tangy mayo"
+    ],
+    "aisle": "pantry",
+    "tier": 0.5,
+    "shelf_life": "medium",
+    "unit_basis": {
+      "qty": 750,
+      "unit": "g"
+    }
+  },
+  {
+    "id": "chakalaka",
+    "name": "Chakalaka",
+    "aliases": [
+      "tin chakalaka",
+      "koo chakalaka",
+      "chakalaka hot",
+      "chakalaka mild"
+    ],
+    "aisle": "pantry",
+    "tier": 0.5,
+    "shelf_life": "long",
+    "unit_basis": {
+      "qty": 410,
+      "unit": "g"
+    }
+  },
+  {
+    "id": "vinegar",
+    "name": "Vinegar",
+    "aliases": [
+      "asene",
+      "asyn",
+      "brown vinegar",
+      "grape vinegar",
+      "iviniga",
+      "spirit vinegar",
+      "viniga",
+      "white vinegar"
+    ],
+    "aisle": "pantry",
+    "tier": 0.5,
+    "shelf_life": "long",
+    "unit_basis": {
+      "qty": 750,
+      "unit": "ml"
+    }
+  },
+  {
+    "id": "cooking-oil",
+    "name": "Cooking oil",
+    "aliases": [
+      "cooking oyl",
+      "d'lite oil",
+      "kookolie",
+      "oil cooking",
+      "sunflower oil",
+      "vegetable oil"
+    ],
+    "aisle": "pantry",
+    "tier": 0.5,
+    "shelf_life": "long",
+    "unit_basis": {
+      "qty": 750,
+      "unit": "ml"
+    }
+  },
+  {
+    "id": "white-sugar",
+    "name": "White sugar",
+    "aliases": [
+      "granulated sugar",
+      "iswekile",
+      "iswekile emhlophe",
+      "selati sugar",
+      "sugar",
+      "sugar white",
+      "suiker",
+      "tswekere",
+      "tswekere e tshweu",
+      "ushukela",
+      "ushukela omhlophe",
+      "white sugr",
+      "witsuiker"
+    ],
+    "aisle": "pantry",
+    "tier": 0.5,
+    "shelf_life": "long",
+    "unit_basis": {
+      "qty": 1,
+      "unit": "kg"
+    }
+  },
+  {
+    "id": "rooibos",
+    "name": "Rooibos",
+    "aliases": [
+      "i-rooibos",
+      "itiye elibomvu",
+      "laager rooibos",
+      "rooibos tea",
+      "rooibos tea bags",
+      "rooibos teabags",
+      "rooibostee"
+    ],
+    "aisle": "pantry",
+    "tier": 0.5,
+    "shelf_life": "long",
+    "unit_basis": {
+      "qty": 40,
+      "unit": "unit"
+    }
+  },
+  {
+    "id": "instant-coffee",
+    "name": "Instant coffee",
+    "aliases": [
+      "coffee instant",
+      "douwe egberts?",
+      "i-instant coffee",
+      "ikhofi elishesha",
+      "jacobs kronung",
+      "kitskoffie",
+      "nescafe",
+      "ricoffy"
+    ],
+    "aisle": "pantry",
+    "tier": 0.5,
+    "shelf_life": "long",
+    "unit_basis": {
+      "qty": 100,
+      "unit": "g"
+    }
+  },
+  {
+    "id": "peanut-butter",
+    "name": "Peanut butter",
+    "aliases": [
+      "black cat peanut butter",
+      "botoro ba manatso",
+      "grondboontjiebotter",
+      "i-peanut butter",
+      "ibhotela lamantongomane",
+      "peanut butter crunchy",
+      "peanut butter smooth",
+      "peanut spread"
+    ],
+    "aisle": "pantry",
+    "tier": 1,
+    "shelf_life": "long",
+    "unit_basis": {
+      "qty": 400,
+      "unit": "g"
+    }
+  },
+  {
+    "id": "honey",
+    "name": "Honey",
+    "aliases": [
+      "fynbos honey",
+      "heuning",
+      "honey bottle",
+      "honey squeeze",
+      "mahe",
+      "pure honey",
+      "ubusi",
+      "uju"
+    ],
+    "aisle": "pantry",
+    "tier": 0.5,
+    "shelf_life": "long",
+    "unit_basis": {
+      "qty": 250,
+      "unit": "g"
+    }
+  },
+  {
+    "id": "icing-sugar",
+    "name": "Icing sugar",
+    "aliases": [
+      "confectioners sugar",
+      "huletts icing sugar",
+      "i-icing sugar",
+      "icing sugar sifted",
+      "powdered sugar",
+      "ushukela we-icing",
+      "versiersuiker"
+    ],
+    "aisle": "pantry",
+    "tier": 0.5,
+    "shelf_life": "long",
+    "unit_basis": {
+      "qty": 500,
+      "unit": "g"
+    }
+  },
+  {
+    "id": "cocoa-powder",
+    "name": "Cocoa powder",
+    "aliases": [
+      "cadbury cocoa",
+      "cocoa",
+      "cocoa powder baking",
+      "kakaopoeier",
+      "unsweetened cocoa"
+    ],
+    "aisle": "pantry",
+    "tier": 0.5,
+    "shelf_life": "long",
+    "unit_basis": {
+      "qty": 125,
+      "unit": "g"
+    }
+  },
+  {
+    "id": "baking-chocolate",
+    "name": "Baking chocolate",
+    "aliases": [
+      "bake chocolate",
+      "bakkersjokolade",
+      "cooking chocolate",
+      "dark chocolate baking",
+      "nestle baking chocolate"
+    ],
+    "aisle": "pantry",
+    "tier": 0.5,
+    "shelf_life": "long",
+    "unit_basis": {
+      "qty": 150,
+      "unit": "g"
+    }
+  },
+  {
+    "id": "chocolate-chips",
+    "name": "Chocolate chips",
+    "aliases": [
+      "baking choc chips",
+      "choc chips",
+      "chocolate bits",
+      "nestle choc chips",
+      "sjokoladeskyfies"
+    ],
+    "aisle": "pantry",
+    "tier": 0.5,
+    "shelf_life": "long",
+    "unit_basis": {
+      "qty": 100,
+      "unit": "g"
+    }
+  },
+  {
+    "id": "baking-powder",
+    "name": "Baking powder",
+    "aliases": [
+      "bakapoere",
+      "bake powder",
+      "baking powder powder",
+      "baking powder tin",
+      "bakpoeier",
+      "royal baking powder"
+    ],
+    "aisle": "pantry",
+    "tier": 0.5,
+    "shelf_life": "long",
+    "unit_basis": {
+      "qty": 100,
+      "unit": "g"
+    }
+  },
+  {
+    "id": "bicarbonate-of-soda",
+    "name": "Bicarbonate of soda",
+    "aliases": [
+      "baking soda",
+      "baking suda",
+      "bicarb",
+      "bicarb of soda",
+      "bicarbonate soda",
+      "koeksoda"
+    ],
+    "aisle": "pantry",
+    "tier": 0.5,
+    "shelf_life": "long",
+    "unit_basis": {
+      "qty": 100,
+      "unit": "g"
+    }
+  },
+  {
+    "id": "vanilla-essence",
+    "name": "Vanilla essence",
+    "aliases": [
+      "i-vanilla",
+      "i-vanilla essence",
+      "robertsons vanilla",
+      "vanieljegeursel",
+      "vanilla ess",
+      "vanilla extract",
+      "vanilla flavour"
+    ],
+    "aisle": "pantry",
+    "tier": 0.5,
+    "shelf_life": "long",
+    "unit_basis": {
+      "qty": 40,
+      "unit": "ml"
+    }
+  },
+  {
+    "id": "custard-powder",
+    "name": "Custard powder",
+    "aliases": [
+      "custard",
+      "instant custard powder",
+      "moir's custard powder",
+      "ultramel custard powder",
+      "vlaepoeier"
+    ],
+    "aisle": "pantry",
+    "tier": 0.5,
+    "shelf_life": "long",
+    "unit_basis": {
+      "qty": 250,
+      "unit": "g"
+    }
+  },
+  {
+    "id": "instant-pudding",
+    "name": "Instant pudding",
+    "aliases": [
+      "chocolate instant pudding",
+      "i-pudding",
+      "i-pudding esheshayo",
+      "kitspoeding",
+      "moir's instant pudding",
+      "pudding powder",
+      "vanilla instant pudding"
+    ],
+    "aisle": "pantry",
+    "tier": 0.5,
+    "shelf_life": "long",
+    "unit_basis": {
+      "qty": 90,
+      "unit": "g"
+    }
+  },
+  {
+    "id": "jelly-powder",
+    "name": "Jelly powder",
+    "aliases": [
+      "i-jelly",
+      "i-jelly powder",
+      "jellie",
+      "jelliepoeier",
+      "jelly crystals",
+      "jelly powder packet",
+      "moir's jelly",
+      "packet jelly"
+    ],
+    "aisle": "pantry",
+    "tier": 0.5,
+    "shelf_life": "long",
+    "unit_basis": {
+      "qty": 80,
+      "unit": "g"
+    }
+  },
+  {
+    "id": "corn-flour",
+    "name": "Corn flour",
+    "aliases": [
+      "corn starch",
+      "cornflour",
+      "maize flour fine",
+      "maizena",
+      "mielieblom"
+    ],
+    "aisle": "pantry",
+    "tier": 0.5,
+    "shelf_life": "long",
+    "unit_basis": {
+      "qty": 500,
+      "unit": "g"
+    }
+  },
+  {
+    "id": "desiccated-coconut",
+    "name": "Desiccated coconut",
+    "aliases": [
+      "coconut desiccated",
+      "coconut dry",
+      "coconut powder",
+      "gerasperde klapper",
+      "shredded coconut"
+    ],
+    "aisle": "pantry",
+    "tier": 0.5,
+    "shelf_life": "long",
+    "unit_basis": {
+      "qty": 100,
+      "unit": "g"
+    }
+  },
+  {
+    "id": "sultanas",
+    "name": "Sultanas",
+    "aliases": [
+      "ama-sultanas",
+      "di-sultanas",
+      "dried fruit mix",
+      "golden sultanas",
+      "i-raisins",
+      "mixed fruit dried",
+      "raisins",
+      "rosyntjies",
+      "safari sultanas"
+    ],
+    "aisle": "pantry",
+    "tier": 0.5,
+    "shelf_life": "long",
+    "unit_basis": {
+      "qty": 200,
+      "unit": "g"
+    }
+  },
+  {
+    "id": "soy-sauce",
+    "name": "Soy sauce",
+    "aliases": [
+      "dark soy sauce",
+      "i-soy sauce",
+      "kikkoman soy?",
+      "light soy sauce",
+      "sojasous",
+      "soya sauce"
+    ],
+    "aisle": "pantry",
+    "tier": 0.5,
+    "shelf_life": "long",
+    "unit_basis": {
+      "qty": 150,
+      "unit": "ml"
+    }
+  },
+  {
+    "id": "sweet-chilli-sauce",
+    "name": "Sweet chilli sauce",
+    "aliases": [
+      "i-sweet chilli sauce",
+      "soet rissiesous",
+      "sweet chili sauce",
+      "sweet chilli dipping sauce",
+      "sweet chilli sauce bottle",
+      "thai sweet chilli"
+    ],
+    "aisle": "pantry",
+    "tier": 0.5,
+    "shelf_life": "long",
+    "unit_basis": {
+      "qty": 250,
+      "unit": "ml"
+    }
+  },
+  {
+    "id": "peri-peri-sauce",
+    "name": "Peri-peri sauce",
+    "aliases": [
+      "i-peri-peri",
+      "i-peri-peri sauce",
+      "nandos peri peri",
+      "peri peri",
+      "peri-peri hot sauce",
+      "peri-peri sous",
+      "piri piri sauce",
+      "piri-piri sous"
+    ],
+    "aisle": "pantry",
+    "tier": 0.5,
+    "shelf_life": "long",
+    "unit_basis": {
+      "qty": 250,
+      "unit": "ml"
+    }
+  },
+  {
+    "id": "coconut-milk",
+    "name": "Coconut milk",
+    "aliases": [
+      "coconut cream",
+      "coconut milk can",
+      "coconut milk light",
+      "coconut milk tin",
+      "klappermelk"
+    ],
+    "aisle": "pantry",
+    "tier": 0.5,
+    "shelf_life": "long",
+    "unit_basis": {
+      "qty": 400,
+      "unit": "ml"
+    }
+  },
+  {
+    "id": "red-curry-paste",
+    "name": "Red curry paste",
+    "aliases": [
+      "curry paste red",
+      "green curry paste",
+      "i-red curry paste",
+      "rooi kerriepasta",
+      "thai curry paste",
+      "thai red curry paste"
+    ],
+    "aisle": "pantry",
+    "tier": 0.5,
+    "shelf_life": "long",
+    "unit_basis": {
+      "qty": 100,
+      "unit": "g"
+    }
+  },
+  {
+    "id": "naan-bread",
+    "name": "Naan bread",
+    "aliases": [
+      "garlic naan",
+      "i-naan",
+      "i-naan bread",
+      "mini naans",
+      "naan",
+      "naanbrood",
+      "plain naan"
+    ],
+    "aisle": "pantry",
+    "tier": 2,
+    "shelf_life": "short",
+    "unit_basis": {
+      "qty": 4,
+      "unit": "unit"
+    }
+  },
+  {
+    "id": "tortillas",
+    "name": "Tortillas",
+    "aliases": [
+      "flour tortillas",
+      "i-tortillas",
+      "tortilla wraps",
+      "wheat tortillas",
+      "wraps"
+    ],
+    "aisle": "pantry",
+    "tier": 2,
+    "shelf_life": "medium",
+    "unit_basis": {
+      "qty": 8,
+      "unit": "unit"
+    }
+  },
+  {
+    "id": "egg-noodles",
+    "name": "Egg noodles",
+    "aliases": [
+      "chinese egg noodles",
+      "chow mein noodles",
+      "egg noodle nest",
+      "eiernoedels",
+      "noodles egg"
+    ],
+    "aisle": "pantry",
+    "tier": 2,
+    "shelf_life": "long",
+    "unit_basis": {
+      "qty": 250,
+      "unit": "g"
+    }
+  },
+  {
+    "id": "sesame-oil",
+    "name": "Sesame oil",
+    "aliases": [
+      "i-sesame oil",
+      "sesame oil bottle",
+      "sesame oil pure",
+      "sesame seed oil",
+      "sesamolie",
+      "toasted sesame oil"
+    ],
+    "aisle": "pantry",
+    "tier": 0.5,
+    "shelf_life": "long",
+    "unit_basis": {
+      "qty": 150,
+      "unit": "ml"
+    }
+  },
+  {
+    "id": "atchar",
+    "name": "Atchar",
+    "aliases": [
+      "achar",
+      "atjar",
+      "hot atchar",
+      "koo atchar",
+      "mango atchar",
+      "vegetable atchar"
+    ],
+    "aisle": "pantry",
+    "tier": 0.5,
+    "shelf_life": "long",
+    "unit_basis": {
+      "qty": 380,
+      "unit": "g"
+    }
+  },
+  {
+    "id": "fruit-chutney",
+    "name": "Fruit chutney",
+    "aliases": [
+      "blatjang",
+      "chutney fruit",
+      "i-chutney",
+      "i-fruit chutney",
+      "mango chutney",
+      "mrs balls chutney",
+      "peach chutney",
+      "vrugte-chutney"
+    ],
+    "aisle": "pantry",
+    "tier": 0.5,
+    "shelf_life": "long",
+    "unit_basis": {
+      "qty": 470,
+      "unit": "g"
+    }
+  },
+  {
+    "id": "bamboo-shoots",
+    "name": "Bamboo shoots",
+    "aliases": [
+      "bamboesspruite",
+      "bamboo shoot",
+      "bamboo shoots canned",
+      "bamboo shoots tin",
+      "bamboo slices"
+    ],
+    "aisle": "pantry",
+    "tier": 0.5,
+    "shelf_life": "long",
+    "unit_basis": {
+      "qty": 225,
+      "unit": "g"
+    }
+  },
+  {
+    "id": "apricot-jam",
+    "name": "Apricot jam",
+    "aliases": [
+      "appelkooskonfyt",
+      "apricot jam",
+      "apricot spread",
+      "jam"
+    ],
+    "aisle": "pantry",
+    "tier": 0.5,
+    "shelf_life": "long",
+    "unit_basis": {
+      "qty": 450,
+      "unit": "g"
+    }
+  },
+  {
+    "id": "babycorn",
+    "name": "Baby corn (tinned)",
+    "aliases": [
+      "babamielie",
+      "baby corn",
+      "babycorn",
+      "corn pieces"
+    ],
+    "aisle": "pantry",
+    "tier": 1,
+    "shelf_life": "long",
+    "unit_basis": {
+      "qty": 200,
+      "unit": "g"
+    }
+  },
+  {
+    "id": "brinjal",
+    "name": "Brinjal",
+    "aliases": [
+      "aubergine",
+      "brinjal",
+      "eggplant",
+      "eiervrug"
+    ],
+    "aisle": "veg",
+    "tier": 1,
+    "shelf_life": "short",
+    "unit_basis": {
+      "qty": 1,
+      "unit": "unit"
+    }
+  },
+  {
+    "id": "broccoli",
+    "name": "Broccoli",
+    "aliases": [
+      "broccoli",
+      "broccoli head",
+      "calabrese"
+    ],
+    "aisle": "veg",
+    "tier": 1,
+    "shelf_life": "short",
+    "unit_basis": {
+      "qty": 1,
+      "unit": "unit"
+    }
+  },
+  {
+    "id": "cauliflower",
+    "name": "Cauliflower",
+    "aliases": [
+      "blomkool",
+      "cauli flower",
+      "cauliflower",
+      "cauliflower head"
+    ],
+    "aisle": "veg",
+    "tier": 1,
+    "shelf_life": "short",
+    "unit_basis": {
+      "qty": 1,
+      "unit": "unit"
+    }
+  },
+  {
+    "id": "chicken-spice",
+    "name": "Chicken spice",
+    "aliases": [
+      "bbq chicken spice",
+      "chicken seasoning",
+      "chicken spice",
+      "hoenderkruidery"
+    ],
+    "aisle": "spices",
+    "tier": 0.5,
+    "shelf_life": "long",
+    "unit_basis": {
+      "qty": 75,
+      "unit": "g"
+    }
+  },
+  {
+    "id": "sweetcorn",
+    "name": "Sweetcorn (cream style, tinned)",
+    "aliases": [
+      "corn",
+      "cream style sweetcorn",
+      "i-sweetcorn",
+      "poone e monate",
+      "suikermielies",
+      "sweetcorn",
+      "umbila",
+      "umbila omnandi"
+    ],
+    "aisle": "pantry",
+    "tier": 1,
+    "shelf_life": "long",
+    "unit_basis": {
+      "qty": 410,
+      "unit": "g"
+    }
+  },
+  {
+    "id": "cucumber",
+    "name": "Cucumber",
+    "aliases": [
+      "cucumber",
+      "cukes",
+      "ikhukhamba",
+      "khukhamba",
+      "komkommer",
+      "salad cucumber",
+      "ukhukhamba"
+    ],
+    "aisle": "veg",
+    "tier": 1,
+    "shelf_life": "short",
+    "unit_basis": {
+      "qty": 1,
+      "unit": "unit"
+    }
+  },
+  {
+    "id": "dry-red-lentils",
+    "name": "Dry red lentils",
+    "aliases": [
+      "dry lentils",
+      "masoor",
+      "red lentils",
+      "rooi lensies"
+    ],
+    "aisle": "pantry",
+    "tier": 2,
+    "shelf_life": "long",
+    "unit_basis": {
+      "qty": 500,
+      "unit": "g"
+    }
+  },
+  {
+    "id": "drinking-chocolate",
+    "name": "Drinking chocolate",
+    "aliases": [
+      "drinking chocolate",
+      "drinksjokolade",
+      "hot chocolate",
+      "milo"
+    ],
+    "aisle": "pantry",
+    "tier": 0.5,
+    "shelf_life": "long",
+    "unit_basis": {
+      "qty": 400,
+      "unit": "g"
+    }
+  },
+  {
+    "id": "firm-tofu",
+    "name": "Firm tofu",
+    "aliases": [
+      "bean curd",
+      "ferm tofu",
+      "soy tofu",
+      "tofu"
+    ],
+    "aisle": "protein-tinned",
+    "tier": 3,
+    "shelf_life": "medium",
+    "unit_basis": {
+      "qty": 300,
+      "unit": "g"
+    }
+  },
+  {
+    "id": "fresh-thyme",
+    "name": "Fresh thyme",
+    "aliases": [
+      "fresh thyme",
+      "thyme",
+      "thyme sprigs",
+      "vars tiemie"
+    ],
+    "aisle": "veg",
+    "tier": 0.5,
+    "shelf_life": "short",
+    "unit_basis": {
+      "qty": 1,
+      "unit": "unit"
+    }
+  },
+  {
+    "id": "fresh-basil",
+    "name": "Fresh basil",
+    "aliases": [
+      "basil",
+      "fresh basil",
+      "sweet basil",
+      "vars basiliekruid"
+    ],
+    "aisle": "veg",
+    "tier": 0.5,
+    "shelf_life": "short",
+    "unit_basis": {
+      "qty": 1,
+      "unit": "unit"
+    }
+  },
+  {
+    "id": "fruit-squash-concentrate",
+    "name": "Fruit squash concentrate",
+    "aliases": [
+      "diksap",
+      "fruit squash",
+      "i-squash",
+      "oros",
+      "squash",
+      "vrugtesap-konsentraat"
+    ],
+    "aisle": "pantry",
+    "tier": 0.5,
+    "shelf_life": "long",
+    "unit_basis": {
+      "qty": 2,
+      "unit": "l"
+    }
+  },
+  {
+    "id": "gem-squash",
+    "name": "Gem squash",
+    "aliases": [
+      "baby squash",
+      "gem squash",
+      "gemsquash",
+      "i-gem squash",
+      "isikwashi",
+      "squash"
+    ],
+    "aisle": "veg",
+    "tier": 1,
+    "shelf_life": "short",
+    "unit_basis": {
+      "qty": 1,
+      "unit": "unit"
+    }
+  },
+  {
+    "id": "glace-cherries",
+    "name": "Glace cherries",
+    "aliases": [
+      "candied cherries",
+      "cherries",
+      "glace cherries",
+      "glace kersies",
+      "glanskersies",
+      "i-glace cherries"
+    ],
+    "aisle": "pantry",
+    "tier": 0.5,
+    "shelf_life": "long",
+    "unit_basis": {
+      "qty": 200,
+      "unit": "g"
+    }
+  },
+  {
+    "id": "lettuce",
+    "name": "Lettuce (iceberg)",
+    "aliases": [
+      "blaarslaai",
+      "i-lettuce",
+      "iceberg lettuce",
+      "isaladi",
+      "kopslaai",
+      "lettuce",
+      "salad lettuce",
+      "salatse"
+    ],
+    "aisle": "veg",
+    "tier": 1,
+    "shelf_life": "short",
+    "unit_basis": {
+      "qty": 1,
+      "unit": "unit"
+    }
+  },
+  {
+    "id": "mixed-chicken-braai",
+    "name": "Mixed chicken braai pack",
+    "aliases": [
+      "braai pack",
+      "chicken braai pack",
+      "gemengde hoenderbraai",
+      "hoenderbraaipak",
+      "i-chicken braai pack",
+      "i-mixed chicken",
+      "mixed chicken pieces"
+    ],
+    "aisle": "protein-fresh",
+    "tier": 3,
+    "shelf_life": "short",
+    "unit_basis": {
+      "qty": 1000,
+      "unit": "g"
+    }
+  },
+  {
+    "id": "mushrooms",
+    "name": "Mushrooms",
+    "aliases": [
+      "amakhowe",
+      "button mushrooms",
+      "di-mushroom",
+      "i-mushrooms",
+      "makhowe",
+      "mushrooms",
+      "sampioene",
+      "white mushrooms"
+    ],
+    "aisle": "veg",
+    "tier": 1,
+    "shelf_life": "short",
+    "unit_basis": {
+      "qty": 200,
+      "unit": "g"
+    }
+  },
+  {
+    "id": "ox-liver",
+    "name": "Ox liver",
+    "aliases": [
+      "beef liver",
+      "beeslewer",
+      "i-liver",
+      "isibindi senkomo",
+      "liver",
+      "oslewer",
+      "ox liver",
+      "sebete sa kgomo"
+    ],
+    "aisle": "protein-fresh",
+    "tier": 3,
+    "shelf_life": "short",
+    "unit_basis": {
+      "qty": 500,
+      "unit": "g"
+    }
+  },
+  {
+    "id": "pumpkin",
+    "name": "Pumpkin",
+    "aliases": [
+      "boer pumpkin",
+      "ithanga",
+      "mokopu",
+      "pampoen",
+      "pumpkin",
+      "squash pumpkin"
+    ],
+    "aisle": "veg",
+    "tier": 1,
+    "shelf_life": "medium",
+    "unit_basis": {
+      "qty": 1,
+      "unit": "unit"
+    }
+  },
+  {
+    "id": "russian-sausages",
+    "name": "Russian sausages",
+    "aliases": [
+      "amarusian",
+      "i-russian",
+      "russian polony",
+      "russian sausages",
+      "russian wors",
+      "russians"
+    ],
+    "aisle": "protein-fresh",
+    "tier": 3,
+    "shelf_life": "short",
+    "unit_basis": {
+      "qty": 1000,
+      "unit": "g"
+    }
+  },
+  {
+    "id": "tennis-biscuits",
+    "name": "Tennis biscuits",
+    "aliases": [
+      "ama-tennis",
+      "coconut cookies",
+      "di-tennis",
+      "di-tennis biscuits",
+      "i-tennis biscuits",
+      "tennis",
+      "tennis biscuits",
+      "tennis cookies",
+      "tennisbeskuitjies"
+    ],
+    "aisle": "pantry",
+    "tier": 0.5,
+    "shelf_life": "long",
+    "unit_basis": {
+      "qty": 200,
+      "unit": "g"
+    }
+  },
+  {
+    "id": "teriyaki-marinade",
+    "name": "Teriyaki marinade",
+    "aliases": [
+      "i-teriyaki",
+      "i-teriyaki marinade",
+      "teriyaki",
+      "teriyaki marinade",
+      "teriyaki sauce"
+    ],
+    "aisle": "pantry",
+    "tier": 0.5,
+    "shelf_life": "long",
+    "unit_basis": {
+      "qty": 300,
+      "unit": "ml"
+    }
+  },
+  {
+    "id": "yeast-spread",
+    "name": "Yeast spread",
+    "aliases": [
+      "bovril",
+      "gissmeer",
+      "i-marmite",
+      "i-yeast spread",
+      "marmite",
+      "yeast spread"
+    ],
+    "aisle": "pantry",
+    "tier": 0.5,
+    "shelf_life": "long",
+    "unit_basis": {
+      "qty": 250,
+      "unit": "g"
+    }
+  },
+  {
+    "id": "ginger",
+    "name": "Fresh ginger",
+    "aliases": [
+      "ginger",
+      "fresh ginger",
+      "ginger root"
+    ],
+    "aisle": "veg",
+    "tier": 0.5,
+    "shelf_life": "short",
+    "unit_basis": {
+      "qty": 100,
+      "unit": "g"
+    }
+  },
+  {
+    "id": "popcorn-kernels",
+    "name": "Popcorn kernels",
+    "aliases": [
+      "popcorn",
+      "popping corn",
+      "popcorn kernels"
+    ],
+    "aisle": "pantry",
+    "tier": 0.5,
+    "shelf_life": "long",
+    "unit_basis": {
+      "qty": 500,
+      "unit": "g"
+    }
+  },
+  {
+    "id": "salsa",
+    "name": "Tomato salsa (jar)",
+    "aliases": [
+      "salsa",
+      "tomato salsa",
+      "taco sauce"
+    ],
+    "aisle": "pantry",
+    "tier": 0.5,
+    "shelf_life": "long",
+    "unit_basis": {
+      "qty": 300,
+      "unit": "g"
+    }
+  },
+  {
+    "id": "peppermint-crisp",
+    "name": "Peppermint crisp chocolate",
+    "aliases": [
+      "peppermint crisp",
+      "peppermint chocolate",
+      "mint chocolate bar"
+    ],
+    "aisle": "pantry",
+    "tier": 0.5,
+    "shelf_life": "long",
+    "unit_basis": {
+      "qty": 40,
+      "unit": "g"
+    }
+  },
+  {
+    "id": "peanuts",
+    "name": "Peanuts",
+    "aliases": [
+      "peanuts",
+      "monkey nuts",
+      "groundnuts"
+    ],
+    "aisle": "pantry",
+    "tier": 2,
+    "shelf_life": "long",
+    "unit_basis": {
+      "qty": 400,
+      "unit": "g"
+    }
+  },
+  {
+    "id": "pumpkin-seeds",
+    "name": "Pumpkin seeds",
+    "aliases": [
+      "pumpkin seeds",
+      "pepitas",
+      "pips"
+    ],
+    "aisle": "pantry",
+    "tier": 0.5,
+    "shelf_life": "long",
+    "unit_basis": {
+      "qty": 100,
+      "unit": "g"
+    }
+  },
+  {
+    "id": "biltong",
+    "name": "Biltong",
+    "aliases": [
+      "biltong",
+      "beef biltong",
+      "biltong sticks"
+    ],
+    "aisle": "protein-fresh",
+    "tier": 3,
+    "shelf_life": "medium",
+    "unit_basis": {
+      "qty": 100,
+      "unit": "g"
+    }
+  },
+  {
+    "id": "crackers",
+    "name": "Cream crackers",
+    "aliases": [
+      "crackers",
+      "cream crackers",
+      "water biscuits"
+    ],
+    "aisle": "pantry",
+    "tier": 0.5,
+    "shelf_life": "long",
+    "unit_basis": {
+      "qty": 200,
+      "unit": "g"
+    }
+  }
+]

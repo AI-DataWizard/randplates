@@ -1,0 +1,439 @@
+{
+  "note": "10 fixture pantries for the matcher golden lock (P-104R Day 4). Human-reviewable inputs; expected outputs live in matcher-golden.json (regen only via scripts/regen-golden.mjs, never by hand). Quantities are natural purchase amounts in each item's own basis unit, mirroring what the pantry add-flow prefills.",
+  "pantries": [
+    {
+      "name": "empty",
+      "pantry": []
+    },
+    {
+      "name": "student-basics",
+      "pantry": [
+        {
+          "id": "maize-meal",
+          "qty": 2500,
+          "unit": "g"
+        },
+        {
+          "id": "cooking-oil",
+          "qty": 750,
+          "unit": "ml"
+        },
+        {
+          "id": "white-rice",
+          "qty": 2000,
+          "unit": "g"
+        },
+        {
+          "id": "baked-beans",
+          "qty": 410,
+          "unit": "g"
+        },
+        {
+          "id": "table-salt",
+          "qty": 500,
+          "unit": "g"
+        },
+        {
+          "id": "onions",
+          "qty": 1500,
+          "unit": "g"
+        }
+      ]
+    },
+    {
+      "name": "braai-kit",
+      "pantry": [
+        {
+          "id": "boerewors",
+          "qty": 500,
+          "unit": "g"
+        },
+        {
+          "id": "white-bread",
+          "qty": 700,
+          "unit": "g"
+        },
+        {
+          "id": "chakalaka",
+          "qty": 410,
+          "unit": "g"
+        },
+        {
+          "id": "potatoes",
+          "qty": 2000,
+          "unit": "g"
+        },
+        {
+          "id": "tomatoes",
+          "qty": 1000,
+          "unit": "g"
+        },
+        {
+          "id": "onions",
+          "qty": 1000,
+          "unit": "g"
+        },
+        {
+          "id": "garlic",
+          "qty": 50,
+          "unit": "g"
+        },
+        {
+          "id": "mixed-chicken-braai",
+          "qty": 1000,
+          "unit": "g"
+        }
+      ]
+    },
+    {
+      "name": "breakfast-corner",
+      "pantry": [
+        {
+          "id": "eggs",
+          "qty": 6,
+          "unit": "unit"
+        },
+        {
+          "id": "maize-meal",
+          "qty": 2500,
+          "unit": "g"
+        },
+        {
+          "id": "fresh-milk",
+          "qty": 1000,
+          "unit": "ml"
+        },
+        {
+          "id": "white-bread",
+          "qty": 700,
+          "unit": "g"
+        },
+        {
+          "id": "butter",
+          "qty": 250,
+          "unit": "g"
+        },
+        {
+          "id": "white-sugar",
+          "qty": 1000,
+          "unit": "g"
+        },
+        {
+          "id": "baked-beans",
+          "qty": 410,
+          "unit": "g"
+        }
+      ]
+    },
+    {
+      "name": "vegetarian-kitchen",
+      "pantry": [
+        {
+          "id": "spinach",
+          "qty": 250,
+          "unit": "g"
+        },
+        {
+          "id": "butternut",
+          "qty": 1000,
+          "unit": "g"
+        },
+        {
+          "id": "tomatoes",
+          "qty": 1000,
+          "unit": "g"
+        },
+        {
+          "id": "onions",
+          "qty": 1000,
+          "unit": "g"
+        },
+        {
+          "id": "white-rice",
+          "qty": 2000,
+          "unit": "g"
+        },
+        {
+          "id": "curry-powder",
+          "qty": 100,
+          "unit": "g"
+        },
+        {
+          "id": "sugar-beans",
+          "qty": 410,
+          "unit": "g"
+        },
+        {
+          "id": "dry-red-lentils",
+          "qty": 500,
+          "unit": "g"
+        },
+        {
+          "id": "cooking-oil",
+          "qty": 750,
+          "unit": "ml"
+        }
+      ]
+    },
+    {
+      "name": "baking-kit",
+      "pantry": [
+        {
+          "id": "cake-flour",
+          "qty": 2500,
+          "unit": "g"
+        },
+        {
+          "id": "white-sugar",
+          "qty": 1000,
+          "unit": "g"
+        },
+        {
+          "id": "eggs",
+          "qty": 6,
+          "unit": "unit"
+        },
+        {
+          "id": "fresh-milk",
+          "qty": 1000,
+          "unit": "ml"
+        },
+        {
+          "id": "butter",
+          "qty": 250,
+          "unit": "g"
+        },
+        {
+          "id": "baking-powder",
+          "qty": 200,
+          "unit": "g"
+        },
+        {
+          "id": "vanilla-essence",
+          "qty": 10,
+          "unit": "ml"
+        }
+      ]
+    },
+    {
+      "name": "curry-night",
+      "pantry": [
+        {
+          "id": "chicken-thighs",
+          "qty": 1000,
+          "unit": "g"
+        },
+        {
+          "id": "curry-powder",
+          "qty": 100,
+          "unit": "g"
+        },
+        {
+          "id": "chilli-powder",
+          "qty": 50,
+          "unit": "g"
+        },
+        {
+          "id": "tomatoes",
+          "qty": 1000,
+          "unit": "g"
+        },
+        {
+          "id": "onions",
+          "qty": 1000,
+          "unit": "g"
+        },
+        {
+          "id": "garlic",
+          "qty": 50,
+          "unit": "g"
+        },
+        {
+          "id": "white-rice",
+          "qty": 2000,
+          "unit": "g"
+        },
+        {
+          "id": "cooking-oil",
+          "qty": 750,
+          "unit": "ml"
+        },
+        {
+          "id": "chicken-spice",
+          "qty": 75,
+          "unit": "g"
+        }
+      ]
+    },
+    {
+      "name": "two-items",
+      "pantry": [
+        {
+          "id": "white-rice",
+          "qty": 2000,
+          "unit": "g"
+        },
+        {
+          "id": "cooking-oil",
+          "qty": 750,
+          "unit": "ml"
+        }
+      ]
+    },
+    {
+      "name": "weekday-30",
+      "pantry": [
+        {
+          "id": "maize-meal",
+          "qty": 2500,
+          "unit": "g"
+        },
+        {
+          "id": "white-rice",
+          "qty": 2000,
+          "unit": "g"
+        },
+        {
+          "id": "macaroni",
+          "qty": 500,
+          "unit": "g"
+        },
+        {
+          "id": "cooking-oil",
+          "qty": 750,
+          "unit": "ml"
+        },
+        {
+          "id": "eggs",
+          "qty": 6,
+          "unit": "unit"
+        },
+        {
+          "id": "fresh-milk",
+          "qty": 1000,
+          "unit": "ml"
+        },
+        {
+          "id": "white-bread",
+          "qty": 700,
+          "unit": "g"
+        },
+        {
+          "id": "margarine",
+          "qty": 250,
+          "unit": "g"
+        },
+        {
+          "id": "white-sugar",
+          "qty": 1000,
+          "unit": "g"
+        },
+        {
+          "id": "table-salt",
+          "qty": 500,
+          "unit": "g"
+        },
+        {
+          "id": "onions",
+          "qty": 1000,
+          "unit": "g"
+        },
+        {
+          "id": "tomatoes",
+          "qty": 1000,
+          "unit": "g"
+        },
+        {
+          "id": "potatoes",
+          "qty": 2000,
+          "unit": "g"
+        },
+        {
+          "id": "carrots",
+          "qty": 500,
+          "unit": "g"
+        },
+        {
+          "id": "cabbage",
+          "qty": 1,
+          "unit": "unit"
+        },
+        {
+          "id": "spinach",
+          "qty": 250,
+          "unit": "g"
+        },
+        {
+          "id": "beef-mince",
+          "qty": 500,
+          "unit": "g"
+        },
+        {
+          "id": "chicken-thighs",
+          "qty": 1000,
+          "unit": "g"
+        },
+        {
+          "id": "boerewors",
+          "qty": 500,
+          "unit": "g"
+        },
+        {
+          "id": "baked-beans",
+          "qty": 410,
+          "unit": "g"
+        },
+        {
+          "id": "pilchards-chilli",
+          "qty": 120,
+          "unit": "g"
+        },
+        {
+          "id": "cheddar-cheese",
+          "qty": 250,
+          "unit": "g"
+        },
+        {
+          "id": "butter",
+          "qty": 250,
+          "unit": "g"
+        },
+        {
+          "id": "garlic",
+          "qty": 50,
+          "unit": "g"
+        },
+        {
+          "id": "curry-powder",
+          "qty": 100,
+          "unit": "g"
+        },
+        {
+          "id": "chicken-spice",
+          "qty": 75,
+          "unit": "g"
+        },
+        {
+          "id": "stock-cubes",
+          "qty": 12,
+          "unit": "unit"
+        },
+        {
+          "id": "tomato-paste",
+          "qty": 50,
+          "unit": "g"
+        },
+        {
+          "id": "black-pepper",
+          "qty": 50,
+          "unit": "g"
+        },
+        {
+          "id": "chakalaka",
+          "qty": 410,
+          "unit": "g"
+        }
+      ]
+    }
+  ]
+}

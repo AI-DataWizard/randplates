@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RandPlates — algorithm test harness</title>
+    <style>
+      body {
+        font-family: ui-monospace, Menlo, Consolas, monospace;
+        background: #fff8f0;
+        color: #1c1917;
+        max-width: 860px;
+        margin: 0 auto;
+        padding: 2rem;
+      }
+      h1 {
+        color: #ea580c;
+        font-family: "Anton", Impact, sans-serif;
+        text-transform: uppercase;
+      }
+      .suite {
+        margin-bottom: 1rem;
+        font-weight: 700;
+        color: #b45309;
+      }
+      .case {
+        padding: 4px 10px;
+        border-bottom: 1px solid #e7e0d3;
+      }
+      .case.pass {
+        color: #16a34a;
+      }
+      .case.fail {
+        color: #dc2626;
+        font-weight: 700;
+      }
+      #summary {
+        font-size: 1.3rem;
+        font-weight: 800;
+        margin: 1rem 0;
+      }
+      pre {
+        white-space: pre-wrap;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>RandPlates — algorithm test harness</h1>
+    <p>
+      Zero dependencies. Algorithm changes without a green run here are rejected
+      (PRD §10 rule 4). Same suite runs under Node:
+      <code>node tests/run-node.mjs</code>
+    </p>
+    <div id="summary">running…</div>
+    <div id="out"></div>
+    <script type="module">
+      const { run: runMatcher } = await import("./matcher-tests.js");
+      const { run: runData } = await import("./data-tests.js");
+      const { run: runBackup } = await import("./backup-tests.js");
+      const { run: runGolden } = await import("./golden-tests.js");
+      const { run: runDeterminism } = await import("./determinism-tests.js");
+      const results = [
+        ...(await runMatcher()),
+        ...(await runData()),
+        ...(await runBackup()),
+        ...(await runGolden()),
+        ...(await runDeterminism()),
+      ];
+      const out = document.getElementById("out");
+      const pass = results.filter((r) => r.ok).length;
+      document.getElementById("summary").textContent =
+        pass === results.length
+          ? `✅ ALL ${results.length} SCENARIOS GREEN`
+          : `❌ ${results.length - pass} FAILED of ${results.length}`;
+      for (const r of results) {
+        out.insertAdjacentHTML(
+          "beforeend",
+          `<div class="case ${r.ok ? "pass" : "fail"}">${r.ok ? "✔" : "✘"} [${r.suite}] ${r.name}${r.ok ? "" : `<pre>${r.err}</pre>`}</div>`,
+        );
+      }
+    </script>
+  </body>
+</html>

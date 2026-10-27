@@ -1,0 +1,1009 @@
+{
+  "_meta": {
+    "name": "RandPlates pantry-math fixtures (P-536)",
+    "contract": "Expected outputs are STAMPED FROM SPEC (hand-reasoned), never from current behavior. A fixture that disagrees with the code means the CODE is on trial, not the fixture.",
+    "date-stamps": "Date-dependent fixtures carry relative offsets (days_ahead / days_ago); the blast materializes them at runtime. 'user' day counts are stable except in the last minute before midnight.",
+    "safety": "Rows marked safety encode never-properties: never-negative, never-Infinity, never-NaN, never-crash."
+  },
+  "fixtures": [
+    {
+      "class": "step",
+      "name": "500 g basis -> quarter 125 -> snaps to 100",
+      "fn": "stepSizeFor",
+      "basis": {
+        "qty": 500,
+        "unit": "g"
+      },
+      "unit": "g",
+      "expect": 100
+    },
+    {
+      "class": "step",
+      "name": "2 kg basis -> 500",
+      "fn": "stepSizeFor",
+      "basis": {
+        "qty": 2000,
+        "unit": "g"
+      },
+      "unit": "g",
+      "expect": 500
+    },
+    {
+      "class": "step",
+      "name": "100 g basis -> 25 floor",
+      "fn": "stepSizeFor",
+      "basis": {
+        "qty": 100,
+        "unit": "g"
+      },
+      "unit": "g",
+      "expect": 25
+    },
+    {
+      "class": "step",
+      "name": "80 g basis -> floor 25 wins",
+      "fn": "stepSizeFor",
+      "basis": {
+        "qty": 80,
+        "unit": "g"
+      },
+      "unit": "g",
+      "expect": 25
+    },
+    {
+      "class": "step",
+      "name": "410 g tin -> 100",
+      "fn": "stepSizeFor",
+      "basis": {
+        "qty": 410,
+        "unit": "g"
+      },
+      "unit": "g",
+      "expect": 100
+    },
+    {
+      "class": "step",
+      "name": "1 kg basis -> 250",
+      "fn": "stepSizeFor",
+      "basis": {
+        "qty": 1000,
+        "unit": "g"
+      },
+      "unit": "g",
+      "expect": 250
+    },
+    {
+      "class": "step",
+      "name": "2.5 kg bag -> 500 (not 625)",
+      "fn": "stepSizeFor",
+      "basis": {
+        "qty": 2500,
+        "unit": "g"
+      },
+      "unit": "g",
+      "expect": 500
+    },
+    {
+      "class": "step",
+      "name": "1 L bottle -> 250 ml",
+      "fn": "stepSizeFor",
+      "basis": {
+        "qty": 1000,
+        "unit": "ml"
+      },
+      "unit": "ml",
+      "expect": 250
+    },
+    {
+      "class": "step",
+      "name": "750 ml -> 200",
+      "fn": "stepSizeFor",
+      "basis": {
+        "qty": 750,
+        "unit": "ml"
+      },
+      "unit": "ml",
+      "expect": 200
+    },
+    {
+      "class": "step",
+      "name": "300 ml -> 50 (tie keeps smaller)",
+      "fn": "stepSizeFor",
+      "basis": {
+        "qty": 300,
+        "unit": "ml"
+      },
+      "unit": "ml",
+      "expect": 50
+    },
+    {
+      "class": "step",
+      "name": "unit-mismatch (g basis, counting) -> 1",
+      "fn": "stepSizeFor",
+      "basis": {
+        "qty": 500,
+        "unit": "g"
+      },
+      "unit": "unit",
+      "expect": 1
+    },
+    {
+      "class": "step",
+      "name": "no basis, g -> fallback 50",
+      "fn": "stepSizeFor",
+      "basis": null,
+      "unit": "g",
+      "expect": 50
+    },
+    {
+      "class": "step",
+      "name": "safety: no basis, tin -> 1 (never crash)",
+      "safety": true,
+      "fn": "stepSizeFor",
+      "basis": null,
+      "unit": "tin",
+      "expect": 1
+    },
+    {
+      "class": "packs",
+      "name": "750 g vs 500 g basis -> 1.5 packs",
+      "fn": "packsCount",
+      "qty": 750,
+      "basisQty": 500,
+      "expect": 1.5
+    },
+    {
+      "class": "packs",
+      "name": "1000 vs 500 -> integer 2",
+      "fn": "packsCount",
+      "qty": 1000,
+      "basisQty": 500,
+      "expect": 2
+    },
+    {
+      "class": "packs",
+      "name": "exactly one pack -> 1",
+      "fn": "packsCount",
+      "qty": 500,
+      "basisQty": 500,
+      "expect": 1
+    },
+    {
+      "class": "packs",
+      "name": "half a pack -> 0.5",
+      "fn": "packsCount",
+      "qty": 250,
+      "basisQty": 500,
+      "expect": 0.5
+    },
+    {
+      "class": "packs",
+      "name": "3 x 410 g tins -> 3",
+      "fn": "packsCount",
+      "qty": 1230,
+      "basisQty": 410,
+      "expect": 3
+    },
+    {
+      "class": "packs",
+      "name": "2 tins -> 2",
+      "fn": "packsCount",
+      "qty": 820,
+      "basisQty": 410,
+      "expect": 2
+    },
+    {
+      "class": "packs",
+      "name": "half a tin -> 0.5",
+      "fn": "packsCount",
+      "qty": 205,
+      "basisQty": 410,
+      "expect": 0.5
+    },
+    {
+      "class": "packs",
+      "name": "zero stock -> 0 packs",
+      "fn": "packsCount",
+      "qty": 0,
+      "basisQty": 500,
+      "expect": 0
+    },
+    {
+      "class": "packs",
+      "name": "safety: zero basis must never be Infinity",
+      "safety": true,
+      "fn": "packsCount",
+      "qty": 500,
+      "basisQty": 0,
+      "expect": null
+    },
+    {
+      "class": "badge",
+      "name": "eggs plural stays eggs",
+      "fn": "badgeWord",
+      "meta": {
+        "id": "eggs",
+        "unit_basis": {
+          "qty": 6,
+          "unit": "unit"
+        }
+      },
+      "packs": 2,
+      "expect": "eggs"
+    },
+    {
+      "class": "badge",
+      "name": "baked beans 1.5 -> tins",
+      "fn": "badgeWord",
+      "meta": {
+        "id": "baked-beans",
+        "aisle": "protein-tinned",
+        "unit_basis": {
+          "qty": 410,
+          "unit": "g"
+        }
+      },
+      "packs": 1.5,
+      "expect": "tins"
+    },
+    {
+      "class": "badge",
+      "name": "one loaf",
+      "fn": "badgeWord",
+      "meta": {
+        "id": "white-bread",
+        "unit_basis": {
+          "qty": 700,
+          "unit": "g"
+        }
+      },
+      "packs": 1,
+      "expect": "loaf"
+    },
+    {
+      "class": "badge",
+      "name": "two bottles of oil",
+      "fn": "badgeWord",
+      "meta": {
+        "id": "cooking-oil",
+        "unit_basis": {
+          "qty": 750,
+          "unit": "ml"
+        }
+      },
+      "packs": 2,
+      "expect": "bottles"
+    },
+    {
+      "class": "badge",
+      "name": "one bunch",
+      "fn": "badgeWord",
+      "meta": {
+        "id": "spinach",
+        "unit_basis": {
+          "qty": 1,
+          "unit": "bunch"
+        }
+      },
+      "packs": 1,
+      "expect": "bunch"
+    },
+    {
+      "class": "badge",
+      "name": "no shelf word -> packs",
+      "fn": "badgeWord",
+      "meta": {
+        "id": "potatoes",
+        "unit_basis": {
+          "qty": 1000,
+          "unit": "g"
+        }
+      },
+      "packs": 1,
+      "expect": "pack"
+    },
+    {
+      "class": "label",
+      "name": "410 g tin label",
+      "fn": "packLabel",
+      "basis": {
+        "qty": 410,
+        "unit": "g"
+      },
+      "meta": {
+        "id": "baked-beans",
+        "aisle": "protein-tinned"
+      },
+      "expect": "1 x 410 g tin"
+    },
+    {
+      "class": "label",
+      "name": "plain 500 g",
+      "fn": "packLabel",
+      "basis": {
+        "qty": 500,
+        "unit": "g"
+      },
+      "meta": {
+        "id": "potatoes"
+      },
+      "expect": "1 x 500 g"
+    },
+    {
+      "class": "label",
+      "name": "1 L bottle label",
+      "fn": "packLabel",
+      "basis": {
+        "qty": 1000,
+        "unit": "ml"
+      },
+      "meta": {
+        "id": "amasi"
+      },
+      "expect": "1 x 1 L bottle"
+    },
+    {
+      "class": "label",
+      "name": "six eggs",
+      "fn": "packLabel",
+      "basis": {
+        "qty": 6,
+        "unit": "unit"
+      },
+      "meta": {
+        "id": "eggs"
+      },
+      "expect": "6 eggs"
+    },
+    {
+      "class": "label",
+      "name": "one bunch of morogo",
+      "fn": "packLabel",
+      "basis": {
+        "qty": 1,
+        "unit": "bunch"
+      },
+      "meta": {
+        "id": "spinach"
+      },
+      "expect": "1 bunch"
+    },
+    {
+      "class": "label",
+      "name": "single item fallback",
+      "fn": "packLabel",
+      "basis": {
+        "qty": 1,
+        "unit": "unit"
+      },
+      "meta": {
+        "id": "stock-cubes"
+      },
+      "expect": "1 item"
+    },
+    {
+      "class": "label",
+      "name": "safety: null basis -> empty string",
+      "safety": true,
+      "fn": "packLabel",
+      "basis": null,
+      "meta": {
+        "id": "x"
+      },
+      "expect": ""
+    },
+    {
+      "class": "soon",
+      "name": "user expiry 3 days out",
+      "fn": "useSoonInfo",
+      "rec": {
+        "expiry_days_ahead": 3
+      },
+      "meta": {
+        "shelf_life_days": 30
+      },
+      "expect": {
+        "kind": "user",
+        "days": 3
+      }
+    },
+    {
+      "class": "soon",
+      "name": "user expiry 10 days out -> not soon",
+      "fn": "useSoonInfo",
+      "rec": {
+        "expiry_days_ahead": 10
+      },
+      "meta": {
+        "shelf_life_days": 30
+      },
+      "expect": null
+    },
+    {
+      "class": "soon",
+      "name": "user expiry today -> days 0",
+      "fn": "useSoonInfo",
+      "rec": {
+        "expiry_days_ahead": 0
+      },
+      "meta": {
+        "shelf_life_days": 30
+      },
+      "expect": {
+        "kind": "user",
+        "days": 0
+      }
+    },
+    {
+      "class": "soon",
+      "name": "estimate: 30d shelf, added 25 days ago -> 5 left",
+      "fn": "useSoonInfo",
+      "rec": {
+        "created_days_ago": 25
+      },
+      "meta": {
+        "shelf_life_days": 30
+      },
+      "expect": {
+        "kind": "estimate",
+        "days": 5
+      }
+    },
+    {
+      "class": "soon",
+      "name": "estimate: 30d shelf, added 2 days ago -> not soon",
+      "fn": "useSoonInfo",
+      "rec": {
+        "created_days_ago": 2
+      },
+      "meta": {
+        "shelf_life_days": 30
+      },
+      "expect": null
+    },
+    {
+      "class": "soon",
+      "name": "estimate clamps at 0 (added long ago)",
+      "fn": "useSoonInfo",
+      "rec": {
+        "created_days_ago": 200
+      },
+      "meta": {
+        "shelf_life_days": 180
+      },
+      "expect": {
+        "kind": "estimate",
+        "days": 0
+      }
+    },
+    {
+      "class": "soon",
+      "name": "short shelf, no dates -> shelf kind",
+      "fn": "useSoonInfo",
+      "rec": {},
+      "meta": {
+        "shelf_life_days": 5
+      },
+      "expect": {
+        "kind": "shelf",
+        "days": 5
+      }
+    },
+    {
+      "class": "soon",
+      "name": "added today, 7-day shelf -> exactly 7 left",
+      "fn": "useSoonInfo",
+      "rec": {
+        "created_days_ago": 0
+      },
+      "meta": {
+        "shelf_life_days": 7
+      },
+      "expect": {
+        "kind": "estimate",
+        "days": 7
+      }
+    },
+    {
+      "class": "soon",
+      "name": "8-day shelf added yesterday -> 7 left, soon",
+      "fn": "useSoonInfo",
+      "rec": {
+        "created_days_ago": 1
+      },
+      "meta": {
+        "shelf_life_days": 8
+      },
+      "expect": {
+        "kind": "estimate",
+        "days": 7
+      }
+    },
+    {
+      "class": "soon",
+      "name": "safety: malformed expiry falls to shelf rule, never NaN",
+      "safety": true,
+      "fn": "useSoonInfo",
+      "rec": {
+        "expiry": "not-a-date"
+      },
+      "meta": {
+        "shelf_life_days": 5
+      },
+      "expect": {
+        "kind": "shelf",
+        "days": 5
+      }
+    },
+    {
+      "class": "soon",
+      "name": "no shelf data, no expiry -> null",
+      "fn": "useSoonInfo",
+      "rec": {},
+      "meta": {},
+      "expect": null
+    },
+    {
+      "class": "soon",
+      "name": "expired last week -> still user-kind (past)",
+      "fn": "useSoonInfo",
+      "rec": {
+        "expiry_days_ahead": -2
+      },
+      "meta": {
+        "shelf_life_days": 30
+      },
+      "expect": {
+        "kind": "user",
+        "days": -2
+      }
+    },
+    {
+      "class": "estimate",
+      "name": "priority: user expiry beats estimate",
+      "fn": "expiryEstimate",
+      "rec": {
+        "expiry_days_ahead": 3,
+        "created_days_ago": 25
+      },
+      "meta": {
+        "shelf_life_days": 30
+      },
+      "expect": {
+        "kind": "user",
+        "days": 3
+      }
+    },
+    {
+      "class": "estimate",
+      "name": "estimate from created_date",
+      "fn": "expiryEstimate",
+      "rec": {
+        "created_days_ago": 25
+      },
+      "meta": {
+        "shelf_life_days": 30
+      },
+      "expect": {
+        "kind": "estimate",
+        "days": 5
+      }
+    },
+    {
+      "class": "estimate",
+      "name": "no dates -> static shelf window",
+      "fn": "expiryEstimate",
+      "rec": {},
+      "meta": {
+        "shelf_life_days": 5
+      },
+      "expect": {
+        "kind": "shelf",
+        "days": 5
+      }
+    },
+    {
+      "class": "estimate",
+      "name": "malformed created_date -> shelf window",
+      "fn": "expiryEstimate",
+      "rec": {
+        "created_date": "garbage"
+      },
+      "meta": {
+        "shelf_life_days": 10
+      },
+      "expect": {
+        "kind": "shelf",
+        "days": 10
+      }
+    },
+    {
+      "class": "estimate",
+      "name": "safety: elapsed past shelf -> 0, never negative",
+      "safety": true,
+      "fn": "expiryEstimate",
+      "rec": {
+        "created_days_ago": 15
+      },
+      "meta": {
+        "shelf_life_days": 10
+      },
+      "expect": {
+        "kind": "estimate",
+        "days": 0
+      }
+    },
+    {
+      "class": "estimate",
+      "name": "malformed user expiry -> estimate path",
+      "fn": "expiryEstimate",
+      "rec": {
+        "expiry": "not-a-date",
+        "created_days_ago": 25
+      },
+      "meta": {
+        "shelf_life_days": 30
+      },
+      "expect": {
+        "kind": "estimate",
+        "days": 5
+      }
+    },
+    {
+      "class": "status",
+      "name": "P-540 ruling: use-soon beats running_low (time beats quantity, ONE bucket)",
+      "fn": "pantryStatusOf",
+      "rec": {
+        "running_low": true,
+        "expiry_days_ahead": 3
+      },
+      "meta": {
+        "shelf_life_days": 30
+      },
+      "expect": "soon"
+    },
+    {
+      "class": "status",
+      "name": "expiry soon -> soon",
+      "fn": "pantryStatusOf",
+      "rec": {
+        "expiry_days_ahead": 3
+      },
+      "meta": {
+        "shelf_life_days": 30
+      },
+      "expect": "soon"
+    },
+    {
+      "class": "status",
+      "name": "estimate path -> soon",
+      "fn": "pantryStatusOf",
+      "rec": {
+        "created_days_ago": 25
+      },
+      "meta": {
+        "shelf_life_days": 30
+      },
+      "expect": "soon"
+    },
+    {
+      "class": "status",
+      "name": "fresh long-shelf -> ok",
+      "fn": "pantryStatusOf",
+      "rec": {
+        "created_days_ago": 1
+      },
+      "meta": {
+        "shelf_life_days": 30
+      },
+      "expect": "ok"
+    },
+    {
+      "class": "status",
+      "name": "safety: no meta -> ok, never crash",
+      "safety": true,
+      "fn": "pantryStatusOf",
+      "rec": {
+        "running_low": false
+      },
+      "meta": null,
+      "expect": "ok"
+    },
+    {
+      "class": "status",
+      "name": "P-540: running_low alone (no expiry window) -> low",
+      "fn": "pantryStatusOf",
+      "rec": {
+        "running_low": true
+      },
+      "meta": {
+        "shelf_life_days": 30
+      },
+      "expect": "low"
+    },
+    {
+      "class": "status",
+      "name": "P-540: running_low + 7-day boundary -> soon (boundary inclusive)",
+      "fn": "pantryStatusOf",
+      "rec": {
+        "running_low": true,
+        "expiry_days_ahead": 7
+      },
+      "meta": {
+        "shelf_life_days": 30
+      },
+      "expect": "soon"
+    },
+    {
+      "class": "status",
+      "name": "P-540: running_low + 8 days out -> low (outside the window)",
+      "fn": "pantryStatusOf",
+      "rec": {
+        "running_low": true,
+        "expiry_days_ahead": 8
+      },
+      "meta": {
+        "shelf_life_days": 30
+      },
+      "expect": "low"
+    },
+    {
+      "class": "status",
+      "name": "P-540: user expiry today (0 days) + running_low -> soon",
+      "fn": "pantryStatusOf",
+      "rec": {
+        "running_low": true,
+        "expiry_days_ahead": 0
+      },
+      "meta": {
+        "shelf_life_days": 30
+      },
+      "expect": "soon"
+    },
+    {
+      "class": "status",
+      "name": "P-540: shelf clock exactly at zero (created = shelf) + running_low -> soon",
+      "fn": "pantryStatusOf",
+      "rec": {
+        "running_low": true,
+        "created_days_ago": 30
+      },
+      "meta": {
+        "shelf_life_days": 30
+      },
+      "expect": "soon"
+    },
+    {
+      "class": "week",
+      "name": "expiry 7 days out -> true",
+      "fn": "expiringThisWeek",
+      "rec": {
+        "expiry_days_ahead": 7
+      },
+      "expect": true
+    },
+    {
+      "class": "week",
+      "name": "expiry 8 days out -> false",
+      "fn": "expiringThisWeek",
+      "rec": {
+        "expiry_days_ahead": 8
+      },
+      "expect": false
+    },
+    {
+      "class": "week",
+      "name": "no expiry -> false",
+      "fn": "expiringThisWeek",
+      "rec": {},
+      "expect": false
+    },
+    {
+      "class": "week",
+      "name": "malformed expiry -> false",
+      "fn": "expiringThisWeek",
+      "rec": {
+        "expiry": "garbage"
+      },
+      "expect": false
+    },
+    {
+      "class": "lowband",
+      "name": "30% of pack left -> fine, not low",
+      "fn": "autoRunningLow",
+      "ingredients": [
+        {
+          "id": "maize-meal",
+          "unit_basis": {
+            "qty": 2500,
+            "unit": "g"
+          }
+        }
+      ],
+      "rows": [
+        {
+          "id": "maize-meal",
+          "qty": 700,
+          "unit": "g"
+        }
+      ],
+      "expectLow": false
+    },
+    {
+      "class": "lowband",
+      "name": "20% band -> RUNNING LOW",
+      "fn": "autoRunningLow",
+      "ingredients": [
+        {
+          "id": "maize-meal",
+          "unit_basis": {
+            "qty": 2500,
+            "unit": "g"
+          }
+        }
+      ],
+      "rows": [
+        {
+          "id": "maize-meal",
+          "qty": 500,
+          "unit": "g"
+        }
+      ],
+      "expectLow": true
+    },
+    {
+      "class": "lowband",
+      "name": "P-555 band v2: 8% left -> RUNNING LOW (the silent zone is gone)",
+      "fn": "autoRunningLow",
+      "ingredients": [
+        {
+          "id": "maize-meal",
+          "unit_basis": {
+            "qty": 2500,
+            "unit": "g"
+          }
+        }
+      ],
+      "rows": [
+        {
+          "id": "maize-meal",
+          "qty": 200,
+          "unit": "g"
+        }
+      ],
+      "expectLow": true
+    },
+    {
+      "class": "lowband",
+      "name": "P-555 band v2: 3% left (the old silent zone) -> RUNNING LOW",
+      "fn": "autoRunningLow",
+      "ingredients": [
+        {
+          "id": "maize-meal",
+          "unit_basis": {
+            "qty": 2500,
+            "unit": "g"
+          }
+        }
+      ],
+      "rows": [
+        {
+          "id": "maize-meal",
+          "qty": 75,
+          "unit": "g"
+        }
+      ],
+      "expectLow": true
+    },
+    {
+      "class": "lowband",
+      "name": "P-555 band v2: 25% boundary (exactly a quarter) -> NOT low",
+      "fn": "autoRunningLow",
+      "ingredients": [
+        {
+          "id": "maize-meal",
+          "unit_basis": {
+            "qty": 2500,
+            "unit": "g"
+          }
+        }
+      ],
+      "rows": [
+        {
+          "id": "maize-meal",
+          "qty": 625,
+          "unit": "g"
+        }
+      ],
+      "expectLow": false
+    },
+    {
+      "class": "lowband",
+      "name": "P-555 band v2: 24% -> RUNNING LOW",
+      "fn": "autoRunningLow",
+      "ingredients": [
+        {
+          "id": "maize-meal",
+          "unit_basis": {
+            "qty": 2500,
+            "unit": "g"
+          }
+        }
+      ],
+      "rows": [
+        {
+          "id": "maize-meal",
+          "qty": 600,
+          "unit": "g"
+        }
+      ],
+      "expectLow": true
+    },
+    {
+      "class": "lowband",
+      "name": "full pack -> not low",
+      "fn": "autoRunningLow",
+      "ingredients": [
+        {
+          "id": "maize-meal",
+          "unit_basis": {
+            "qty": 2500,
+            "unit": "g"
+          }
+        }
+      ],
+      "rows": [
+        {
+          "id": "maize-meal",
+          "qty": 2500,
+          "unit": "g"
+        }
+      ],
+      "expectLow": false
+    },
+    {
+      "class": "lowband",
+      "name": "cross-unit: 0.5 kg (20%) -> low",
+      "fn": "autoRunningLow",
+      "ingredients": [
+        {
+          "id": "maize-meal",
+          "unit_basis": {
+            "qty": 2500,
+            "unit": "g"
+          }
+        }
+      ],
+      "rows": [
+        {
+          "id": "maize-meal",
+          "qty": 0.5,
+          "unit": "kg"
+        }
+      ],
+      "expectLow": true
+    },
+    {
+      "class": "lowband",
+      "name": "unknown ingredient -> skipped, never low",
+      "fn": "autoRunningLow",
+      "ingredients": [
+        {
+          "id": "maize-meal",
+          "unit_basis": {
+            "qty": 2500,
+            "unit": "g"
+          }
+        }
+      ],
+      "rows": [
+        {
+          "id": "ghost-item",
+          "qty": 1,
+          "unit": "g"
+        }
+      ],
+      "expectLow": false
+    }
+  ]
+}

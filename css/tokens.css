@@ -1,0 +1,162 @@
+/* tokens.css — design tokens. REBRAND v2.0 "Spaza Modern" (15 Sept 2026, PRD Amendment A1).
+   Token NAMES are stable across rebrands — the whole site restyles from this one file.
+   Money-first philosophy unchanged: the number is still the brand; now it wears a price tag. */
+
+:root {
+  /* ---- color: spaza-market energy (was: currency/banknote palette) ---- */
+  --clr-brand: #ea580c; /* chilli orange — primary actions, brand marks */
+  --clr-brand-strong: #c2410c; /* pressed/hover brand; AA-safe orange for smaller money text */
+  --clr-brand-soft: #ffedd5; /* tinted surfaces (chips, hover washes) */
+  --clr-coin: #b45309; /* deep amber — coin/streak accents as TEXT (AA on white) */
+  --clr-coin-soft: #fef3c7;
+  --clr-sun: #fbbf24; /* sun yellow — sticker fills, highlight bars, badge medals */
+  --clr-sun-soft: #fde68a;
+  --clr-cream: #fff8f0; /* warm paper — page surfaces */
+  --clr-card: #ffffff;
+  --clr-ink: #1c1917; /* charcoal ink — text */
+  --clr-ink-soft: #57534e;
+  --clr-line: #f0e3d3; /* warm hairlines on paper */
+  --clr-amber: #d97706; /* near-budget warning */
+  --clr-amber-soft: #fef3c7;
+  --clr-red: #dc2626; /* over-budget */
+  --clr-red-soft: #fee2e2;
+  /* budget semantics are SEMANTIC now, not brand: green = under (kept for meaning) */
+  --clr-ok: #16a34a;
+  --clr-ok-soft: #dcfce7;
+  --clr-focus: #c2410c;
+
+  /* ---- type: Anton display + Inter body; till-slip mono for the shopping list ---- */
+  --font-ui: "Inter", "Segoe UI", system-ui, -apple-system, sans-serif;
+  --font-display:
+    "Anton", "Arial Narrow", Impact, sans-serif; /* headlines, tags, slip brand */
+  --font-slip: ui-monospace, "Cascadia Mono", "Courier New", monospace;
+  --fs-money: clamp(1.6rem, 1.1rem + 2vw, 2.4rem); /* the number is the brand */
+  --fs-h1: clamp(1.7rem, 1.2rem + 2.2vw, 2.6rem);
+  --fs-h2: 1.35rem;
+  --fs-body: 1rem;
+  --fs-small: 0.85rem;
+
+  /* ---- space / shape / motion ---- */
+  --sp-1: 0.25rem;
+  --sp-2: 0.5rem;
+  --sp-3: 0.75rem;
+  --sp-4: 1rem;
+  --sp-6: 1.5rem;
+  --sp-8: 2rem;
+  --r-sm: 8px;
+  --r-md: 12px;
+  --r-lg: 18px;
+  --r-pill: 999px;
+  /* P-557 THEME GEOMETRY DEFAULTS (Spaza Classic baseline; themes.css overrides
+     per data-theme). --rad-ctl = controls/chips, --rad-card = cards/panels,
+     --line-weight = control border, --sticker-tilt = price sticker rotation,
+     --on-brand / --on-sun = text on brand/sun fills (derived at >= 4.5:1). */
+  --rad-ctl: var(--r-sm);
+  --rad-card: var(--r-md);
+  --line-weight: 1px;
+  --sticker-tilt: -2deg;
+  --on-brand: #1c1917;
+  --on-sun: #451a03;
+  --clr-sunken: #f4ead9; /* recessed surface: tracks, meter fills, empty states */
+  --on-ok: #fff;
+  --on-amber: #451a03;
+  --on-red: #fff;
+  --clr-ok-text: #15803d;
+  --clr-amber-text: #b45309;
+  --clr-red-text: #b91c1c; /* classic baseline AA-text variants */
+  --shadow-1: 0 1px 3px rgba(28, 25, 23, 0.08);
+  --shadow-2: 0 4px 14px rgba(28, 25, 23, 0.1);
+  --shadow-sticker: 2px 2px 0 rgba(28, 25, 23, 0.16); /* hard sticker edge */
+  --t-fast: 140ms cubic-bezier(0.2, 0.7, 0.3, 1);
+  --t-med: 280ms cubic-bezier(0.2, 0.7, 0.3, 1);
+  --tap: 44px; /* accessibility floor: 44px touch targets (PRD §6) */
+}
+
+/* Money figure styling — applied everywhere money appears.
+   Base = flat orange (AA at display sizes); contexts (recipe cards, slips, tables)
+   upgrade it to sticker treatments in views.css. Smaller money uses --clr-brand-strong. */
+.money {
+  font-family: var(--font-ui);
+  font-size: var(--fs-money);
+  font-weight: 900;
+  color: var(--clr-brand);
+  letter-spacing: -0.01em;
+  font-variant-numeric: tabular-nums;
+}
+.money--warn {
+  color: var(--clr-amber-text);
+}
+.money--over {
+  color: var(--clr-red-text);
+}
+.money--sm {
+  font-size: 1.1rem;
+  color: var(--clr-brand-strong);
+}
+
+/* Sticker price: the tag-shaped chip treatment (PRD Amendment A1 "sticker prices").
+   Tag point on the left, hard drop shadow, slight market-stall tilt. */
+.sticker {
+  display: inline-block;
+  font-family: var(--font-ui);
+  font-weight: 900;
+  font-variant-numeric: tabular-nums;
+  background: var(--clr-brand);
+  color: var(
+    --on-brand
+  ); /* P-558: derived per theme/mode (white broke dark modes) */
+  padding: 0.28em 0.9em 0.28em 1.25em;
+  clip-path: polygon(0 50%, 10% 0, 100% 0, 100% 100%, 10% 100%);
+  transform: rotate(var(--sticker-tilt));
+  filter: drop-shadow(
+    2px 2px 0 rgba(28, 25, 23, 0.16)
+  ); /* light: ink edge; dark: see override below */
+}
+
+/* Motion as feedback, not decoration (PRD §6) — and always respect reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    transition-duration: 0.001ms !important;
+  }
+}
+
+/* ---- P-545 personalization: data-attribute theme variants (accent / density /
+   motion / stickers). Accents stay INSIDE the Spaza Modern brand; density
+   rescales the shared spacing tokens; motion=off hard-stops transitions;
+   stickers=off flattens every price tag to plain money text. ---- */
+
+html[data-density="compact"] {
+  --sp-1: 0.2rem;
+  --sp-2: 0.4rem;
+  --sp-3: 0.6rem;
+  --sp-4: 0.8rem;
+  --sp-6: 1.2rem;
+  --sp-8: 1.6rem;
+}
+html[data-motion="off"] *,
+html[data-motion="off"] *::before,
+html[data-motion="off"] *::after {
+  transition: none !important;
+  animation-duration: 0.01s !important;
+}
+html[data-stickers="off"] .price-tag {
+  background: transparent;
+  color: var(--clr-brand-strong);
+  border: none;
+  box-shadow: none;
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+}
+
+html[data-mode="dark"] {
+  /* P-546: base shadows flip to true elevation in dark mode */
+  --shadow-1: 0 1px 3px rgba(0, 0, 0, 0.35);
+  --shadow-2: 0 4px 14px rgba(0, 0, 0, 0.45);
+  --shadow-sticker: 2px 2px 0 rgba(0, 0, 0, 0.55);
+}
+html[data-mode="dark"] .sticker-money {
+  filter: drop-shadow(2px 2px 0 rgba(0, 0, 0, 0.55));
+}

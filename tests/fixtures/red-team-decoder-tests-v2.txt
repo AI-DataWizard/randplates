@@ -1,0 +1,374 @@
+--- TEST ID: K1-asr-pop ---
+Input: 1 kg pop
+Expected: REVIEW_QUEUE(unresolved_ingredient)  # P-429: "pop"->popcorn false positive killed by the strength floor
+
+--- TEST ID: K2-asr-was ---
+Input: 500g braai was
+Expected: REVIEW_QUEUE(unresolved_ingredient)
+
+--- TEST ID: K3-asr-union ---
+Input: 2 union chopped finely
+Expected: REVIEW_QUEUE(unresolved_ingredient)
+
+--- TEST ID: K4-asr-chakalala ---
+Input: 1 can chakalala mild
+Expected: RESOLVE  # P-429 ruling: fuzzy ASR correction (chakalala->chakalaka, 9 chars) is a WIN, not a queue
+
+--- TEST ID: K5-asr-valid-fallback ---
+Input: 1 kg maize meal
+Expected: RESOLVE
+
+--- TEST ID: L1-zulu-uphuku ---
+Input: 1 koppie uphuku
+Expected: REVIEW_QUEUE(unresolved_ingredient)
+
+--- TEST ID: L2-zulu-amanzi ---
+Input: 2 cup yamanzi
+Expected: REVIEW_QUEUE(unresolved_ingredient)
+
+--- TEST ID: L3-zulu-verb-line ---
+Input: Sika i-onion encane
+Expected: REVIEW_QUEUE(unparsed_line)  # P-429 normalization: model said subjective_modifier; "Sika i-onion encane" has no resolvable ingredient — unparsed_line is the honest reason
+
+--- TEST ID: L4-zulu-mixed-ingredient ---
+Input: Add 2 cups impuphu
+Expected: RESOLVE
+
+--- TEST ID: L5-zulu-instruction ---
+Input: Bhaka for 20 minutes on medium heat
+Expected: REVIEW_QUEUE(unparsed_line)  # P-429 normalization: model said IGNORED; conservative queue beats silent drop
+
+--- TEST ID: M1-promo-chicken ---
+Input: 2 for R30 chicken pieces bulk pack
+Expected: REVIEW_QUEUE(price_talk)
+
+--- TEST ID: M2-promo-oil ---
+Input: buy 2 get 1 free sunflower oil
+Expected: REVIEW_QUEUE(price_talk)
+
+--- TEST ID: M3-promo-chips ---
+Input: R10 chips family size
+Expected: REVIEW_QUEUE(price_talk)
+
+--- TEST ID: M4-promo-maize ---
+Input: Special: 5kg maize meal for R49.99
+Expected: REVIEW_QUEUE(price_talk)
+
+--- TEST ID: M5-promo-baked-beans ---
+Input: Save R5 on Koo baked beans today only
+Expected: REVIEW_QUEUE(price_talk)
+
+--- TEST ID: N1-chapter-timestamp ---
+Input: 00:01 Step 1: Chop onions and tomatoes
+Expected: RESOLVE_AS_STEP("Chop onions and tomatoes")  # P-429 ruling: marker stripped, real step extracted — better than the model's IGNORED
+
+--- TEST ID: N2-chapter-part ---
+Input: Part 1/3: The Marinade Prep
+Expected: IGNORED
+
+--- TEST ID: N3-inline-timestamp ---
+Input: add 1 cup white rice to boiling water
+Expected: RESOLVE  # the "add 1 cup white rice" verb line: rice resolves + instruction kept as step
+
+--- TEST ID: N4-social-link ---
+Input: Link in bio for full recipe and grocery list
+Expected: IGNORED
+
+--- TEST ID: N5-hashtag-dump ---
+Input: #viral #tiktokfood #southafrica #mzansifood
+Expected: IGNORED
+
+--- TEST ID: O1-nested-fraction-1 ---
+Input: half of a third of a cup maize meal
+Expected: REVIEW_QUEUE(vague_quantity)
+
+--- TEST ID: O2-nested-fraction-2 ---
+Input: ¾ of half cup white sugar
+Expected: REVIEW_QUEUE(vague_quantity)
+
+--- TEST ID: O3-dozen-units ---
+Input: two and a half dozen eggs
+Expected: REVIEW_QUEUE(vague_quantity)
+
+--- TEST ID: O4-pinch-nested ---
+Input: a pinch of a pinch of salt
+Expected: REVIEW_QUEUE(vague_quantity)
+
+--- TEST ID: O5-standard-fraction ---
+Input: 1.5 cups white rice
+Expected: RESOLVE
+
+--- TEST ID: P1-golden-braai ---
+Input:
+HEIT MK! Ultimate Friday night braai setup 🔥
+Servings: 6
+Time: 45 mins
+Ingredients:
+
+* 1 kg braaiboordjie wors
+* 2 onions sliced
+* 1 packet Mrs Balls chutney
+* 4 vetkoek
+Steps:
+
+1. Fire up the braai coals until medium heat.
+2. Grill wors until golden brown.
+3. Serve warm inside vetkoek with chutney.
+Expected: GOLDEN (normalized below in p429 audit)
+
+--- TEST ID: P2-golden-kota ---
+Input:
+Spaza shop style weekend kota! 🍞
+Servings: 2
+Time: 20 mins
+Ingredients:
+
+* 1 loaf white bread hollowed out
+* 4 polony slices thick cut
+* 4 vienna sausages fried
+* 1 can Koo baked beans
+Steps:
+
+1. Hollow out the bread loaf.
+2. Fry polony and viennas.
+3. Layer baked beans and fried meats inside the bread.
+Expected: GOLDEN (normalized below in p429 audit)
+
+--- TEST ID: P3-golden-student-meal ---
+Input:
+End of month student survival bowl 🍛
+Servings: 1
+Time: 15 mins
+Ingredients:
+
+* 1 cup white rice
+* 1 packet soya mince
+* 2 tbsp atchar
+Steps:
+
+1. Boil rice until tender.
+2. Rehydrate and simmer soya mince.
+3. Combine rice and soya mince, top with atchar.
+Expected: GOLDEN (normalized below in p429 audit)
+
+--- TEST ID: P4-golden-plan-dump ---
+Input:
+7-Day Family Meal Prep Dump 📅
+Servings: 4
+Time: 60 mins
+Ingredients:
+
+* 2 kg maize meal
+* 1 kg samp
+* 2 cans chakalaka
+Steps:
+
+1. Cook samp in a large pot until soft.
+2. Prepare stiff pap using maize meal.
+3. Serve with warm chakalaka.
+Expected: GOLDEN (normalized below in p429 audit)
+
+--- TEST ID: P5-golden-granny-pap ---
+Input:
+Gogo's Traditional Sunday Pap & Morogo 🍲
+Servings: 6
+Time: 40 mins
+Ingredients:
+
+* 3 cups White Star maize meal
+* 500g morogo spinach
+* 2 russians sliced
+Steps:
+
+1. Bring water to a boil, stir in maize meal to make smooth pap.
+2. Steam morogo greens until tender.
+3. Slice and fry russians to serve alongside.
+Expected: GOLDEN (normalized below in p429 audit)
+
+--- TEST ID: P6-golden-keto-post ---
+Input:
+Low Carb Weekend Keto Bowl 🥑
+Servings: 2
+Time: 25 mins
+Ingredients:
+
+* 4 eggs large
+* 200g vienna sausages
+Steps:
+
+1. Fry eggs sunny side up.
+2. Heat vienna sausages in a pan until charred.
+3. Plate together and enjoy.
+Expected: GOLDEN (normalized below in p429 audit)
+
+--- TEST ID: P7-golden-dessert ---
+Input:
+Sweet Morning Jungle Oats Porridge 🥣
+Servings: 2
+Time: 10 mins
+Ingredients:
+
+* 1 cup Jungle Oats
+* 2 cups amasi
+Steps:
+
+1. Boil oats with water or milk until thick.
+2. Stir in amasi for a traditional tangy twist.
+3. Serve hot.
+Expected: GOLDEN (normalized below in p429 audit)
+
+--- TEST ID: P8-golden-r50-challenge ---
+Input:
+Viral R50 Supermarket Challenge Meal 🛒
+Servings: 4
+Time: 30 mins
+Ingredients:
+
+* 500g Iwisa maize meal
+* 1 can Koo baked beans
+* 1 onion diced
+Steps:
+
+1. Cook Iwisa maize meal into soft porridge or pap.
+2. Sauté onion until translucent, add baked beans and simmer.
+3. Combine and serve hearty portions for under R50.
+Expected: GOLDEN (normalized below in p429 audit)
+
+--- GOLDEN P1: braai (P-429 engine-truth, normalized from Gemini findings) ---
+Expected draft: title="Ultimate Friday night braai setup" servings=6 timeMinutes=45
+  ingredients: boerewors/1kg, onions/2unit, fruit-chutney/1packet, vetkoek/4unit
+  steps: 3 | reviewRequired: false
+
+--- GOLDEN P2: kota ---
+Expected draft: title="Spaza shop style weekend kota" servings=2 timeMinutes=20
+  ingredients: white-bread/1loaf, polony/4unit, vienna-sausages/4unit, baked-beans/1can
+  steps: 3 | reviewRequired: false
+
+--- GOLDEN P3: student meal ---
+Expected draft: title="End of month student survival bowl" servings=1 timeMinutes=15
+  ingredients: white-rice/1cup, soya-mince/1packet, atchar/2tbsp
+  steps: 3 | reviewRequired: false
+
+--- GOLDEN P4: plan dump ---
+Expected draft: title="7-Day Family Meal Prep Dump" servings=4 timeMinutes=60
+  ingredients: maize-meal/2kg, samp/1kg, chakalaka/2can
+  steps: 3 | reviewRequired: false
+
+--- GOLDEN P5: granny pap ---
+Expected draft: title="Gogo's Traditional Sunday Pap & Morogo" servings=6 timeMinutes=40
+  ingredients: maize-meal/3cup, spinach/500g, russian-sausages/2unit
+  steps: 3 | reviewRequired: false
+
+--- GOLDEN P6: keto ---
+Expected draft: title="Low Carb Weekend Keto Bowl" servings=2 timeMinutes=25
+  ingredients: eggs/4egg, vienna-sausages/200g
+  steps: 3 | reviewRequired: false
+
+--- GOLDEN P7: dessert ---
+Expected draft: title="Sweet Morning Jungle Oats Porridge" servings=2 timeMinutes=10
+  ingredients: rolled-oats/1cup, amasi/2cup
+  steps: 3 | reviewRequired: false
+
+--- GOLDEN P8: R50 challenge ---
+Expected draft: title="Viral R50 Supermarket Challenge Meal" servings=4 timeMinutes=30
+  ingredients: maize-meal/500g, baked-beans/1can, onions/1unit
+  steps: 3 | reviewRequired: false
+
+--- TEST ID: TP1-serves-family ---
+Input: Feeds 6
+Ingredients:
+1 cup white rice
+Expected: RESOLVE servings=6
+
+--- TEST ID: TP2-serving-size ---
+Input: Serving size: 4
+Ingredients:
+1 cup white rice
+Expected: RESOLVE servings=4
+
+--- TEST ID: TP3-reversed-servings ---
+Input: 6 servings
+Ingredients:
+1 cup white rice
+Expected: RESOLVE servings=6
+
+--- TEST ID: TP4-total-time ---
+Input: Total time: 45 mins
+Ingredients:
+1 cup white rice
+Expected: RESOLVE timeMinutes=45
+
+--- TEST ID: TP5-prep-cook-sum ---
+Input: Prep time: 10 mins
+Cook time: 25 mins
+Ingredients:
+1 cup white rice
+Expected: RESOLVE timeMinutes=35
+
+--- TEST ID: TP6-duration-hours ---
+Input: Duration: 1 hour
+Ingredients:
+1 cup white rice
+Expected: RESOLVE timeMinutes=60
+
+--- TEST ID: TP7-digit-guard-holds ---
+Input: 2 eggs
+Ingredients:
+1 cup white rice
+Expected: RESOLVE servings=null
+
+--- TEST ID: SQ1-oven-c-inline ---
+Input: Bake at 180°C for 20 mins.
+Expected: steps: ["Bake at 180°C for 20 mins."], ovenTempC: 180, review: []
+
+--- TEST ID: SQ2-oven-f-convert ---
+Input: Roast in a 350°F oven for 1 hour.
+Expected: steps: ["Roast in a 350°F oven for 1 hour."], ovenTempC: 175, review: []
+
+--- TEST ID: SQ3-oven-gas-mark ---
+Input: Bake on gas mark 6 for 25 minutes.
+Expected: steps: ["Bake on gas mark 6 for 25 minutes."], ovenTempC: 200, review: []
+
+--- TEST ID: SQ4-oven-fan ---
+Input: Bake at 180°C fan for 20 mins.
+Expected: steps: ["Bake at 180°C fan for 20 mins."], ovenTempC: 160, review: []
+
+--- TEST ID: SQ5-oven-none-no-guess ---
+Input: Bake in a preheated oven until golden.
+Expected: steps: ["Bake in a preheated oven until golden."], ovenTempC: null, review: []
+
+--- TEST ID: SQ6-serve-pure ---
+Input: Serve with pap and chutney.
+Expected: steps: [], serveWith: [maize-meal, fruit-chutney], review: []
+
+--- TEST ID: SQ7-serve-after-action ---
+Input: Grill the wors, then serve with chakalaka.
+Expected: steps: ["Grill the wors, then serve with chakalaka."], serveWith: [chakalaka], review: []
+
+--- TEST ID: SQ8-serve-enjoy ---
+Input: Enjoy with amasi.
+Expected: steps: [], serveWith: [amasi], review: []
+
+--- TEST ID: SQ9-dedupe-identical ---
+Input:
+Add the onions and fry until golden.
+Stir in the tomatoes and simmer for 10 mins.
+Add the onions and fry until golden.
+Expected: steps: ["Add the onions and fry until golden.","Stir in the tomatoes and simmer for 10 mins."], review: []
+
+--- TEST ID: SQ10-dedupe-short-preserved ---
+Input:
+Season.
+Add the mince and brown.
+Season.
+Expected: steps: ["Season.","Add the mince and brown.","Season."], review: []
+
+--- TEST ID: SQ11-trim-filler-and-promo ---
+Input: Okay so now, add the onions and fry until golden. Follow for more!
+Expected: steps: ["Add the onions and fry until golden."], review: []
+
+--- TEST ID: SQ12-marketing-gate ---
+Input:
+You won't believe how good this is!!
+Mix the flour and water into a dough.
+Expected: steps: ["Mix the flour and water into a dough."], ignored: ["You won't believe how good this is!!"], review: []

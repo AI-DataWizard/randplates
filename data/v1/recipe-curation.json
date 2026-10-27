@@ -1,0 +1,1757 @@
+[
+  {
+    "n": 1,
+    "title": "Pap and eggs",
+    "why": "Cheapest hot breakfast/supper; maize meal + eggs stretch far",
+    "sketch": "Maize meal, eggs, onion/tomato, oil",
+    "url": "https://iol.co.za/lifestyle/food-drink/2026-08-28-r50-or-less--simple-meals-that-wont-break-your-budget/",
+    "flag": "",
+    "wave": 1,
+    "lbl": "W1-01"
+  },
+  {
+    "n": 3,
+    "title": "Oats and banana pancakes",
+    "why": "Student-friendly, no exotic ingredients, very cheap per serving",
+    "sketch": "Oats, banana, egg, milk, cinnamon",
+    "url": "https://www.ufs.ac.za/docs/librariesprovider31/food-environment/eat-succeed-recipe-booklet-.pdf",
+    "flag": "",
+    "wave": 1,
+    "lbl": "W1-03"
+  },
+  {
+    "n": 4,
+    "title": "Peanut Butter & Jam Oats",
+    "why": "5-minute breakfast; pantry staples only",
+    "sketch": "Oats, peanut butter, jam, milk/water",
+    "url": "https://hr.uct.ac.za/sites/default/files/image_tool/images/163/Meals%20On%20A%20Budget%20INTERFACE%20CookBook.pdf",
+    "flag": "",
+    "wave": 1,
+    "lbl": "W1-04"
+  },
+  {
+    "n": 5,
+    "title": "Cinnamon Porridge",
+    "why": "Simplest hot breakfast; maize meal or oats + cinnamon + sugar",
+    "sketch": "Maize meal/oats, cinnamon, sugar, milk",
+    "url": "https://hr.uct.ac.za/sites/default/files/image_tool/images/163/Meals%20On%20A%20Budget%20INTERFACE%20CookBook.pdf",
+    "flag": "",
+    "wave": 1,
+    "lbl": "W1-05"
+  },
+  {
+    "n": 6,
+    "title": "Breakfast Mashed Potato Crumpets",
+    "why": "Uses leftover potatoes; serves 6 under R100",
+    "sketch": "Potatoes, flour, egg, oil",
+    "url": "https://essentialflavours.co.za/eggs-the-affordable-hero-for-every-meal/",
+    "flag": "",
+    "wave": 1,
+    "lbl": "W1-06"
+  },
+  {
+    "n": 7,
+    "title": "Eggy Bun Bowls",
+    "why": "10-min breakfast; bread + egg + cheese",
+    "sketch": "Bread rolls, eggs, cheese, butter",
+    "url": "https://essentialflavours.co.za/eggs-the-affordable-hero-for-every-meal/",
+    "flag": "",
+    "wave": 1,
+    "lbl": "W1-07"
+  },
+  {
+    "n": 8,
+    "title": "Scrambled eggs in a microwave",
+    "why": "Res-kitchen friendly (kettle/microwave); zero equipment needed",
+    "sketch": "Eggs, milk, butter, salt",
+    "url": "https://www.ufs.ac.za/docs/librariesprovider31/food-environment/eat-succeed-recipe-booklet-.pdf",
+    "flag": "",
+    "wave": 1,
+    "lbl": "W1-08"
+  },
+  {
+    "n": 9,
+    "title": "Hashbrown and Egg Cups",
+    "why": "Under 20 min, serves 4 under R100; breakfast or lunch",
+    "sketch": "Potatoes, eggs, cheddar, chives",
+    "url": "https://www.foodandhome.co.za/recipes/beat-the-budget-with-eggs-the-affordable-anytime-staple",
+    "flag": "",
+    "wave": 1,
+    "lbl": "W1-09"
+  },
+  {
+    "n": 10,
+    "title": "Tomato and cheese fold-over omelette wrap",
+    "why": "Under R40, one serving; quick student meal",
+    "sketch": "Eggs, tomato, cheese, tortilla",
+    "url": "https://www.citizen.co.za/lifestyle/food/recipes/tomato-cheese-fold-over-omelette-wrap/",
+    "flag": "",
+    "wave": 1,
+    "lbl": "W1-10"
+  },
+  {
+    "n": 11,
+    "title": "Tomato and onion sandwiches",
+    "why": "No-cook lunch; bread + tomato + onion + seasoning",
+    "sketch": "Bread, tomatoes, onion, seasoning",
+    "url": "https://iol.co.za/lifestyle/food-drink/2026-08-28-r50-or-less--simple-meals-that-wont-break-your-budget/",
+    "flag": "",
+    "wave": 1,
+    "lbl": "W1-11"
+  },
+  {
+    "n": 12,
+    "title": "Two-minute noodle upgrade",
+    "why": "Student classic; noodles + egg + cabbage = full meal",
+    "sketch": "Instant noodles, egg, cabbage, onion",
+    "url": "https://iol.co.za/lifestyle/food-drink/2026-08-28-r50-or-less--simple-meals-that-wont-break-your-budget/",
+    "flag": "",
+    "wave": 1,
+    "lbl": "W1-12"
+  },
+  {
+    "n": 14,
+    "title": "Pilchards Burrito",
+    "why": "UJ student recipe; 20 min prep, 10 min cook",
+    "sketch": "Pilchards, tortilla, root veg, rocket",
+    "url": "https://www.uj.ac.za/wp-content/uploads/2021/11/recipe-booklet_v4.pdf",
+    "flag": "",
+    "wave": 1,
+    "lbl": "W1-14"
+  },
+  {
+    "n": 15,
+    "title": "Kota (quarter loaf)",
+    "why": "SA street food classic; bread + chips + atchar + egg/cheese",
+    "sketch": "White bread, potatoes, atchar, egg, cheese, chakalaka",
+    "url": "https://www.citizen.co.za/lifestyle/food/recipes/recipe-of-the-day-kota/",
+    "flag": "",
+    "wave": 1,
+    "lbl": "W1-15"
+  },
+  {
+    "n": 16,
+    "title": "Steak Kota",
+    "why": "Upgraded kota with steak; taste.co.za version",
+    "sketch": "Bread, steak, chips, atchar, cheese",
+    "url": "https://taste.co.za/recipes/steak-kota/",
+    "flag": "",
+    "wave": 1,
+    "lbl": "W1-16"
+  },
+  {
+    "n": 17,
+    "title": "Vegetarian kota (scambane)",
+    "why": "UFS recipe; meat-free kota with veg curry",
+    "sketch": "Bread, vegetable curry, chakalaka, chips",
+    "url": "https://www.ufs.ac.za/docs/librariesprovider31/food-environment/eat-succeed-recipe-booklet-.pdf",
+    "flag": "",
+    "wave": 1,
+    "lbl": "W1-17"
+  },
+  {
+    "n": 19,
+    "title": "Savory Mince On Toast",
+    "why": "Quick mince on toast; student-friendly",
+    "sketch": "Mince, onion, tomato, bread, curry powder",
+    "url": "https://eatsandsleeps.com/savory-mince-on-toast-recipe-za-style/",
+    "flag": "",
+    "wave": 1,
+    "lbl": "W1-19"
+  },
+  {
+    "n": 20,
+    "title": "BLT Egg Sliders",
+    "why": "Under R100, serves 4; breakfast or lunch",
+    "sketch": "Bread rolls, eggs, bacon, lettuce, tomato, mayo",
+    "url": "https://www.sapoultry.co.za/recipes/blt-egg-sliders/",
+    "flag": "",
+    "wave": 1,
+    "lbl": "W1-20"
+  },
+  {
+    "n": 21,
+    "title": "Pap and Wors Bake",
+    "why": "Classic SA braai plate in one dish; feeds a family",
+    "sketch": "Maize meal, boerewors, tomato/onion relish, cheese sauce",
+    "url": "https://www.spursauces.co.za/recipes/pap-and-wors-bake/",
+    "flag": "",
+    "wave": 1,
+    "lbl": "W1-21"
+  },
+  {
+    "n": 22,
+    "title": "Pap with chakalaka and wors",
+    "why": "Heritage Day staple; Woolworths version",
+    "sketch": "Maize meal, boerewors, chakalaka",
+    "url": "https://www.woolworths.co.za/recipes/pap-chakalaka-wors",
+    "flag": "",
+    "wave": 1,
+    "lbl": "W1-22"
+  },
+  {
+    "n": 23,
+    "title": "Phutu pap with wors & relish",
+    "why": "Crumbly pap + wors + tomato relish; very SA",
+    "sketch": "Maize meal, boerewors, tomato, onion",
+    "url": "https://mykitchen.co.za/phutu-pap-with-wors-relish/",
+    "flag": "",
+    "wave": 1,
+    "lbl": "W1-23"
+  },
+  {
+    "n": 24,
+    "title": "Umngqusho wezambane (samp with potatoes)",
+    "why": "Traditional Nguni dish; samp + beans + potatoes",
+    "sketch": "Samp, sugar beans, potatoes, stock",
+    "url": "https://taste.co.za/recipes/umngqusho-wezambane-samp-with-potatoes/",
+    "flag": "",
+    "wave": 1,
+    "lbl": "W1-24"
+  },
+  {
+    "n": 25,
+    "title": "White samp (umngqusho omhlophe)",
+    "why": "Simplest umngqusho; samp + butter + salt",
+    "sketch": "Samp, butter, salt",
+    "url": "https://taste.co.za/recipes/white-samp-umngqusho-omhlophe/",
+    "flag": "",
+    "wave": 1,
+    "lbl": "W1-25"
+  },
+  {
+    "n": 26,
+    "title": "Samp and Beans with Spinach and Bacon",
+    "why": "SPAR recipe; samp + beans + spinach + bacon",
+    "sketch": "Samp and beans, spinach, bacon, onion",
+    "url": "https://www.spar.co.za/recipes/samp-and-beans-with-spinach-and-bacon-umngqusho",
+    "flag": "",
+    "wave": 1,
+    "lbl": "W1-26"
+  },
+  {
+    "n": 27,
+    "title": "Classic chakalaka",
+    "why": "Taste.co.za version; the SA mother sauce",
+    "sketch": "Onion, peppers, carrots, curry powder, baked beans, tomato",
+    "url": "https://taste.co.za/recipes/classic-chakalaka/",
+    "flag": "",
+    "wave": 1,
+    "lbl": "W1-27"
+  },
+  {
+    "n": 29,
+    "title": "Green bean bredie",
+    "why": "Traditional Cape bredie; mutton + green beans + potato",
+    "sketch": "Mutton, green beans, onions, potato, spices",
+    "url": "https://taste.co.za/recipes/green-bean-bredie-groenboontjiebredie/",
+    "flag": "",
+    "wave": 1,
+    "lbl": "W1-29"
+  },
+  {
+    "n": 30,
+    "title": "Tomato Bredie and Dumplings",
+    "why": "Cape Malay heritage; lamb + tomato + dumplings",
+    "sketch": "Lamb, tomatoes, onion, potato, dumpling dough",
+    "url": "https://www.instantpot.co.za/recipes/tomato-bredie-and-dumplings/",
+    "flag": "",
+    "wave": 1,
+    "lbl": "W1-30"
+  },
+  {
+    "n": 31,
+    "title": "Vegetable Curry (SPAR)",
+    "why": "Budget veg curry; serves 4\u20136",
+    "sketch": "Onion, mixed vegetables, curry powder, turmeric",
+    "url": "https://www.spar.co.za/recipes/vegetable-curry",
+    "flag": "",
+    "wave": 1,
+    "lbl": "W1-31"
+  },
+  {
+    "n": 32,
+    "title": "Durban Vegetable Curry",
+    "why": "Durban-style masala veg curry; Indian SA classic",
+    "sketch": "Mixed vegetables, Durban masala, cinnamon, bay",
+    "url": "https://www.fabulousfusionfood.com/durban-vegetable-curry/",
+    "flag": "",
+    "wave": 1,
+    "lbl": "W1-32"
+  },
+  {
+    "n": 34,
+    "title": "Homemade Fish Cakes (Pilchard Frikkadels)",
+    "why": "Tinned pilchards + breadcrumbs + egg; very cheap",
+    "sketch": "Pilchards, breadcrumbs, egg, onion, spices",
+    "url": "https://nutritionbykirby.co.za/homemade-fish-cakes-south-african-pilchard-frikkadels/",
+    "flag": "",
+    "wave": 1,
+    "lbl": "W1-34"
+  },
+  {
+    "n": 35,
+    "title": "Gran's Famous Fish Cakes",
+    "why": "Hake + potato + chilli; family-sized",
+    "sketch": "Hake, potatoes, onions, chillies, coriander, egg, breadcrumbs",
+    "url": "https://www.iolnews.co.za/grans-famous-fish-cakes/",
+    "flag": "",
+    "wave": 1,
+    "lbl": "W1-35"
+  },
+  {
+    "n": 36,
+    "title": "Pan-fried Vetkoek and Curried Mince",
+    "why": "SA classic; vetkoek + curried mince, feeds 4\u20136",
+    "sketch": "Flour, yeast, mince, onion, carrot, curry powder",
+    "url": "https://www.amcsa.co.za/pan-fried-vetkoek-and-curried-mince/",
+    "flag": "",
+    "wave": 1,
+    "lbl": "W1-36"
+  },
+  {
+    "n": 37,
+    "title": "Sweet potato and mince bake topped with egg",
+    "why": "Budget mince bake; serves a family",
+    "sketch": "Sweet potato, mince, onion, tomato, egg",
+    "url": "https://www.citizen.co.za/lifestyle/food/recipes/sweet-potato-and-mince-bake-topped-with-egg/",
+    "flag": "",
+    "wave": 1,
+    "lbl": "W1-37"
+  },
+  {
+    "n": 38,
+    "title": "Hot spicy mince with magwinya",
+    "why": "Mince + magwinya (fat cakes); student classic",
+    "sketch": "Mince, onion, spices, flour, yeast",
+    "url": "https://taste.co.za/recipes/hot-spicy-mince-with-magwinya/",
+    "flag": "",
+    "wave": 1,
+    "lbl": "W1-38"
+  },
+  {
+    "n": 39,
+    "title": "Ouma Onder die Kombers (Granny under the Covers)",
+    "why": "Cabbage rolls with spiced mince; very SA",
+    "sketch": "Cabbage, mince, bread, onion, tomato sauce",
+    "url": "https://crushmag-online.com/ouma-onder-die-kombers-granny-under-the-covers/",
+    "flag": "",
+    "wave": 1,
+    "lbl": "W1-39"
+  },
+  {
+    "n": 40,
+    "title": "Sardine pasta (Taste.co.za)",
+    "why": "Tinned sardines + pasta + tomato; 20 min meal",
+    "sketch": "Spaghetti, sardines, garlic, chilli, tomato",
+    "url": "https://taste.co.za/recipes/sardine-pasta/",
+    "flag": "",
+    "wave": 1,
+    "lbl": "W1-40"
+  },
+  {
+    "n": 41,
+    "title": "Peri-Peri Sardine Alfredo pasta",
+    "why": "Lucky Star recipe; creamy sardine pasta",
+    "sketch": "Pasta, sardines, cream, parmesan, peri-peri",
+    "url": "https://luckystar.co.za/recipes/peri-peri-sardine-alfredo-pasta/",
+    "flag": "",
+    "wave": 1,
+    "lbl": "W1-41"
+  },
+  {
+    "n": 42,
+    "title": "Pilchard stew (Chef Funi)",
+    "why": "Tinned pilchards + veg; budget protein staple",
+    "sketch": "Pilchards, onion, carrot, tomato, curry powder",
+    "url": "https://www.foodformzansi.co.za/recipe-chef-funis-pilchard-stew-a-tito-approved-delight/",
+    "flag": "",
+    "wave": 1,
+    "lbl": "W1-42"
+  },
+  {
+    "n": 44,
+    "title": "Smoky Pilchard Stew with Steamed Spinach Dombolo",
+    "why": "Pilchards + dombolo (dumpling); one-pot",
+    "sketch": "Pilchards, tomato, spinach, flour, yeast",
+    "url": "https://saldanha.co.za/smoky-pilchard-stew-with-steamed-spinach-dombolo/",
+    "flag": "",
+    "wave": 1,
+    "lbl": "W1-44"
+  },
+  {
+    "n": 45,
+    "title": "Boontjiesop (Bean Soup)",
+    "why": "Traditional SA bean soup; meal in itself",
+    "sketch": "Borlotti beans, kidney beans, gravy beef, onion",
+    "url": "https://www.abc.net.au/boontjiesop-bean-soup-with-herb-and-beer-bread/",
+    "flag": "",
+    "wave": 1,
+    "lbl": "W1-45"
+  },
+  {
+    "n": 46,
+    "title": "Samp and beans (Food & Home)",
+    "why": "Hearty samp + beans; feeds a family",
+    "sketch": "Samp, sugar beans, stock, onion",
+    "url": "https://www.foodandhome.co.za/recipes/samp-and-beans/",
+    "flag": "",
+    "wave": 1,
+    "lbl": "W1-46"
+  },
+  {
+    "n": 49,
+    "title": "Cape Malay lentil curry",
+    "why": "Cape Malay flavours; lentils + cardamom + rice",
+    "sketch": "Brown lentils, cardamom, curry powder, tomato, rice",
+    "url": "https://taste.co.za/recipes/cape-malay-lentil-curry/",
+    "flag": "",
+    "wave": 1,
+    "lbl": "W1-49"
+  },
+  {
+    "n": 50,
+    "title": "Lentil Potato Curry",
+    "why": "Lentils + potatoes + curry; very filling",
+    "sketch": "Lentils, potatoes, curry powder, onion, garlic",
+    "url": "https://kailecooks.blogspot.com/2025/08/lentil-potato-curry.html",
+    "flag": "",
+    "wave": 1,
+    "lbl": "W1-50"
+  },
+  {
+    "n": 51,
+    "title": "Sugar bean stew with pap",
+    "why": "Backbone of budget SA cooking; cheapest hot meal",
+    "sketch": "Sugar beans, maize meal, onion, tomato",
+    "url": "https://eatingplantbasedza.com/cheap-plant-based-meals-south-africa/",
+    "flag": "",
+    "wave": 1,
+    "lbl": "W1-51"
+  },
+  {
+    "n": 52,
+    "title": "Baked bean shepherd's pie",
+    "why": "UFS recipe; baked beans + mashed potato topping",
+    "sketch": "Baked beans, potatoes, onion, tomato",
+    "url": "https://www.ufs.ac.za/docs/librariesprovider31/food-environment/eat-succeed-recipe-booklet-.pdf",
+    "flag": "",
+    "wave": 1,
+    "lbl": "W1-52"
+  },
+  {
+    "n": 53,
+    "title": "Curry bean stew",
+    "why": "UFS recipe; dried beans + curry + veg",
+    "sketch": "Dried beans, curry powder, onion, carrot",
+    "url": "https://www.ufs.ac.za/docs/librariesprovider31/food-environment/eat-succeed-recipe-booklet-.pdf",
+    "flag": "",
+    "wave": 1,
+    "lbl": "W1-53"
+  },
+  {
+    "n": 54,
+    "title": "Monk Soup",
+    "why": "PAN SA recipe; red lentils + cabbage + carrot, very cheap",
+    "sketch": "Red lentils, cabbage, carrot, leek/onion",
+    "url": "https://www.pan-sa.org/recipes-1/monksoup-7n7z8-zyrcy-jbyh4",
+    "flag": "",
+    "wave": 1,
+    "lbl": "W1-54"
+  },
+  {
+    "n": 55,
+    "title": "Split pea soup",
+    "why": "Under R100; split peas + potato + carrot",
+    "sketch": "Split peas, onion, carrot, potato, beef cube",
+    "url": "https://iol.co.za/lifestyle/food-drink/2025-07-07-chilly-nights-warm-bites-enjoy-hearty-winter-meals-for-just-r150-or-less/",
+    "flag": "",
+    "wave": 1,
+    "lbl": "W1-55"
+  },
+  {
+    "n": 56,
+    "title": "Every-grain vegetable stew",
+    "why": "Taste.co.za; butternut + grains + tomato",
+    "sketch": "Butternut, grains, onion, garlic, tomato paste",
+    "url": "https://taste.co.za/recipes/every-grain-vegetable-stew/",
+    "flag": "",
+    "wave": 1,
+    "lbl": "W1-56"
+  },
+  {
+    "n": 57,
+    "title": "Comforting veggie stew",
+    "why": "Rising Sun recipe; lentils + mixed veg + rice",
+    "sketch": "Lentils, mixed vegetables, curry powder, rice",
+    "url": "https://risingsunnewspapers.co.za/comforting-veggie-stew/",
+    "flag": "",
+    "wave": 1,
+    "lbl": "W1-57"
+  },
+  {
+    "n": 58,
+    "title": "Pumpkin, beans and potato stew",
+    "why": "Citizen recipe; seasonal + budget-friendly",
+    "sketch": "Pumpkin, potatoes, beans, onion, garlic, stock",
+    "url": "https://www.citizen.co.za/lifestyle/food/recipes/recipe-of-the-day-pumpkin-beans-and-potato-stew/",
+    "flag": "",
+    "wave": 1,
+    "lbl": "W1-58"
+  },
+  {
+    "n": 59,
+    "title": "Potato and chickpea curry",
+    "why": "IOL Januworry recipe; potato + chickpea + curry",
+    "sketch": "Potatoes, chickpeas, onion, curry powder, tomato",
+    "url": "https://iol.co.za/lifestyle/food-drink/2026-01-09-survive-januworry-with-these-three-budget-friendly-potato-recipes/",
+    "flag": "",
+    "wave": 1,
+    "lbl": "W1-59"
+  },
+  {
+    "n": 60,
+    "title": "No Fuss Four Bean Soup",
+    "why": "Essential Flavours recipe; tinned beans + veg, very quick",
+    "sketch": "Four-bean mix, black beans, onion, peppers, curry powder",
+    "url": "https://essentialflavours.co.za/no-fuss-four-bean-soup/",
+    "flag": "",
+    "wave": 1,
+    "lbl": "W1-60"
+  },
+  {
+    "n": 1,
+    "title": "Mac and cheese",
+    "why": "Cheapest crowd-feeder in the book; serves 4-6, 30-60 min",
+    "sketch": "macaroni, cheddar-cheese, fresh-milk, butter, bread-flour, margarine, black-pepper, table-salt",
+    "flag": "",
+    "wave": 2,
+    "lbl": "W2-01"
+  },
+  {
+    "n": 2,
+    "title": "Creamy tuna pasta bake",
+    "why": "Tinned fish + pantry pasta, no fresh meat; serves 4, 30-60 min",
+    "sketch": "penne, tinned-tuna, sweetcorn, cheddar-cheese, fresh-milk, butter, bread-flour, mixed-herbs",
+    "flag": "",
+    "wave": 2,
+    "lbl": "W2-02"
+  },
+  {
+    "n": 3,
+    "title": "Mince and macaroni bake",
+    "why": "SA weeknight classic, stretches mince across 6; 30-60 min",
+    "sketch": "beef-mince, macaroni, onions, tomato-paste, tomatoes, cheddar-cheese, mixed-herbs, stock-cubes",
+    "flag": "",
+    "wave": 2,
+    "lbl": "W2-03"
+  },
+  {
+    "n": 4,
+    "title": "Cheesy mixed-veg pasta bake",
+    "why": "Uses frozen veg, no chopping; serves 4, 30-60 min",
+    "sketch": "penne, frozen-mixed-vegetables, cream-cheese, cheddar-cheese, garlic, fresh-milk, mixed-herbs",
+    "flag": "",
+    "wave": 2,
+    "lbl": "W2-04"
+  },
+  {
+    "n": 5,
+    "title": "Spaghetti bolognese",
+    "why": "Mince + grated carrot stretches far; serves 4-6, 30-60 min",
+    "sketch": "beef-mince, spaghetti, onions, carrots, tomato-paste, tomato-sauce, mixed-herbs, stock-cubes",
+    "flag": "",
+    "wave": 2,
+    "lbl": "W2-05"
+  },
+  {
+    "n": 6,
+    "title": "Chicken and veg stir fry",
+    "why": "Fastest way to use chicken breasts + frozen veg; serves 4, <=30 min",
+    "sketch": "chicken-breasts, frozen-mixed-vegetables, soy-sauce, garlic, ginger, cooking-oil, white-rice",
+    "flag": "needs-ingredient",
+    "wave": 2,
+    "lbl": "W2-06"
+  },
+  {
+    "n": 7,
+    "title": "Beef and cabbage stir fry",
+    "why": "Cabbage is the cheapest bulk veg; serves 4, <=30 min",
+    "sketch": "beef-mince, cabbage, carrots, onions, soy-sauce, cooking-oil, white-rice",
+    "flag": "",
+    "wave": 2,
+    "lbl": "W2-07"
+  },
+  {
+    "n": 8,
+    "title": "Bacon and egg fried rice",
+    "why": "Leftover rice + 2 eggs + a little bacon; serves 4, <=30 min",
+    "sketch": "white-rice, bacon, eggs, frozen-peas, carrots, spring-onions, soy-sauce",
+    "flag": "",
+    "wave": 2,
+    "lbl": "W2-08"
+  },
+  {
+    "n": 10,
+    "title": "Chicken noodle stir fry",
+    "why": "Egg noodles bulk out chicken thighs; serves 4, <=30 min",
+    "sketch": "egg-noodles, chicken-thighs, cabbage, carrots, soy-sauce, sesame-oil, garlic",
+    "flag": "",
+    "wave": 2,
+    "lbl": "W2-10"
+  },
+  {
+    "n": 11,
+    "title": "Russian sausage and cabbage noodles",
+    "why": "Russians + noodles, near-zero prep; serves 4, <=30 min",
+    "sketch": "russian-sausages, egg-noodles, cabbage, onions, tomato-sauce, paprika",
+    "flag": "",
+    "wave": 2,
+    "lbl": "W2-11"
+  },
+  {
+    "n": 12,
+    "title": "Chicken mayo wrap",
+    "why": "No cooking beyond the chicken; serves 4, <=30 min",
+    "sketch": "tortillas, chicken-breasts, mayonnaise, lettuce, cucumber, black-pepper",
+    "flag": "",
+    "wave": 2,
+    "lbl": "W2-12"
+  },
+  {
+    "n": 13,
+    "title": "Polony and cheese wrap",
+    "why": "Lunchbox-tier cost, zero heat; serves 4, <=30 min",
+    "sketch": "tortillas, polony, cheddar-cheese, mayonnaise, lettuce, tomato-sauce",
+    "flag": "",
+    "wave": 2,
+    "lbl": "W2-13"
+  },
+  {
+    "n": 14,
+    "title": "Bean and cheese quesadilla",
+    "why": "Tinned beans + tortillas, pan-to-table; serves 4, <=30 min",
+    "sketch": "tortillas, sugar-beans, cheddar-cheese, onions, chilli-powder, ground-cumin, salsa",
+    "flag": "needs-ingredient",
+    "wave": 2,
+    "lbl": "W2-14"
+  },
+  {
+    "n": 15,
+    "title": "Chickpea and coconut curry",
+    "why": "Tinned chickpeas, no meat, big yield; serves 4, 30-60 min",
+    "sketch": "chickpeas, coconut-milk, curry-powder, onions, tomatoes, garlic, ginger, white-rice",
+    "flag": "needs-ingredient",
+    "wave": 2,
+    "lbl": "W2-15"
+  },
+  {
+    "n": 16,
+    "title": "Red lentil dhal",
+    "why": "R10-ish protein base, freezes well; serves 4-6, 30-60 min",
+    "sketch": "dry-red-lentils, onions, curry-powder, turmeric, tomatoes, garlic, white-rice",
+    "flag": "",
+    "wave": 2,
+    "lbl": "W2-16"
+  },
+  {
+    "n": 17,
+    "title": "Chicken and potato curry",
+    "why": "Thighs + potatoes, feeds 6 on one pack; 30-60 min",
+    "sketch": "chicken-thighs, potatoes, curry-powder, onions, tomatoes, garlic, ginger, white-rice",
+    "flag": "needs-ingredient",
+    "wave": 2,
+    "lbl": "W2-17"
+  },
+  {
+    "n": 18,
+    "title": "Pilchard curry",
+    "why": "Tinned pilchards, 20-minute curry; serves 4, <=30 min",
+    "sketch": "pilchards-tomato, onions, curry-powder, potatoes, tomatoes, white-rice",
+    "flag": "",
+    "wave": 2,
+    "lbl": "W2-18"
+  },
+  {
+    "n": 19,
+    "title": "Beef and four bean soup",
+    "why": "Stewing pieces + tinned beans = 6 bowls; 30-60 min",
+    "sketch": "beef-stewing-pieces, four-bean-mix, carrots, potatoes, onions, stock-cubes",
+    "flag": "",
+    "wave": 2,
+    "lbl": "W2-19"
+  },
+  {
+    "n": 20,
+    "title": "Chicken and sweetcorn soup",
+    "why": "Cream-style corn thickens it for free; serves 4-6, 30-60 min",
+    "sketch": "chicken-thighs, sweetcorn, carrots, onions, stock-cubes, macaroni",
+    "flag": "",
+    "wave": 2,
+    "lbl": "W2-20"
+  },
+  {
+    "n": 21,
+    "title": "Creamy butternut soup",
+    "why": "Butternut is cheap in season, bread on the side; serves 4-6, 30-60 min",
+    "sketch": "butternut, onions, stock-cubes, fresh-milk, bread-flour, white-bread",
+    "flag": "",
+    "wave": 2,
+    "lbl": "W2-21"
+  },
+  {
+    "n": 22,
+    "title": "Cottage pie",
+    "why": "The default family tray; serves 6, 30-60 min",
+    "sketch": "beef-mince, potatoes, carrots, frozen-peas, onions, tomato-paste, stock-cubes, margarine, fresh-milk",
+    "flag": "",
+    "wave": 2,
+    "lbl": "W2-22"
+  },
+  {
+    "n": 23,
+    "title": "Soya mince cottage pie",
+    "why": "Same tray, meat-free, ~half the cost; serves 6, 30-60 min",
+    "sketch": "soya-mince, potatoes, frozen-mixed-vegetables, onions, tomato-paste, stock-cubes, margarine",
+    "flag": "",
+    "wave": 2,
+    "lbl": "W2-23"
+  },
+  {
+    "n": 24,
+    "title": "Chicken and veg tray bake",
+    "why": "One pan, thighs + roots, no watching; serves 4-6, 30-60 min",
+    "sketch": "chicken-thighs, potatoes, butternut, carrots, onions, cooking-oil, braai-spice",
+    "flag": "",
+    "wave": 2,
+    "lbl": "W2-24"
+  },
+  {
+    "n": 25,
+    "title": "Sausage and sweet potato tray bake",
+    "why": "Pork sausages stretched by sweet potato; serves 4, 30-60 min",
+    "sketch": "pork-sausages, sweet-potatoes, potatoes, onions, paprika, cooking-oil",
+    "flag": "",
+    "wave": 2,
+    "lbl": "W2-25"
+  },
+  {
+    "n": 26,
+    "title": "Hake and spinach bake",
+    "why": "Frozen hake + frozen spinach, creamy bake; serves 4, 30-60 min",
+    "sketch": "hake-fillets, frozen-chopped-spinach, cream-cheese, cheddar-cheese, garlic, fresh-milk",
+    "flag": "",
+    "wave": 2,
+    "lbl": "W2-26"
+  },
+  {
+    "n": 27,
+    "title": "Tuna and four bean salad",
+    "why": "No cooking at all, tinned everything; serves 4, <=30 min",
+    "sketch": "tinned-tuna, four-bean-mix, onions, cucumber, tomatoes, vinegar, cooking-oil",
+    "flag": "",
+    "wave": 2,
+    "lbl": "W2-27"
+  },
+  {
+    "n": 28,
+    "title": "Chicken mayo meal salad",
+    "why": "Uses Sunday's chicken, bread on the side; serves 4, <=30 min",
+    "sketch": "chicken-breasts, lettuce, cucumber, tomatoes, mayonnaise, white-bread",
+    "flag": "",
+    "wave": 2,
+    "lbl": "W2-28"
+  },
+  {
+    "n": 29,
+    "title": "Tuna and corn fritters",
+    "why": "Tinned tuna + creamed corn, pan-fried; serves 4, <=30 min",
+    "sketch": "tinned-tuna, sweetcorn, eggs, self-raising-flour, spring-onions, cooking-oil",
+    "flag": "",
+    "wave": 2,
+    "lbl": "W2-29"
+  },
+  {
+    "n": 31,
+    "title": "Cheese and veg omelette",
+    "why": "Eggs + odds and ends, 10 minutes; serves 2-4, <=30 min",
+    "sketch": "eggs, cheddar-cheese, green-pepper, mushrooms, onions, butter",
+    "flag": "",
+    "wave": 2,
+    "lbl": "W2-31"
+  },
+  {
+    "n": 32,
+    "title": "Bacon and potato frittata",
+    "why": "Uses up boiled potatoes, eats hot or cold; serves 4, 30-60 min",
+    "sketch": "eggs, potatoes, bacon, cheddar-cheese, onions, frozen-peas",
+    "flag": "",
+    "wave": 2,
+    "lbl": "W2-32"
+  },
+  {
+    "n": 33,
+    "title": "Toasted cheese and tomato",
+    "why": "The payday-eve dinner; serves 2-4, <=30 min",
+    "sketch": "white-bread, cheddar-cheese, tomatoes, margarine",
+    "flag": "",
+    "wave": 2,
+    "lbl": "W2-33"
+  },
+  {
+    "n": 35,
+    "title": "Pancakes with cinnamon sugar",
+    "why": "Cheap supper or weekend breakfast; serves 4-6, <=30 min",
+    "sketch": "cake-flour, eggs, fresh-milk, white-sugar, ground-cinnamon, cooking-oil",
+    "flag": "",
+    "wave": 2,
+    "lbl": "W2-35"
+  },
+  {
+    "n": 36,
+    "title": "Bacon, egg and tomato toast",
+    "why": "Fast cooked breakfast, 3 ingredients; serves 2-4, <=30 min",
+    "sketch": "white-bread, bacon, eggs, tomatoes, margarine",
+    "flag": "",
+    "wave": 2,
+    "lbl": "W2-36"
+  },
+  {
+    "n": 38,
+    "title": "Tennis biscuit fridge tart",
+    "why": "No-bake pudding, feeds a crowd; serves 6-8, 30-60 min incl. chilling",
+    "sketch": "tennis-biscuits, instant-pudding, fresh-cream, fresh-milk, butter",
+    "flag": "",
+    "wave": 2,
+    "lbl": "W2-38"
+  },
+  {
+    "n": 39,
+    "title": "Fish fingers, chips and peas",
+    "why": "Frozen-and-done, kids' default; serves 4, <=30 min",
+    "sketch": "fish-fingers, frozen-chips, frozen-peas, lemons, tomato-sauce",
+    "flag": "",
+    "wave": 2,
+    "lbl": "W2-39"
+  },
+  {
+    "title": "French toast with cinnamon sugar",
+    "why": "Budget egg-and-bread classic, 10 min",
+    "sketch": "eggs, white-bread, fresh-milk, ground-cinnamon, white-sugar, butter, cooking-oil",
+    "meal": "breakfast",
+    "flag": "",
+    "wave": 3,
+    "n": 1,
+    "lbl": "W3-001"
+  },
+  {
+    "title": "Banana French toast",
+    "why": "Uses up ripe bananas, sweet without syrup",
+    "sketch": "eggs, white-bread, bananas, fresh-milk, ground-cinnamon, butter",
+    "meal": "breakfast",
+    "flag": "",
+    "wave": 3,
+    "n": 2,
+    "lbl": "W3-002"
+  },
+  {
+    "title": "Egg and cheese scramble cups",
+    "why": "High-protein, muffin-tin friendly, 20 min",
+    "sketch": "eggs, cheddar-cheese, green-pepper, onions, mushrooms, cooking-oil",
+    "meal": "breakfast",
+    "flag": "",
+    "wave": 3,
+    "n": 3,
+    "lbl": "W3-003"
+  },
+  {
+    "title": "Bacon and egg scramble cups",
+    "why": "Filling grab-and-go cups",
+    "sketch": "eggs, bacon, cheddar-cheese, onions, cooking-oil",
+    "meal": "breakfast",
+    "flag": "",
+    "wave": 3,
+    "n": 4,
+    "lbl": "W3-004"
+  },
+  {
+    "title": "Overnight oats with banana and peanut butter",
+    "why": "No-cook, oats stretched with milk",
+    "sketch": "rolled-oats, fresh-milk, plain-yoghurt, bananas, peanut-butter, honey",
+    "meal": "breakfast",
+    "flag": "",
+    "wave": 3,
+    "n": 5,
+    "lbl": "W3-005"
+  },
+  {
+    "title": "Instant maize porridge with peanut butter and banana",
+    "why": "3-min breakfast, high energy",
+    "sketch": "instant-maize-porridge, peanut-butter, bananas, fresh-milk",
+    "meal": "breakfast",
+    "flag": "",
+    "wave": 3,
+    "n": 10,
+    "lbl": "W3-010"
+  },
+  {
+    "title": "Maltabella porridge with milk and sugar",
+    "why": "Traditional sorghum porridge, cheap",
+    "sketch": "maltabella, fresh-milk, white-sugar, margarine",
+    "meal": "breakfast",
+    "flag": "",
+    "wave": 3,
+    "n": 11,
+    "lbl": "W3-011"
+  },
+  {
+    "title": "Rolled oats with honey and sultanas",
+    "why": "Plain oats, pantry sweetener",
+    "sketch": "rolled-oats, honey, sultanas, fresh-milk",
+    "meal": "breakfast",
+    "flag": "",
+    "wave": 3,
+    "n": 12,
+    "lbl": "W3-012"
+  },
+  {
+    "title": "Banana peanut butter smoothie bowl",
+    "why": "Thick, filling, no specialty milk",
+    "sketch": "bananas, peanut-butter, plain-yoghurt, fresh-milk, honey, rolled-oats",
+    "meal": "breakfast",
+    "flag": "",
+    "wave": 3,
+    "n": 14,
+    "lbl": "W3-014"
+  },
+  {
+    "title": "Amasi breakfast bowl with oats and honey",
+    "why": "Traditional amasi meets oats",
+    "sketch": "amasi, rolled-oats, honey, apples",
+    "meal": "breakfast",
+    "flag": "",
+    "wave": 3,
+    "n": 16,
+    "lbl": "W3-016"
+  },
+  {
+    "title": "Yoghurt bowl with apple and cinnamon",
+    "why": "Cheap fruit bowl",
+    "sketch": "plain-yoghurt, apples, ground-cinnamon, honey",
+    "meal": "breakfast",
+    "flag": "",
+    "wave": 3,
+    "n": 19,
+    "lbl": "W3-019"
+  },
+  {
+    "title": "Breakfast wrap with egg and cheese",
+    "why": "Handheld, uses tortillas",
+    "sketch": "tortillas, eggs, cheddar-cheese, tomatoes, onions",
+    "meal": "breakfast",
+    "flag": "",
+    "wave": 3,
+    "n": 20,
+    "lbl": "W3-020"
+  },
+  {
+    "title": "Egg and tomato tortilla wrap",
+    "why": "10-min roll-up",
+    "sketch": "tortillas, eggs, tomatoes, onions, cooking-oil",
+    "meal": "breakfast",
+    "flag": "",
+    "wave": 3,
+    "n": 21,
+    "lbl": "W3-021"
+  },
+  {
+    "title": "Avocado toast with fried egg",
+    "why": "Trendy but cheap if avos in season",
+    "sketch": "white-bread, avocado, eggs, lemons, black-pepper",
+    "meal": "breakfast",
+    "flag": "",
+    "wave": 3,
+    "n": 22,
+    "lbl": "W3-022"
+  },
+  {
+    "title": "Cinnamon sugar toast",
+    "why": "5-min pantry breakfast",
+    "sketch": "white-bread, margarine, ground-cinnamon, white-sugar",
+    "meal": "breakfast",
+    "flag": "",
+    "wave": 3,
+    "n": 23,
+    "lbl": "W3-023"
+  },
+  {
+    "title": "Peanut butter and banana toast",
+    "why": "Filling, no cooking beyond toasting",
+    "sketch": "white-bread, peanut-butter, bananas, honey",
+    "meal": "breakfast",
+    "flag": "",
+    "wave": 3,
+    "n": 24,
+    "lbl": "W3-024"
+  },
+  {
+    "title": "Baked beans on toast",
+    "why": "Tinned staple, 10 min",
+    "sketch": "baked-beans, white-bread, margarine, black-pepper",
+    "meal": "breakfast",
+    "flag": "",
+    "wave": 3,
+    "n": 26,
+    "lbl": "W3-026"
+  },
+  {
+    "title": "Baked beans with sausage on toast",
+    "why": "Heartier tinned breakfast",
+    "sketch": "baked-beans-with-sausage, white-bread, margarine",
+    "meal": "breakfast",
+    "flag": "",
+    "wave": 3,
+    "n": 27,
+    "lbl": "W3-027"
+  },
+  {
+    "title": "Scrambled eggs with tomato and onion",
+    "why": "Savoury, 10 min",
+    "sketch": "eggs, tomatoes, onions, cooking-oil, black-pepper",
+    "meal": "breakfast",
+    "flag": "",
+    "wave": 3,
+    "n": 28,
+    "lbl": "W3-028"
+  },
+  {
+    "title": "Fried egg and polony sandwich",
+    "why": "Budget deli sandwich",
+    "sketch": "white-bread, eggs, polony, margarine, tomato-sauce",
+    "meal": "breakfast",
+    "flag": "",
+    "wave": 3,
+    "n": 31,
+    "lbl": "W3-031"
+  },
+  {
+    "title": "Rooibos and toast with yeast spread",
+    "why": "Marmite-style classic, 5 min",
+    "sketch": "rooibos, white-bread, margarine, yeast-spread",
+    "meal": "breakfast",
+    "flag": "",
+    "wave": 3,
+    "n": 32,
+    "lbl": "W3-032"
+  },
+  {
+    "title": "Buttermilk flapjacks with cinnamon sugar",
+    "why": "Cheap pancake stack, pantry staples",
+    "sketch": "buttermilk, cake-flour, eggs, baking-powder, white-sugar, cooking-oil",
+    "meal": "breakfast",
+    "flag": "",
+    "wave": 3,
+    "n": 33,
+    "lbl": "W3-033"
+  },
+  {
+    "title": "Corn fritters",
+    "why": "Uses tinned sweetcorn, 20 min",
+    "sketch": "sweetcorn, eggs, cake-flour, baking-powder, cooking-oil",
+    "meal": "breakfast",
+    "flag": "",
+    "wave": 3,
+    "n": 34,
+    "lbl": "W3-034"
+  },
+  {
+    "title": "Pilchards on toast",
+    "why": "Tinned fish breakfast, high protein",
+    "sketch": "pilchards-tomato, white-bread, onions, cooking-oil",
+    "meal": "breakfast",
+    "flag": "",
+    "wave": 3,
+    "n": 35,
+    "lbl": "W3-035"
+  },
+  {
+    "title": "Milk tart",
+    "why": "SA classic, uses pantry staples, 45 min",
+    "sketch": "condensed-milk, fresh-milk, eggs, corn-flour, white-sugar, butter, ground-cinnamon, vanilla-essence, tennis-biscuits",
+    "meal": "dessert",
+    "flag": "",
+    "wave": 3,
+    "n": 37,
+    "lbl": "W3-037"
+  },
+  {
+    "title": "Malva pudding",
+    "why": "Budget baked pudding, uses jam",
+    "sketch": "cake-flour, white-sugar, eggs, apricot-jam, bicarbonate-of-soda, fresh-milk, vinegar, butter, fresh-cream",
+    "meal": "dessert",
+    "flag": "",
+    "wave": 3,
+    "n": 38,
+    "lbl": "W3-038"
+  },
+  {
+    "title": "Banana bread",
+    "why": "Uses overripe bananas, cheap",
+    "sketch": "bananas, cake-flour, white-sugar, eggs, butter, baking-powder, bicarbonate-of-soda, ground-cinnamon",
+    "meal": "dessert",
+    "flag": "",
+    "wave": 3,
+    "n": 39,
+    "lbl": "W3-039"
+  },
+  {
+    "title": "Lemon fridge tart",
+    "why": "Tangy no-bake, cheap lemons",
+    "sketch": "lemons, condensed-milk, tennis-biscuits, fresh-cream, butter",
+    "meal": "dessert",
+    "flag": "",
+    "wave": 3,
+    "n": 41,
+    "lbl": "W3-041"
+  },
+  {
+    "title": "Caramel condensed milk tart",
+    "why": "Boiled condensed milk, no bake",
+    "sketch": "condensed-milk, tennis-biscuits, butter, fresh-cream",
+    "meal": "dessert",
+    "flag": "",
+    "wave": 3,
+    "n": 42,
+    "lbl": "W3-042"
+  },
+  {
+    "title": "Jelly and custard build",
+    "why": "Kids' favourite, 10 min",
+    "sketch": "jelly-powder, custard-powder, fresh-milk, white-sugar",
+    "meal": "dessert",
+    "flag": "",
+    "wave": 3,
+    "n": 43,
+    "lbl": "W3-043"
+  },
+  {
+    "title": "Chocolate mug cake",
+    "why": "5-min single serve",
+    "sketch": "cake-flour, cocoa-powder, white-sugar, baking-powder, fresh-milk, cooking-oil, vanilla-essence",
+    "meal": "dessert",
+    "flag": "",
+    "wave": 3,
+    "n": 44,
+    "lbl": "W3-044"
+  },
+  {
+    "title": "Baked apples with cinnamon and sultanas",
+    "why": "Fruit-based, cheap",
+    "sketch": "apples, white-sugar, ground-cinnamon, butter, sultanas",
+    "meal": "dessert",
+    "flag": "",
+    "wave": 3,
+    "n": 47,
+    "lbl": "W3-047"
+  },
+  {
+    "title": "Baked banana with honey and cinnamon",
+    "why": "15-min warm fruit dessert",
+    "sketch": "bananas, honey, ground-cinnamon, butter",
+    "meal": "dessert",
+    "flag": "",
+    "wave": 3,
+    "n": 48,
+    "lbl": "W3-048"
+  },
+  {
+    "title": "Cinnamon sugar puff pastry twists",
+    "why": "15-min crunchy treat",
+    "sketch": "frozen-puff-pastry, white-sugar, ground-cinnamon, butter",
+    "meal": "dessert",
+    "flag": "",
+    "wave": 3,
+    "n": 49,
+    "lbl": "W3-049"
+  },
+  {
+    "title": "Instant pudding with tennis biscuit crumble",
+    "why": "Upgrades instant pudding",
+    "sketch": "instant-pudding, fresh-milk, tennis-biscuits, butter",
+    "meal": "dessert",
+    "flag": "",
+    "wave": 3,
+    "n": 50,
+    "lbl": "W3-050"
+  },
+  {
+    "title": "Chocolate biscuit pudding",
+    "why": "Layered cream and biscuits",
+    "sketch": "tennis-biscuits, cocoa-powder, fresh-cream, condensed-milk",
+    "meal": "dessert",
+    "flag": "",
+    "wave": 3,
+    "n": 52,
+    "lbl": "W3-052"
+  },
+  {
+    "title": "Rice pudding with cinnamon",
+    "why": "Stretches rice and milk",
+    "sketch": "white-rice, fresh-milk, white-sugar, ground-cinnamon, sultanas",
+    "meal": "dessert",
+    "flag": "",
+    "wave": 3,
+    "n": 53,
+    "lbl": "W3-053"
+  },
+  {
+    "title": "Bread pudding",
+    "why": "Uses stale bread, eggs, milk",
+    "sketch": "white-bread, eggs, fresh-milk, white-sugar, ground-cinnamon, sultanas, butter",
+    "meal": "dessert",
+    "flag": "",
+    "wave": 3,
+    "n": 54,
+    "lbl": "W3-054"
+  },
+  {
+    "title": "Jelly fruit salad",
+    "why": "Light, uses fresh fruit",
+    "sketch": "jelly-powder, apples, bananas, oranges, naartjies",
+    "meal": "dessert",
+    "flag": "",
+    "wave": 3,
+    "n": 55,
+    "lbl": "W3-055"
+  },
+  {
+    "title": "Custard slice",
+    "why": "Puff pastry and custard, 40 min",
+    "sketch": "frozen-puff-pastry, custard-powder, fresh-milk, white-sugar, icing-sugar",
+    "meal": "dessert",
+    "flag": "",
+    "wave": 3,
+    "n": 56,
+    "lbl": "W3-056"
+  },
+  {
+    "title": "Coconut ice",
+    "why": "No-bake, condensed milk and coconut",
+    "sketch": "desiccated-coconut, condensed-milk, icing-sugar",
+    "meal": "dessert",
+    "flag": "",
+    "wave": 3,
+    "n": 57,
+    "lbl": "W3-057"
+  },
+  {
+    "title": "No-bake cheesecake",
+    "why": "Cream cheese set with lemon",
+    "sketch": "cream-cheese, condensed-milk, lemons, tennis-biscuits, butter",
+    "meal": "dessert",
+    "flag": "",
+    "wave": 3,
+    "n": 58,
+    "lbl": "W3-058"
+  },
+  {
+    "title": "Chocolate brownies",
+    "why": "One-bowl bake, cocoa not chocolate",
+    "sketch": "cocoa-powder, cake-flour, eggs, butter, white-sugar, baking-powder",
+    "meal": "dessert",
+    "flag": "",
+    "wave": 3,
+    "n": 59,
+    "lbl": "W3-059"
+  },
+  {
+    "title": "Chocolate chip cookies",
+    "why": "Cheap batch bake",
+    "sketch": "cake-flour, chocolate-chips, butter, white-sugar, eggs, baking-powder",
+    "meal": "dessert",
+    "flag": "",
+    "wave": 3,
+    "n": 60,
+    "lbl": "W3-060"
+  },
+  {
+    "title": "Peanut butter cookies",
+    "why": "3-ingredient style, cheap",
+    "sketch": "peanut-butter, cake-flour, white-sugar, eggs",
+    "meal": "dessert",
+    "flag": "",
+    "wave": 3,
+    "n": 61,
+    "lbl": "W3-061"
+  },
+  {
+    "title": "Oat crunchies",
+    "why": "SA tray bake, oats stretch flour",
+    "sketch": "rolled-oats, cake-flour, white-sugar, butter, bicarbonate-of-soda",
+    "meal": "dessert",
+    "flag": "",
+    "wave": 3,
+    "n": 62,
+    "lbl": "W3-062"
+  },
+  {
+    "title": "Buttermilk rusks",
+    "why": "SA dunking rusk, pantry staples",
+    "sketch": "buttermilk, self-raising-flour, white-sugar, butter, table-salt",
+    "meal": "dessert",
+    "flag": "",
+    "wave": 3,
+    "n": 63,
+    "lbl": "W3-063"
+  },
+  {
+    "title": "Coconut biscuits",
+    "why": "Uses desiccated coconut, 20 min",
+    "sketch": "desiccated-coconut, cake-flour, white-sugar, eggs, butter",
+    "meal": "dessert",
+    "flag": "",
+    "wave": 3,
+    "n": 65,
+    "lbl": "W3-065"
+  },
+  {
+    "title": "Jam tarts",
+    "why": "Party classic, jam and pastry",
+    "sketch": "apricot-jam, cake-flour, butter, white-sugar, eggs",
+    "meal": "dessert",
+    "flag": "",
+    "wave": 3,
+    "n": 66,
+    "lbl": "W3-066"
+  },
+  {
+    "title": "Buttermilk scones",
+    "why": "20-min bake, cheap",
+    "sketch": "cake-flour, buttermilk, butter, baking-powder, white-sugar",
+    "meal": "dessert",
+    "flag": "",
+    "wave": 3,
+    "n": 67,
+    "lbl": "W3-067"
+  },
+  {
+    "title": "Apple crumble",
+    "why": "Fruit + oats topping, cheap",
+    "sketch": "apples, cake-flour, butter, white-sugar, ground-cinnamon, rolled-oats",
+    "meal": "dessert",
+    "flag": "",
+    "wave": 3,
+    "n": 69,
+    "lbl": "W3-069"
+  },
+  {
+    "title": "Banana custard",
+    "why": "5-min warm dessert",
+    "sketch": "bananas, custard-powder, fresh-milk, white-sugar",
+    "meal": "dessert",
+    "flag": "",
+    "wave": 3,
+    "n": 70,
+    "lbl": "W3-070"
+  },
+  {
+    "title": "Instant pudding trifle",
+    "why": "Layered no-bake, uses jelly",
+    "sketch": "instant-pudding, tennis-biscuits, jelly-powder, fresh-cream, fresh-milk",
+    "meal": "dessert",
+    "flag": "",
+    "wave": 3,
+    "n": 71,
+    "lbl": "W3-071"
+  },
+  {
+    "title": "Pumpkin fritters with cinnamon sugar",
+    "why": "SA classic, cheap pumpkin",
+    "sketch": "pumpkin, cake-flour, eggs, white-sugar, ground-cinnamon, cooking-oil",
+    "meal": "dessert",
+    "flag": "",
+    "wave": 3,
+    "n": 72,
+    "lbl": "W3-072"
+  },
+  {
+    "title": "Sweet potato pudding",
+    "why": "Baked, cheap root veg",
+    "sketch": "sweet-potatoes, white-sugar, eggs, ground-cinnamon, fresh-milk, butter",
+    "meal": "dessert",
+    "flag": "",
+    "wave": 3,
+    "n": 73,
+    "lbl": "W3-073"
+  },
+  {
+    "title": "Butternut pudding",
+    "why": "Baked, uses cheap butternut",
+    "sketch": "butternut, cake-flour, white-sugar, eggs, ground-cinnamon, butter",
+    "meal": "dessert",
+    "flag": "",
+    "wave": 3,
+    "n": 74,
+    "lbl": "W3-074"
+  },
+  {
+    "title": "Ice cream with chocolate sauce",
+    "why": "5-min, cocoa-based sauce",
+    "sketch": "ice-cream, cocoa-powder, white-sugar, butter, fresh-milk",
+    "meal": "dessert",
+    "flag": "",
+    "wave": 3,
+    "n": 75,
+    "lbl": "W3-075"
+  },
+  {
+    "title": "Drinking chocolate pudding",
+    "why": "10-min stovetop pudding",
+    "sketch": "drinking-chocolate, custard-powder, fresh-milk, white-sugar",
+    "meal": "dessert",
+    "flag": "",
+    "wave": 3,
+    "n": 77,
+    "lbl": "W3-077"
+  },
+  {
+    "title": "Condensed milk lemon pudding",
+    "why": "Baked, tangy and cheap",
+    "sketch": "condensed-milk, lemons, eggs, cake-flour, white-sugar",
+    "meal": "dessert",
+    "flag": "",
+    "wave": 3,
+    "n": 78,
+    "lbl": "W3-078"
+  },
+  {
+    "title": "Peppermint crisp tart",
+    "why": "SA no-bake favourite",
+    "sketch": "tennis-biscuits, condensed-milk, fresh-cream, peppermint crisp",
+    "meal": "dessert",
+    "flag": "needs-ingredient: peppermint crisp",
+    "wave": 3,
+    "n": 79,
+    "lbl": "W3-079"
+  },
+  {
+    "title": "Sweet cinnamon popcorn",
+    "why": "Cheap, 5 min",
+    "sketch": "popcorn kernels, white-sugar, ground-cinnamon, butter",
+    "meal": "snack",
+    "flag": "needs-ingredient: popcorn kernels",
+    "wave": 3,
+    "n": 80,
+    "lbl": "W3-080"
+  },
+  {
+    "title": "Tuna mayo toastie",
+    "why": "Filling, uses tinned tuna",
+    "sketch": "white-bread, tinned-tuna, mayonnaise, sweetcorn, cheddar-cheese",
+    "meal": "snack",
+    "flag": "",
+    "wave": 3,
+    "n": 84,
+    "lbl": "W3-084"
+  },
+  {
+    "title": "Ham and cheese toastie",
+    "why": "Uses ham and cheddar",
+    "sketch": "white-bread, ham, cheddar-cheese, butter",
+    "meal": "snack",
+    "flag": "",
+    "wave": 3,
+    "n": 85,
+    "lbl": "W3-085"
+  },
+  {
+    "title": "Polony and cheese toastie",
+    "why": "Cheapest deli toastie",
+    "sketch": "white-bread, polony, cheddar-cheese, margarine",
+    "meal": "snack",
+    "flag": "",
+    "wave": 3,
+    "n": 86,
+    "lbl": "W3-086"
+  },
+  {
+    "title": "Sardine toastie",
+    "why": "Tinned fish snack",
+    "sketch": "white-bread, tinned-sardines-tomato, onions, butter",
+    "meal": "snack",
+    "flag": "",
+    "wave": 3,
+    "n": 87,
+    "lbl": "W3-087"
+  },
+  {
+    "title": "Spiced roasted chickpeas",
+    "why": "Crunchy, high protein",
+    "sketch": "chickpeas, cooking-oil, curry-powder, table-salt",
+    "meal": "snack",
+    "flag": "",
+    "wave": 3,
+    "n": 88,
+    "lbl": "W3-088"
+  },
+  {
+    "title": "Roasted tinned lentils",
+    "why": "Crunchy, cheap protein",
+    "sketch": "tinned-lentils, cooking-oil, curry-powder, table-salt",
+    "meal": "snack",
+    "flag": "",
+    "wave": 3,
+    "n": 90,
+    "lbl": "W3-090"
+  },
+  {
+    "title": "Peanut butter oat energy balls",
+    "why": "No-bake, cheap energy",
+    "sketch": "rolled-oats, peanut-butter, honey, desiccated-coconut",
+    "meal": "snack",
+    "flag": "",
+    "wave": 3,
+    "n": 91,
+    "lbl": "W3-091"
+  },
+  {
+    "title": "Coconut oat bites",
+    "why": "No-bake, condensed milk binds",
+    "sketch": "rolled-oats, desiccated-coconut, condensed-milk",
+    "meal": "snack",
+    "flag": "",
+    "wave": 3,
+    "n": 92,
+    "lbl": "W3-092"
+  },
+  {
+    "title": "Chickpea dip with bread/tortillas",
+    "why": "Budget hummus-style dip",
+    "sketch": "chickpeas, garlic, lemons, cooking-oil, paprika, white-bread",
+    "meal": "snack",
+    "flag": "",
+    "wave": 3,
+    "n": 94,
+    "lbl": "W3-094"
+  },
+  {
+    "title": "Cream cheese and sweet chilli dip",
+    "why": "5-min dip",
+    "sketch": "cream-cheese, sweet-chilli-sauce, tortillas",
+    "meal": "snack",
+    "flag": "",
+    "wave": 3,
+    "n": 95,
+    "lbl": "W3-095"
+  },
+  {
+    "title": "Avocado dip with toast",
+    "why": "Cheap when avos in season",
+    "sketch": "avocado, lemons, garlic, black-pepper, white-bread",
+    "meal": "snack",
+    "flag": "",
+    "wave": 3,
+    "n": 96,
+    "lbl": "W3-096"
+  },
+  {
+    "title": "No-yeast vetkoek (quick dough balls)",
+    "why": "Fried dough, pantry staples",
+    "sketch": "cake-flour, baking-powder, table-salt, fresh-milk, cooking-oil",
+    "meal": "snack",
+    "flag": "",
+    "wave": 3,
+    "n": 97,
+    "lbl": "W3-097"
+  },
+  {
+    "title": "Cheese straws",
+    "why": "Puff pastry, cheese, 20 min",
+    "sketch": "frozen-puff-pastry, cheddar-cheese, eggs",
+    "meal": "snack",
+    "flag": "",
+    "wave": 3,
+    "n": 98,
+    "lbl": "W3-098"
+  },
+  {
+    "title": "Sausage rolls",
+    "why": "Puff pastry, sausages, 30 min",
+    "sketch": "frozen-puff-pastry, pork-sausages, eggs",
+    "meal": "snack",
+    "flag": "",
+    "wave": 3,
+    "n": 99,
+    "lbl": "W3-099"
+  },
+  {
+    "title": "Cheese and ham pinwheels",
+    "why": "Tortilla roll-ups, no cook",
+    "sketch": "tortillas, ham, cream-cheese, spring-onions",
+    "meal": "snack",
+    "flag": "",
+    "wave": 3,
+    "n": 101,
+    "lbl": "W3-101"
+  },
+  {
+    "title": "Tuna and sweetcorn wrap",
+    "why": "Filling, tinned staples",
+    "sketch": "tortillas, tinned-tuna, sweetcorn, mayonnaise",
+    "meal": "snack",
+    "flag": "",
+    "wave": 3,
+    "n": 102,
+    "lbl": "W3-102"
+  },
+  {
+    "title": "Peanut butter and honey sandwich",
+    "why": "3-min pantry snack",
+    "sketch": "white-bread, peanut-butter, honey",
+    "meal": "snack",
+    "flag": "",
+    "wave": 3,
+    "n": 103,
+    "lbl": "W3-103"
+  },
+  {
+    "title": "Jam sandwich",
+    "why": "Cheapest sweet snack",
+    "sketch": "white-bread, apricot-jam, margarine",
+    "meal": "snack",
+    "flag": "",
+    "wave": 3,
+    "n": 104,
+    "lbl": "W3-104"
+  },
+  {
+    "title": "Yeast spread and cheese sandwich",
+    "why": "Savoury Marmite classic",
+    "sketch": "white-bread, yeast-spread, cheddar-cheese, margarine",
+    "meal": "snack",
+    "flag": "",
+    "wave": 3,
+    "n": 105,
+    "lbl": "W3-105"
+  },
+  {
+    "title": "Cucumber and cream cheese sandwiches",
+    "why": "Light, cheap",
+    "sketch": "white-bread, cucumber, cream-cheese, table-salt",
+    "meal": "snack",
+    "flag": "",
+    "wave": 3,
+    "n": 106,
+    "lbl": "W3-106"
+  },
+  {
+    "title": "Fried potato chips",
+    "why": "Homemade, cheap",
+    "sketch": "potatoes, cooking-oil, table-salt",
+    "meal": "snack",
+    "flag": "",
+    "wave": 3,
+    "n": 107,
+    "lbl": "W3-107"
+  },
+  {
+    "title": "Mashed potato bites",
+    "why": "Uses leftover mash, fried",
+    "sketch": "potatoes, eggs, cake-flour, cooking-oil, table-salt",
+    "meal": "snack",
+    "flag": "",
+    "wave": 3,
+    "n": 108,
+    "lbl": "W3-108"
+  },
+  {
+    "title": "Soya chunk bites",
+    "why": "Cheap protein, spiced and fried",
+    "sketch": "soya-chunks, cake-flour, curry-powder, cooking-oil",
+    "meal": "snack",
+    "flag": "",
+    "wave": 3,
+    "n": 109,
+    "lbl": "W3-109"
+  },
+  {
+    "title": "Yoghurt and fruit cup",
+    "why": "5-min, no cook",
+    "sketch": "plain-yoghurt, bananas, honey, rolled-oats",
+    "meal": "snack",
+    "flag": "",
+    "wave": 3,
+    "n": 111,
+    "lbl": "W3-111"
+  },
+  {
+    "title": "Frozen yoghurt banana bites",
+    "why": "Freeze-ahead snack",
+    "sketch": "plain-yoghurt, bananas, honey, desiccated-coconut",
+    "meal": "snack",
+    "flag": "",
+    "wave": 3,
+    "n": 112,
+    "lbl": "W3-112"
+  },
+  {
+    "title": "Spiced peanuts",
+    "why": "Crunchy bar snack",
+    "sketch": "peanuts, cooking-oil, curry-powder, table-salt",
+    "meal": "snack",
+    "flag": "needs-ingredient: peanuts",
+    "wave": 3,
+    "n": 114,
+    "lbl": "W3-114"
+  },
+  {
+    "title": "Roasted pumpkin seeds",
+    "why": "Cheap if seeds saved",
+    "sketch": "pumpkin seeds, cooking-oil, table-salt",
+    "meal": "snack",
+    "flag": "needs-ingredient: pumpkin seeds",
+    "wave": 3,
+    "n": 115,
+    "lbl": "W3-115"
+  },
+  {
+    "title": "Biltong bites",
+    "why": "SA protein snack",
+    "sketch": "biltong",
+    "meal": "snack",
+    "flag": "needs-ingredient: biltong",
+    "wave": 3,
+    "n": 116,
+    "lbl": "W3-116"
+  },
+  {
+    "title": "Cheese and cucumber crackers",
+    "why": "Quick assembly",
+    "sketch": "crackers, cheddar-cheese, cucumber",
+    "meal": "snack",
+    "flag": "needs-ingredient: crackers",
+    "wave": 3,
+    "n": 117,
+    "lbl": "W3-117"
+  },
+  {
+    "title": "Tinned mackerel on bread",
+    "why": "Cheap oily fish snack",
+    "sketch": "tinned-mackerel-tomato, white-bread, onions",
+    "meal": "snack",
+    "flag": "",
+    "wave": 3,
+    "n": 118,
+    "lbl": "W3-118"
+  },
+  {
+    "title": "Toasted cheese and onion sandwich",
+    "why": "10-min savoury",
+    "sketch": "white-bread, cheddar-cheese, onions, butter",
+    "meal": "snack",
+    "flag": "",
+    "wave": 3,
+    "n": 119,
+    "lbl": "W3-119"
+  }
+]

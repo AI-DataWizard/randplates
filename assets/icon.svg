@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512">
+  <!-- RandPlates logomark v2 (rebrand: Spaza Modern, PRD Amendment A1) —
+       a tilted price-tag sticker: the plate IS the price. -->
+  <rect width="512" height="512" rx="96" fill="#fff8f0"/>
+  <g transform="rotate(-8 256 256)">
+    <rect x="86" y="126" width="352" height="288" rx="40" fill="#ea580c"/>
+    <circle cx="150" cy="188" r="26" fill="#fbbf24"/>
+    <text x="262" y="345" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="200" font-weight="900" fill="#ffffff">R</text>
+  </g>
+</svg>

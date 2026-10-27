@@ -1,0 +1,1321 @@
+{
+  "note": "Determinism lock for the matcher+costing engine. Regenerate ONLY via scripts/regen-golden.mjs after a deliberate change; review the diff before committing.",
+  "prices_last_verified": "2026-10-25",
+  "budget_cents": 60000,
+  "pantries": [
+    {
+      "name": "empty",
+      "eligible_count": 340,
+      "top": [
+        {
+          "id": "hummus-with-veg-sticks",
+          "readiness": "almost",
+          "perPlateCents": 1223,
+          "score": 2.54,
+          "coverage": 0
+        },
+        {
+          "id": "sardine-toastie",
+          "readiness": "almost",
+          "perPlateCents": 1555,
+          "score": 2.46,
+          "coverage": 0
+        },
+        {
+          "id": "avocado-toast-with-fried-egg",
+          "readiness": "almost",
+          "perPlateCents": 1410,
+          "score": 2.42,
+          "coverage": 0
+        },
+        {
+          "id": "sardine-pasta",
+          "readiness": "almost",
+          "perPlateCents": 994,
+          "score": 2.38,
+          "coverage": 0
+        },
+        {
+          "id": "tomato-and-onion-sandwiches",
+          "readiness": "almost",
+          "perPlateCents": 796,
+          "score": 2.33,
+          "coverage": 0
+        },
+        {
+          "id": "avocado-and-egg-toast",
+          "readiness": "almost",
+          "perPlateCents": 1410,
+          "score": 2.25,
+          "coverage": 0
+        },
+        {
+          "id": "pilchards-on-toast",
+          "readiness": "almost",
+          "perPlateCents": 1722,
+          "score": 2.21,
+          "coverage": 0
+        },
+        {
+          "id": "tuna-mayo-sandwich",
+          "readiness": "almost",
+          "perPlateCents": 2565,
+          "score": 2.21,
+          "coverage": 0
+        },
+        {
+          "id": "french-toast-with-cinnamon-sugar",
+          "readiness": "almost",
+          "perPlateCents": 1047,
+          "score": 2.04,
+          "coverage": 0
+        },
+        {
+          "id": "tinned-mackerel-on-bread",
+          "readiness": "almost",
+          "perPlateCents": 1855,
+          "score": 2.04,
+          "coverage": 0
+        },
+        {
+          "id": "rice-and-beans-lunch-bowl",
+          "readiness": "almost",
+          "perPlateCents": 1871,
+          "score": 2.04,
+          "coverage": 0
+        },
+        {
+          "id": "scrambled-eggs-tomato-onion",
+          "readiness": "almost",
+          "perPlateCents": 1523,
+          "score": 1.88,
+          "coverage": 0
+        },
+        {
+          "id": "instant-pudding-trifle",
+          "readiness": "almost",
+          "perPlateCents": 1799,
+          "score": 1.67,
+          "coverage": 0
+        },
+        {
+          "id": "overnight-oats-with-apple-and-cinnamon",
+          "readiness": "almost",
+          "perPlateCents": 1091,
+          "score": 1.63,
+          "coverage": 0
+        },
+        {
+          "id": "amasi-breakfast-bowl",
+          "readiness": "almost",
+          "perPlateCents": 1230,
+          "score": 1.58,
+          "coverage": 0
+        },
+        {
+          "id": "coleslaw-with-polony",
+          "readiness": "almost",
+          "perPlateCents": 577,
+          "score": 1.5,
+          "coverage": 0
+        },
+        {
+          "id": "curried-samp-and-bean-salad",
+          "readiness": "almost",
+          "perPlateCents": 1079,
+          "score": 1.42,
+          "coverage": 0
+        },
+        {
+          "id": "samp-and-beans-lunch-bowl",
+          "readiness": "almost",
+          "perPlateCents": 1079,
+          "score": 1.42,
+          "coverage": 0
+        },
+        {
+          "id": "chocolate-biscuit-pudding",
+          "readiness": "stretch",
+          "perPlateCents": 1612,
+          "score": 1.21,
+          "coverage": 0
+        },
+        {
+          "id": "lemon-fridge-tart",
+          "readiness": "stretch",
+          "perPlateCents": 2674,
+          "score": 1.21,
+          "coverage": 0
+        }
+      ]
+    },
+    {
+      "name": "student-basics",
+      "eligible_count": 340,
+      "top": [
+        {
+          "id": "classic-chakalaka",
+          "readiness": "almost",
+          "perPlateCents": 736,
+          "score": 69.49,
+          "coverage": 0.5882352941176471
+        },
+        {
+          "id": "baked-beans-and-corn-pap-bake",
+          "readiness": "stretch",
+          "perPlateCents": 1523,
+          "score": 66.75,
+          "coverage": 0.6086956521739131
+        },
+        {
+          "id": "rice-and-beans-lunch-bowl",
+          "readiness": "almost",
+          "perPlateCents": 1871,
+          "score": 65.02,
+          "coverage": 0.5714285714285714
+        },
+        {
+          "id": "baked-beans-on-toast",
+          "readiness": "almost",
+          "perPlateCents": 923,
+          "score": 60.21,
+          "coverage": 0.5
+        },
+        {
+          "id": "beef-and-chakalaka-lunch-bowl",
+          "readiness": "stretch",
+          "perPlateCents": 2828,
+          "score": 54.88,
+          "coverage": 0.5
+        },
+        {
+          "id": "stuffed-green-peppers",
+          "readiness": "stretch",
+          "perPlateCents": 3272,
+          "score": 54.4,
+          "coverage": 0.5185185185185185
+        },
+        {
+          "id": "mielie-rice-with-chakalaka-and-fried-egg",
+          "readiness": "almost",
+          "perPlateCents": 2108,
+          "score": 52.75,
+          "coverage": 0.5
+        },
+        {
+          "id": "easy-chakalaka-with-pap-wors",
+          "readiness": "almost",
+          "perPlateCents": 1866,
+          "score": 51.92,
+          "coverage": 0.5
+        },
+        {
+          "id": "pap-and-eggs",
+          "readiness": "almost",
+          "perPlateCents": 957,
+          "score": 51.79,
+          "coverage": 0.5
+        },
+        {
+          "id": "cape-malay-lentil-curry",
+          "readiness": "almost",
+          "perPlateCents": 900,
+          "score": 48.98,
+          "coverage": 0.47058823529411764
+        },
+        {
+          "id": "phutu-pap-with-wors-and-relish",
+          "readiness": "almost",
+          "perPlateCents": 1875,
+          "score": 48.02,
+          "coverage": 0.47058823529411764
+        },
+        {
+          "id": "pap-with-chakalaka-and-wors",
+          "readiness": "almost",
+          "perPlateCents": 2264,
+          "score": 48.02,
+          "coverage": 0.47058823529411764
+        },
+        {
+          "id": "comforting-veggie-stew",
+          "readiness": "stretch",
+          "perPlateCents": 1080,
+          "score": 47.1,
+          "coverage": 0.47058823529411764
+        },
+        {
+          "id": "peri-peri-chicken-with-rice",
+          "readiness": "stretch",
+          "perPlateCents": 1852,
+          "score": 46.89,
+          "coverage": 0.47058823529411764
+        },
+        {
+          "id": "curried-cabbage-peas-and-rice",
+          "readiness": "stretch",
+          "perPlateCents": 801,
+          "score": 46.69,
+          "coverage": 0.47058823529411764
+        },
+        {
+          "id": "chicken-drumsticks-with-pap-and-tomato-gravy",
+          "readiness": "stretch",
+          "perPlateCents": 2844,
+          "score": 46.48,
+          "coverage": 0.47058823529411764
+        },
+        {
+          "id": "sugar-bean-stew-with-pap",
+          "readiness": "almost",
+          "perPlateCents": 1141,
+          "score": 46.45,
+          "coverage": 0.4444444444444444
+        },
+        {
+          "id": "red-lentil-dhal",
+          "readiness": "almost",
+          "perPlateCents": 534,
+          "score": 45.67,
+          "coverage": 0.4375
+        },
+        {
+          "id": "maize-meal-porridge-with-amasi",
+          "readiness": "almost",
+          "perPlateCents": 392,
+          "score": 45.5,
+          "coverage": 0.45454545454545453
+        },
+        {
+          "id": "leftover-roast-chicken-and-gravy-pap-bowl",
+          "readiness": "stretch",
+          "perPlateCents": 1692,
+          "score": 43.08,
+          "coverage": 0.4
+        }
+      ]
+    },
+    {
+      "name": "braai-kit",
+      "eligible_count": 381,
+      "top": [
+        {
+          "id": "boerewors-in-tomato-and-onion-gravy",
+          "readiness": "ready",
+          "perPlateCents": 1769,
+          "score": 90.75,
+          "coverage": 0.6875
+        },
+        {
+          "id": "tomato-and-onion-sandwiches",
+          "readiness": "ready",
+          "perPlateCents": 796,
+          "score": 89.73,
+          "coverage": 0.7272727272727273
+        },
+        {
+          "id": "pap-with-chakalaka-and-wors",
+          "readiness": "almost",
+          "perPlateCents": 2264,
+          "score": 84.83,
+          "coverage": 0.6470588235294118
+        },
+        {
+          "id": "phutu-pap-with-wors-and-relish",
+          "readiness": "almost",
+          "perPlateCents": 1875,
+          "score": 78.95,
+          "coverage": 0.5882352941176471
+        },
+        {
+          "id": "easy-chakalaka-with-pap-wors",
+          "readiness": "almost",
+          "perPlateCents": 1866,
+          "score": 71.38,
+          "coverage": 0.5625
+        },
+        {
+          "id": "boerewors-and-egg-breakfast-bowl-with-tomato-relish",
+          "readiness": "almost",
+          "perPlateCents": 1827,
+          "score": 68.38,
+          "coverage": 0.5263157894736842
+        },
+        {
+          "id": "green-bean-and-potato-curry",
+          "readiness": "almost",
+          "perPlateCents": 1048,
+          "score": 67.96,
+          "coverage": 0.6
+        },
+        {
+          "id": "braaied-boerewors-and-sweetcorn-braai-broodjie",
+          "readiness": "stretch",
+          "perPlateCents": 1950,
+          "score": 64.88,
+          "coverage": 0.5
+        },
+        {
+          "id": "lentil-potato-curry",
+          "readiness": "almost",
+          "perPlateCents": 898,
+          "score": 64.13,
+          "coverage": 0.5625
+        },
+        {
+          "id": "durban-bunny-chow",
+          "readiness": "stretch",
+          "perPlateCents": 2637,
+          "score": 64,
+          "coverage": 0.5416666666666666
+        },
+        {
+          "id": "braai-broodjie",
+          "readiness": "stretch",
+          "perPlateCents": 1669,
+          "score": 62.83,
+          "coverage": 0.5
+        },
+        {
+          "id": "savory-mince-on-toast",
+          "readiness": "almost",
+          "perPlateCents": 1665,
+          "score": 61.35,
+          "coverage": 0.47058823529411764
+        },
+        {
+          "id": "tinned-mackerel-on-bread",
+          "readiness": "almost",
+          "perPlateCents": 1855,
+          "score": 60.75,
+          "coverage": 0.5
+        },
+        {
+          "id": "cauliflower-and-potato-curry",
+          "readiness": "almost",
+          "perPlateCents": 1310,
+          "score": 60.48,
+          "coverage": 0.5294117647058824
+        },
+        {
+          "id": "peanut-butter-and-honey-sandwich",
+          "readiness": "almost",
+          "perPlateCents": 941,
+          "score": 59.73,
+          "coverage": 0.5714285714285714
+        },
+        {
+          "id": "jam-sandwich",
+          "readiness": "ready",
+          "perPlateCents": 595,
+          "score": 58.67,
+          "coverage": 0.6666666666666666
+        },
+        {
+          "id": "potato-and-chickpea-curry",
+          "readiness": "almost",
+          "perPlateCents": 1160,
+          "score": 58.08,
+          "coverage": 0.5
+        },
+        {
+          "id": "sardine-toastie",
+          "readiness": "almost",
+          "perPlateCents": 1555,
+          "score": 57.32,
+          "coverage": 0.46153846153846156
+        },
+        {
+          "id": "toasted-cheese-and-tomato",
+          "readiness": "stretch",
+          "perPlateCents": 1696,
+          "score": 56.99,
+          "coverage": 0.46153846153846156
+        },
+        {
+          "id": "toasted-cheese-and-onion-sandwich",
+          "readiness": "stretch",
+          "perPlateCents": 1805,
+          "score": 53.99,
+          "coverage": 0.46153846153846156
+        }
+      ]
+    },
+    {
+      "name": "breakfast-corner",
+      "eligible_count": 340,
+      "top": [
+        {
+          "id": "french-toast-with-cinnamon-sugar",
+          "readiness": "ready",
+          "perPlateCents": 1047,
+          "score": 115.89,
+          "coverage": 0.8888888888888888
+        },
+        {
+          "id": "bread-pudding",
+          "readiness": "ready",
+          "perPlateCents": 1053,
+          "score": 110.89,
+          "coverage": 0.8888888888888888
+        },
+        {
+          "id": "creamy-pap-and-boiled-egg-breakfast-bowl",
+          "readiness": "ready",
+          "perPlateCents": 1021,
+          "score": 102.33,
+          "coverage": 0.8333333333333334
+        },
+        {
+          "id": "bread-pudding-with-custard",
+          "readiness": "ready",
+          "perPlateCents": 1068,
+          "score": 102,
+          "coverage": 0.8
+        },
+        {
+          "id": "scrambled-eggs-in-microwave",
+          "readiness": "ready",
+          "perPlateCents": 1225,
+          "score": 100.62,
+          "coverage": 0.8461538461538461
+        },
+        {
+          "id": "baked-beans-on-toast",
+          "readiness": "ready",
+          "perPlateCents": 923,
+          "score": 99.33,
+          "coverage": 0.8333333333333334
+        },
+        {
+          "id": "caramel-custard-pudding",
+          "readiness": "ready",
+          "perPlateCents": 802,
+          "score": 95.62,
+          "coverage": 0.8461538461538461
+        },
+        {
+          "id": "baked-custard",
+          "readiness": "ready",
+          "perPlateCents": 1042,
+          "score": 95.62,
+          "coverage": 0.8461538461538461
+        },
+        {
+          "id": "cinnamon-porridge",
+          "readiness": "ready",
+          "perPlateCents": 677,
+          "score": 89.33,
+          "coverage": 0.8333333333333334
+        },
+        {
+          "id": "egg-mayonnaise-sandwich",
+          "readiness": "ready",
+          "perPlateCents": 1480,
+          "score": 87.43,
+          "coverage": 0.7142857142857143
+        },
+        {
+          "id": "sweet-potato-pudding",
+          "readiness": "almost",
+          "perPlateCents": 987,
+          "score": 86.34,
+          "coverage": 0.7058823529411765
+        },
+        {
+          "id": "avocado-toast-with-fried-egg",
+          "readiness": "almost",
+          "perPlateCents": 1410,
+          "score": 83.96,
+          "coverage": 0.625
+        },
+        {
+          "id": "pancakes-with-cinnamon-sugar",
+          "readiness": "almost",
+          "perPlateCents": 667,
+          "score": 76.36,
+          "coverage": 0.6111111111111112
+        },
+        {
+          "id": "chocolate-steamed-pudding",
+          "readiness": "almost",
+          "perPlateCents": 1499,
+          "score": 75.25,
+          "coverage": 0.6
+        },
+        {
+          "id": "pap-and-eggs",
+          "readiness": "almost",
+          "perPlateCents": 957,
+          "score": 74.63,
+          "coverage": 0.625
+        },
+        {
+          "id": "wholewheat-and-raisin-muffins",
+          "readiness": "almost",
+          "perPlateCents": 727,
+          "score": 73.65,
+          "coverage": 0.5789473684210527
+        },
+        {
+          "id": "self-saucing-chocolate-pudding",
+          "readiness": "almost",
+          "perPlateCents": 825,
+          "score": 72.39,
+          "coverage": 0.5714285714285714
+        },
+        {
+          "id": "meringues",
+          "readiness": "ready",
+          "perPlateCents": 472,
+          "score": 71.78,
+          "coverage": 0.7777777777777778
+        },
+        {
+          "id": "chakalaka-and-egg-bake",
+          "readiness": "stretch",
+          "perPlateCents": 2860,
+          "score": 71.17,
+          "coverage": 0.5833333333333334
+        },
+        {
+          "id": "eggy-bun-bowls",
+          "readiness": "stretch",
+          "perPlateCents": 1256,
+          "score": 70.73,
+          "coverage": 0.5789473684210527
+        }
+      ]
+    },
+    {
+      "name": "vegetarian-kitchen",
+      "eligible_count": 349,
+      "top": [
+        {
+          "id": "red-lentil-dhal",
+          "readiness": "ready",
+          "perPlateCents": 534,
+          "score": 98.5,
+          "coverage": 0.875
+        },
+        {
+          "id": "cape-malay-lentil-curry",
+          "readiness": "ready",
+          "perPlateCents": 900,
+          "score": 93.35,
+          "coverage": 0.8235294117647058
+        },
+        {
+          "id": "comforting-veggie-stew",
+          "readiness": "almost",
+          "perPlateCents": 1080,
+          "score": 91.48,
+          "coverage": 0.8235294117647058
+        },
+        {
+          "id": "sweet-potato-and-sugar-bean-stew",
+          "readiness": "almost",
+          "perPlateCents": 1209,
+          "score": 89.42,
+          "coverage": 0.6666666666666666
+        },
+        {
+          "id": "samp-and-beans-lunch-bowl",
+          "readiness": "almost",
+          "perPlateCents": 1079,
+          "score": 84.44,
+          "coverage": 0.6111111111111112
+        },
+        {
+          "id": "sugar-bean-stew-with-pap",
+          "readiness": "almost",
+          "perPlateCents": 1141,
+          "score": 83.79,
+          "coverage": 0.6666666666666666
+        },
+        {
+          "id": "everyday-lentil-curry",
+          "readiness": "ready",
+          "perPlateCents": 1435,
+          "score": 80.43,
+          "coverage": 0.7142857142857143
+        },
+        {
+          "id": "samp-and-sugar-beans",
+          "readiness": "almost",
+          "perPlateCents": 1139,
+          "score": 79.44,
+          "coverage": 0.6111111111111112
+        },
+        {
+          "id": "pumpkin-beans-and-potato-stew",
+          "readiness": "almost",
+          "perPlateCents": 1437,
+          "score": 73.77,
+          "coverage": 0.5789473684210527
+        },
+        {
+          "id": "samp-and-beans-food-and-home",
+          "readiness": "almost",
+          "perPlateCents": 783,
+          "score": 73.33,
+          "coverage": 0.6
+        },
+        {
+          "id": "lentil-potato-curry",
+          "readiness": "almost",
+          "perPlateCents": 898,
+          "score": 69.83,
+          "coverage": 0.625
+        },
+        {
+          "id": "curry-bean-stew",
+          "readiness": "almost",
+          "perPlateCents": 1614,
+          "score": 69.39,
+          "coverage": 0.5714285714285714
+        },
+        {
+          "id": "no-fuss-four-bean-soup",
+          "readiness": "almost",
+          "perPlateCents": 1889,
+          "score": 68.44,
+          "coverage": 0.5714285714285714
+        },
+        {
+          "id": "pumpkin-and-lentil-curry",
+          "readiness": "almost",
+          "perPlateCents": 1837,
+          "score": 66.37,
+          "coverage": 0.5882352941176471
+        },
+        {
+          "id": "curried-cabbage-peas-and-rice",
+          "readiness": "almost",
+          "perPlateCents": 801,
+          "score": 64.41,
+          "coverage": 0.5882352941176471
+        },
+        {
+          "id": "mom-s-creamy-samp-and-beans",
+          "readiness": "almost",
+          "perPlateCents": 1190,
+          "score": 63.33,
+          "coverage": 0.5
+        },
+        {
+          "id": "samp-and-beans-with-spinach-and-bacon",
+          "readiness": "almost",
+          "perPlateCents": 2227,
+          "score": 61.25,
+          "coverage": 0.5
+        },
+        {
+          "id": "chickpea-and-coconut-curry",
+          "readiness": "almost",
+          "perPlateCents": 1692,
+          "score": 60.72,
+          "coverage": 0.5263157894736842
+        },
+        {
+          "id": "vegetable-curry-spar",
+          "readiness": "almost",
+          "perPlateCents": 942,
+          "score": 59.67,
+          "coverage": 0.5454545454545454
+        },
+        {
+          "id": "umngqusho-wezambane",
+          "readiness": "almost",
+          "perPlateCents": 1253,
+          "score": 59.04,
+          "coverage": 0.47368421052631576
+        }
+      ]
+    },
+    {
+      "name": "baking-kit",
+      "eligible_count": 340,
+      "top": [
+        {
+          "id": "self-saucing-chocolate-pudding",
+          "readiness": "ready",
+          "perPlateCents": 825,
+          "score": 104.71,
+          "coverage": 0.8571428571428571
+        },
+        {
+          "id": "chocolate-steamed-pudding",
+          "readiness": "ready",
+          "perPlateCents": 1499,
+          "score": 104,
+          "coverage": 0.85
+        },
+        {
+          "id": "caramel-custard-pudding",
+          "readiness": "ready",
+          "perPlateCents": 802,
+          "score": 103.31,
+          "coverage": 0.9230769230769231
+        },
+        {
+          "id": "baked-custard",
+          "readiness": "ready",
+          "perPlateCents": 1042,
+          "score": 103.31,
+          "coverage": 0.9230769230769231
+        },
+        {
+          "id": "pancakes-with-cinnamon-sugar",
+          "readiness": "ready",
+          "perPlateCents": 667,
+          "score": 102.33,
+          "coverage": 0.8333333333333334
+        },
+        {
+          "id": "chocolate-brownies",
+          "readiness": "ready",
+          "perPlateCents": 1217,
+          "score": 100.86,
+          "coverage": 0.9285714285714286
+        },
+        {
+          "id": "chocolate-chip-cookies",
+          "readiness": "ready",
+          "perPlateCents": 1920,
+          "score": 100.86,
+          "coverage": 0.9285714285714286
+        },
+        {
+          "id": "scrambled-eggs-in-microwave",
+          "readiness": "ready",
+          "perPlateCents": 1225,
+          "score": 100.62,
+          "coverage": 0.8461538461538461
+        },
+        {
+          "id": "jam-tarts",
+          "readiness": "ready",
+          "perPlateCents": 975,
+          "score": 100.31,
+          "coverage": 0.9230769230769231
+        },
+        {
+          "id": "apple-and-cinnamon-muffins",
+          "readiness": "almost",
+          "perPlateCents": 611,
+          "score": 98.08,
+          "coverage": 0.8
+        },
+        {
+          "id": "vanilla-mug-cake",
+          "readiness": "ready",
+          "perPlateCents": 595,
+          "score": 97.67,
+          "coverage": 0.9166666666666666
+        },
+        {
+          "id": "peanut-butter-cookies",
+          "readiness": "almost",
+          "perPlateCents": 706,
+          "score": 97.2,
+          "coverage": 0.8461538461538461
+        },
+        {
+          "id": "butternut-pudding",
+          "readiness": "almost",
+          "perPlateCents": 849,
+          "score": 93.17,
+          "coverage": 0.8
+        },
+        {
+          "id": "coconut-biscuits",
+          "readiness": "almost",
+          "perPlateCents": 1526,
+          "score": 92.96,
+          "coverage": 0.75
+        },
+        {
+          "id": "chocolate-cake",
+          "readiness": "almost",
+          "perPlateCents": 1774,
+          "score": 92.33,
+          "coverage": 0.75
+        },
+        {
+          "id": "traditional-milk-tart",
+          "readiness": "almost",
+          "perPlateCents": 1468,
+          "score": 91.25,
+          "coverage": 0.7391304347826086
+        },
+        {
+          "id": "chocolate-mug-cake",
+          "readiness": "ready",
+          "perPlateCents": 1112,
+          "score": 90.62,
+          "coverage": 0.8461538461538461
+        },
+        {
+          "id": "french-toast-with-cinnamon-sugar",
+          "readiness": "almost",
+          "perPlateCents": 1047,
+          "score": 87.88,
+          "coverage": 0.6666666666666666
+        },
+        {
+          "id": "corn-fritters",
+          "readiness": "almost",
+          "perPlateCents": 1287,
+          "score": 86.79,
+          "coverage": 0.6875
+        },
+        {
+          "id": "sweet-potato-pudding",
+          "readiness": "almost",
+          "perPlateCents": 987,
+          "score": 86.34,
+          "coverage": 0.7058823529411765
+        }
+      ]
+    },
+    {
+      "name": "curry-night",
+      "eligible_count": 340,
+      "top": [
+        {
+          "id": "kerrie-en-appelkoos-chicken",
+          "readiness": "ready",
+          "perPlateCents": 2274,
+          "score": 104.95,
+          "coverage": 0.8095238095238095
+        },
+        {
+          "id": "peri-peri-chicken-with-rice",
+          "readiness": "ready",
+          "perPlateCents": 1852,
+          "score": 101.35,
+          "coverage": 0.8235294117647058
+        },
+        {
+          "id": "chicken-and-potato-curry",
+          "readiness": "almost",
+          "perPlateCents": 1572,
+          "score": 98.52,
+          "coverage": 0.7619047619047619
+        },
+        {
+          "id": "chicken-and-peanut-butter-stew",
+          "readiness": "almost",
+          "perPlateCents": 2282,
+          "score": 89,
+          "coverage": 0.6842105263157895
+        },
+        {
+          "id": "one-pot-chicken-and-rice",
+          "readiness": "almost",
+          "perPlateCents": 1865,
+          "score": 82.25,
+          "coverage": 0.6666666666666666
+        },
+        {
+          "id": "red-lentil-dhal",
+          "readiness": "almost",
+          "perPlateCents": 534,
+          "score": 76.63,
+          "coverage": 0.6875
+        },
+        {
+          "id": "cape-malay-lentil-curry",
+          "readiness": "almost",
+          "perPlateCents": 900,
+          "score": 72.58,
+          "coverage": 0.6470588235294118
+        },
+        {
+          "id": "steamed-bread-with-chicken-stew",
+          "readiness": "almost",
+          "perPlateCents": 2301,
+          "score": 70.54,
+          "coverage": 0.5
+        },
+        {
+          "id": "curried-cabbage-peas-and-rice",
+          "readiness": "almost",
+          "perPlateCents": 801,
+          "score": 70.29,
+          "coverage": 0.6470588235294118
+        },
+        {
+          "id": "chicken-and-chickpea-curry",
+          "readiness": "almost",
+          "perPlateCents": 2909,
+          "score": 70.25,
+          "coverage": 0.5416666666666666
+        },
+        {
+          "id": "vegetable-curry-spar",
+          "readiness": "almost",
+          "perPlateCents": 942,
+          "score": 68.76,
+          "coverage": 0.6363636363636364
+        },
+        {
+          "id": "chickpea-and-coconut-curry",
+          "readiness": "almost",
+          "perPlateCents": 1692,
+          "score": 65.98,
+          "coverage": 0.5789473684210527
+        },
+        {
+          "id": "rice-and-beans-lunch-bowl",
+          "readiness": "almost",
+          "perPlateCents": 1871,
+          "score": 65.02,
+          "coverage": 0.5714285714285714
+        },
+        {
+          "id": "comforting-veggie-stew",
+          "readiness": "almost",
+          "perPlateCents": 1080,
+          "score": 64.82,
+          "coverage": 0.5882352941176471
+        },
+        {
+          "id": "chicken-and-veg-tray-bake",
+          "readiness": "almost",
+          "perPlateCents": 1805,
+          "score": 63.79,
+          "coverage": 0.5
+        },
+        {
+          "id": "durban-vegetable-curry",
+          "readiness": "almost",
+          "perPlateCents": 1130,
+          "score": 63.46,
+          "coverage": 0.5833333333333334
+        },
+        {
+          "id": "leftover-roast-chicken-and-gravy-pap-bowl",
+          "readiness": "almost",
+          "perPlateCents": 1692,
+          "score": 63.38,
+          "coverage": 0.45
+        },
+        {
+          "id": "kidney-bean-chilli-with-rice",
+          "readiness": "stretch",
+          "perPlateCents": 2420,
+          "score": 62.98,
+          "coverage": 0.5789473684210527
+        },
+        {
+          "id": "soya-chunks-cabbage-curry-with-rice",
+          "readiness": "almost",
+          "perPlateCents": 690,
+          "score": 60.09,
+          "coverage": 0.5238095238095238
+        },
+        {
+          "id": "pita-chips-with-tomato-dip",
+          "readiness": "almost",
+          "perPlateCents": 1010,
+          "score": 59.92,
+          "coverage": 0.5
+        }
+      ]
+    },
+    {
+      "name": "two-items",
+      "eligible_count": 340,
+      "top": [
+        {
+          "id": "rice-and-beans-lunch-bowl",
+          "readiness": "almost",
+          "perPlateCents": 1871,
+          "score": 40.67,
+          "coverage": 0.35714285714285715
+        },
+        {
+          "id": "beef-and-chakalaka-lunch-bowl",
+          "readiness": "stretch",
+          "perPlateCents": 2828,
+          "score": 33.21,
+          "coverage": 0.3125
+        },
+        {
+          "id": "breakfast-rice-bowl-with-egg",
+          "readiness": "almost",
+          "perPlateCents": 2988,
+          "score": 33.08,
+          "coverage": 0.3333333333333333
+        },
+        {
+          "id": "rice-pudding-cinnamon",
+          "readiness": "almost",
+          "perPlateCents": 607,
+          "score": 31.45,
+          "coverage": 0.36363636363636365
+        },
+        {
+          "id": "mielie-rice-with-chakalaka-and-fried-egg",
+          "readiness": "almost",
+          "perPlateCents": 2108,
+          "score": 31.08,
+          "coverage": 0.3125
+        },
+        {
+          "id": "red-lentil-dhal",
+          "readiness": "almost",
+          "perPlateCents": 534,
+          "score": 30.25,
+          "coverage": 0.3125
+        },
+        {
+          "id": "chicken-and-veg-stir-fry",
+          "readiness": "stretch",
+          "perPlateCents": 2145,
+          "score": 28.88,
+          "coverage": 0.3125
+        },
+        {
+          "id": "egg-fried-rice",
+          "readiness": "stretch",
+          "perPlateCents": 1979,
+          "score": 28.65,
+          "coverage": 0.2631578947368421
+        },
+        {
+          "id": "cape-malay-lentil-curry",
+          "readiness": "almost",
+          "perPlateCents": 900,
+          "score": 28.41,
+          "coverage": 0.29411764705882354
+        },
+        {
+          "id": "comforting-veggie-stew",
+          "readiness": "stretch",
+          "perPlateCents": 1080,
+          "score": 26.54,
+          "coverage": 0.29411764705882354
+        },
+        {
+          "id": "peri-peri-chicken-with-rice",
+          "readiness": "stretch",
+          "perPlateCents": 1852,
+          "score": 26.33,
+          "coverage": 0.29411764705882354
+        },
+        {
+          "id": "tinned-mackerel-and-atchar-fried-rice",
+          "readiness": "almost",
+          "perPlateCents": 2028,
+          "score": 26.31,
+          "coverage": 0.22727272727272727
+        },
+        {
+          "id": "curried-cabbage-peas-and-rice",
+          "readiness": "stretch",
+          "perPlateCents": 801,
+          "score": 26.12,
+          "coverage": 0.29411764705882354
+        },
+        {
+          "id": "creamy-rice-pudding",
+          "readiness": "almost",
+          "perPlateCents": 943,
+          "score": 25.85,
+          "coverage": 0.3076923076923077
+        },
+        {
+          "id": "chickpea-and-coconut-curry",
+          "readiness": "almost",
+          "perPlateCents": 1692,
+          "score": 25.53,
+          "coverage": 0.2631578947368421
+        },
+        {
+          "id": "soya-and-vegetable-stir-fry-with-rice",
+          "readiness": "almost",
+          "perPlateCents": 1882,
+          "score": 24.82,
+          "coverage": 0.2631578947368421
+        },
+        {
+          "id": "beef-and-cabbage-stir-fry",
+          "readiness": "stretch",
+          "perPlateCents": 2559,
+          "score": 24.74,
+          "coverage": 0.2777777777777778
+        },
+        {
+          "id": "tuna-and-rice-salad-bowl",
+          "readiness": "almost",
+          "perPlateCents": 3819,
+          "score": 24.3,
+          "coverage": 0.21052631578947367
+        },
+        {
+          "id": "dryfried-cabbage-and-soya-chunks",
+          "readiness": "almost",
+          "perPlateCents": 1623,
+          "score": 22.89,
+          "coverage": 0.23809523809523808
+        },
+        {
+          "id": "soya-chunks-cabbage-curry-with-rice",
+          "readiness": "almost",
+          "perPlateCents": 690,
+          "score": 22.64,
+          "coverage": 0.23809523809523808
+        }
+      ]
+    },
+    {
+      "name": "weekday-30",
+      "eligible_count": 391,
+      "top": [
+        {
+          "id": "savory-mince-on-toast",
+          "readiness": "ready",
+          "perPlateCents": 1665,
+          "score": 132,
+          "coverage": 1
+        },
+        {
+          "id": "pap-and-wors-bake",
+          "readiness": "ready",
+          "perPlateCents": 2936,
+          "score": 131,
+          "coverage": 1
+        },
+        {
+          "id": "toasted-cheese-and-tomato",
+          "readiness": "ready",
+          "perPlateCents": 1696,
+          "score": 127,
+          "coverage": 1
+        },
+        {
+          "id": "frikkadel-with-rice",
+          "readiness": "ready",
+          "perPlateCents": 2398,
+          "score": 124.55,
+          "coverage": 0.9354838709677419
+        },
+        {
+          "id": "eggy-bun-bowls",
+          "readiness": "ready",
+          "perPlateCents": 1256,
+          "score": 124,
+          "coverage": 1
+        },
+        {
+          "id": "scrambled-eggs-tomato-onion",
+          "readiness": "ready",
+          "perPlateCents": 1523,
+          "score": 124,
+          "coverage": 1
+        },
+        {
+          "id": "toasted-cheese-and-onion-sandwich",
+          "readiness": "ready",
+          "perPlateCents": 1805,
+          "score": 124,
+          "coverage": 1
+        },
+        {
+          "id": "phutu-pap-with-wors-and-relish",
+          "readiness": "ready",
+          "perPlateCents": 1875,
+          "score": 124,
+          "coverage": 1
+        },
+        {
+          "id": "pap-with-chakalaka-and-wors",
+          "readiness": "ready",
+          "perPlateCents": 2264,
+          "score": 124,
+          "coverage": 1
+        },
+        {
+          "id": "braai-broodjie",
+          "readiness": "ready",
+          "perPlateCents": 1669,
+          "score": 122.75,
+          "coverage": 0.9375
+        },
+        {
+          "id": "ouma-onder-die-kombers",
+          "readiness": "ready",
+          "perPlateCents": 2136,
+          "score": 121.83,
+          "coverage": 0.9583333333333334
+        },
+        {
+          "id": "mince-and-macaroni-bake",
+          "readiness": "ready",
+          "perPlateCents": 1940,
+          "score": 121.65,
+          "coverage": 0.9565217391304348
+        },
+        {
+          "id": "french-toast-with-cinnamon-sugar",
+          "readiness": "ready",
+          "perPlateCents": 1047,
+          "score": 121.44,
+          "coverage": 0.9444444444444444
+        },
+        {
+          "id": "chicken-and-potato-curry",
+          "readiness": "ready",
+          "perPlateCents": 1572,
+          "score": 121.24,
+          "coverage": 0.9523809523809523
+        },
+        {
+          "id": "chicken-and-vegetable-stew",
+          "readiness": "ready",
+          "perPlateCents": 2117,
+          "score": 121.24,
+          "coverage": 0.9523809523809523
+        },
+        {
+          "id": "pap-and-eggs",
+          "readiness": "ready",
+          "perPlateCents": 957,
+          "score": 121,
+          "coverage": 1
+        },
+        {
+          "id": "durban-bunny-chow",
+          "readiness": "ready",
+          "perPlateCents": 2637,
+          "score": 120.67,
+          "coverage": 0.9166666666666666
+        },
+        {
+          "id": "chakalaka-and-egg-bake",
+          "readiness": "ready",
+          "perPlateCents": 2860,
+          "score": 119.83,
+          "coverage": 0.9583333333333334
+        },
+        {
+          "id": "boerewors-and-egg-breakfast-bowl-with-tomato-relish",
+          "readiness": "ready",
+          "perPlateCents": 1827,
+          "score": 118.74,
+          "coverage": 0.9473684210526315
+        },
+        {
+          "id": "beef-and-cabbage-stir-fry",
+          "readiness": "ready",
+          "perPlateCents": 2559,
+          "score": 117.44,
+          "coverage": 0.9444444444444444
+        }
+      ]
+    }
+  ]
+}

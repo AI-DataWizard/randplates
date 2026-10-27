@@ -1,0 +1,3855 @@
+{
+  "_doc": "P-541 planner blast fixtures \u2014 hand-stamped spec truth. When this gate goes red the ENGINE is on trial, never the fixture (unless the owner changed the spec on record).",
+  "scenarios": [
+    {
+      "id": "A01",
+      "bucket": "budget",
+      "desc": "R200 for 7 dinners: 'cook once, eat twice' repeats each dish before the next; budget held to the cent",
+      "op": "plan",
+      "candidates": [
+        {
+          "recipeId": "c1",
+          "title": "c1",
+          "servings": 2,
+          "timeMinutes": 30,
+          "tags": ["dinner"],
+          "eligible": true,
+          "coverage": 0.5,
+          "matchPct": 50,
+          "realCount": 1,
+          "perPlateCents": 2000,
+          "ingredients": [
+            {
+              "id": "a1",
+              "qty": 400,
+              "unit": "g",
+              "optional": false
+            }
+          ]
+        },
+        {
+          "recipeId": "c2",
+          "title": "c2",
+          "servings": 2,
+          "timeMinutes": 30,
+          "tags": ["dinner"],
+          "eligible": true,
+          "coverage": 0.5,
+          "matchPct": 50,
+          "realCount": 1,
+          "perPlateCents": 2000,
+          "ingredients": [
+            {
+              "id": "a2",
+              "qty": 400,
+              "unit": "g",
+              "optional": false
+            }
+          ]
+        },
+        {
+          "recipeId": "c3",
+          "title": "c3",
+          "servings": 2,
+          "timeMinutes": 30,
+          "tags": ["dinner"],
+          "eligible": true,
+          "coverage": 0.5,
+          "matchPct": 50,
+          "realCount": 1,
+          "perPlateCents": 2000,
+          "ingredients": [
+            {
+              "id": "a3",
+              "qty": 400,
+              "unit": "g",
+              "optional": false
+            }
+          ]
+        },
+        {
+          "recipeId": "c4",
+          "title": "c4",
+          "servings": 2,
+          "timeMinutes": 30,
+          "tags": ["dinner"],
+          "eligible": true,
+          "coverage": 0.5,
+          "matchPct": 50,
+          "realCount": 1,
+          "perPlateCents": 2000,
+          "ingredients": [
+            {
+              "id": "a4",
+              "qty": 400,
+              "unit": "g",
+              "optional": false
+            }
+          ]
+        },
+        {
+          "recipeId": "c5",
+          "title": "c5",
+          "servings": 2,
+          "timeMinutes": 30,
+          "tags": ["dinner"],
+          "eligible": true,
+          "coverage": 0.5,
+          "matchPct": 50,
+          "realCount": 1,
+          "perPlateCents": 2000,
+          "ingredients": [
+            {
+              "id": "a5",
+              "qty": 400,
+              "unit": "g",
+              "optional": false
+            }
+          ]
+        },
+        {
+          "recipeId": "c6",
+          "title": "c6",
+          "servings": 2,
+          "timeMinutes": 30,
+          "tags": ["dinner"],
+          "eligible": true,
+          "coverage": 0.5,
+          "matchPct": 50,
+          "realCount": 1,
+          "perPlateCents": 2000,
+          "ingredients": [
+            {
+              "id": "a6",
+              "qty": 400,
+              "unit": "g",
+              "optional": false
+            }
+          ]
+        },
+        {
+          "recipeId": "c7",
+          "title": "c7",
+          "servings": 2,
+          "timeMinutes": 30,
+          "tags": ["dinner"],
+          "eligible": true,
+          "coverage": 0.5,
+          "matchPct": 50,
+          "realCount": 1,
+          "perPlateCents": 2000,
+          "ingredients": [
+            {
+              "id": "a7",
+              "qty": 400,
+              "unit": "g",
+              "optional": false
+            }
+          ]
+        }
+      ],
+      "opts": {
+        "weekBudgetCents": 20000,
+        "days": 7,
+        "servings": 2,
+        "ingredients": [
+          {
+            "id": "a1",
+            "name": "a1",
+            "aisle": "fixture",
+            "tier": 9,
+            "shelf_life_days": 365
+          },
+          {
+            "id": "a2",
+            "name": "a2",
+            "aisle": "fixture",
+            "tier": 9,
+            "shelf_life_days": 365
+          },
+          {
+            "id": "a3",
+            "name": "a3",
+            "aisle": "fixture",
+            "tier": 9,
+            "shelf_life_days": 365
+          },
+          {
+            "id": "a4",
+            "name": "a4",
+            "aisle": "fixture",
+            "tier": 9,
+            "shelf_life_days": 365
+          },
+          {
+            "id": "a5",
+            "name": "a5",
+            "aisle": "fixture",
+            "tier": 9,
+            "shelf_life_days": 365
+          },
+          {
+            "id": "a6",
+            "name": "a6",
+            "aisle": "fixture",
+            "tier": 9,
+            "shelf_life_days": 365
+          },
+          {
+            "id": "a7",
+            "name": "a7",
+            "aisle": "fixture",
+            "tier": 9,
+            "shelf_life_days": 365
+          }
+        ],
+        "priceEntries": [
+          {
+            "ingredient_id": "a1",
+            "price_cents": 4000,
+            "pack_qty": 400,
+            "pack_unit": "g",
+            "store": "fixture",
+            "source": "verified",
+            "last_verified": "2026-10-01"
+          },
+          {
+            "ingredient_id": "a2",
+            "price_cents": 4000,
+            "pack_qty": 400,
+            "pack_unit": "g",
+            "store": "fixture",
+            "source": "verified",
+            "last_verified": "2026-10-01"
+          },
+          {
+            "ingredient_id": "a3",
+            "price_cents": 4000,
+            "pack_qty": 400,
+            "pack_unit": "g",
+            "store": "fixture",
+            "source": "verified",
+            "last_verified": "2026-10-01"
+          },
+          {
+            "ingredient_id": "a4",
+            "price_cents": 4000,
+            "pack_qty": 400,
+            "pack_unit": "g",
+            "store": "fixture",
+            "source": "verified",
+            "last_verified": "2026-10-01"
+          },
+          {
+            "ingredient_id": "a5",
+            "price_cents": 4000,
+            "pack_qty": 400,
+            "pack_unit": "g",
+            "store": "fixture",
+            "source": "verified",
+            "last_verified": "2026-10-01"
+          },
+          {
+            "ingredient_id": "a6",
+            "price_cents": 4000,
+            "pack_qty": 400,
+            "pack_unit": "g",
+            "store": "fixture",
+            "source": "verified",
+            "last_verified": "2026-10-01"
+          },
+          {
+            "ingredient_id": "a7",
+            "price_cents": 4000,
+            "pack_qty": 400,
+            "pack_unit": "g",
+            "store": "fixture",
+            "source": "verified",
+            "last_verified": "2026-10-01"
+          }
+        ],
+        "pantry": [],
+        "recentCookIds": [],
+        "repeatLovers": []
+      },
+      "expect": {
+        "days": ["c1", "c1", "c2", "c2", "c3", null, null],
+        "mealsPlanned": 5,
+        "totalCents": 20000,
+        "status": "over",
+        "savingsCents": 35000,
+        "warnings": ["bump the budget"]
+      }
+    },
+    {
+      "id": "A02",
+      "bucket": "budget",
+      "desc": "Zero budget: no meal planned, honest budget-limited warning (0 >= 0.95x0)",
+      "op": "plan",
+      "candidates": [
+        {
+          "recipeId": "solo",
+          "title": "solo",
+          "servings": 2,
+          "timeMinutes": 30,
+          "tags": ["dinner"],
+          "eligible": true,
+          "coverage": 0.5,
+          "matchPct": 50,
+          "realCount": 1,
+          "perPlateCents": 2000,
+          "ingredients": [
+            {
+              "id": "a1",
+              "qty": 400,
+              "unit": "g",
+              "optional": false
+            }
+          ]
+        }
+      ],
+      "opts": {
+        "weekBudgetCents": 0,
+        "days": 1,
+        "servings": 2,
+        "ingredients": [
+          {
+            "id": "a1",
+            "name": "a1",
+            "aisle": "fixture",
+            "tier": 9,
+            "shelf_life_days": 365
+          }
+        ],
+        "priceEntries": [
+          {
+            "ingredient_id": "a1",
+            "price_cents": 4000,
+            "pack_qty": 400,
+            "pack_unit": "g",
+            "store": "fixture",
+            "source": "verified",
+            "last_verified": "2026-10-01"
+          }
+        ],
+        "pantry": [],
+        "recentCookIds": [],
+        "repeatLovers": []
+      },
+      "expect": {
+        "days": [null],
+        "mealsPlanned": 0,
+        "totalCents": 0,
+        "status": "over",
+        "warnings": ["bump the budget"]
+      }
+    },
+    {
+      "id": "A03",
+      "bucket": "budget",
+      "desc": "Exact-fit week: 2x c1 + 1x c2 lands exactly on R120 -> 'over' band",
+      "op": "plan",
+      "candidates": [
+        {
+          "recipeId": "c1",
+          "title": "c1",
+          "servings": 2,
+          "timeMinutes": 30,
+          "tags": ["dinner"],
+          "eligible": true,
+          "coverage": 0.5,
+          "matchPct": 50,
+          "realCount": 1,
+          "perPlateCents": 2000,
+          "ingredients": [
+            {
+              "id": "a1",
+              "qty": 400,
+              "unit": "g",
+              "optional": false
+            }
+          ]
+        },
+        {
+          "recipeId": "c2",
+          "title": "c2",
+          "servings": 2,
+          "timeMinutes": 30,
+          "tags": ["dinner"],
+          "eligible": true,
+          "coverage": 0.5,
+          "matchPct": 50,
+          "realCount": 1,
+          "perPlateCents": 2000,
+          "ingredients": [
+            {
+              "id": "a2",
+              "qty": 400,
+              "unit": "g",
+              "optional": false
+            }
+          ]
+        },
+        {
+          "recipeId": "c3",
+          "title": "c3",
+          "servings": 2,
+          "timeMinutes": 30,
+          "tags": ["dinner"],
+          "eligible": true,
+          "coverage": 0.5,
+          "matchPct": 50,
+          "realCount": 1,
+          "perPlateCents": 2000,
+          "ingredients": [
+            {
+              "id": "a3",
+              "qty": 400,
+              "unit": "g",
+              "optional": false
+            }
+          ]
+        }
+      ],
+      "opts": {
+        "weekBudgetCents": 12000,
+        "days": 3,
+        "servings": 2,
+        "ingredients": [
+          {
+            "id": "a1",
+            "name": "a1",
+            "aisle": "fixture",
+            "tier": 9,
+            "shelf_life_days": 365
+          },
+          {
+            "id": "a2",
+            "name": "a2",
+            "aisle": "fixture",
+            "tier": 9,
+            "shelf_life_days": 365
+          },
+          {
+            "id": "a3",
+            "name": "a3",
+            "aisle": "fixture",
+            "tier": 9,
+            "shelf_life_days": 365
+          }
+        ],
+        "priceEntries": [
+          {
+            "ingredient_id": "a1",
+            "price_cents": 4000,
+            "pack_qty": 400,
+            "pack_unit": "g",
+            "store": "fixture",
+            "source": "verified",
+            "last_verified": "2026-10-01"
+          },
+          {
+            "ingredient_id": "a2",
+            "price_cents": 4000,
+            "pack_qty": 400,
+            "pack_unit": "g",
+            "store": "fixture",
+            "source": "verified",
+            "last_verified": "2026-10-01"
+          },
+          {
+            "ingredient_id": "a3",
+            "price_cents": 4000,
+            "pack_qty": 400,
+            "pack_unit": "g",
+            "store": "fixture",
+            "source": "verified",
+            "last_verified": "2026-10-01"
+          }
+        ],
+        "pantry": [],
+        "recentCookIds": [],
+        "repeatLovers": []
+      },
+      "expect": {
+        "days": ["c1", "c1", "c2"],
+        "mealsPlanned": 3,
+        "totalCents": 12000,
+        "status": "over"
+      }
+    },
+    {
+      "id": "A04",
+      "bucket": "budget",
+      "desc": "90% band edge: R40 spent of R44 (4000/4400 > 0.9) -> amber 'near'",
+      "op": "plan",
+      "candidates": [
+        {
+          "recipeId": "one",
+          "title": "one",
+          "servings": 2,
+          "timeMinutes": 30,
+          "tags": ["dinner"],
+          "eligible": true,
+          "coverage": 0.5,
+          "matchPct": 50,
+          "realCount": 1,
+          "perPlateCents": 2000,
+          "ingredients": [
+            {
+              "id": "a1",
+              "qty": 400,
+              "unit": "g",
+              "optional": false
+            }
+          ]
+        }
+      ],
+      "opts": {
+        "weekBudgetCents": 4400,
+        "days": 1,
+        "servings": 2,
+        "ingredients": [
+          {
+            "id": "a1",
+            "name": "a1",
+            "aisle": "fixture",
+            "tier": 9,
+            "shelf_life_days": 365
+          }
+        ],
+        "priceEntries": [
+          {
+            "ingredient_id": "a1",
+            "price_cents": 4000,
+            "pack_qty": 400,
+            "pack_unit": "g",
+            "store": "fixture",
+            "source": "verified",
+            "last_verified": "2026-10-01"
+          }
+        ],
+        "pantry": [],
+        "recentCookIds": [],
+        "repeatLovers": []
+      },
+      "expect": {
+        "days": ["one"],
+        "mealsPlanned": 1,
+        "totalCents": 4000,
+        "status": "near"
+      }
+    },
+    {
+      "id": "A05",
+      "bucket": "budget",
+      "desc": "Under band: R40 of R50 (4000 < 4500) -> green 'under'",
+      "op": "plan",
+      "candidates": [
+        {
+          "recipeId": "one",
+          "title": "one",
+          "servings": 2,
+          "timeMinutes": 30,
+          "tags": ["dinner"],
+          "eligible": true,
+          "coverage": 0.5,
+          "matchPct": 50,
+          "realCount": 1,
+          "perPlateCents": 2000,
+          "ingredients": [
+            {
+              "id": "a1",
+              "qty": 400,
+              "unit": "g",
+              "optional": false
+            }
+          ]
+        }
+      ],
+      "opts": {
+        "weekBudgetCents": 5000,
+        "days": 1,
+        "servings": 2,
+        "ingredients": [
+          {
+            "id": "a1",
+            "name": "a1",
+            "aisle": "fixture",
+            "tier": 9,
+            "shelf_life_days": 365
+          }
+        ],
+        "priceEntries": [
+          {
+            "ingredient_id": "a1",
+            "price_cents": 4000,
+            "pack_qty": 400,
+            "pack_unit": "g",
+            "store": "fixture",
+            "source": "verified",
+            "last_verified": "2026-10-01"
+          }
+        ],
+        "pantry": [],
+        "recentCookIds": [],
+        "repeatLovers": []
+      },
+      "expect": {
+        "days": ["one"],
+        "mealsPlanned": 1,
+        "totalCents": 4000,
+        "status": "under"
+      }
+    },
+    {
+      "id": "A06",
+      "bucket": "budget",
+      "desc": "P-307 utilization: greedy takes cheap R40, upgrade pass swaps to realCount-3 R60 within budget",
+      "op": "plan",
+      "candidates": [
+        {
+          "recipeId": "cheap",
+          "title": "cheap",
+          "servings": 2,
+          "timeMinutes": 30,
+          "tags": ["dinner"],
+          "eligible": true,
+          "coverage": 0.5,
+          "matchPct": 50,
+          "realCount": 1,
+          "perPlateCents": 2000,
+          "ingredients": [
+            {
+              "id": "beefA",
+              "qty": 400,
+              "unit": "g",
+              "optional": false
+            }
+          ]
+        },
+        {
+          "recipeId": "quality",
+          "title": "quality",
+          "servings": 2,
+          "timeMinutes": 30,
+          "tags": ["dinner"],
+          "eligible": true,
+          "coverage": 0.6,
+          "matchPct": 50,
+          "realCount": 3,
+          "perPlateCents": 2000,
+          "ingredients": [
+            {
+              "id": "beefB",
+              "qty": 400,
+              "unit": "g",
+              "optional": false
+            }
+          ]
+        }
+      ],
+      "opts": {
+        "weekBudgetCents": 6000,
+        "days": 1,
+        "servings": 2,
+        "ingredients": [
+          {
+            "id": "beefA",
+            "name": "beefA",
+            "aisle": "fixture",
+            "tier": 9,
+            "shelf_life_days": 365
+          },
+          {
+            "id": "beefB",
+            "name": "beefB",
+            "aisle": "fixture",
+            "tier": 9,
+            "shelf_life_days": 365
+          }
+        ],
+        "priceEntries": [
+          {
+            "ingredient_id": "beefA",
+            "price_cents": 4000,
+            "pack_qty": 400,
+            "pack_unit": "g",
+            "store": "fixture",
+            "source": "verified",
+            "last_verified": "2026-10-01"
+          },
+          {
+            "ingredient_id": "beefB",
+            "price_cents": 6000,
+            "pack_qty": 400,
+            "pack_unit": "g",
+            "store": "fixture",
+            "source": "verified",
+            "last_verified": "2026-10-01"
+          }
+        ],
+        "pantry": [],
+        "recentCookIds": [],
+        "repeatLovers": []
+      },
+      "expect": {
+        "days": ["quality"],
+        "totalCents": 6000,
+        "status": "over",
+        "mealsPlanned": 1
+      }
+    },
+    {
+      "id": "A07",
+      "bucket": "budget",
+      "desc": "Budget far too small (R5 vs R40 meal): 0 meals, variety-flavored warning (spend < 95%)",
+      "op": "plan",
+      "candidates": [
+        {
+          "recipeId": "one",
+          "title": "one",
+          "servings": 2,
+          "timeMinutes": 30,
+          "tags": ["dinner"],
+          "eligible": true,
+          "coverage": 0.5,
+          "matchPct": 50,
+          "realCount": 1,
+          "perPlateCents": 2000,
+          "ingredients": [
+            {
+              "id": "a1",
+              "qty": 400,
+              "unit": "g",
+              "optional": false
+            }
+          ]
+        }
+      ],
+      "opts": {
+        "weekBudgetCents": 500,
+        "days": 1,
+        "servings": 2,
+        "ingredients": [
+          {
+            "id": "a1",
+            "name": "a1",
+            "aisle": "fixture",
+            "tier": 9,
+            "shelf_life_days": 365
+          }
+        ],
+        "priceEntries": [
+          {
+            "ingredient_id": "a1",
+            "price_cents": 4000,
+            "pack_qty": 400,
+            "pack_unit": "g",
+            "store": "fixture",
+            "source": "verified",
+            "last_verified": "2026-10-01"
+          }
+        ],
+        "pantry": [],
+        "recentCookIds": [],
+        "repeatLovers": []
+      },
+      "expect": {
+        "days": [null],
+        "mealsPlanned": 0,
+        "totalCents": 0,
+        "warnings": ["Only 0 of 1 days filled"]
+      }
+    },
+    {
+      "id": "A08",
+      "bucket": "budget",
+      "desc": "Pack-rounding honesty: 250g need rounds to a 400g pack (R40) -> R30 budget can't afford it",
+      "op": "plan",
+      "candidates": [
+        {
+          "recipeId": "one",
+          "title": "one",
+          "servings": 2,
+          "timeMinutes": 30,
+          "tags": ["dinner"],
+          "eligible": true,
+          "coverage": 0.5,
+          "matchPct": 50,
+          "realCount": 1,
+          "perPlateCents": 2000,
+          "ingredients": [
+            {
+              "id": "a1",
+              "qty": 250,
+              "unit": "g",
+              "optional": false
+            }
+          ]
+        }
+      ],
+      "opts": {
+        "weekBudgetCents": 3000,
+        "days": 1,
+        "servings": 2,
+        "ingredients": [
+          {
+            "id": "a1",
+            "name": "a1",
+            "aisle": "fixture",
+            "tier": 9,
+            "shelf_life_days": 30
+          }
+        ],
+        "priceEntries": [
+          {
+            "ingredient_id": "a1",
+            "price_cents": 4000,
+            "pack_qty": 400,
+            "pack_unit": "g",
+            "store": "fixture",
+            "source": "verified",
+            "last_verified": "2026-10-01"
+          }
+        ],
+        "pantry": [],
+        "recentCookIds": [],
+        "repeatLovers": []
+      },
+      "expect": {
+        "days": [null],
+        "mealsPlanned": 0,
+        "totalCents": 0
+      }
+    },
+    {
+      "id": "A09",
+      "bucket": "budget",
+      "desc": "Same rounding at R40 budget: charged for the WHOLE pack, long shelf -> no waste report",
+      "op": "plan",
+      "candidates": [
+        {
+          "recipeId": "one",
+          "title": "one",
+          "servings": 2,
+          "timeMinutes": 30,
+          "tags": ["dinner"],
+          "eligible": true,
+          "coverage": 0.5,
+          "matchPct": 50,
+          "realCount": 1,
+          "perPlateCents": 2000,
+          "ingredients": [
+            {
+              "id": "a1",
+              "qty": 250,
+              "unit": "g",
+              "optional": false
+            }
+          ]
+        }
+      ],
+      "opts": {
+        "weekBudgetCents": 4000,
+        "days": 1,
+        "servings": 2,
+        "ingredients": [
+          {
+            "id": "a1",
+            "name": "a1",
+            "aisle": "fixture",
+            "tier": 9,
+            "shelf_life_days": 30
+          }
+        ],
+        "priceEntries": [
+          {
+            "ingredient_id": "a1",
+            "price_cents": 4000,
+            "pack_qty": 400,
+            "pack_unit": "g",
+            "store": "fixture",
+            "source": "verified",
+            "last_verified": "2026-10-01"
+          }
+        ],
+        "pantry": [],
+        "recentCookIds": [],
+        "repeatLovers": []
+      },
+      "expect": {
+        "days": ["one"],
+        "mealsPlanned": 1,
+        "totalCents": 4000,
+        "status": "over",
+        "packLeftovers": []
+      }
+    },
+    {
+      "id": "A10",
+      "bucket": "budget",
+      "desc": "Pantry offsets the gap: 150g stock + 250g need -> buys 1 pack, stock valued proportionally",
+      "op": "plan",
+      "candidates": [
+        {
+          "recipeId": "one",
+          "title": "one",
+          "servings": 2,
+          "timeMinutes": 30,
+          "tags": ["dinner"],
+          "eligible": true,
+          "coverage": 0.5,
+          "matchPct": 50,
+          "realCount": 1,
+          "perPlateCents": 2000,
+          "ingredients": [
+            {
+              "id": "a1",
+              "qty": 250,
+              "unit": "g",
+              "optional": false
+            }
+          ]
+        }
+      ],
+      "opts": {
+        "weekBudgetCents": 4000,
+        "days": 1,
+        "servings": 2,
+        "ingredients": [
+          {
+            "id": "a1",
+            "name": "a1",
+            "aisle": "fixture",
+            "tier": 9,
+            "shelf_life_days": 30
+          }
+        ],
+        "priceEntries": [
+          {
+            "ingredient_id": "a1",
+            "price_cents": 4000,
+            "pack_qty": 400,
+            "pack_unit": "g",
+            "store": "fixture",
+            "source": "verified",
+            "last_verified": "2026-10-01"
+          }
+        ],
+        "pantry": [
+          {
+            "id": "a1",
+            "qty": 150,
+            "unit": "g"
+          }
+        ],
+        "recentCookIds": [],
+        "repeatLovers": []
+      },
+      "expect": {
+        "days": ["one"],
+        "mealsPlanned": 1,
+        "totalCents": 4000,
+        "pantryUse": [
+          {
+            "id": "a1",
+            "qty": 150,
+            "valueCents": 1500
+          }
+        ]
+      }
+    },
+    {
+      "id": "B01",
+      "bucket": "pantry",
+      "desc": "Empty pantry week: repeats pack-share; every line bought, no pantry-use rows",
+      "op": "plan",
+      "candidates": [
+        {
+          "recipeId": "c1",
+          "title": "c1",
+          "servings": 2,
+          "timeMinutes": 30,
+          "tags": ["dinner"],
+          "eligible": true,
+          "coverage": 0.5,
+          "matchPct": 50,
+          "realCount": 1,
+          "perPlateCents": 2000,
+          "ingredients": [
+            {
+              "id": "a1",
+              "qty": 400,
+              "unit": "g",
+              "optional": false
+            }
+          ]
+        },
+        {
+          "recipeId": "c2",
+          "title": "c2",
+          "servings": 2,
+          "timeMinutes": 30,
+          "tags": ["dinner"],
+          "eligible": true,
+          "coverage": 0.5,
+          "matchPct": 50,
+          "realCount": 1,
+          "perPlateCents": 2000,
+          "ingredients": [
+            {
+              "id": "a2",
+              "qty": 400,
+              "unit": "g",
+              "optional": false
+            }
+          ]
+        },
+        {
+          "recipeId": "c3",
+          "title": "c3",
+          "servings": 2,
+          "timeMinutes": 30,
+          "tags": ["dinner"],
+          "eligible": true,
+          "coverage": 0.5,
+          "matchPct": 50,
+          "realCount": 1,
+          "perPlateCents": 2000,
+          "ingredients": [
+            {
+              "id": "a3",
+              "qty": 400,
+              "unit": "g",
+              "optional": false
+            }
+          ]
+        }
+      ],
+      "opts": {
+        "weekBudgetCents": 12000,
+        "days": 3,
+        "servings": 2,
+        "ingredients": [
+          {
+            "id": "a1",
+            "name": "a1",
+            "aisle": "fixture",
+            "tier": 9,
+            "shelf_life_days": 365
+          },
+          {
+            "id": "a2",
+            "name": "a2",
+            "aisle": "fixture",
+            "tier": 9,
+            "shelf_life_days": 365
+          },
+          {
+            "id": "a3",
+            "name": "a3",
+            "aisle": "fixture",
+            "tier": 9,
+            "shelf_life_days": 365
+          }
+        ],
+        "priceEntries": [
+          {
+            "ingredient_id": "a1",
+            "price_cents": 4000,
+            "pack_qty": 400,
+            "pack_unit": "g",
+            "store": "fixture",
+            "source": "verified",
+            "last_verified": "2026-10-01"
+          },
+          {
+            "ingredient_id": "a2",
+            "price_cents": 4000,
+            "pack_qty": 400,
+            "pack_unit": "g",
+            "store": "fixture",
+            "source": "verified",
+            "last_verified": "2026-10-01"
+          },
+          {
+            "ingredient_id": "a3",
+            "price_cents": 4000,
+            "pack_qty": 400,
+            "pack_unit": "g",
+            "store": "fixture",
+            "source": "verified",
+            "last_verified": "2026-10-01"
+          }
+        ],
+        "pantry": [],
+        "recentCookIds": [],
+        "repeatLovers": []
+      },
+      "expect": {
+        "days": ["c1", "c1", "c2"],
+        "totalCents": 12000,
+        "pantryUse": [],
+        "shoppingList": [
+          {
+            "id": "a1",
+            "packs": 2,
+            "priceCents": 8000
+          },
+          {
+            "id": "a2",
+            "packs": 1,
+            "priceCents": 4000
+          }
+        ]
+      }
+    },
+    {
+      "id": "B02",
+      "bucket": "pantry",
+      "desc": "Fully-stocked week: R0 shop, all plate value from the kitchen",
+      "op": "plan",
+      "candidates": [
+        {
+          "recipeId": "c1",
+          "title": "c1",
+          "servings": 2,
+          "timeMinutes": 30,
+          "tags": ["dinner"],
+          "eligible": true,
+          "coverage": 0.5,
+          "matchPct": 50,
+          "realCount": 1,
+          "perPlateCents": 2000,
+          "ingredients": [
+            {
+              "id": "a1",
+              "qty": 400,
+              "unit": "g",
+              "optional": false
+            }
+          ]
+        },
+        {
+          "recipeId": "c2",
+          "title": "c2",
+          "servings": 2,
+          "timeMinutes": 30,
+          "tags": ["dinner"],
+          "eligible": true,
+          "coverage": 0.5,
+          "matchPct": 50,
+          "realCount": 1,
+          "perPlateCents": 2000,
+          "ingredients": [
+            {
+              "id": "a2",
+              "qty": 400,
+              "unit": "g",
+              "optional": false
+            }
+          ]
+        },
+        {
+          "recipeId": "c3",
+          "title": "c3",
+          "servings": 2,
+          "timeMinutes": 30,
+          "tags": ["dinner"],
+          "eligible": true,
+          "coverage": 0.5,
+          "matchPct": 50,
+          "realCount": 1,
+          "perPlateCents": 2000,
+          "ingredients": [
+            {
+              "id": "a3",
+              "qty": 400,
+              "unit": "g",
+              "optional": false
+            }
+          ]
+        }
+      ],
+      "opts": {
+        "weekBudgetCents": 12000,
+        "days": 3,
+        "servings": 2,
+        "ingredients": [
+          {
+            "id": "a1",
+            "name": "a1",
+            "aisle": "fixture",
+            "tier": 9,
+            "shelf_life_days": 365
+          },
+          {
+            "id": "a2",
+            "name": "a2",
+            "aisle": "fixture",
+            "tier": 9,
+            "shelf_life_days": 365
+          },
+          {
+            "id": "a3",
+            "name": "a3",
+            "aisle": "fixture",
+            "tier": 9,
+            "shelf_life_days": 365
+          }
+        ],
+        "priceEntries": [
+          {
+            "ingredient_id": "a1",
+            "price_cents": 4000,
+            "pack_qty": 400,
+            "pack_unit": "g",
+            "store": "fixture",
+            "source": "verified",
+            "last_verified": "2026-10-01"
+          },
+          {
+            "ingredient_id": "a2",
+            "price_cents": 4000,
+            "pack_qty": 400,
+            "pack_unit": "g",
+            "store": "fixture",
+            "source": "verified",
+            "last_verified": "2026-10-01"
+          },
+          {
+            "ingredient_id": "a3",
+            "price_cents": 4000,
+            "pack_qty": 400,
+            "pack_unit": "g",
+            "store": "fixture",
+            "source": "verified",
+            "last_verified": "2026-10-01"
+          }
+        ],
+        "pantry": [
+          {
+            "id": "a1",
+            "qty": 400,
+            "unit": "g"
+          },
+          {
+            "id": "a2",
+            "qty": 400,
+            "unit": "g"
+          },
+          {
+            "id": "a3",
+            "qty": 400,
+            "unit": "g"
+          }
+        ],
+        "recentCookIds": [],
+        "repeatLovers": []
+      },
+      "expect": {
+        "days": ["c1", "c2", "c3"],
+        "totalCents": 0,
+        "status": "under",
+        "shoppingList": [],
+        "pantryUseCount": 3
+      }
+    },
+    {
+      "id": "B03",
+      "bucket": "pantry",
+      "desc": "P-306 hole fix: shared 500g stock consumed ONCE; the second meal (tie->repeat) buys its own pack",
+      "op": "plan",
+      "candidates": [
+        {
+          "recipeId": "m1",
+          "title": "m1",
+          "servings": 2,
+          "timeMinutes": 30,
+          "tags": ["dinner"],
+          "eligible": true,
+          "coverage": 0.5,
+          "matchPct": 50,
+          "realCount": 1,
+          "perPlateCents": 2000,
+          "ingredients": [
+            {
+              "id": "onions",
+              "qty": 500,
+              "unit": "g",
+              "optional": false
+            }
+          ]
+        },
+        {
+          "recipeId": "m2",
+          "title": "m2",
+          "servings": 2,
+          "timeMinutes": 30,
+          "tags": ["dinner"],
+          "eligible": true,
+          "coverage": 0.5,
+          "matchPct": 50,
+          "realCount": 1,
+          "perPlateCents": 2000,
+          "ingredients": [
+            {
+              "id": "onions",
+              "qty": 500,
+              "unit": "g",
+              "optional": false
+            }
+          ]
+        }
+      ],
+      "opts": {
+        "weekBudgetCents": 20000,
+        "days": 2,
+        "servings": 2,
+        "ingredients": [
+          {
+            "id": "onions",
+            "name": "onions",
+            "aisle": "fixture",
+            "tier": 9,
+            "shelf_life_days": 365
+          }
+        ],
+        "priceEntries": [
+          {
+            "ingredient_id": "onions",
+            "price_cents": 2000,
+            "pack_qty": 500,
+            "pack_unit": "g",
+            "store": "fixture",
+            "source": "verified",
+            "last_verified": "2026-10-01"
+          }
+        ],
+        "pantry": [
+          {
+            "id": "onions",
+            "qty": 500,
+            "unit": "g"
+          }
+        ],
+        "recentCookIds": [],
+        "repeatLovers": []
+      },
+      "expect": {
+        "days": ["m1", "m1"],
+        "totalCents": 2000,
+        "shoppingList": [
+          {
+            "id": "onions",
+            "packs": 1,
+            "priceCents": 2000
+          }
+        ],
+        "pantryUse": [
+          {
+            "id": "onions",
+            "qty": 500,
+            "valueCents": 2000
+          }
+        ]
+      }
+    },
+    {
+      "id": "B04",
+      "bucket": "pantry",
+      "desc": "Partial coverage buys only the true gap (100g stock, 300g need -> still 1 pack, stock valued)",
+      "op": "plan",
+      "candidates": [
+        {
+          "recipeId": "one",
+          "title": "one",
+          "servings": 2,
+          "timeMinutes": 30,
+          "tags": ["dinner"],
+          "eligible": true,
+          "coverage": 0.5,
+          "matchPct": 50,
+          "realCount": 1,
+          "perPlateCents": 2000,
+          "ingredients": [
+            {
+              "id": "onions",
+              "qty": 300,
+              "unit": "g",
+              "optional": false
+            }
+          ]
+        }
+      ],
+      "opts": {
+        "weekBudgetCents": 4000,
+        "days": 1,
+        "servings": 2,
+        "ingredients": [
+          {
+            "id": "onions",
+            "name": "onions",
+            "aisle": "fixture",
+            "tier": 9,
+            "shelf_life_days": 365
+          }
+        ],
+        "priceEntries": [
+          {
+            "ingredient_id": "onions",
+            "price_cents": 4000,
+            "pack_qty": 400,
+            "pack_unit": "g",
+            "store": "fixture",
+            "source": "verified",
+            "last_verified": "2026-10-01"
+          }
+        ],
+        "pantry": [
+          {
+            "id": "onions",
+            "qty": 100,
+            "unit": "g"
+          }
+        ],
+        "recentCookIds": [],
+        "repeatLovers": []
+      },
+      "expect": {
+        "days": ["one"],
+        "totalCents": 4000,
+        "shoppingList": [
+          {
+            "id": "onions",
+            "packs": 1,
+            "priceCents": 4000
+          }
+        ],
+        "pantryUse": [
+          {
+            "id": "onions",
+            "qty": 100,
+            "valueCents": 1000
+          }
+        ]
+      }
+    },
+    {
+      "id": "B05",
+      "bucket": "pantry",
+      "desc": "Staple-tier lines (tier 0 <= 0.5) are assumed-home: never bought, never consume stock",
+      "op": "plan",
+      "candidates": [
+        {
+          "recipeId": "one",
+          "title": "one",
+          "servings": 2,
+          "timeMinutes": 30,
+          "tags": ["dinner"],
+          "eligible": true,
+          "coverage": 0.5,
+          "matchPct": 50,
+          "realCount": 1,
+          "perPlateCents": 2000,
+          "ingredients": [
+            {
+              "id": "salt",
+              "qty": 5,
+              "unit": "g",
+              "optional": false
+            }
+          ]
+        }
+      ],
+      "opts": {
+        "weekBudgetCents": 4000,
+        "days": 1,
+        "servings": 2,
+        "ingredients": [
+          {
+            "id": "salt",
+            "name": "salt",
+            "aisle": "fixture",
+            "tier": 0,
+            "shelf_life_days": 365
+          }
+        ],
+        "priceEntries": [
+          {
+            "ingredient_id": "salt",
+            "price_cents": 1000,
+            "pack_qty": 200,
+            "pack_unit": "g",
+            "store": "fixture",
+            "source": "verified",
+            "last_verified": "2026-10-01"
+          }
+        ],
+        "pantry": [],
+        "recentCookIds": [],
+        "repeatLovers": []
+      },
+      "expect": {
+        "days": ["one"],
+        "mealsPlanned": 1,
+        "totalCents": 0,
+        "shoppingList": [],
+        "pantryUse": []
+      }
+    },
+    {
+      "id": "B06",
+      "bucket": "pantry",
+      "desc": "Garbage pantry rows (negative/zero/string qty) skipped, not trusted (P-308)",
+      "op": "plan",
+      "candidates": [
+        {
+          "recipeId": "one",
+          "title": "one",
+          "servings": 2,
+          "timeMinutes": 30,
+          "tags": ["dinner"],
+          "eligible": true,
+          "coverage": 0.5,
+          "matchPct": 50,
+          "realCount": 1,
+          "perPlateCents": 2000,
+          "ingredients": [
+            {
+              "id": "a1",
+              "qty": 400,
+              "unit": "g",
+              "optional": false
+            }
+          ]
+        }
+      ],
+      "opts": {
+        "weekBudgetCents": 4000,
+        "days": 1,
+        "servings": 2,
+        "ingredients": [
+          {
+            "id": "a1",
+            "name": "a1",
+            "aisle": "fixture",
+            "tier": 9,
+            "shelf_life_days": 365
+          }
+        ],
+        "priceEntries": [
+          {
+            "ingredient_id": "a1",
+            "price_cents": 4000,
+            "pack_qty": 400,
+            "pack_unit": "g",
+            "store": "fixture",
+            "source": "verified",
+            "last_verified": "2026-10-01"
+          }
+        ],
+        "pantry": [
+          {
+            "id": "a1",
+            "qty": -5,
+            "unit": "g"
+          },
+          {
+            "id": "a1",
+            "qty": 0,
+            "unit": "g"
+          },
+          {
+            "id": "a1",
+            "qty": "abc",
+            "unit": "g"
+          }
+        ],
+        "recentCookIds": [],
+        "repeatLovers": []
+      },
+      "expect": {
+        "days": ["one"],
+        "totalCents": 4000,
+        "pantryUse": []
+      }
+    },
+    {
+      "id": "B07",
+      "bucket": "pantry",
+      "desc": "Unconvertible 'unit' lines: 3 loose pantry ROWS consumed once each; 4th meal count-buys a pack",
+      "op": "plan",
+      "candidates": [
+        {
+          "recipeId": "r1",
+          "title": "r1",
+          "servings": 2,
+          "timeMinutes": 30,
+          "tags": ["dinner"],
+          "eligible": true,
+          "coverage": 0.5,
+          "matchPct": 50,
+          "realCount": 1,
+          "perPlateCents": 2000,
+          "ingredients": [
+            {
+              "id": "myst",
+              "qty": 2,
+              "unit": "unit",
+              "optional": false
+            }
+          ]
+        },
+        {
+          "recipeId": "r2",
+          "title": "r2",
+          "servings": 2,
+          "timeMinutes": 30,
+          "tags": ["dinner"],
+          "eligible": true,
+          "coverage": 0.5,
+          "matchPct": 50,
+          "realCount": 1,
+          "perPlateCents": 2000,
+          "ingredients": [
+            {
+              "id": "myst",
+              "qty": 2,
+              "unit": "unit",
+              "optional": false
+            }
+          ]
+        },
+        {
+          "recipeId": "r3",
+          "title": "r3",
+          "servings": 2,
+          "timeMinutes": 30,
+          "tags": ["dinner"],
+          "eligible": true,
+          "coverage": 0.5,
+          "matchPct": 50,
+          "realCount": 1,
+          "perPlateCents": 2000,
+          "ingredients": [
+            {
+              "id": "myst",
+              "qty": 2,
+              "unit": "unit",
+              "optional": false
+            }
+          ]
+        },
+        {
+          "recipeId": "r4",
+          "title": "r4",
+          "servings": 2,
+          "timeMinutes": 30,
+          "tags": ["dinner"],
+          "eligible": true,
+          "coverage": 0.5,
+          "matchPct": 50,
+          "realCount": 1,
+          "perPlateCents": 2000,
+          "ingredients": [
+            {
+              "id": "myst",
+              "qty": 2,
+              "unit": "unit",
+              "optional": false
+            }
+          ]
+        }
+      ],
+      "opts": {
+        "weekBudgetCents": 20000,
+        "days": 4,
+        "servings": 2,
+        "ingredients": [
+          {
+            "id": "myst",
+            "name": "myst",
+            "aisle": "fixture",
+            "tier": 9,
+            "shelf_life_days": 365
+          }
+        ],
+        "priceEntries": [
+          {
+            "ingredient_id": "myst",
+            "price_cents": 4000,
+            "pack_qty": 400,
+            "pack_unit": "g",
+            "store": "fixture",
+            "source": "verified",
+            "last_verified": "2026-10-01"
+          }
+        ],
+        "pantry": [
+          {
+            "id": "myst",
+            "qty": 1,
+            "unit": "unit"
+          },
+          {
+            "id": "myst",
+            "qty": 1,
+            "unit": "unit"
+          },
+          {
+            "id": "myst",
+            "qty": 1,
+            "unit": "unit"
+          }
+        ],
+        "recentCookIds": [],
+        "repeatLovers": []
+      },
+      "expect": {
+        "days": ["r1", "r1", "r2", "r2"],
+        "mealsPlanned": 4,
+        "totalCents": 4000,
+        "shoppingList": [
+          {
+            "id": "myst",
+            "packs": 1,
+            "priceCents": 4000
+          }
+        ],
+        "pantryUse": [
+          {
+            "id": "myst",
+            "qty": 3,
+            "unit": "unit",
+            "valueCents": null
+          }
+        ]
+      }
+    },
+    {
+      "id": "B08",
+      "bucket": "pantry",
+      "desc": "Pantry-use value is proportional to pack price (400g of a 2000g/R60 pack = R12)",
+      "op": "plan",
+      "candidates": [
+        {
+          "recipeId": "one",
+          "title": "one",
+          "servings": 2,
+          "timeMinutes": 30,
+          "tags": ["dinner"],
+          "eligible": true,
+          "coverage": 0.5,
+          "matchPct": 50,
+          "realCount": 1,
+          "perPlateCents": 2000,
+          "ingredients": [
+            {
+              "id": "rice",
+              "qty": 400,
+              "unit": "g",
+              "optional": false
+            }
+          ]
+        }
+      ],
+      "opts": {
+        "weekBudgetCents": 6000,
+        "days": 1,
+        "servings": 2,
+        "ingredients": [
+          {
+            "id": "rice",
+            "name": "rice",
+            "aisle": "fixture",
+            "tier": 9,
+            "shelf_life_days": 365
+          }
+        ],
+        "priceEntries": [
+          {
+            "ingredient_id": "rice",
+            "price_cents": 6000,
+            "pack_qty": 2000,
+            "pack_unit": "g",
+            "store": "fixture",
+            "source": "verified",
+            "last_verified": "2026-10-01"
+          }
+        ],
+        "pantry": [
+          {
+            "id": "rice",
+            "qty": 1000,
+            "unit": "g"
+          }
+        ],
+        "recentCookIds": [],
+        "repeatLovers": []
+      },
+      "expect": {
+        "days": ["one"],
+        "totalCents": 0,
+        "pantryUse": [
+          {
+            "id": "rice",
+            "qty": 400,
+            "valueCents": 1200
+          }
+        ]
+      }
+    },
+    {
+      "id": "C01",
+      "bucket": "perishable",
+      "desc": "Relief decides day 3: eater eff R36.50 (R39 - 0.25x(1/3xR30)) beats plain R37; starter's near-free repeat takes days 1-2",
+      "op": "plan",
+      "candidates": [
+        {
+          "recipeId": "starter",
+          "title": "starter",
+          "servings": 2,
+          "timeMinutes": 30,
+          "tags": ["dinner"],
+          "eligible": true,
+          "coverage": 0.6,
+          "matchPct": 50,
+          "realCount": 1,
+          "perPlateCents": 2000,
+          "ingredients": [
+            {
+              "id": "spinach",
+              "qty": 50,
+              "unit": "g",
+              "optional": false
+            },
+            {
+              "id": "pasta",
+              "qty": 400,
+              "unit": "g",
+              "optional": false
+            }
+          ]
+        },
+        {
+          "recipeId": "plain",
+          "title": "plain",
+          "servings": 2,
+          "timeMinutes": 30,
+          "tags": ["dinner"],
+          "eligible": true,
+          "coverage": 0.5,
+          "matchPct": 50,
+          "realCount": 1,
+          "perPlateCents": 2000,
+          "ingredients": [
+            {
+              "id": "beefA",
+              "qty": 500,
+              "unit": "g",
+              "optional": false
+            }
+          ]
+        },
+        {
+          "recipeId": "eater",
+          "title": "eater",
+          "servings": 2,
+          "timeMinutes": 30,
+          "tags": ["dinner"],
+          "eligible": true,
+          "coverage": 0.5,
+          "matchPct": 50,
+          "realCount": 1,
+          "perPlateCents": 2000,
+          "ingredients": [
+            {
+              "id": "beefB",
+              "qty": 400,
+              "unit": "g",
+              "optional": false
+            },
+            {
+              "id": "spinach",
+              "qty": 300,
+              "unit": "g",
+              "optional": false
+            }
+          ]
+        }
+      ],
+      "opts": {
+        "weekBudgetCents": 8100,
+        "days": 3,
+        "servings": 2,
+        "ingredients": [
+          {
+            "id": "spinach",
+            "name": "spinach",
+            "aisle": "fixture",
+            "tier": 9,
+            "shelf_life_days": 3
+          },
+          {
+            "id": "pasta",
+            "name": "pasta",
+            "aisle": "fixture",
+            "tier": 9,
+            "shelf_life_days": 365
+          },
+          {
+            "id": "beefA",
+            "name": "beefA",
+            "aisle": "fixture",
+            "tier": 9,
+            "shelf_life_days": 365
+          },
+          {
+            "id": "beefB",
+            "name": "beefB",
+            "aisle": "fixture",
+            "tier": 9,
+            "shelf_life_days": 365
+          }
+        ],
+        "priceEntries": [
+          {
+            "ingredient_id": "spinach",
+            "price_cents": 3000,
+            "pack_qty": 400,
+            "pack_unit": "g",
+            "store": "fixture",
+            "source": "verified",
+            "last_verified": "2026-10-01"
+          },
+          {
+            "ingredient_id": "pasta",
+            "price_cents": 600,
+            "pack_qty": 500,
+            "pack_unit": "g",
+            "store": "fixture",
+            "source": "verified",
+            "last_verified": "2026-10-01"
+          },
+          {
+            "ingredient_id": "beefA",
+            "price_cents": 3700,
+            "pack_qty": 500,
+            "pack_unit": "g",
+            "store": "fixture",
+            "source": "verified",
+            "last_verified": "2026-10-01"
+          },
+          {
+            "ingredient_id": "beefB",
+            "price_cents": 3900,
+            "pack_qty": 400,
+            "pack_unit": "g",
+            "store": "fixture",
+            "source": "verified",
+            "last_verified": "2026-10-01"
+          }
+        ],
+        "pantry": [],
+        "recentCookIds": [],
+        "repeatLovers": []
+      },
+      "expect": {
+        "days": ["starter", "starter", "eater"],
+        "mealsPlanned": 3,
+        "totalCents": 8100,
+        "packLeftovers": [],
+        "savingsCents": 24900,
+        "status": "over"
+      }
+    },
+    {
+      "id": "C02",
+      "bucket": "perishable",
+      "desc": "Long-shelf (365d) spinach gets NO relief: eater stays R39 -> plain (R37) wins day 3",
+      "op": "plan",
+      "candidates": [
+        {
+          "recipeId": "starter",
+          "title": "starter",
+          "servings": 2,
+          "timeMinutes": 30,
+          "tags": ["dinner"],
+          "eligible": true,
+          "coverage": 0.6,
+          "matchPct": 50,
+          "realCount": 1,
+          "perPlateCents": 2000,
+          "ingredients": [
+            {
+              "id": "spinach",
+              "qty": 50,
+              "unit": "g",
+              "optional": false
+            },
+            {
+              "id": "pasta",
+              "qty": 400,
+              "unit": "g",
+              "optional": false
+            }
+          ]
+        },
+        {
+          "recipeId": "plain",
+          "title": "plain",
+          "servings": 2,
+          "timeMinutes": 30,
+          "tags": ["dinner"],
+          "eligible": true,
+          "coverage": 0.5,
+          "matchPct": 50,
+          "realCount": 1,
+          "perPlateCents": 2000,
+          "ingredients": [
+            {
+              "id": "beefA",
+              "qty": 500,
+              "unit": "g",
+              "optional": false
+            }
+          ]
+        },
+        {
+          "recipeId": "eater",
+          "title": "eater",
+          "servings": 2,
+          "timeMinutes": 30,
+          "tags": ["dinner"],
+          "eligible": true,
+          "coverage": 0.5,
+          "matchPct": 50,
+          "realCount": 1,
+          "perPlateCents": 2000,
+          "ingredients": [
+            {
+              "id": "beefB",
+              "qty": 400,
+              "unit": "g",
+              "optional": false
+            },
+            {
+              "id": "spinach",
+              "qty": 300,
+              "unit": "g",
+              "optional": false
+            }
+          ]
+        }
+      ],
+      "opts": {
+        "weekBudgetCents": 8100,
+        "days": 3,
+        "servings": 2,
+        "ingredients": [
+          {
+            "id": "spinach",
+            "name": "spinach",
+            "aisle": "fixture",
+            "tier": 9,
+            "shelf_life_days": 365
+          },
+          {
+            "id": "pasta",
+            "name": "pasta",
+            "aisle": "fixture",
+            "tier": 9,
+            "shelf_life_days": 365
+          },
+          {
+            "id": "beefA",
+            "name": "beefA",
+            "aisle": "fixture",
+            "tier": 9,
+            "shelf_life_days": 365
+          },
+          {
+            "id": "beefB",
+            "name": "beefB",
+            "aisle": "fixture",
+            "tier": 9,
+            "shelf_life_days": 365
+          }
+        ],
+        "priceEntries": [
+          {
+            "ingredient_id": "spinach",
+            "price_cents": 3000,
+            "pack_qty": 400,
+            "pack_unit": "g",
+            "store": "fixture",
+            "source": "verified",
+            "last_verified": "2026-10-01"
+          },
+          {
+            "ingredient_id": "pasta",
+            "price_cents": 600,
+            "pack_qty": 500,
+            "pack_unit": "g",
+            "store": "fixture",
+            "source": "verified",
+            "last_verified": "2026-10-01"
+          },
+          {
+            "ingredient_id": "beefA",
+            "price_cents": 3700,
+            "pack_qty": 500,
+            "pack_unit": "g",
+            "store": "fixture",
+            "source": "verified",
+            "last_verified": "2026-10-01"
+          },
+          {
+            "ingredient_id": "beefB",
+            "price_cents": 3900,
+            "pack_qty": 400,
+            "pack_unit": "g",
+            "store": "fixture",
+            "source": "verified",
+            "last_verified": "2026-10-01"
+          }
+        ],
+        "pantry": [],
+        "recentCookIds": [],
+        "repeatLovers": []
+      },
+      "expect": {
+        "days": ["starter", "starter", "plain"],
+        "totalCents": 7900,
+        "mealsPlanned": 3,
+        "packLeftovers": [],
+        "status": "near"
+      }
+    },
+    {
+      "id": "C03",
+      "bucket": "perishable",
+      "desc": "Shelf-2 spinach: day-3 freshness negative -> floored to 0 relief -> plain wins; the 300g surplus is then REPORTED as waste (vs C01 where the eater eats it) \u2014 relief is honesty, not a subsidy",
+      "op": "plan",
+      "candidates": [
+        {
+          "recipeId": "starter",
+          "title": "starter",
+          "servings": 2,
+          "timeMinutes": 30,
+          "tags": ["dinner"],
+          "eligible": true,
+          "coverage": 0.6,
+          "matchPct": 50,
+          "realCount": 1,
+          "perPlateCents": 2000,
+          "ingredients": [
+            {
+              "id": "spinach",
+              "qty": 50,
+              "unit": "g",
+              "optional": false
+            },
+            {
+              "id": "pasta",
+              "qty": 400,
+              "unit": "g",
+              "optional": false
+            }
+          ]
+        },
+        {
+          "recipeId": "plain",
+          "title": "plain",
+          "servings": 2,
+          "timeMinutes": 30,
+          "tags": ["dinner"],
+          "eligible": true,
+          "coverage": 0.5,
+          "matchPct": 50,
+          "realCount": 1,
+          "perPlateCents": 2000,
+          "ingredients": [
+            {
+              "id": "beefA",
+              "qty": 500,
+              "unit": "g",
+              "optional": false
+            }
+          ]
+        },
+        {
+          "recipeId": "eater",
+          "title": "eater",
+          "servings": 2,
+          "timeMinutes": 30,
+          "tags": ["dinner"],
+          "eligible": true,
+          "coverage": 0.5,
+          "matchPct": 50,
+          "realCount": 1,
+          "perPlateCents": 2000,
+          "ingredients": [
+            {
+              "id": "beefB",
+              "qty": 400,
+              "unit": "g",
+              "optional": false
+            },
+            {
+              "id": "spinach",
+              "qty": 300,
+              "unit": "g",
+              "optional": false
+            }
+          ]
+        }
+      ],
+      "opts": {
+        "weekBudgetCents": 8100,
+        "days": 3,
+        "servings": 2,
+        "ingredients": [
+          {
+            "id": "spinach",
+            "name": "spinach",
+            "aisle": "fixture",
+            "tier": 9,
+            "shelf_life_days": 2
+          },
+          {
+            "id": "pasta",
+            "name": "pasta",
+            "aisle": "fixture",
+            "tier": 9,
+            "shelf_life_days": 365
+          },
+          {
+            "id": "beefA",
+            "name": "beefA",
+            "aisle": "fixture",
+            "tier": 9,
+            "shelf_life_days": 365
+          },
+          {
+            "id": "beefB",
+            "name": "beefB",
+            "aisle": "fixture",
+            "tier": 9,
+            "shelf_life_days": 365
+          }
+        ],
+        "priceEntries": [
+          {
+            "ingredient_id": "spinach",
+            "price_cents": 3000,
+            "pack_qty": 400,
+            "pack_unit": "g",
+            "store": "fixture",
+            "source": "verified",
+            "last_verified": "2026-10-01"
+          },
+          {
+            "ingredient_id": "pasta",
+            "price_cents": 600,
+            "pack_qty": 500,
+            "pack_unit": "g",
+            "store": "fixture",
+            "source": "verified",
+            "last_verified": "2026-10-01"
+          },
+          {
+            "ingredient_id": "beefA",
+            "price_cents": 3700,
+            "pack_qty": 500,
+            "pack_unit": "g",
+            "store": "fixture",
+            "source": "verified",
+            "last_verified": "2026-10-01"
+          },
+          {
+            "ingredient_id": "beefB",
+            "price_cents": 3900,
+            "pack_qty": 400,
+            "pack_unit": "g",
+            "store": "fixture",
+            "source": "verified",
+            "last_verified": "2026-10-01"
+          }
+        ],
+        "pantry": [],
+        "recentCookIds": [],
+        "repeatLovers": []
+      },
+      "expect": {
+        "days": ["starter", "starter", "plain"],
+        "totalCents": 7900,
+        "mealsPlanned": 3,
+        "packLeftovers": [
+          {
+            "name": "spinach",
+            "qty": 300,
+            "valueCents": 2250,
+            "shelfDays": 2
+          }
+        ],
+        "status": "near",
+        "savingsCents": 25100
+      }
+    },
+    {
+      "id": "C04",
+      "bucket": "perishable",
+      "desc": "Waste honesty: 100g used of a 400g 3-day pack -> USE SOON reports 300g worth R30",
+      "op": "plan",
+      "candidates": [
+        {
+          "recipeId": "one",
+          "title": "one",
+          "servings": 2,
+          "timeMinutes": 30,
+          "tags": ["dinner"],
+          "eligible": true,
+          "coverage": 0.5,
+          "matchPct": 50,
+          "realCount": 1,
+          "perPlateCents": 2000,
+          "ingredients": [
+            {
+              "id": "spinach",
+              "qty": 100,
+              "unit": "g",
+              "optional": false
+            }
+          ]
+        }
+      ],
+      "opts": {
+        "weekBudgetCents": 6000,
+        "days": 1,
+        "servings": 2,
+        "ingredients": [
+          {
+            "id": "spinach",
+            "name": "spinach",
+            "aisle": "fixture",
+            "tier": 9,
+            "shelf_life_days": 3
+          }
+        ],
+        "priceEntries": [
+          {
+            "ingredient_id": "spinach",
+            "price_cents": 4000,
+            "pack_qty": 400,
+            "pack_unit": "g",
+            "store": "fixture",
+            "source": "verified",
+            "last_verified": "2026-10-01"
+          }
+        ],
+        "pantry": [],
+        "recentCookIds": [],
+        "repeatLovers": []
+      },
+      "expect": {
+        "days": ["one"],
+        "totalCents": 4000,
+        "packLeftovers": [
+          {
+            "name": "spinach",
+            "qty": 300,
+            "valueCents": 3000,
+            "shelfDays": 3
+          }
+        ]
+      }
+    },
+    {
+      "id": "C05",
+      "bucket": "perishable",
+      "desc": "Long-shelf surplus stays silent: 365d item -> no USE SOON block",
+      "op": "plan",
+      "candidates": [
+        {
+          "recipeId": "one",
+          "title": "one",
+          "servings": 2,
+          "timeMinutes": 30,
+          "tags": ["dinner"],
+          "eligible": true,
+          "coverage": 0.5,
+          "matchPct": 50,
+          "realCount": 1,
+          "perPlateCents": 2000,
+          "ingredients": [
+            {
+              "id": "flour",
+              "qty": 100,
+              "unit": "g",
+              "optional": false
+            }
+          ]
+        }
+      ],
+      "opts": {
+        "weekBudgetCents": 6000,
+        "days": 1,
+        "servings": 2,
+        "ingredients": [
+          {
+            "id": "flour",
+            "name": "flour",
+            "aisle": "fixture",
+            "tier": 9,
+            "shelf_life_days": 365
+          }
+        ],
+        "priceEntries": [
+          {
+            "ingredient_id": "flour",
+            "price_cents": 4000,
+            "pack_qty": 400,
+            "pack_unit": "g",
+            "store": "fixture",
+            "source": "verified",
+            "last_verified": "2026-10-01"
+          }
+        ],
+        "pantry": [],
+        "recentCookIds": [],
+        "repeatLovers": []
+      },
+      "expect": {
+        "days": ["one"],
+        "totalCents": 4000,
+        "packLeftovers": []
+      }
+    },
+    {
+      "id": "C06",
+      "bucket": "perishable",
+      "desc": "USE SOON value proportional: 150g of a 500g/R50 5-day pack -> 350g worth R35",
+      "op": "plan",
+      "candidates": [
+        {
+          "recipeId": "one",
+          "title": "one",
+          "servings": 2,
+          "timeMinutes": 30,
+          "tags": ["dinner"],
+          "eligible": true,
+          "coverage": 0.5,
+          "matchPct": 50,
+          "realCount": 1,
+          "perPlateCents": 2000,
+          "ingredients": [
+            {
+              "id": "berries",
+              "qty": 150,
+              "unit": "g",
+              "optional": false
+            }
+          ]
+        }
+      ],
+      "opts": {
+        "weekBudgetCents": 6000,
+        "days": 1,
+        "servings": 2,
+        "ingredients": [
+          {
+            "id": "berries",
+            "name": "berries",
+            "aisle": "fixture",
+            "tier": 9,
+            "shelf_life_days": 5
+          }
+        ],
+        "priceEntries": [
+          {
+            "ingredient_id": "berries",
+            "price_cents": 5000,
+            "pack_qty": 500,
+            "pack_unit": "g",
+            "store": "fixture",
+            "source": "verified",
+            "last_verified": "2026-10-01"
+          }
+        ],
+        "pantry": [],
+        "recentCookIds": [],
+        "repeatLovers": []
+      },
+      "expect": {
+        "days": ["one"],
+        "totalCents": 5000,
+        "packLeftovers": [
+          {
+            "name": "berries",
+            "qty": 350,
+            "valueCents": 3500,
+            "shelfDays": 5
+          }
+        ]
+      }
+    },
+    {
+      "id": "D01",
+      "bucket": "variety",
+      "desc": "Recency bench: stew cooked 5d ago sits out; curry takes the day",
+      "op": "plan",
+      "candidates": [
+        {
+          "recipeId": "stew",
+          "title": "stew",
+          "servings": 2,
+          "timeMinutes": 30,
+          "tags": ["dinner"],
+          "eligible": true,
+          "coverage": 0.5,
+          "matchPct": 50,
+          "realCount": 1,
+          "perPlateCents": 2000,
+          "ingredients": [
+            {
+              "id": "beef",
+              "qty": 400,
+              "unit": "g",
+              "optional": false
+            }
+          ]
+        },
+        {
+          "recipeId": "curry",
+          "title": "curry",
+          "servings": 2,
+          "timeMinutes": 30,
+          "tags": ["dinner"],
+          "eligible": true,
+          "coverage": 0.5,
+          "matchPct": 50,
+          "realCount": 1,
+          "perPlateCents": 2000,
+          "ingredients": [
+            {
+              "id": "chicken",
+              "qty": 400,
+              "unit": "g",
+              "optional": false
+            }
+          ]
+        }
+      ],
+      "opts": {
+        "weekBudgetCents": 20000,
+        "days": 1,
+        "servings": 2,
+        "ingredients": [
+          {
+            "id": "beef",
+            "name": "beef",
+            "aisle": "fixture",
+            "tier": 9,
+            "shelf_life_days": 365
+          },
+          {
+            "id": "chicken",
+            "name": "chicken",
+            "aisle": "fixture",
+            "tier": 9,
+            "shelf_life_days": 365
+          }
+        ],
+        "priceEntries": [
+          {
+            "ingredient_id": "beef",
+            "price_cents": 4000,
+            "pack_qty": 400,
+            "pack_unit": "g",
+            "store": "fixture",
+            "source": "verified",
+            "last_verified": "2026-10-01"
+          },
+          {
+            "ingredient_id": "chicken",
+            "price_cents": 4000,
+            "pack_qty": 400,
+            "pack_unit": "g",
+            "store": "fixture",
+            "source": "verified",
+            "last_verified": "2026-10-01"
+          }
+        ],
+        "pantry": [],
+        "recentCookIds": ["stew"],
+        "repeatLovers": []
+      },
+      "expect": {
+        "days": ["curry"]
+      }
+    },
+    {
+      "id": "D02",
+      "bucket": "variety",
+      "desc": "Repeater exemption: a deliberate repeater (in the log >=3x) still plans despite recency",
+      "op": "plan",
+      "candidates": [
+        {
+          "recipeId": "pap",
+          "title": "pap",
+          "servings": 2,
+          "timeMinutes": 30,
+          "tags": ["dinner"],
+          "eligible": true,
+          "coverage": 0.5,
+          "matchPct": 50,
+          "realCount": 1,
+          "perPlateCents": 2000,
+          "ingredients": [
+            {
+              "id": "maize",
+              "qty": 300,
+              "unit": "g",
+              "optional": false
+            }
+          ]
+        }
+      ],
+      "opts": {
+        "weekBudgetCents": 20000,
+        "days": 1,
+        "servings": 2,
+        "ingredients": [
+          {
+            "id": "maize",
+            "name": "maize",
+            "aisle": "fixture",
+            "tier": 9,
+            "shelf_life_days": 365
+          }
+        ],
+        "priceEntries": [
+          {
+            "ingredient_id": "maize",
+            "price_cents": 3000,
+            "pack_qty": 1000,
+            "pack_unit": "g",
+            "store": "fixture",
+            "source": "verified",
+            "last_verified": "2026-10-01"
+          }
+        ],
+        "pantry": [],
+        "recentCookIds": ["pap"],
+        "repeatLovers": ["pap"]
+      },
+      "expect": {
+        "days": ["pap"]
+      }
+    },
+    {
+      "id": "D03",
+      "bucket": "variety",
+      "desc": "Holes beat repeats: one recipe, 3 days -> exactly 2 (MAX_REPEATS), day 3 honest hole",
+      "op": "plan",
+      "candidates": [
+        {
+          "recipeId": "solo",
+          "title": "solo",
+          "servings": 2,
+          "timeMinutes": 30,
+          "tags": ["dinner"],
+          "eligible": true,
+          "coverage": 0.5,
+          "matchPct": 50,
+          "realCount": 1,
+          "perPlateCents": 2000,
+          "ingredients": [
+            {
+              "id": "maize",
+              "qty": 300,
+              "unit": "g",
+              "optional": false
+            }
+          ]
+        }
+      ],
+      "opts": {
+        "weekBudgetCents": 20000,
+        "days": 3,
+        "servings": 2,
+        "ingredients": [
+          {
+            "id": "maize",
+            "name": "maize",
+            "aisle": "fixture",
+            "tier": 9,
+            "shelf_life_days": 365
+          }
+        ],
+        "priceEntries": [
+          {
+            "ingredient_id": "maize",
+            "price_cents": 3000,
+            "pack_qty": 1000,
+            "pack_unit": "g",
+            "store": "fixture",
+            "source": "verified",
+            "last_verified": "2026-10-01"
+          }
+        ],
+        "pantry": [],
+        "recentCookIds": [],
+        "repeatLovers": []
+      },
+      "expect": {
+        "days": ["solo", "solo", null],
+        "mealsPlanned": 2,
+        "totalCents": 3000,
+        "warnings": ["repeat cap and pantry variety"]
+      }
+    },
+    {
+      "id": "D04",
+      "bucket": "variety",
+      "desc": "A fresh repeat always beats a benched recent: same recipe twice, recent never returns",
+      "op": "plan",
+      "candidates": [
+        {
+          "recipeId": "stew",
+          "title": "stew",
+          "servings": 2,
+          "timeMinutes": 30,
+          "tags": ["dinner"],
+          "eligible": true,
+          "coverage": 0.5,
+          "matchPct": 50,
+          "realCount": 1,
+          "perPlateCents": 2000,
+          "ingredients": [
+            {
+              "id": "beef",
+              "qty": 400,
+              "unit": "g",
+              "optional": false
+            }
+          ]
+        },
+        {
+          "recipeId": "curry",
+          "title": "curry",
+          "servings": 2,
+          "timeMinutes": 30,
+          "tags": ["dinner"],
+          "eligible": true,
+          "coverage": 0.5,
+          "matchPct": 50,
+          "realCount": 1,
+          "perPlateCents": 2000,
+          "ingredients": [
+            {
+              "id": "chicken",
+              "qty": 400,
+              "unit": "g",
+              "optional": false
+            }
+          ]
+        }
+      ],
+      "opts": {
+        "weekBudgetCents": 20000,
+        "days": 2,
+        "servings": 2,
+        "ingredients": [
+          {
+            "id": "beef",
+            "name": "beef",
+            "aisle": "fixture",
+            "tier": 9,
+            "shelf_life_days": 365
+          },
+          {
+            "id": "chicken",
+            "name": "chicken",
+            "aisle": "fixture",
+            "tier": 9,
+            "shelf_life_days": 365
+          }
+        ],
+        "priceEntries": [
+          {
+            "ingredient_id": "beef",
+            "price_cents": 4000,
+            "pack_qty": 400,
+            "pack_unit": "g",
+            "store": "fixture",
+            "source": "verified",
+            "last_verified": "2026-10-01"
+          },
+          {
+            "ingredient_id": "chicken",
+            "price_cents": 4000,
+            "pack_qty": 400,
+            "pack_unit": "g",
+            "store": "fixture",
+            "source": "verified",
+            "last_verified": "2026-10-01"
+          }
+        ],
+        "pantry": [],
+        "recentCookIds": ["stew"],
+        "repeatLovers": []
+      },
+      "expect": {
+        "days": ["curry", "curry"],
+        "mealsPlanned": 2,
+        "totalCents": 8000
+      }
+    },
+    {
+      "id": "D05",
+      "bucket": "variety",
+      "desc": "applyPick honors MAX_REPEATS: a recipe already placed twice is rejected with 'repeat-cap'",
+      "op": "pick",
+      "candidates": [
+        {
+          "recipeId": "solo",
+          "title": "solo",
+          "servings": 2,
+          "timeMinutes": 30,
+          "tags": ["dinner"],
+          "eligible": true,
+          "coverage": 0.5,
+          "matchPct": 50,
+          "realCount": 1,
+          "perPlateCents": 2000,
+          "ingredients": [
+            {
+              "id": "maize",
+              "qty": 300,
+              "unit": "g",
+              "optional": false
+            }
+          ]
+        },
+        {
+          "recipeId": "other",
+          "title": "other",
+          "servings": 2,
+          "timeMinutes": 30,
+          "tags": ["dinner"],
+          "eligible": true,
+          "coverage": 0.5,
+          "matchPct": 50,
+          "realCount": 1,
+          "perPlateCents": 2000,
+          "ingredients": [
+            {
+              "id": "chicken",
+              "qty": 400,
+              "unit": "g",
+              "optional": false
+            }
+          ]
+        }
+      ],
+      "opts": {
+        "weekBudgetCents": 20000,
+        "days": 3,
+        "servings": 2,
+        "ingredients": [
+          {
+            "id": "maize",
+            "name": "maize",
+            "aisle": "fixture",
+            "tier": 9,
+            "shelf_life_days": 365
+          },
+          {
+            "id": "chicken",
+            "name": "chicken",
+            "aisle": "fixture",
+            "tier": 9,
+            "shelf_life_days": 365
+          }
+        ],
+        "priceEntries": [
+          {
+            "ingredient_id": "maize",
+            "price_cents": 3000,
+            "pack_qty": 1000,
+            "pack_unit": "g",
+            "store": "fixture",
+            "source": "verified",
+            "last_verified": "2026-10-01"
+          },
+          {
+            "ingredient_id": "chicken",
+            "price_cents": 4000,
+            "pack_qty": 400,
+            "pack_unit": "g",
+            "store": "fixture",
+            "source": "verified",
+            "last_verified": "2026-10-01"
+          }
+        ],
+        "pantry": [],
+        "recentCookIds": [],
+        "repeatLovers": []
+      },
+      "seedPlan": ["solo", "solo", null],
+      "dayIndex": 2,
+      "choice": "solo",
+      "expect": {
+        "ok": false,
+        "reason": "repeat-cap"
+      }
+    },
+    {
+      "id": "D06",
+      "bucket": "variety",
+      "desc": "The repeater exemption lifts the bench but NOT the cap: still max 2 of the same",
+      "op": "plan",
+      "candidates": [
+        {
+          "recipeId": "pap",
+          "title": "pap",
+          "servings": 2,
+          "timeMinutes": 30,
+          "tags": ["dinner"],
+          "eligible": true,
+          "coverage": 0.5,
+          "matchPct": 50,
+          "realCount": 1,
+          "perPlateCents": 2000,
+          "ingredients": [
+            {
+              "id": "maize",
+              "qty": 300,
+              "unit": "g",
+              "optional": false
+            }
+          ]
+        }
+      ],
+      "opts": {
+        "weekBudgetCents": 20000,
+        "days": 3,
+        "servings": 2,
+        "ingredients": [
+          {
+            "id": "maize",
+            "name": "maize",
+            "aisle": "fixture",
+            "tier": 9,
+            "shelf_life_days": 365
+          }
+        ],
+        "priceEntries": [
+          {
+            "ingredient_id": "maize",
+            "price_cents": 3000,
+            "pack_qty": 1000,
+            "pack_unit": "g",
+            "store": "fixture",
+            "source": "verified",
+            "last_verified": "2026-10-01"
+          }
+        ],
+        "pantry": [],
+        "recentCookIds": ["pap"],
+        "repeatLovers": ["pap"]
+      },
+      "expect": {
+        "days": ["pap", "pap", null],
+        "mealsPlanned": 2,
+        "totalCents": 3000
+      }
+    },
+    {
+      "id": "D07",
+      "bucket": "variety",
+      "desc": "applyPick unknown recipe -> {ok:false, reason:'unknown-recipe'}",
+      "op": "pick",
+      "candidates": [
+        {
+          "recipeId": "solo",
+          "title": "solo",
+          "servings": 2,
+          "timeMinutes": 30,
+          "tags": ["dinner"],
+          "eligible": true,
+          "coverage": 0.5,
+          "matchPct": 50,
+          "realCount": 1,
+          "perPlateCents": 2000,
+          "ingredients": [
+            {
+              "id": "maize",
+              "qty": 300,
+              "unit": "g",
+              "optional": false
+            }
+          ]
+        }
+      ],
+      "opts": {
+        "weekBudgetCents": 20000,
+        "days": 1,
+        "servings": 2,
+        "ingredients": [
+          {
+            "id": "maize",
+            "name": "maize",
+            "aisle": "fixture",
+            "tier": 9,
+            "shelf_life_days": 365
+          }
+        ],
+        "priceEntries": [
+          {
+            "ingredient_id": "maize",
+            "price_cents": 3000,
+            "pack_qty": 1000,
+            "pack_unit": "g",
+            "store": "fixture",
+            "source": "verified",
+            "last_verified": "2026-10-01"
+          }
+        ],
+        "pantry": [],
+        "recentCookIds": [],
+        "repeatLovers": []
+      },
+      "seedPlan": ["solo"],
+      "dayIndex": 0,
+      "choice": "nope",
+      "expect": {
+        "ok": false,
+        "reason": "unknown-recipe"
+      }
+    },
+    {
+      "id": "E01",
+      "bucket": "contracts",
+      "desc": "Servings 2->4 scales 200g->400g; meal VALUE is proportional (R32), shop charge pack-exact (R40)",
+      "op": "plan",
+      "candidates": [
+        {
+          "recipeId": "one",
+          "title": "one",
+          "servings": 2,
+          "timeMinutes": 30,
+          "tags": ["dinner"],
+          "eligible": true,
+          "coverage": 0.5,
+          "matchPct": 50,
+          "realCount": 1,
+          "perPlateCents": 2000,
+          "ingredients": [
+            {
+              "id": "a1",
+              "qty": 200,
+              "unit": "g",
+              "optional": false
+            }
+          ]
+        }
+      ],
+      "opts": {
+        "weekBudgetCents": 6000,
+        "days": 1,
+        "servings": 4,
+        "ingredients": [
+          {
+            "id": "a1",
+            "name": "a1",
+            "aisle": "fixture",
+            "tier": 9,
+            "shelf_life_days": 365
+          }
+        ],
+        "priceEntries": [
+          {
+            "ingredient_id": "a1",
+            "price_cents": 4000,
+            "pack_qty": 500,
+            "pack_unit": "g",
+            "store": "fixture",
+            "source": "verified",
+            "last_verified": "2026-10-01"
+          }
+        ],
+        "pantry": [],
+        "recentCookIds": [],
+        "repeatLovers": []
+      },
+      "expect": {
+        "days": ["one"],
+        "totalCents": 4000,
+        "plates": 4,
+        "mealCents": 3200,
+        "perPlateCents": 800,
+        "shoppingList": [
+          {
+            "id": "a1",
+            "packs": 1,
+            "priceCents": 4000
+          }
+        ]
+      }
+    },
+    {
+      "id": "E02",
+      "bucket": "contracts",
+      "desc": "Tier-mixed slip: e1 repeats (R30 x2 packs), v1 once -> split R40 verified / R60 estimated + footer",
+      "op": "plan",
+      "candidates": [
+        {
+          "recipeId": "m1",
+          "title": "m1",
+          "servings": 2,
+          "timeMinutes": 30,
+          "tags": ["dinner"],
+          "eligible": true,
+          "coverage": 0.5,
+          "matchPct": 50,
+          "realCount": 1,
+          "perPlateCents": 2000,
+          "ingredients": [
+            {
+              "id": "v1",
+              "qty": 400,
+              "unit": "g",
+              "optional": false
+            }
+          ]
+        },
+        {
+          "recipeId": "m2",
+          "title": "m2",
+          "servings": 2,
+          "timeMinutes": 30,
+          "tags": ["dinner"],
+          "eligible": true,
+          "coverage": 0.5,
+          "matchPct": 50,
+          "realCount": 1,
+          "perPlateCents": 2000,
+          "ingredients": [
+            {
+              "id": "v2",
+              "qty": 400,
+              "unit": "g",
+              "optional": false
+            }
+          ]
+        },
+        {
+          "recipeId": "m3",
+          "title": "m3",
+          "servings": 2,
+          "timeMinutes": 30,
+          "tags": ["dinner"],
+          "eligible": true,
+          "coverage": 0.5,
+          "matchPct": 50,
+          "realCount": 1,
+          "perPlateCents": 2000,
+          "ingredients": [
+            {
+              "id": "e1",
+              "qty": 400,
+              "unit": "g",
+              "optional": false
+            }
+          ]
+        }
+      ],
+      "opts": {
+        "weekBudgetCents": 20000,
+        "days": 3,
+        "servings": 2,
+        "ingredients": [
+          {
+            "id": "v1",
+            "name": "v1",
+            "aisle": "fixture",
+            "tier": 9,
+            "shelf_life_days": 365
+          },
+          {
+            "id": "v2",
+            "name": "v2",
+            "aisle": "fixture",
+            "tier": 9,
+            "shelf_life_days": 365
+          },
+          {
+            "id": "e1",
+            "name": "e1",
+            "aisle": "fixture",
+            "tier": 9,
+            "shelf_life_days": 365
+          }
+        ],
+        "priceEntries": [
+          {
+            "ingredient_id": "v1",
+            "price_cents": 4000,
+            "pack_qty": 400,
+            "pack_unit": "g",
+            "store": "fixture",
+            "source": "verified",
+            "last_verified": "2026-10-01"
+          },
+          {
+            "ingredient_id": "v2",
+            "price_cents": 6000,
+            "pack_qty": 400,
+            "pack_unit": "g",
+            "store": "fixture",
+            "source": "verified",
+            "last_verified": "2026-10-01"
+          },
+          {
+            "ingredient_id": "e1",
+            "price_cents": 3000,
+            "pack_qty": 400,
+            "pack_unit": "g",
+            "store": "fixture",
+            "source": "estimated",
+            "last_verified": "2026-10-01"
+          }
+        ],
+        "pantry": [],
+        "recentCookIds": [],
+        "repeatLovers": []
+      },
+      "expect": {
+        "days": ["m3", "m3", "m1"],
+        "totalCents": 10000,
+        "priceTiers": {
+          "verified": 4000,
+          "verifiedCount": 1,
+          "estimated": 6000,
+          "estimatedCount": 1
+        },
+        "slipIncludes": ["Prices: 1\u2713 (R40.00) \u00b7 1\u2248 (R60.00)"]
+      }
+    },
+    {
+      "id": "E03",
+      "bucket": "contracts",
+      "desc": "Tier normalizer: legacy 'estimate' spelling counts as estimated, never verified",
+      "op": "plan",
+      "candidates": [
+        {
+          "recipeId": "m3",
+          "title": "m3",
+          "servings": 2,
+          "timeMinutes": 30,
+          "tags": ["dinner"],
+          "eligible": true,
+          "coverage": 0.5,
+          "matchPct": 50,
+          "realCount": 1,
+          "perPlateCents": 2000,
+          "ingredients": [
+            {
+              "id": "e1",
+              "qty": 400,
+              "unit": "g",
+              "optional": false
+            }
+          ]
+        }
+      ],
+      "opts": {
+        "weekBudgetCents": 6000,
+        "days": 1,
+        "servings": 2,
+        "ingredients": [
+          {
+            "id": "e1",
+            "name": "e1",
+            "aisle": "fixture",
+            "tier": 9,
+            "shelf_life_days": 365
+          }
+        ],
+        "priceEntries": [
+          {
+            "ingredient_id": "e1",
+            "price_cents": 3000,
+            "pack_qty": 400,
+            "pack_unit": "g",
+            "store": "fixture",
+            "source": "estimate",
+            "last_verified": "2026-10-01"
+          }
+        ],
+        "pantry": [],
+        "recentCookIds": [],
+        "repeatLovers": []
+      },
+      "expect": {
+        "days": ["m3"],
+        "priceTiers": {
+          "verified": 0,
+          "verifiedCount": 0,
+          "estimated": 3000,
+          "estimatedCount": 1
+        }
+      }
+    },
+    {
+      "id": "E04",
+      "bucket": "contracts",
+      "desc": "WhatsApp 48-char cap: a 50-char name truncates with ellipsis, no line ever exceeds 48",
+      "op": "slip",
+      "candidates": [
+        {
+          "recipeId": "one",
+          "title": "one",
+          "servings": 2,
+          "timeMinutes": 30,
+          "tags": ["dinner"],
+          "eligible": true,
+          "coverage": 0.5,
+          "matchPct": 50,
+          "realCount": 1,
+          "perPlateCents": 2000,
+          "ingredients": [
+            {
+              "id": "long1",
+              "qty": 400,
+              "unit": "g",
+              "optional": false
+            }
+          ]
+        }
+      ],
+      "opts": {
+        "weekBudgetCents": 6000,
+        "days": 1,
+        "servings": 2,
+        "ingredients": [
+          {
+            "id": "long1",
+            "name": "Very Long Ingredient Name That Goes On Forever And Ever XX",
+            "aisle": "fixture",
+            "tier": 9,
+            "shelf_life_days": 365
+          }
+        ],
+        "priceEntries": [
+          {
+            "ingredient_id": "long1",
+            "price_cents": 4000,
+            "pack_qty": 400,
+            "pack_unit": "g",
+            "store": "fixture",
+            "source": "verified",
+            "last_verified": "2026-10-01"
+          }
+        ],
+        "pantry": [],
+        "recentCookIds": [],
+        "repeatLovers": []
+      },
+      "expect": {
+        "maxLineLen": 48,
+        "includes": ["\u2026"]
+      }
+    },
+    {
+      "id": "E05",
+      "bucket": "contracts",
+      "desc": "Slip contract shape: header, week block, total, savings line all present in order",
+      "op": "slip",
+      "candidates": [
+        {
+          "recipeId": "one",
+          "title": "one",
+          "servings": 2,
+          "timeMinutes": 30,
+          "tags": ["dinner"],
+          "eligible": true,
+          "coverage": 0.5,
+          "matchPct": 50,
+          "realCount": 1,
+          "perPlateCents": 2000,
+          "ingredients": [
+            {
+              "id": "a1",
+              "qty": 400,
+              "unit": "g",
+              "optional": false
+            }
+          ]
+        }
+      ],
+      "opts": {
+        "weekBudgetCents": 6000,
+        "days": 1,
+        "servings": 2,
+        "ingredients": [
+          {
+            "id": "a1",
+            "name": "a1",
+            "aisle": "fixture",
+            "tier": 9,
+            "shelf_life_days": 365
+          }
+        ],
+        "priceEntries": [
+          {
+            "ingredient_id": "a1",
+            "price_cents": 4000,
+            "pack_qty": 400,
+            "pack_unit": "g",
+            "store": "fixture",
+            "source": "verified",
+            "last_verified": "2026-10-01"
+          }
+        ],
+        "pantry": [],
+        "recentCookIds": [],
+        "repeatLovers": []
+      },
+      "expect": {
+        "firstLine": "*RANDPLATES WEEK PLAN*",
+        "includes": [
+          "*THE WEEK*",
+          "\u2022 Mon one R40.00",
+          "*TOTAL R40.00*",
+          "Saved vs eating out: R70.00"
+        ],
+        "maxLineLen": 48
+      }
+    },
+    {
+      "id": "E06",
+      "bucket": "contracts",
+      "desc": "Offline regenerate: [c1,c1,c2] -> clear day 3 -> repick c2 -> byte-identical plan (sheet replay + pantry re-consumption land on the same totals)",
+      "op": "repick",
+      "candidates": [
+        {
+          "recipeId": "c1",
+          "title": "c1",
+          "servings": 2,
+          "timeMinutes": 30,
+          "tags": ["dinner"],
+          "eligible": true,
+          "coverage": 0.5,
+          "matchPct": 50,
+          "realCount": 1,
+          "perPlateCents": 2000,
+          "ingredients": [
+            {
+              "id": "a1",
+              "qty": 400,
+              "unit": "g"
+            }
+          ]
+        },
+        {
+          "recipeId": "c2",
+          "title": "c2",
+          "servings": 2,
+          "timeMinutes": 30,
+          "tags": ["dinner"],
+          "eligible": true,
+          "coverage": 0.5,
+          "matchPct": 50,
+          "realCount": 1,
+          "perPlateCents": 2000,
+          "ingredients": [
+            {
+              "id": "a2",
+              "qty": 400,
+              "unit": "g"
+            }
+          ]
+        }
+      ],
+      "opts": {
+        "weekBudgetCents": 12000,
+        "days": 3,
+        "servings": 2,
+        "ingredients": [
+          {
+            "id": "a1",
+            "name": "a1",
+            "aisle": "fixture",
+            "tier": 9,
+            "shelf_life_days": 365
+          },
+          {
+            "id": "a2",
+            "name": "a2",
+            "aisle": "fixture",
+            "tier": 9,
+            "shelf_life_days": 365
+          }
+        ],
+        "priceEntries": [
+          {
+            "ingredient_id": "a1",
+            "price_cents": 4000,
+            "pack_qty": 400,
+            "pack_unit": "g",
+            "store": "fixture",
+            "source": "verified",
+            "last_verified": "2026-10-01"
+          },
+          {
+            "ingredient_id": "a2",
+            "price_cents": 4000,
+            "pack_qty": 400,
+            "pack_unit": "g",
+            "store": "fixture",
+            "source": "verified",
+            "last_verified": "2026-10-01"
+          }
+        ],
+        "pantry": [],
+        "recentCookIds": [],
+        "repeatLovers": []
+      },
+      "dayIndex": 2,
+      "choice": "c2",
+      "expect": {
+        "totalRestored": true,
+        "mealsPlanned": 3,
+        "days": ["c1", "c1", "c2"],
+        "totalCents": 12000
+      }
+    },
+    {
+      "id": "E07",
+      "bucket": "contracts",
+      "desc": "dayOptions ranks cheapest-first and flags the over-budget pick with the exact overrun",
+      "op": "options",
+      "candidates": [
+        {
+          "recipeId": "cheapA",
+          "title": "cheapA",
+          "servings": 2,
+          "timeMinutes": 30,
+          "tags": ["dinner"],
+          "eligible": true,
+          "coverage": 0.5,
+          "matchPct": 50,
+          "realCount": 1,
+          "perPlateCents": 2000,
+          "ingredients": [
+            {
+              "id": "a1",
+              "qty": 400,
+              "unit": "g",
+              "optional": false
+            }
+          ]
+        },
+        {
+          "recipeId": "expB",
+          "title": "expB",
+          "servings": 2,
+          "timeMinutes": 30,
+          "tags": ["dinner"],
+          "eligible": true,
+          "coverage": 0.5,
+          "matchPct": 50,
+          "realCount": 1,
+          "perPlateCents": 2000,
+          "ingredients": [
+            {
+              "id": "a9",
+              "qty": 900,
+              "unit": "g",
+              "optional": false
+            }
+          ]
+        }
+      ],
+      "opts": {
+        "weekBudgetCents": 8000,
+        "days": 2,
+        "servings": 2,
+        "ingredients": [
+          {
+            "id": "a1",
+            "name": "a1",
+            "aisle": "fixture",
+            "tier": 9,
+            "shelf_life_days": 365
+          },
+          {
+            "id": "a9",
+            "name": "a9",
+            "aisle": "fixture",
+            "tier": 9,
+            "shelf_life_days": 365
+          }
+        ],
+        "priceEntries": [
+          {
+            "ingredient_id": "a1",
+            "price_cents": 4000,
+            "pack_qty": 400,
+            "pack_unit": "g",
+            "store": "fixture",
+            "source": "verified",
+            "last_verified": "2026-10-01"
+          },
+          {
+            "ingredient_id": "a9",
+            "price_cents": 9000,
+            "pack_qty": 900,
+            "pack_unit": "g",
+            "store": "fixture",
+            "source": "verified",
+            "last_verified": "2026-10-01"
+          }
+        ],
+        "pantry": [],
+        "recentCookIds": [],
+        "repeatLovers": []
+      },
+      "seedPlan": ["cheapA", null],
+      "dayIndex": 1,
+      "expect": {
+        "firstOption": "cheapA",
+        "expB": {
+          "overBudget": true,
+          "overByCents": 5000
+        }
+      }
+    },
+    {
+      "id": "E08",
+      "bucket": "contracts",
+      "desc": "Savings math: same dish twice packs into 2 packs (R80) -> saved R140 vs the R55/plate baseline",
+      "op": "plan",
+      "candidates": [
+        {
+          "recipeId": "c1",
+          "title": "c1",
+          "servings": 2,
+          "timeMinutes": 30,
+          "tags": ["dinner"],
+          "eligible": true,
+          "coverage": 0.5,
+          "matchPct": 50,
+          "realCount": 1,
+          "perPlateCents": 2000,
+          "ingredients": [
+            {
+              "id": "a1",
+              "qty": 400,
+              "unit": "g",
+              "optional": false
+            }
+          ]
+        },
+        {
+          "recipeId": "c2",
+          "title": "c2",
+          "servings": 2,
+          "timeMinutes": 30,
+          "tags": ["dinner"],
+          "eligible": true,
+          "coverage": 0.5,
+          "matchPct": 50,
+          "realCount": 1,
+          "perPlateCents": 2000,
+          "ingredients": [
+            {
+              "id": "a2",
+              "qty": 400,
+              "unit": "g",
+              "optional": false
+            }
+          ]
+        }
+      ],
+      "opts": {
+        "weekBudgetCents": 12000,
+        "days": 2,
+        "servings": 2,
+        "ingredients": [
+          {
+            "id": "a1",
+            "name": "a1",
+            "aisle": "fixture",
+            "tier": 9,
+            "shelf_life_days": 365
+          },
+          {
+            "id": "a2",
+            "name": "a2",
+            "aisle": "fixture",
+            "tier": 9,
+            "shelf_life_days": 365
+          }
+        ],
+        "priceEntries": [
+          {
+            "ingredient_id": "a1",
+            "price_cents": 4000,
+            "pack_qty": 400,
+            "pack_unit": "g",
+            "store": "fixture",
+            "source": "verified",
+            "last_verified": "2026-10-01"
+          },
+          {
+            "ingredient_id": "a2",
+            "price_cents": 4000,
+            "pack_qty": 400,
+            "pack_unit": "g",
+            "store": "fixture",
+            "source": "verified",
+            "last_verified": "2026-10-01"
+          }
+        ],
+        "pantry": [],
+        "recentCookIds": [],
+        "repeatLovers": []
+      },
+      "expect": {
+        "days": ["c1", "c1"],
+        "totalCents": 8000,
+        "savingsCents": 14000
+      }
+    },
+    {
+      "id": "E09",
+      "bucket": "contracts",
+      "desc": "Empty dinner pool honesty: lunch-only candidates -> the no-dinner warning, 0 meals",
+      "op": "plan",
+      "candidates": [
+        {
+          "recipeId": "brunch",
+          "title": "brunch",
+          "servings": 2,
+          "timeMinutes": 15,
+          "tags": ["lunch"],
+          "eligible": true,
+          "coverage": 0.5,
+          "matchPct": 50,
+          "realCount": 1,
+          "perPlateCents": 2000,
+          "ingredients": [
+            {
+              "id": "a1",
+              "qty": 400,
+              "unit": "g",
+              "optional": false
+            }
+          ]
+        }
+      ],
+      "opts": {
+        "weekBudgetCents": 20000,
+        "days": 1,
+        "servings": 2,
+        "ingredients": [
+          {
+            "id": "a1",
+            "name": "a1",
+            "aisle": "fixture",
+            "tier": 9,
+            "shelf_life_days": 365
+          }
+        ],
+        "priceEntries": [
+          {
+            "ingredient_id": "a1",
+            "price_cents": 4000,
+            "pack_qty": 400,
+            "pack_unit": "g",
+            "store": "fixture",
+            "source": "verified",
+            "last_verified": "2026-10-01"
+          }
+        ],
+        "pantry": [],
+        "recentCookIds": [],
+        "repeatLovers": []
+      },
+      "expect": {
+        "days": [null],
+        "mealsPlanned": 0,
+        "totalCents": 0,
+        "warnings": ["No dinner recipes match"]
+      }
+    },
+    {
+      "id": "E10",
+      "bucket": "contracts",
+      "desc": "Status band edge at exactly 90%: R36 spent of R40 -> 'near' (display rounding never flips a band)",
+      "op": "plan",
+      "candidates": [
+        {
+          "recipeId": "one",
+          "title": "one",
+          "servings": 2,
+          "timeMinutes": 30,
+          "tags": ["dinner"],
+          "eligible": true,
+          "coverage": 0.5,
+          "matchPct": 50,
+          "realCount": 1,
+          "perPlateCents": 2000,
+          "ingredients": [
+            {
+              "id": "a1",
+              "qty": 360,
+              "unit": "g",
+              "optional": false
+            }
+          ]
+        }
+      ],
+      "opts": {
+        "weekBudgetCents": 4000,
+        "days": 1,
+        "servings": 2,
+        "ingredients": [
+          {
+            "id": "a1",
+            "name": "a1",
+            "aisle": "fixture",
+            "tier": 9,
+            "shelf_life_days": 30
+          }
+        ],
+        "priceEntries": [
+          {
+            "ingredient_id": "a1",
+            "price_cents": 3600,
+            "pack_qty": 360,
+            "pack_unit": "g",
+            "store": "fixture",
+            "source": "verified",
+            "last_verified": "2026-10-01"
+          }
+        ],
+        "pantry": [],
+        "recentCookIds": [],
+        "repeatLovers": []
+      },
+      "expect": {
+        "days": ["one"],
+        "totalCents": 3600,
+        "status": "near"
+      }
+    }
+  ]
+}

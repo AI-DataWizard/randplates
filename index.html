@@ -1,0 +1,1712 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      RandPlates — cheap dinner ideas for South Africa, planned by rands
+    </title>
+    <meta
+      name="description"
+      content="Cheap dinner ideas for South Africa, planned by rands. Tell RandPlates your kitchen and your budget; get meals you can cook tonight, a week of dinners, and a priced shopping list — works fully offline, free." />
+    <meta name="theme-color" content="#ea580c" />
+    <!-- P-532 SEO: canonical + social cards. P-601 NOTE: randplates.co.za is the
+       PLACEHOLDER — swap SITE_URL here, in prices.html, sitemap.xml and robots.txt
+       the day the real domain is bought. One find-replace, four files. -->
+    <link rel="canonical" href="https://randplates.co.za/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="RandPlates" />
+    <meta
+      property="og:title"
+      content="RandPlates — cheap dinner ideas for South Africa, planned by rands" />
+    <meta
+      property="og:description"
+      content="Tell RandPlates your kitchen and your budget; get meals you can cook tonight, a week of dinners, and a priced shopping list. Works fully offline — no data needed." />
+    <meta property="og:url" content="https://randplates.co.za/" />
+    <meta
+      property="og:image"
+      content="https://randplates.co.za/assets/og-image.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:locale" content="en_ZA" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="RandPlates — dinner, planned by rands" />
+    <meta
+      name="twitter:description"
+      content="Your kitchen decides the price. Real SA prices, works offline, free forever." />
+    <meta
+      name="twitter:image"
+      content="https://randplates.co.za/assets/og-image.png" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "RandPlates",
+        "url": "https://randplates.co.za/",
+        "logo": "https://randplates.co.za/assets/icons/icon-512.png",
+        "founder": {
+          "@type": "Person",
+          "name": "Tadiwanashe Chopamba",
+          "sameAs": [
+            "https://www.linkedin.com/in/tadiwanashe-chopamba-9b80b5289/"
+          ]
+        }
+      }
+    </script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "RandPlates",
+        "url": "https://randplates.co.za/",
+        "inLanguage": "en-ZA",
+        "description": "Budget-first cooking engine for South Africa: pantry to plates, priced in rands, planned offline."
+      }
+    </script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "How does RandPlates know what I can cook tonight?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "You add what you have to your Pantry. The Matcher ranks every recipe by how much of it you already own, shows the Match % and the true cost per plate, and prices any missing items with real South African shelf prices."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Does RandPlates work offline or without data?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. Prices, recipes and your pantry live on your phone. It works with the router off, in dead zones and with no airtime — no server, no account, no data costs."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How are the prices kept honest?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Every price carries the date it was verified and the store tier it came from. Old prices say so — RandPlates never pretends a price is fresh, and there are no live price APIs."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can it plan a whole week of dinners on a budget?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. The Planner fills 7 dinners inside your weekly budget, uses what you already own first, and renders the shopping list as an aisle-sorted, priced till slip you can check off or paste into WhatsApp."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can I add my own recipes?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Paste any recipe — a WhatsApp forward, a blog post — into the Recipe Decoder. It extracts ingredients, amounts and steps as an editable proposal, then prices it like any built-in recipe."
+            }
+          }
+        ]
+      }
+    </script>
+    <link rel="manifest" href="manifest.json" />
+    <link rel="icon" href="assets/icon.svg" type="image/svg+xml" />
+    <link
+      rel="icon"
+      href="assets/icons/favicon-32.png"
+      sizes="32x32"
+      type="image/png" />
+    <link
+      rel="apple-touch-icon"
+      href="assets/icons/apple-touch-icon.png"
+      sizes="180x180" />
+    <!-- P-312: fonts self-hosted (css/fonts.css + assets/fonts/) — the Google
+       CSS link was the render-blocking chain AND failed offline. -->
+    <link
+      rel="preload"
+      href="assets/fonts/inter-latin.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin />
+    <link
+      rel="preload"
+      href="assets/fonts/anton-latin.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin />
+    <link rel="stylesheet" href="css/fonts.css" />
+    <link rel="stylesheet" href="css/tokens.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/views.css" />
+    <link rel="stylesheet" href="css/themes.css" />
+    <link id="gfonts-link" rel="stylesheet" href="" media="all" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="topbar-inner">
+        <a class="brand" href="#home">
+          <svg width="26" height="26" viewBox="0 0 26 26" aria-hidden="true">
+            <rect
+              x="4"
+              y="4"
+              width="18"
+              height="18"
+              rx="4"
+              transform="rotate(-8 13 13)"
+              fill="#ea580c" />
+            <circle
+              cx="8.4"
+              cy="7.6"
+              r="1.5"
+              transform="rotate(-8 13 13)"
+              fill="#fbbf24" />
+            <text
+              x="13.4"
+              y="18.2"
+              text-anchor="middle"
+              font-size="12"
+              font-weight="900"
+              fill="#ffffff"
+              font-family="Inter, sans-serif"
+              transform="rotate(-8 13 13)">
+              R
+            </text>
+          </svg>
+          <span>Rand<span class="coin">Plates</span></span>
+        </a>
+        <nav class="tabs" id="nav" aria-label="Screens">
+          <a href="#home" data-view="home">Home</a>
+          <a href="#pantry" data-view="pantry">Pantry</a>
+          <a href="#matcher" data-view="matcher">Matcher</a>
+          <a href="#planner" data-view="planner">Planner</a>
+          <a href="#explorer" data-view="explorer">Prices</a>
+          <a href="#cooklog" data-view="cooklog">Cook Log</a>
+          <a href="#decoder" data-view="decoder">Decoder</a>
+          <a href="#settings" data-view="settings">Settings</a>
+        </nav>
+        <span
+          class="offline-flag"
+          id="offline-flag"
+          title="You're offline — cached data only"
+          >● offline — still cooking</span
+        >
+        <!-- P-311: custom install affordance. Hidden until the browser signals
+           installability (beforeinstallprompt) or iOS is detected. Suppression
+           policy lives in main.js (7-day dismissal cooldown; standalone = never). -->
+        <button
+          id="install-btn"
+          class="ghost"
+          type="button"
+          hidden
+          aria-label="Install RandPlates on your device">
+          ⬇ Install
+        </button>
+      </div>
+    </header>
+    <!-- P-417: ingredient compare modal — retailer prices, pantry status,
+           recipes using it. Body level: overlays never live inside a view. -->
+    <dialog
+      id="ing-modal"
+      class="meal-picker mpd"
+      aria-label="Ingredient details">
+      <div class="mp-head">
+        <div>
+          <div class="mp-title" id="ing-title">Ingredient</div>
+          <div class="mp-sub muted" id="ing-sub"></div>
+        </div>
+        <button class="ghost small" id="ing-close" type="button">Close</button>
+      </div>
+      <div id="ing-body"></div>
+    </dialog>
+    <!-- P-415: cook-log history detail — opens the full recipe (steps included)
+           WITHOUT depending on matcher filters, per owner request. -->
+    <dialog id="dec-modal" class="meal-picker mpd" aria-label="Decoded recipe">
+      <div class="mp-head">
+        <div>
+          <div class="mp-title" id="dm-title">Decoded recipe</div>
+          <div class="mp-sub muted" id="dm-sub">
+            Saved from the Decoder Lab — fully editable.
+          </div>
+        </div>
+        <button class="ghost small" id="dm-close" type="button">Close</button>
+      </div>
+      <div id="dm-body"></div>
+    </dialog>
+
+    <dialog
+      id="cook-detail"
+      class="meal-picker mpd"
+      aria-label="Recipe details">
+      <div class="mp-head">
+        <div>
+          <div class="mp-title" id="cd-title">Recipe</div>
+          <div class="mp-sub muted" id="cd-sub"></div>
+        </div>
+        <button class="ghost small" id="cd-close" type="button">Close</button>
+      </div>
+      <div id="cd-body"></div>
+    </dialog>
+    <!-- P-311: iOS has no beforeinstallprompt — this sheet teaches Add to
+           Home Screen the way the real share sheet works, step by step. -->
+    <dialog
+      id="a2hs-sheet"
+      class="a2hs-sheet"
+      aria-label="Install RandPlates on iPhone or iPad">
+      <div class="a2hs-card">
+        <div class="a2hs-grip" aria-hidden="true"></div>
+        <h2>Put RandPlates on your Home Screen</h2>
+        <p class="muted">
+          Works exactly like installing an app — full screen, works offline,
+          opens with one tap.
+        </p>
+        <ol class="a2hs-steps">
+          <li>
+            <span class="a2hs-ic" aria-hidden="true"
+              ><svg viewBox="0 0 24 24" width="20" height="20">
+                <path
+                  fill="currentColor"
+                  d="M12 3v11.6l-3.3-3.3-1.4 1.4L12 18.4l4.7-5.7-1.4-1.4L12 14.6V3z"
+                  opacity="0" />
+                <rect x="11" y="2" width="2" height="12" rx="1" />
+                <path
+                  d="M7.6 8.6 8.9 9.9 12 6.8l3.1 3.1 1.3-1.3L12 3.4 7.6 8.6z" />
+                <rect x="5" y="17" width="14" height="2" rx="1" opacity=".5" />
+                <path d="M11 12h2v2h-2z" opacity="0" /></svg></span
+            >Tap the <strong>Share</strong> button
+            <span class="a2hs-hint"
+              >(the square with an arrow, in Safari's toolbar)</span
+            >
+          </li>
+          <li>
+            <span class="a2hs-ic" aria-hidden="true"
+              ><svg viewBox="0 0 24 24" width="20" height="20">
+                <path
+                  fill="currentColor"
+                  d="M6 4h12v2H8v12h2v2H6V4zm10 4h2v12H8v-2h8V8zm-4 4h2v2h-2v-2z" /></svg></span
+            >Scroll down and tap <strong>Add to Home Screen</strong>
+          </li>
+          <li>
+            <span class="a2hs-ic" aria-hidden="true"
+              ><svg viewBox="0 0 24 24" width="20" height="20">
+                <path
+                  fill="currentColor"
+                  d="M11 3h2v8h8v2h-8v8h-2v-8H3v-2h8V3z" /></svg></span
+            >Tap <strong>Add</strong> — RandPlates is on your Home Screen
+          </li>
+        </ol>
+        <button class="btn" id="a2hs-close" type="button">Got it</button>
+      </div>
+    </dialog>
+
+    <main id="main">
+      <!-- HOME -->
+      <section class="view" id="view-home" hidden>
+        <!-- P-530 HOME V2 (owner-picked Oct 23): matcher removed from home; home
+           is the destination index — hero + CTA matrix + fast lane. The
+           matcher widget that lived here (quicktry) was a half-matcher doing
+           the matcher's job worse; its coverage-derived starter chips live on
+           in the fast lane below, where every action writes REAL data. -->
+        <div class="hero-v2">
+          <span class="hero-eyebrow"
+            >Budget-first cooking engine · South Africa</span
+          >
+          <h1>Your kitchen already knows <em>what's for dinner</em>.</h1>
+          <p class="hero-sub">
+            RandPlates turns what you have into what you cook: pantry to plates,
+            priced in rands, planned offline. No account. No server. No data
+            costs.
+          </p>
+          <div class="hero-row">
+            <a class="btn-x" href="#matcher">What can I cook tonight?</a>
+            <a class="btn-x ghosty" href="#pantry">Stock my pantry</a>
+            <div class="hero-sticker">
+              <small>Real dinners from</small
+              ><span id="home-hero-number">…</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="matrix-head">
+          <h2>Every door, one tap away</h2>
+          <span>the full story on every screen — nothing dead-ends</span>
+        </div>
+        <nav class="cta-grid" aria-label="RandPlates views">
+          <a class="cta-card" href="#pantry"
+            ><span class="badge-dot"></span>
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M4 8h16l-1.5 12h-13z" />
+              <path d="M8 8V6a4 4 0 0 1 8 0v2" />
+            </svg>
+            <h3>Pantry</h3>
+            <p>
+              Add what you have — search in English or vernacular, prices attach
+              automatically.
+            </p>
+            <span class="go">Stock the kitchen →</span></a
+          >
+          <a class="cta-card" href="#matcher"
+            ><span class="badge-dot"></span>
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <circle cx="11" cy="11" r="7" />
+              <path d="M20 20l-3.5-3.5" />
+            </svg>
+            <h3>Matcher</h3>
+            <p>
+              Cook tonight from what you own. Match %, missing items priced,
+              per-plate cost.
+            </p>
+            <span class="go">Find tonight's dinner →</span></a
+          >
+          <a class="cta-card" href="#planner"
+            ><span class="badge-dot"></span>
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <rect x="3" y="4" width="18" height="17" rx="2" />
+              <path d="M3 9h18M8 2v4M16 2v4" />
+            </svg>
+            <h3>Planner</h3>
+            <p>
+              A week of dinners inside your budget, with one priced,
+              aisle-sorted shopping list.
+            </p>
+            <span class="go">Plan the week →</span></a
+          >
+          <a class="cta-card" href="#explorer"
+            ><span class="badge-dot"></span>
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M12 2v3M12 19v3M2 12h3M19 12h3" />
+              <circle cx="12" cy="12" r="5.5" />
+            </svg>
+            <h3>Price Explorer</h3>
+            <p>
+              Check a price before the shops. Freshness chips say how old every
+              price is.
+            </p>
+            <span class="go">Check a price →</span></a
+          >
+          <a class="cta-card" href="#decoder"
+            ><span class="badge-dot"></span>
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M4 4h16v12H4z" />
+              <path d="M9 20h6M12 16v4M7 8h6M7 11h9" />
+            </svg>
+            <h3>Recipe Decoder</h3>
+            <p>
+              Paste any recipe — a WhatsApp forward, a blog post — get
+              ingredients + steps, priced.
+            </p>
+            <span class="go">Decode a recipe →</span></a
+          >
+          <a class="cta-card" href="#cooklog"
+            ><span class="badge-dot"></span>
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M12 3c3 4-3 5 0 9s-2 6 2 9" />
+              <path d="M5 21h14" />
+            </svg>
+            <h3>Cook Log</h3>
+            <p>
+              Your cooking history, priced as it fills. Streaks, averages, steps
+              from every cook.
+            </p>
+            <span class="go">See your history →</span></a
+          >
+          <button type="button" class="cta-card" id="cta-guide">
+            <span class="badge-dot"></span>
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <circle cx="12" cy="12" r="9" />
+              <path d="M12 8v.01M12 11v5" />
+            </svg>
+            <h3>How it works</h3>
+            <p>
+              New here? The full illustrated guide — plus a tap-through demo
+              that shows the whole idea.
+            </p>
+            <span class="go">Take the tour →</span>
+          </button>
+          <a class="cta-card" href="#settings"
+            ><span class="badge-dot"></span>
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <circle cx="12" cy="12" r="3" />
+              <path
+                d="M12 2l1.5 3 3.5.5-2.5 2.5.5 3.5-3-1.7-3 1.7.5-3.5L7 5.5l3.5-.5z" />
+            </svg>
+            <h3>Settings &amp; About</h3>
+            <p>
+              Make it yours — and meet the builder. Feedback and price
+              corrections welcome.
+            </p>
+            <span class="go">Open settings →</span></a
+          >
+        </nav>
+
+        <section
+          class="fast-lane"
+          id="fastlane"
+          aria-label="The 60-second fast lane">
+          <h2>60 seconds to your first plan</h2>
+          <p class="fl-sub">
+            The fast lane does it for real — you end on an actual priced plan,
+            not a demo.
+          </p>
+          <div class="fl-steps">
+            <div class="fl-step">
+              <span class="fl-n">1.</span>
+              <h3 class="fl-h">Add 3 things you have</h3>
+              <p id="fl-hint">
+                Tap the starter chips — real ingredients go into your real
+                pantry.
+              </p>
+              <div class="chips fl-chips" id="fl-chips"></div>
+            </div>
+            <div class="fl-step">
+              <span class="fl-n">2.</span>
+              <h3 class="fl-h">See what you can cook</h3>
+              <p>
+                The matcher ranks real dinners from your items, priced per
+                plate.
+              </p>
+              <a class="btn-x" href="#matcher">Show me dinners →</a>
+            </div>
+            <div class="fl-step">
+              <span class="fl-n">3.</span>
+              <h3 class="fl-h">Plan the whole week</h3>
+              <p>
+                Fill the week inside your budget and get the priced shopping
+                list.
+              </p>
+              <a class="btn-x ghosty" href="#planner">Plan my week →</a>
+            </div>
+          </div>
+        </section>
+
+        <p class="muted section-gap">
+          Prices last verified: <strong id="home-price-stamp">…</strong> · every
+          price carries its date —
+          <a href="#explorer" class="chip-link">see the honesty layer</a>
+        </p>
+
+        <!-- P-531 SITE GUIDE — illustrated, sticker-style, zero video (owner ruling:
+           static images only, PWA size budget). 8 sections + ONE interactive
+           tap-through demo that runs real functions on sample data. Every empty
+           state in the app deep-links here (scroll-offset pattern). -->
+        <div class="section-gap" id="guide">
+          <div class="matrix-head">
+            <h2>The full guide</h2>
+            <span>eight short walkthroughs — tap one open</span>
+          </div>
+
+          <div
+            class="guided-demo"
+            id="guided-demo"
+            data-stage="1"
+            aria-label="Guided demo — tap through a sample session">
+            <div class="gd-head">
+              <span class="gd-tag">DEMO · nothing is saved</span>
+              <h3>Watch one dinner happen</h3>
+              <p class="muted">
+                Real data, sample kitchen. Tap Next — the demo uses the same
+                engine the app uses.
+              </p>
+            </div>
+            <div id="gd-stage"></div>
+            <div class="gd-nav">
+              <span id="gd-count" class="muted">1 / 3</span>
+              <button type="button" id="gd-next">Next →</button>
+            </div>
+          </div>
+
+          <details class="guide-sec" id="guide-pantry">
+            <summary>
+              <span class="gs-name">1 · Pantry — stock your kitchen</span
+              ><span class="gs-meta">3 steps</span>
+            </summary>
+
+            <p class="gs-intro">
+              Record what's in your cupboards; each entry gets a verified R
+              price attached.
+            </p>
+            <div class="g-step">
+              <span class="g-n">1</span>
+              <div>
+                <h3 class="g-h">Search anything you have</h3>
+                <p>
+                  Type in English or vernacular — "pap", "wors", "morogo" all
+                  work. Search ignores accents and most typos.
+                </p>
+              </div>
+            </div>
+            <div class="g-step">
+              <span class="g-n">2</span>
+              <div>
+                <h3 class="g-h">Tap to add</h3>
+                <p>
+                  Each suggestion shows how it's usually bought (a 1 kg bag, a
+                  dozen). One tap puts the pack in your pantry.
+                </p>
+              </div>
+            </div>
+            <div class="g-step">
+              <span class="g-n">3</span>
+              <div>
+                <h3 class="g-h">Adjust amounts</h3>
+                <p>
+                  Hold + / − to set what you actually have. "Running low" marks
+                  itself automatically when recipes would empty it.
+                </p>
+              </div>
+            </div>
+          </details>
+          <details class="guide-sec" id="guide-matcher">
+            <summary>
+              <span class="gs-name">2 · Matcher — cook tonight</span
+              ><span class="gs-meta">3 steps</span>
+            </summary>
+
+            <p class="gs-intro">
+              Match your current stock to recipes, see missing items and
+              per-plate cost.
+            </p>
+            <div class="g-step">
+              <span class="g-n">1</span>
+              <div>
+                <h3 class="g-h">See your matches</h3>
+                <p>
+                  Every recipe shows Match % (how much of it you already own)
+                  and the true cost per plate.
+                </p>
+              </div>
+            </div>
+            <div class="g-step">
+              <span class="g-n">2</span>
+              <div>
+                <h3 class="g-h">Read the missing list</h3>
+                <p>
+                  Missing items are priced with real shelf prices — so "88%
+                  match" always comes with a rand amount to finish it.
+                </p>
+              </div>
+            </div>
+            <div class="g-step">
+              <span class="g-n">3</span>
+              <div>
+                <h3 class="g-h">Cook, and it's logged</h3>
+                <p>
+                  "Cook" checks your stock first, spends the ingredients, and
+                  writes the cook into your history.
+                </p>
+              </div>
+            </div>
+          </details>
+          <details class="guide-sec" id="guide-planner">
+            <summary>
+              <span class="gs-name">3 · Planner — the week, priced</span
+              ><span class="gs-meta">3 steps</span>
+            </summary>
+
+            <p class="gs-intro">
+              Plan seven meals, each priced, and get an aisle-sorted grocery
+              list ready.
+            </p>
+            <div class="g-step">
+              <span class="g-n">1</span>
+              <div>
+                <h3 class="g-h">Set a weekly budget</h3>
+                <p>
+                  The planner fills 7 dinners inside it, using what you own
+                  first, buying the rest.
+                </p>
+              </div>
+            </div>
+            <div class="g-step">
+              <span class="g-n">2</span>
+              <div>
+                <h3 class="g-h">Swap any day</h3>
+                <p>
+                  Don't like Tuesday? Tap the day and swap it for another match
+                  — the budget updates live.
+                </p>
+              </div>
+            </div>
+            <div class="g-step">
+              <span class="g-n">3</span>
+              <div>
+                <h3 class="g-h">Get the slip</h3>
+                <p>
+                  The shopping list renders as a real till slip — aisle-sorted,
+                  priced, checkable, ready to paste into WhatsApp.
+                </p>
+              </div>
+            </div>
+          </details>
+          <details class="guide-sec" id="guide-explorer">
+            <summary>
+              <span class="gs-name"
+                >4 · Price Explorer — check before the shops</span
+              ><span class="gs-meta">2 steps</span>
+            </summary>
+
+            <p class="gs-intro">
+              Search any item, see its dated R price — ✓ checked in-store or ≈
+              an honest estimate.
+            </p>
+            <div class="g-step">
+              <span class="g-n">1</span>
+              <div>
+                <h3 class="g-h">Search any ingredient</h3>
+                <p>
+                  Real SA prices with how it's sold (pack, tin, bunch) and which
+                  store tier the price came from.
+                </p>
+              </div>
+            </div>
+            <div class="g-step">
+              <span class="g-n">2</span>
+              <div>
+                <h3 class="g-h">Trust the date, not the guess</h3>
+                <p>
+                  Every price carries a freshness chip. Old prices say so —
+                  RandPlates never pretends a price is fresh.
+                </p>
+              </div>
+            </div>
+          </details>
+          <details class="guide-sec" id="guide-decoder">
+            <summary>
+              <span class="gs-name">5 · Recipe Decoder — paste any recipe</span
+              ><span class="gs-meta">3 steps</span>
+            </summary>
+
+            <p class="gs-intro">
+              Turn any forwarded WhatsApp recipe into a priced ingredient list
+              you can shop.
+            </p>
+            <div class="g-step">
+              <span class="g-n">1</span>
+              <div>
+                <h3 class="g-h">Paste from anywhere</h3>
+                <p>
+                  A WhatsApp forward, a blog post, a photo caption. The decoder
+                  reads amounts, units and steps.
+                </p>
+              </div>
+            </div>
+            <div class="g-step">
+              <span class="g-n">2</span>
+              <div>
+                <h3 class="g-h">Fix anything</h3>
+                <p>
+                  Extraction is a proposal, not a verdict — title, servings,
+                  ingredients and steps are all editable.
+                </p>
+              </div>
+            </div>
+            <div class="g-step">
+              <span class="g-n">3</span>
+              <div>
+                <h3 class="g-h">Save into your library</h3>
+                <p>
+                  Saved recipes get prices, match % and cook buttons like any
+                  built-in one.
+                </p>
+              </div>
+            </div>
+          </details>
+          <details class="guide-sec" id="guide-cooklog">
+            <summary>
+              <span class="gs-name">6 · Cook Log — your cooking history</span
+              ><span class="gs-meta">2 steps</span>
+            </summary>
+
+            <p class="gs-intro">
+              See every meal you've cooked, with per-plate cost, streaks and
+              averages.
+            </p>
+            <div class="g-step">
+              <span class="g-n">1</span>
+              <div>
+                <h3 class="g-h">Every cook, priced</h3>
+                <p>
+                  Streaks, averages and what each plate really cost you —
+                  computed from your history, not typed in.
+                </p>
+              </div>
+            </div>
+            <div class="g-step">
+              <span class="g-n">2</span>
+              <div>
+                <h3 class="g-h">Reopen any meal</h3>
+                <p>
+                  Tap a past cook to see its steps again — no digging through
+                  the matcher.
+                </p>
+              </div>
+            </div>
+          </details>
+          <details class="guide-sec" id="guide-offline">
+            <summary>
+              <span class="gs-name"
+                >7 · Offline & install — the whole point</span
+              ><span class="gs-meta">2 steps</span>
+            </summary>
+
+            <p class="gs-intro">
+              Run it offline; everything stays on your device, no server needed.
+            </p>
+            <div class="g-step">
+              <span class="g-n">1</span>
+              <div>
+                <h3 class="g-h">It works with no signal</h3>
+                <p>
+                  Prices, recipes and your pantry live on your phone. Router
+                  off, dead zone, data finished — still cooking.
+                </p>
+              </div>
+            </div>
+            <div class="g-step">
+              <span class="g-n">2</span>
+              <div>
+                <h3 class="g-h">Install it like an app</h3>
+                <p>
+                  Android: menu → "Install app". iPhone: Share → "Add to Home
+                  Screen". No store, no update fees.
+                </p>
+              </div>
+            </div>
+          </details>
+          <details class="guide-sec" id="guide-settings">
+            <summary>
+              <span class="gs-name">8 · Settings & About — make it yours</span
+              ><span class="gs-meta">2 steps</span>
+            </summary>
+
+            <p class="gs-intro">
+              Change preferences, read the story behind RandPlates and report
+              any price errors.
+            </p>
+            <div class="g-step">
+              <span class="g-n">1</span>
+              <div>
+                <h3 class="g-h">Your data stays yours</h3>
+                <p>
+                  Export, import or erase everything — one tap, one file.
+                  Nothing is uploaded anywhere.
+                </p>
+              </div>
+            </div>
+            <div class="g-step">
+              <span class="g-n">2</span>
+              <div>
+                <h3 class="g-h">Talk to the builder</h3>
+                <p>
+                  Found a wrong price? The About panel takes price corrections
+                  and feedback directly.
+                </p>
+              </div>
+            </div>
+          </details>
+        </div>
+      </section>
+
+      <!-- PANTRY -->
+      <section class="view" id="view-pantry" hidden>
+        <header class="pantry-head">
+          <h1>Your pantry</h1>
+          <p class="muted lede">
+            The heart of the app. Add what you have; everything downstream
+            re-computes.
+          </p>
+        </header>
+        <div class="pantry-layout">
+          <div class="panel pantry-search-panel">
+            <div class="panel-title"><h2>Add ingredients</h2></div>
+            <div class="search-field">
+              <input
+                type="search"
+                id="pantry-search"
+                placeholder='Search — try "pap", "wors", "oil"…'
+                autocomplete="off"
+                aria-label="Search ingredients" />
+            </div>
+            <div id="pantry-suggestions" class="section-gap"></div>
+          </div>
+          <div class="pantry-main">
+            <div class="pantry-counter" id="pantry-counter"></div>
+            <div class="panel section-gap pantry-panel">
+              <div class="panel-title pantry-title-row">
+                <h2>In your kitchen</h2>
+                <div class="pantry-viewtools" id="pantry-viewtools" hidden>
+                  <button
+                    type="button"
+                    class="ghost small"
+                    id="pantry-expand-all">
+                    Expand all
+                  </button>
+                  <button
+                    type="button"
+                    class="ghost small"
+                    id="pantry-collapse-all">
+                    Collapse all
+                  </button>
+                </div>
+              </div>
+              <div class="pantry-filterbar" id="pantry-filterbar" hidden>
+                <span class="pf-icon" aria-hidden="true">
+                  <svg
+                    viewBox="0 0 24 24"
+                    width="20"
+                    height="20"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2.4"
+                    stroke-linecap="round">
+                    <circle cx="11" cy="11" r="7" />
+                    <path d="M20 20l-3.5-3.5" />
+                  </svg>
+                </span>
+                <input
+                  type="search"
+                  id="pantry-filter"
+                  placeholder="Find something in your kitchen…"
+                  autocomplete="off"
+                  aria-label="Find something in your pantry" />
+                <span
+                  class="pf-count"
+                  id="pantry-filter-count"
+                  aria-live="polite"></span>
+              </div>
+              <div
+                class="pantry-chips"
+                id="pantry-chips"
+                role="group"
+                aria-label="Filter pantry by status"
+                hidden></div>
+              <div
+                class="pantry-chips pantry-aisles"
+                id="pantry-aisles"
+                role="group"
+                aria-label="Filter pantry by aisle"
+                hidden></div>
+              <div id="pantry-list"></div>
+              <div class="pantry-tools">
+                <button class="ghost" id="pantry-export">Export JSON</button>
+                <button class="ghost" id="pantry-import-btn">Import</button>
+                <input
+                  type="file"
+                  id="pantry-import"
+                  accept="application/json"
+                  hidden />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- MATCHER -->
+      <section class="view" id="view-matcher" hidden>
+        <h1>The Matcher</h1>
+        <!-- P-310: price honesty travels with the view — offline is no excuse for
+           hiding when prices were last verified -->
+        <p class="muted price-stamp">
+          Prices as of <span id="matcher-price-stamp">—</span>
+        </p>
+        <div
+          class="meal-chips section-gap"
+          id="meal-chips"
+          role="group"
+          aria-label="What are you cooking for?">
+          <button type="button" class="meal-chip" data-meal="">Anything</button>
+          <button type="button" class="meal-chip" data-meal="breakfast">
+            🌅 Breakfast
+          </button>
+          <button type="button" class="meal-chip" data-meal="lunch">
+            🥪 Lunch
+          </button>
+          <button type="button" class="meal-chip" data-meal="dinner">
+            🍲 Dinner
+          </button>
+          <!-- P-553 (owner): dessert + snack chips — matcher discovery only; per
+             P-313 they never leak into the planner (dessert planner ruling (a) intact) -->
+          <button type="button" class="meal-chip" data-meal="dessert">
+            🍮 Dessert
+          </button>
+          <button type="button" class="meal-chip" data-meal="snack">
+            🍿 Snack
+          </button>
+        </div>
+        <!-- P-537: recipe search — title (accent-insensitive), ingredient (registry
+           aliases incl. vernacular), tags. ANDs with every filter below. -->
+        <div class="search-field msearch-wrap section-gap">
+          <input
+            type="search"
+            id="matcher-search"
+            placeholder="Search recipes, ingredients or tags — try “pap”, “spinach”, “chakalaka”"
+            autocomplete="off"
+            enterkeyhint="search"
+            aria-label="Search recipes by name, ingredient or tag" />
+        </div>
+        <details class="panel tune-panel section-gap" id="tune-panel">
+          <summary class="tune-head">
+            <h2 style="margin: 0">Tune your match</h2>
+            <span class="tune-badge" id="tune-badge" hidden></span>
+            <span class="tune-chev" aria-hidden="true">▾</span>
+          </summary>
+          <div class="tune-body">
+            <div class="tune-plate">
+              <div class="budget-line">
+                <h3 class="tune-l">Max per plate</h3>
+                <span class="money" id="plate-display">Any price</span>
+              </div>
+              <input
+                type="range"
+                class="budget"
+                id="plate-dial"
+                min="500"
+                max="6000"
+                step="250"
+                value="6000"
+                aria-label="Maximum price per plate dial" />
+              <div class="tune-scale muted" aria-hidden="true">
+                <span>R5</span><span>R60 · slide to the end for any price</span>
+              </div>
+            </div>
+
+            <div
+              class="chip-row"
+              id="tier-chips"
+              role="group"
+              aria-label="How ready are you to cook?">
+              <button type="button" class="fchip" data-tier="all">
+                All matches <b class="fc-n"></b>
+              </button>
+              <button type="button" class="fchip" data-tier="ready">
+                Cook now <b class="fc-n"></b>
+              </button>
+              <button type="button" class="fchip" data-tier="almost">
+                One small shop <b class="fc-n"></b>
+              </button>
+              <button type="button" class="fchip" data-tier="stretch">
+                Bigger shop <b class="fc-n"></b>
+              </button>
+            </div>
+
+            <div
+              class="chip-row"
+              id="missing-chips"
+              role="group"
+              aria-label="How much are you up for buying?">
+              <button type="button" class="fchip" data-missing="">
+                Any shopping <b class="fc-n"></b>
+              </button>
+              <button type="button" class="fchip" data-missing="4">
+                ≤ 4 to buy <b class="fc-n"></b>
+              </button>
+              <button type="button" class="fchip" data-missing="2">
+                ≤ 2 to buy <b class="fc-n"></b>
+              </button>
+              <button type="button" class="fchip" data-missing="0">
+                Nothing to buy <b class="fc-n"></b>
+              </button>
+            </div>
+
+            <div
+              class="chip-row"
+              id="time-chips"
+              role="group"
+              aria-label="Cook time">
+              <button type="button" class="fchip" data-time="">
+                Any time <b class="fc-n"></b>
+              </button>
+              <button type="button" class="fchip" data-time="15">
+                ≤ 15 min <b class="fc-n"></b>
+              </button>
+              <button type="button" class="fchip" data-time="30">
+                ≤ 30 min <b class="fc-n"></b>
+              </button>
+              <button type="button" class="fchip" data-time="45">
+                ≤ 45 min <b class="fc-n"></b>
+              </button>
+            </div>
+
+            <div
+              class="chip-row"
+              id="diet-chips"
+              role="group"
+              aria-label="Dietary">
+              <button type="button" class="fchip" data-diet="">
+                Everything <b class="fc-n"></b>
+              </button>
+              <button type="button" class="fchip" data-diet="vegetarian">
+                Vegetarian <b class="fc-n"></b>
+              </button>
+              <button type="button" class="fchip" data-diet="vegan">
+                Vegan <b class="fc-n"></b>
+              </button>
+            </div>
+
+            <div
+              class="chip-row"
+              id="coverage-chips"
+              role="group"
+              aria-label="How much do you already have?">
+              <button type="button" class="fchip" data-coverage="">
+                Any match <b class="fc-n"></b>
+              </button>
+              <button type="button" class="fchip" data-coverage="90">
+                ≥ 90% mine <b class="fc-n"></b>
+              </button>
+              <button type="button" class="fchip" data-coverage="70">
+                ≥ 70% mine <b class="fc-n"></b>
+              </button>
+              <button type="button" class="fchip" data-coverage="50">
+                ≥ 50% mine <b class="fc-n"></b>
+              </button>
+            </div>
+
+            <div
+              class="chip-row"
+              id="feeds-chips"
+              role="group"
+              aria-label="How many people are you feeding?">
+              <button type="button" class="fchip" data-feeds="">
+                Any size <b class="fc-n"></b>
+              </button>
+              <button type="button" class="fchip" data-feeds="2">
+                Feeds 2+ <b class="fc-n"></b>
+              </button>
+              <button type="button" class="fchip" data-feeds="4">
+                Feeds 4+ <b class="fc-n"></b>
+              </button>
+              <button type="button" class="fchip" data-feeds="6">
+                Feeds 6+ <b class="fc-n"></b>
+              </button>
+            </div>
+
+            <div
+              class="chip-row"
+              id="tag-chips"
+              role="group"
+              aria-label="Show only (pick any)">
+              <button type="button" class="fchip" data-tag="traditional">
+                Traditional <b class="fc-n"></b>
+              </button>
+              <button type="button" class="fchip" data-tag="quick">
+                Quick &amp; easy <b class="fc-n"></b>
+              </button>
+              <button type="button" class="fchip" data-tag="family">
+                Family pot <b class="fc-n"></b>
+              </button>
+              <button type="button" class="fchip" data-tag="student">
+                Student stash <b class="fc-n"></b>
+              </button>
+              <button type="button" class="fchip" data-tag="dessert">
+                Dessert <b class="fc-n"></b>
+              </button>
+              <button type="button" class="fchip" data-tag="snack">
+                Snack <b class="fc-n"></b>
+              </button>
+            </div>
+            <!-- P-535: pantry dossier deep-link lands here (dismissible focus chip) -->
+
+            <div class="tune-tools">
+              <label class="field tune-sort"
+                >Sort
+                <select id="sort-mode">
+                  <option value="match">Best match</option>
+                  <option value="cheap">Cheapest plate</option>
+                  <option value="fast">Fastest</option>
+                  <option value="fewest">Least shopping</option>
+                </select>
+              </label>
+              <button
+                type="button"
+                class="fchip"
+                id="fav-only"
+                aria-pressed="false">
+                Favourites only <b class="fc-n"></b>
+              </button>
+              <button type="button" class="btn tune-surprise" id="surprise-btn">
+                <span aria-hidden="true">🎲</span> Surprise me
+              </button>
+              <button type="button" class="ghost small" id="tune-reset">
+                Reset all
+              </button>
+            </div>
+          </div>
+        </details>
+        <div class="unlock-strip section-gap" id="unlock-strip" hidden></div>
+        <div class="results-head section-gap">
+          <h2 id="results-title" style="margin: 0">Results</h2>
+          <span class="muted" id="results-note" aria-live="polite"></span>
+        </div>
+        <div
+          class="active-filters section-gap"
+          id="active-filters"
+          role="group"
+          aria-label="Active filters — tap to remove"></div>
+        <div
+          class="chip-row section-gap"
+          id="focus-strip"
+          role="group"
+          aria-label="Ingredient focus"
+          hidden></div>
+        <div class="stack section-gap" id="matcher-results"></div>
+      </section>
+
+      <!-- PLANNER -->
+      <section class="view" id="view-planner" hidden>
+        <h1>Week Planner</h1>
+        <p class="muted">
+          The crown jewel: 7 dinners inside your budget, one shopping list.
+        </p>
+        <div class="panel section-gap">
+          <div class="row">
+            <label class="field"
+              >Weekly budget (R)
+              <input
+                type="number"
+                id="week-budget"
+                min="0"
+                max="5000"
+                step="10"
+                value="600" />
+            </label>
+            <label class="field"
+              >Plates per meal
+              <input
+                type="number"
+                id="week-servings"
+                min="1"
+                max="8"
+                value="2" />
+            </label>
+            <button id="plan-week">Plan my week</button>
+            <!-- P-310a: save the arrangement before it gets regenerated away -->
+            <button id="save-plan" type="button" class="ghost" disabled>
+              Save this plan
+            </button>
+          </div>
+        </div>
+        <div id="plan-output"></div>
+        <!-- P-310a: saved plans — load restores the exact grid; a changed pantry
+           loads it flagged stale instead of pretending it still matches -->
+        <div id="saved-plans" class="section-gap" hidden></div>
+        <dialog
+          id="save-plan-dialog"
+          class="meal-picker"
+          aria-label="Save this plan">
+          <div class="mp-head">
+            <div>
+              <div class="mp-title">Save this plan</div>
+              <div class="mp-sub muted" id="save-plan-meta"></div>
+            </div>
+            <button class="ghost small" id="save-plan-close" type="button">
+              Close
+            </button>
+          </div>
+          <div class="mpd-body">
+            <label class="field"
+              >Plan name
+              <input
+                type="text"
+                id="save-plan-name"
+                maxlength="40"
+                autocomplete="off" />
+            </label>
+            <button type="button" id="save-plan-confirm" class="plan-week-btn">
+              Save plan
+            </button>
+          </div>
+        </dialog>
+        <!-- P-301: day picker — native <dialog> gives Esc-cancel and a free focus trap;
+           the planner is the core accessibility surface (P-301 spec #3) -->
+        <dialog
+          id="meal-picker"
+          class="meal-picker"
+          aria-label="Pick a meal for this day">
+          <div class="mp-head">
+            <div>
+              <div class="mp-title" id="mp-day">Pick dinner</div>
+              <div class="mp-sub muted" id="mp-sub"></div>
+            </div>
+            <button class="ghost small" id="mp-close" type="button">
+              Close
+            </button>
+          </div>
+          <div
+            id="mp-list"
+            role="listbox"
+            aria-label="Meals ranked by what they add to the shop"></div>
+          <div class="mp-foot muted">
+            ↑↓ move · Enter picks · Esc cancels · ranked by added shop cost
+          </div>
+        </dialog>
+        <!-- P-307: recipe detail — one tap under a picker row: numbers at the
+           planned plates, ingredients with quantities, recipe link, swap action -->
+        <dialog
+          id="mp-detail"
+          class="meal-picker mpd"
+          aria-label="Recipe details">
+          <div class="mp-head">
+            <div>
+              <div class="mp-title" id="mpd-title">Recipe</div>
+              <div class="mp-sub muted" id="mpd-day"></div>
+            </div>
+            <button class="ghost small" id="mpd-close" type="button">
+              Close
+            </button>
+          </div>
+          <div id="mpd-body"></div>
+        </dialog>
+      </section>
+
+      <!-- EXPLORER -->
+      <section class="view" id="view-explorer" hidden>
+        <div class="px-hero">
+          <h1>Your Weekly Meal Plan, Priced Right</h1>
+          <p class="px-lede">
+            Set your budget, stock your pantry — RandPlates ranks a week of
+            dinners by real cost per plate. Search a staple below, tap it to
+            compare retailers, then cook it.
+          </p>
+          <details class="px-more">
+            <summary>How RandPlates prices your week</summary>
+            <div class="px-copy">
+              <p class="px-honesty">
+                Every ingredient here carries a price — nothing is left blank.
+                Each price is honestly tiered: <strong>✓ checked</strong> means
+                a person verified it against the store — on the shelf, at the
+                till, or on the retailer's own app;
+                <strong>≈ estimate</strong> means it was researched from
+                Checkers, Pick n Pay, Shoprite and comparable products, and it's
+                marked as an estimate until someone checks it in-store. The date
+                appears next to every price, and anything older than a month is
+                marked old. We don't pull live feeds, so prices may shift — spot
+                a wrong one and it gets re-verified.
+              </p>
+              <p>
+                You set the budget. We do the maths. Enter what's in your pantry
+                and what you can spend this week, and RandPlates shows you what
+                you can cook — ranked by ingredient overlap and real cost per
+                plate. It's built as a cheap meal plan South Africa can actually
+                use: offline, fast, no sign-up. You get seven days of meals that
+                stay inside your budget, plus one consolidated shopping list to
+                take to the spaza or supermarket.
+              </p>
+              <h2>What to cook with pap you already have</h2>
+              <p>
+                Your pap, rice, or morogo should lead the plan, not sit at the
+                back. The engine checks what you already have and pushes those
+                recipes to the top, so you use what's in your kitchen first.
+                You'll see how much of each recipe you already cover, what's
+                still missing, and the cost per plate in Rands and cents, lined
+                up so you can compare. Less waste, more of your staples doing
+                the work.
+              </p>
+              <h2>R500 grocery list or R400 — built for your budget</h2>
+              <p>
+                Whether you're planning a R500 grocery list or a tight grocery
+                list for R400, you need numbers that match the till slip.
+                RandPlates builds budget meals for a week South Africa can shop
+                for — one list, total cost, priced from real local retailers.
+                Every ingredient shows quantity and price, every meal shows cost
+                per plate. If a plan goes over, it tells you and shows the next
+                best fit inside your budget.
+              </p>
+            </div>
+          </details>
+          <div class="px-fresh">
+            <strong
+              >Prices updated <span id="explorer-stamp"></span> — every
+              ingredient priced: ✓ checked in-store or ≈ researched estimate,
+              each with its date.</strong
+            >
+            <span
+              id="px-tier-line"
+              class="px-tier-line"
+              aria-live="polite"></span>
+            <button type="button" class="chip-link" data-guide="guide-explorer">
+              how we price →
+            </button>
+          </div>
+        </div>
+        <div class="px-controls section-gap">
+          <label class="px-search" for="px-search">
+            <span aria-hidden="true">🔍</span>
+            <input
+              id="px-search"
+              type="search"
+              placeholder="Search ingredients (pap, beans, morogo...)"
+              autocomplete="off" />
+          </label>
+          <label class="px-sort" for="px-sort">
+            <span>Sort</span>
+            <select id="px-sort" class="log-filter">
+              <option value="name">A–Z</option>
+              <option value="price">Cheapest pack</option>
+              <option value="unit">Best per 100g/ml</option>
+            </select>
+          </label>
+        </div>
+        <div
+          class="chip-row"
+          id="px-store-chips"
+          role="group"
+          aria-label="Filter prices by store"></div>
+        <div
+          class="chip-row"
+          id="px-aisle-chips"
+          role="group"
+          aria-label="Filter by aisle"></div>
+        <div
+          class="chip-row"
+          id="px-aisle-hints"
+          role="group"
+          aria-label="Cheapest store per aisle"></div>
+        <p class="muted px-count" id="px-count" aria-live="polite"></p>
+        <div class="panel section-gap table-wrap" id="explorer-table"></div>
+      </section>
+
+      <!-- COOK LOG -->
+      <section class="view" id="view-cooklog" hidden>
+        <h1>Cook Log</h1>
+        <p class="muted">
+          Streaks, badges and level progression — the Fan Zone DNA, applied to
+          real cooking.
+        </p>
+        <div id="cooklog-output"></div>
+      </section>
+
+      <!-- DECODER -->
+      <section class="view" id="view-decoder" hidden>
+        <h1>Decoder Lab</h1>
+        <p class="muted">
+          Paste a TikTok caption or recipe text — the deterministic parser
+          drafts a structured recipe. Unresolved lines go to a review queue
+          before saving.
+        </p>
+        <div class="panel section-gap">
+          <textarea
+            id="decode-input"
+            placeholder="Paste recipe text here — e.g.
+Serves 4 – 30 min
+2 cups rice
+1 onion
+Fry the onion. Add rice and water..."></textarea>
+          <div><button id="decode-run">Decode</button></div>
+          <p class="muted dec-entry-copy" style="margin-top: var(--sp-2)">
+            Paste a caption. We’ll turn it into rands and plates.
+            <button type="button" class="dec-help-link" id="dec-help-open">
+              How we read your caption →
+            </button>
+          </p>
+        </div>
+        <div class="dec-samples">
+          <span class="muted dec-samples-label">Try one:</span>
+          <button type="button" class="px-chip dec-sample" data-sample="A">
+            Easy student bowl
+          </button>
+          <button type="button" class="px-chip dec-sample" data-sample="B">
+            Messy real-life post
+          </button>
+          <button type="button" class="px-chip dec-sample" data-sample="C">
+            Gogo’s Sunday lunch
+          </button>
+        </div>
+        <div id="decode-output"></div>
+        <div id="gap-report-panel"></div>
+        <div id="decoded-library"></div>
+        <div class="dec-help" id="dec-help" hidden>
+          <div
+            class="dec-help-card"
+            role="dialog"
+            aria-modal="true"
+            aria-label="How the Decoder Lab works">
+            <button
+              type="button"
+              class="dec-help-close"
+              id="dec-help-close"
+              aria-label="Close">
+              ✕
+            </button>
+            <h2>How the Decoder Lab works</h2>
+            <h3>What this does</h3>
+            <p>
+              Paste a messy TikTok caption, get a proper recipe draft with real
+              rands per plate. Same caption will always give you the same draft
+              — no AI, no guessing, just the same rules every time.
+            </p>
+            <h3>The review queue</h3>
+            <p>
+              If a line is vague — “a pinch”, a promo, a typo — it won’t guess.
+              It moves that line to your review queue so you can fix it. Nothing
+              dodgy auto-saves; that’s how we keep your plates honest.
+            </p>
+            <h3>Where the data lives</h3>
+            <p>
+              Everything lives on your phone. No account, no server, no one else
+              seeing your pantry. Even offline, it still works.
+            </p>
+            <h3>What “unpriced” means</h3>
+            <p>
+              Unpriced just means we don’t have a checked shop price for that
+              line yet. The recipe still saves, that line just counts as R0 for
+              now. When the registry gets a real price, your plates update.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- SETTINGS -->
+      <section class="view" id="view-settings" hidden>
+        <h1>Settings &amp; About</h1>
+        <p class="muted" id="settings-intro">
+          Your setup for your kitchen. Budget defaults, pantry, and your data —
+          all stays on this phone.
+        </p>
+        <div class="panel section-gap">
+          <h2>Your kitchen profile</h2>
+          <p class="muted">
+            Feeds the Planner's plate counts and every recipe card's default
+            cook size.
+          </p>
+          <div class="st-row">
+            <label class="st-field"
+              >People in the house
+              <input
+                type="number"
+                id="st-household"
+                min="1"
+                max="12"
+                step="1"
+                inputmode="numeric" />
+            </label>
+            <label class="st-field"
+              >Default servings
+              <input
+                type="number"
+                id="st-servings"
+                min="1"
+                max="12"
+                step="1"
+                inputmode="numeric"
+                placeholder="same as household" />
+            </label>
+          </div>
+          <p class="muted st-hint" id="st-servings-note">
+            Servings set the Planner's plates and every recipe card's default
+            cook size. Leave blank to always match people in the house.
+          </p>
+        </div>
+        <div class="panel section-gap">
+          <h2>Budget defaults</h2>
+          <div class="st-row">
+            <label class="st-field"
+              >Weekly budget (R)
+              <input
+                type="number"
+                id="st-weekly"
+                min="0"
+                max="5000"
+                step="10"
+                inputmode="numeric" />
+            </label>
+            <label class="st-field"
+              >Per-plate ceiling (R)
+              <input
+                type="number"
+                id="st-plate"
+                min="0"
+                max="500"
+                step="1"
+                inputmode="numeric"
+                placeholder="any" />
+            </label>
+          </div>
+          <p class="muted st-hint">
+            The weekly budget sets the Matcher's "money left" line and the
+            Planner's dial. The ceiling caps what any single plate may cost.
+            Change either and both views re-rank on the spot.
+          </p>
+        </div>
+        <div class="panel section-gap">
+          <h2>Look &amp; feel</h2>
+          <div class="st-row">
+            <label class="st-field"
+              >Theme
+              <select id="st-theme" class="st-select"></select>
+            </label>
+            <label class="st-field"
+              >Mode
+              <select id="st-mode" class="st-select">
+                <option value="light">Light</option>
+                <option value="auto">Follow system</option>
+                <option value="dark">Dark</option>
+              </select>
+            </label>
+          </div>
+          <p class="muted st-hint" id="st-theme-note">
+            Every theme restyles colors, fonts and shapes end to end. A theme's
+            fonts download once when you're online; colors always work offline.
+          </p>
+        </div>
+        <div class="panel section-gap">
+          <h2>Your data — your kitchen stays in your kitchen</h2>
+          <div class="px-copy">
+            <p>
+              Your pantry, cook log, and meal plans live only in this device's
+              IndexedDB. Nothing leaves your phone. We don't send it to any
+              server.
+            </p>
+            <p>
+              Prices come from the app's public data files. No accounts. No
+              logins. No cookies. No cross-site tracking.
+            </p>
+            <p>
+              <strong>We do count one thing:</strong> anonymous, aggregate usage
+              — how many times the app opens, how many meals get planned. No
+              names, no device IDs. Cookieless beacon. We tell you plainly
+              because that honesty is part of the deal.
+            </p>
+            <p>
+              Your data is yours. Export it, import it, delete it — whenever you
+              want.
+            </p>
+          </div>
+          <div class="row section-gap">
+            <button class="ghost" id="export-all">
+              Export all data (JSON)
+            </button>
+            <button class="ghost" id="import-all-btn">
+              Import backup (merge)
+            </button>
+            <input
+              type="file"
+              id="import-all"
+              accept="application/json"
+              hidden />
+            <button class="danger" id="wipe-all">Erase everything</button>
+          </div>
+          <p class="muted st-hint" id="storage-meter">Checking storage…</p>
+          <p class="muted st-hint" id="backup-nudge">
+            Import merges: for every record the newer version wins, so restoring
+            an old backup never overwrites newer cooking. Your kitchen lives
+            only on this device — export a backup before uninstalling the app or
+            clearing browser data.
+          </p>
+          <h3 class="st-h">Erase just one thing</h3>
+          <div class="row">
+            <button class="ghost" data-wipe="cook_log">Cook log</button>
+            <button class="ghost" data-wipe="pantry">Pantry</button>
+            <button class="ghost" data-wipe="saved_plans">Saved plans</button>
+            <button class="ghost" data-wipe="saved_recipes">
+              Saved recipes
+            </button>
+            <button class="ghost" data-wipe="settings">Settings</button>
+          </div>
+          <p class="muted st-hint">
+            Each erase asks first and only touches that one collection.
+          </p>
+        </div>
+        <div class="panel section-gap">
+          <h2>About RandPlates — built in public</h2>
+          <div class="px-copy">
+            <p>
+              RandPlates is a free, offline-first dinner planner for South
+              African kitchens. You tell it what's in your pantry and what you
+              can spend; it ranks what you can cook tonight and plans a priced
+              week. No account, no server — everything stays on your phone.
+            </p>
+            <p>
+              <strong>How prices are researched:</strong> real retailer prices
+              captured in-store and cross-checked online (Checkers, PnP,
+              Shoprite) — never AI guesses. Every price carries an honesty tier:
+              <strong>✓ checked</strong> (verified in a real store) or
+              <strong>≈ estimate</strong> (researched, not yet in-store
+              verified). It's on the card, so you always know what you're
+              trusting.
+            </p>
+            <p>
+              <strong>Who builds it:</strong> I'm a final-year engineering
+              student who saw South African kitchens scrambling for affordable
+              meals. I used AI to stitch RandPlates together — but every price
+              comes from a real till slip, a shelf check, the retailer's own
+              app, or a clearly-marked estimate. Never an AI guess. No ads, no
+              sign-up, no tracking — just your kitchen, your data.
+            </p>
+            <p>
+              This is a build-in-public project — the wins and the regressions
+              get posted as they happen.
+            </p>
+          </div>
+          <h3 class="st-h">Contact</h3>
+          <div class="row">
+            <a class="ghost chip-link" href="mailto:tadiwachopambaweb@gmail.com"
+              >✉ Gmail</a
+            >
+            <a
+              class="ghost chip-link"
+              href="https://www.linkedin.com/in/tadiwanashe-chopamba-9b80b5289/"
+              rel="noopener"
+              >LinkedIn</a
+            >
+            <a
+              class="ghost chip-link"
+              href="https://www.instagram.com/tadiwachopamba"
+              rel="noopener"
+              >Instagram</a
+            >
+          </div>
+          <p class="muted st-hint">
+            Feedback, support, corrections — or
+            <a id="price-report-link" href="#">spot a wrong price? Tell me</a>
+            and I'll re-verify it.
+          </p>
+        </div>
+        <div class="panel section-gap">
+          <h2>Price data</h2>
+          <p class="muted">
+            Prices last verified: <strong id="settings-stamp">…</strong> · file
+            version <strong id="settings-version">…</strong><br />
+            Real retailer prices, no AI guesses. Browse every line in the
+            <a href="#explorer" data-view="explorer">Price Explorer</a>.
+          </p>
+        </div>
+        <div class="panel section-gap">
+          <h2>Install</h2>
+          <p class="muted" id="install-hint">
+            Install RandPlates from your browser menu ("Add to Home Screen") for
+            offline, in-aisle use.
+          </p>
+          <p class="muted section-gap">
+            RandPlates is budget-first and local-first. You add what you have
+            and what you can spend. We rank recipes by what you already have and
+            real ZAR cost per plate — R7.16, not "affordable" — then plan your
+            week inside your budget and give you one priced till slip to shop.
+          </p>
+          <p class="muted">
+            Successor to
+            <a href="https://ai-datawizard.github.io/pitch26/" rel="noopener"
+              >Pitch26</a
+            >
+            · RandPlates v0.9.9 · build contract: PRD v1.0 §7.
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <button
+      type="button"
+      class="scroll-top"
+      id="scroll-top"
+      aria-label="Back to top">
+      <span aria-hidden="true">↑</span>
+    </button>
+    <div id="unlock-burst" role="status" aria-live="polite" hidden></div>
+    <div id="toast" role="status" aria-live="polite"></div>
+
+    <script type="module" src="js/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,25 @@
+{
+  "runAt": "2026-10-21T17:18:20.649Z",
+  "engineSha": "ca0d118",
+  "corpus": {
+    "v1": 65,
+    "v2": 52,
+    "v3": 0
+  },
+  "total": 117,
+  "passed": 117,
+  "failed": 0,
+  "safety": {
+    "total": 45,
+    "passed": 45,
+    "rate": 1
+  },
+  "matrix": {},
+  "marginals": {
+    "byCategory": {},
+    "byLayer": {}
+  },
+  "ambiguous": 0,
+  "target": null,
+  "failures": []
+}

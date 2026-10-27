@@ -1,0 +1,8 @@
+# P-532: robots — crawl the app + the price research page, keep internals internal.
+User-agent: *
+Allow: /
+Allow: /prices.html
+Disallow: /tests/
+Disallow: /shots/
+
+Sitemap: https://randplates.co.za/sitemap.xml
