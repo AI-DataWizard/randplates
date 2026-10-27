@@ -144,11 +144,12 @@
     <link rel="stylesheet" href="css/views.css" />
     <link rel="stylesheet" href="css/themes.css" />
     <link id="gfonts-link" rel="stylesheet" href="" media="all" />
-    <!-- P-412 analytics slot: Cloudflare Web Analytics — cookieless, aggregate-only,
-       chosen so the privacy statement stays literally true. GA4 is NOT used:
-       it sets cookies, which would falsify the "no cookies, no tracking" promise.
-       Activate: uncomment and paste the beacon token (dash.cloudflare.com → Web Analytics). -->
-    <!-- <script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon="{"token": "PASTE_CF_WEB_ANALYTICS_TOKEN"}"></script> -->
+    <!-- Cloudflare Web Analytics (P-412: cookieless, aggregate-only; GA4 rejected to keep the privacy statement literally true) -->
+    <script
+      type="module"
+      src="https://static.cloudflareinsights.com/beacon.min.js"
+      data-cf-beacon='{"token": "e20980713e7741829a553b69b62965eb"}'></script>
+    <!-- End Cloudflare Web Analytics -->
   </head>
   <body>
     <header class="topbar">
@@ -1710,7 +1711,7 @@ Fry the onion. Add rice and water..."></textarea>
             <a href="https://ai-datawizard.github.io/pitch26/" rel="noopener"
               >Pitch26</a
             >
-            · RandPlates v1.0.0 · build contract: PRD v1.0 §7.
+            · RandPlates v1.0.0
           </p>
         </div>
       </section>
