@@ -144,6 +144,11 @@
     <link rel="stylesheet" href="css/views.css" />
     <link rel="stylesheet" href="css/themes.css" />
     <link id="gfonts-link" rel="stylesheet" href="" media="all" />
+    <!-- P-412 analytics slot: Cloudflare Web Analytics — cookieless, aggregate-only,
+       chosen so the privacy statement stays literally true. GA4 is NOT used:
+       it sets cookies, which would falsify the "no cookies, no tracking" promise.
+       Activate: uncomment and paste the beacon token (dash.cloudflare.com → Web Analytics). -->
+    <!-- <script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon="{"token": "PASTE_CF_WEB_ANALYTICS_TOKEN"}"></script> -->
   </head>
   <body>
     <header class="topbar">
@@ -192,7 +197,8 @@
           class="offline-flag"
           id="offline-flag"
           title="You're offline — cached data only"
-          >● offline — still cooking</span
+          >● <span class="flag-full">offline — still cooking</span
+          ><span class="flag-short">offline</span></span
         >
         <!-- P-311: custom install affordance. Hidden until the browser signals
            installability (beforeinstallprompt) or iOS is detected. Suppression
@@ -1675,6 +1681,19 @@ Fry the onion. Add rice and water..."></textarea>
           </p>
         </div>
         <div class="panel section-gap">
+          <h2>Your usage — Pulse</h2>
+          <p class="muted">
+            Aggregate counters kept on this phone only — nothing is sent
+            anywhere.
+          </p>
+          <p class="muted">
+            Matcher runs: <strong id="pulse-matcher">0</strong> · weekly plans
+            generated: <strong id="pulse-plans">0</strong> · meals cooked:
+            <strong id="pulse-cooks">0</strong> · recipes decoded:
+            <strong id="pulse-decodes">0</strong>
+          </p>
+        </div>
+        <div class="panel section-gap">
           <h2>Install</h2>
           <p class="muted" id="install-hint">
             Install RandPlates from your browser menu ("Add to Home Screen") for
@@ -1691,7 +1710,7 @@ Fry the onion. Add rice and water..."></textarea>
             <a href="https://ai-datawizard.github.io/pitch26/" rel="noopener"
               >Pitch26</a
             >
-            · RandPlates v0.9.9 · build contract: PRD v1.0 §7.
+            · RandPlates v1.0.0 · build contract: PRD v1.0 §7.
           </p>
         </div>
       </section>

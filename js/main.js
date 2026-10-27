@@ -223,6 +223,24 @@ async function boot() {
       if ((db.getSettings().display || {}).mode === "auto") applyDisplayPrefs();
     });
 
+  // P-412 Pulse: aggregate usage counters, localStorage-only, never transmitted.
+  const PULSE_KEY = "randplates-pulse-v1";
+  const pulseRead = () => {
+    try {
+      return JSON.parse(localStorage.getItem(PULSE_KEY)) || {};
+    } catch {
+      return {};
+    }
+  };
+  window.__pulseRead = pulseRead;
+  window.__pulseBump = (k) => {
+    const p = pulseRead();
+    p[k] = (p[k] || 0) + 1;
+    try {
+      localStorage.setItem(PULSE_KEY, JSON.stringify(p));
+    } catch {}
+  };
+
   // SW registration (skipped on file:// where workers/modules also break)
   // Publish the real sticky-header height so sticky panels never guess (Fan Zone lesson).
   const setStickyOffset = () => {
@@ -256,8 +274,10 @@ async function boot() {
   // text (works on hidden elements) and passed a dead flag. Now the class is
   // synced on boot and on both events.
   const $offlineFlag = $("#offline-flag");
-  const syncOfflineFlag = () =>
+  const syncOfflineFlag = () => {
     $offlineFlag.classList.toggle("on", !store.get().online);
+    setStickyOffset(); // P-603: flag toggles can change topbar height -> re-measure so scroll offsets stay true
+  };
   window.addEventListener("online", () => {
     store.set({ online: true });
     syncOfflineFlag();
@@ -405,6 +425,7 @@ async function boot() {
     if (target === "pantry") renderPantry();
     if (target === "matcher") runMatcher();
     if (target === "planner") renderPlanner();
+    if (target === "settings") renderPulse();
     if (target === "explorer") renderExplorer();
     if (target === "cooklog") renderCookLog();
     if (target === "decoder") renderGapReport();
@@ -1614,6 +1635,7 @@ function toggleFavourite(recipeId) {
 }
 
 function runMatcher() {
+  window.__pulseBump("matcherRuns"); // P-412 Pulse
   syncTuneUI();
   computeAndRender();
 }
@@ -2868,6 +2890,7 @@ async function cookRecipe(recipe, plates, result) {
     },
     { verifiedCount: 0, estimatedCount: 0 },
   );
+  window.__pulseBump("cookLogs"); // P-412 Pulse
   const logRec = await db.logCook({
     recipeId: recipe.id,
     title: recipe.title,
@@ -2987,6 +3010,19 @@ function wireMatcherDelegation() {
 }
 
 // ---------------- PLANNER ----------------
+
+function renderPulse() {
+  // P-412: Settings > Pulse (this-device aggregates only)
+  const p = window.__pulseRead ? window.__pulseRead() : {};
+  const set = (id, v) => {
+    const el = $(id);
+    if (el) el.textContent = String(v || 0);
+  };
+  set("#pulse-matcher", p.matcherRuns);
+  set("#pulse-plans", p.plansGenerated);
+  set("#pulse-cooks", p.cookLogs);
+  set("#pulse-decodes", p.decodes);
+}
 
 function renderPlanner() {
   const p = store.get().planner;
@@ -3340,6 +3376,7 @@ function downloadPlanPdf(plan) {
 }
 
 function drawPlan(plan) {
+  window.__pulseBump("plansGenerated"); // P-412 Pulse
   updateSavePlanBtn(); // P-310b: every plan-mutating path funnels through here
   const cls =
     plan.status === "under" ? "" : plan.status === "near" ? "near" : "over";
@@ -4795,6 +4832,7 @@ function runDecoder() {
   }
   window.__decodedDraft = draft; // review state lives across re-renders
   renderDecodeOutput();
+  window.__pulseBump("decodes"); // P-412 Pulse
   logGapQueue(draft, text); // P-441: the review queue becomes research data
 }
 

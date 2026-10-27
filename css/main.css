@@ -103,6 +103,14 @@ nav.tabs a.active {
 .offline-flag.on {
   display: inline-flex;
 }
+/* P-603: the flag must never change sticky-chrome height on mobile (owner-reported
+   squeeze). Full label on wide screens; compact chip on phones. */
+.offline-flag .flag-short {
+  display: none;
+}
+.offline-flag {
+  flex-shrink: 0;
+}
 
 /* P-311: install affordance in the topbar (next to the offline flag) */
 #install-btn {
@@ -475,5 +483,11 @@ label.field {
     order: 3;
     width: 100%;
     padding-bottom: var(--sp-1);
+  }
+  .offline-flag .flag-full {
+    display: none;
+  }
+  .offline-flag .flag-short {
+    display: inline;
   }
 }
