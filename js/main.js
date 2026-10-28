@@ -1224,6 +1224,27 @@ function renderPantry() {
           renderPantry();
         }),
     );
+    // P-610: native <details> toggles must WRITE the state back, or the next
+    // render (any qty edit) silently re-opens a group the user just closed.
+    $$("#pantry-list details.aisle-group").forEach((d) =>
+      d.addEventListener("toggle", () => {
+        const a = d.dataset.aisle;
+        if (d.open) pantryView.collapsed.delete(a);
+        else pantryView.collapsed.add(a);
+      }),
+    );
+    const collapseBtn = $("#pantry-collapse-all");
+    if (collapseBtn)
+      collapseBtn.onclick = () => {
+        const allCollapsed = collapseBtn.textContent
+          .trim()
+          .startsWith("Expand");
+        Object.keys(aisles).forEach((a) => {
+          if (allCollapsed) pantryView.collapsed.delete(a);
+          else pantryView.collapsed.add(a);
+        });
+        renderPantry();
+      };
     $("#pantry-filter-count").textContent =
       filterText || pantryView.status !== "all" || pantryView.aisle
         ? `${shownPantry.length} of ${pantry.length}`
@@ -1280,7 +1301,26 @@ function renderPantry() {
       searching && !shownPantry.length
         ? `<div class="empty"><span class="big">🔍</span>Nothing in your pantry matches that.<br><button type="button" class="ghost small section-gap" id="pantry-clear-filter">Clear filter</button></div>`
         : "";
+    // P-610: on phones the aisle groups start FOLDED — reaching your pantry
+    // shouldn't be a scroll marathon. Seeded once per session; every manual
+    // toggle updates the set below so a re-render never fights the user.
+    if (
+      !pantryView.collapseSeeded &&
+      matchMedia("(max-width: 560px)").matches &&
+      !searching
+    ) {
+      Object.keys(aisles).forEach((a) => pantryView.collapsed.add(a));
+      pantryView.collapseSeeded = true;
+    }
+    const collapseAllState = Object.keys(aisles).every((a) =>
+      pantryView.collapsed.has(a),
+    );
+    const collapseChip =
+      shownPantry.length > 2
+        ? `<button type="button" class="ghost small" id="pantry-collapse-all">${collapseAllState ? "Expand all" : "Collapse all"}</button>`
+        : "";
     list.innerHTML =
+      collapseChip +
       staplesBanner +
       noMatchNote +
       Object.entries(aisles)
@@ -4179,7 +4219,11 @@ function renderExplorer() {
     // same vocabulary as the till-slip tier footer (✓/≈ legend).
     const nVer = rows.filter((r) => r.p.source === "verified").length;
     $("#px-tier-line").textContent =
-      `· ${nVer}✓ in-store verified · ${rows.length - nVer}≈ estimated`;
+      `· on screen: ${nVer}✓ verified · ${rows.length - nVer}≈ estimated`;
+    const sv = $("#px-stat-verified"),
+      se = $("#px-stat-estimated");
+    if (sv) sv.textContent = nVer;
+    if (se) se.textContent = rows.length - nVer;
     if (!rows.length) {
       // P-418 red-team fix: empty search left a header-only table
       $("#explorer-table").innerHTML = `<div class="px-empty">
@@ -4489,6 +4533,36 @@ function wireHistory() {
       downloadBlob(blob, "randplates-cook-log.json");
       toast("Cook log exported");
     };
+  // P-610: import — the export's missing twin. Accepts the same JSON the
+  // exporter writes; dedupes by entry id so re-importing is always safe.
+  const importBtn = $("#log-import");
+  if (importBtn) importBtn.onclick = () => $("#log-import-file")?.click();
+  const importFile = $("#log-import-file");
+  if (importFile)
+    importFile.onchange = async () => {
+      const file = importFile.files?.[0];
+      importFile.value = ""; // allow re-picking the same file
+      if (!file) return;
+      try {
+        const data = JSON.parse(await file.text());
+        if (data?.kind !== "cook-log" || !Array.isArray(data.entries))
+          throw new Error("not a cook-log file");
+        const have = new Set((await db.getAll("cook_log")).map((e) => e.id));
+        const fresh = data.entries.filter(
+          (e) => e?.id && e?.recipeId && !have.has(e.id),
+        );
+        for (const e of fresh) await db.put("cook_log", e);
+        store.set({ cookLog: await db.getAll("cook_log") });
+        renderCookLog();
+        toast(
+          fresh.length
+            ? `Imported ${fresh.length} cook${fresh.length === 1 ? "" : "s"}${data.entries.length - fresh.length ? ` · skipped ${data.entries.length - fresh.length} duplicate${data.entries.length - fresh.length === 1 ? "" : "s"}` : ""}`
+            : "Nothing new — all entries already in your log",
+        );
+      } catch (err) {
+        toast("That file is not a RandPlates cook log");
+      }
+    };
   const clearBtn = $("#log-clear");
   if (clearBtn)
     clearBtn.onclick = async () => {
@@ -4652,6 +4726,8 @@ function renderCookLog() {
         </select>
         <span class="log-controls-spacer"></span>
         <button class="ghost small" id="log-export" type="button">Export log</button>
+        <button class="ghost small" id="log-import" type="button">Import log</button>
+        <input type="file" id="log-import-file" accept="application/json,.json" hidden>
         <button class="ghost small danger" id="log-clear" type="button">Clear log</button>
       </div>
       ${
@@ -5417,7 +5493,7 @@ function renderDecodeOutput() {
              ${
                window.__decSwap === idx
                  ? `<div class="dec-suggest">
-               <input class="dec-swap-search" data-idx="${idx}" placeholder="Type what you actually meant…" aria-label="Search the registry to swap in">
+               <input class="dec-swap-search" data-idx="${idx}" placeholder="Type what you actually meant…" aria-label="Search the registry to swap in" autocomplete="off" autocapitalize="none" autocorrect="off" enterkeyhint="search">
                <div class="dec-picker" data-idx="${idx}">
                  ${
                    suggestions(i)
@@ -5457,7 +5533,7 @@ function renderDecodeOutput() {
       ${
         window.__decAdd
           ? `<div class="missing-line dec-fix" data-idx="new">
-        <input class="dec-swap-search" data-idx="new" placeholder="Type an ingredient name…" aria-label="Search the registry to add">
+        <input class="dec-swap-search" data-idx="new" placeholder="Type an ingredient name…" aria-label="Search the registry to add" autocomplete="off" autocapitalize="none" autocorrect="off" enterkeyhint="search">
         <div class="dec-picker" data-idx="new"><span class="muted">start typing to search the registry</span></div>
       </div>`
           : ""
@@ -5530,6 +5606,18 @@ function renderDecodeOutput() {
           ? null
           : Number(swap.dataset.idx);
       renderDecodeOutput();
+      // P-610: the search box must land in view and OWN the keyboard —
+      // previously it rendered below the fold and felt "broken" on phones.
+      if (window.__decSwap != null) {
+        const row =
+          $(`.missing-line[data-idx="${window.__decSwap}"]`) ||
+          $(`.missing-line[data-idx="new"]`);
+        row?.scrollIntoView({ behavior: motionBehavior(), block: "start" });
+        setTimeout(
+          () => $(`.dec-swap-search[data-idx="${window.__decSwap}"]`)?.focus(),
+          60,
+        );
+      }
       return;
     }
     if (ev.target.closest("#dec-add-ing")) {

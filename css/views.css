@@ -886,10 +886,25 @@
   .pi-controls {
     justify-self: stretch;
     justify-content: space-between;
+    flex-wrap: wrap;
+    row-gap: var(--sp-2);
+  }
+  .pantry-item .stepper,
+  .pantry-item select.unit-sel,
+  .pantry-remove {
+    flex-shrink: 0;
   }
   .pantry-item .qty-input {
-    width: 56px;
+    width: 64px;
   }
+  .pantry-remove {
+    margin-left: auto;
+  }
+}
+/* P-610: aisle headers are sticky-safe targets for scroll-into-view */
+.aisle-group,
+.missing-line {
+  scroll-margin-top: calc(var(--sticky-offset, 0px) + 10px);
 }
 
 /* ================= MATCHER ================= */
@@ -1803,12 +1818,65 @@ input[type="range"].budget::-moz-range-thumb {
 }
 .px-fresh {
   margin-top: var(--sp-6);
-  padding-top: var(--sp-4);
-  border-top: 1px dashed var(--clr-line);
+  padding: var(--sp-4);
+  border: 1px solid var(--clr-line);
+  border-radius: var(--r-md);
+  background: var(--clr-card);
+  display: grid;
+  gap: var(--sp-2);
 }
 .px-fresh strong {
   color: var(--clr-brand-strong);
 } /* P-558: small bold = strong variant */
+.px-fresh-head {
+  display: flex;
+  align-items: center;
+  gap: var(--sp-3);
+  flex-wrap: wrap;
+}
+.px-fresh-title {
+  font-family: "Anton", "Impact", sans-serif;
+  font-size: 1.05rem;
+  letter-spacing: 0.04em;
+}
+.px-fresh-stats {
+  display: flex;
+  gap: var(--sp-2);
+  margin-left: auto;
+  flex-wrap: wrap;
+}
+.px-stat {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 6px;
+  background: var(--clr-sunken);
+  border: 1px solid var(--clr-line);
+  border-radius: var(--r-sm);
+  padding: 4px 10px;
+}
+.px-stat-n {
+  font-size: 1.05rem;
+  font-weight: 900;
+  font-variant-numeric: tabular-nums;
+}
+.px-stat-k {
+  font-size: 0.72rem;
+  color: var(--clr-ink-soft);
+}
+.px-fresh-sub {
+  font-size: 0.82rem;
+  color: var(--clr-ink-soft);
+  margin: 0;
+}
+.px-fresh-cta {
+  justify-self: start;
+  letter-spacing: 0.06em;
+  font-size: 0.82rem;
+}
+.px-tier-line {
+  color: var(--clr-ink-soft);
+  font-size: 0.78rem;
+}
 .px-controls {
   display: flex;
   flex-wrap: wrap;
@@ -2138,6 +2206,49 @@ input[type="range"].budget::-moz-range-thumb {
   background: var(--clr-card);
   padding: 4px 8px;
   min-width: 120px;
+}
+
+/* ---- P-610: decoder mobile UX — tappable, unzooming, visible search ---- */
+.dec-swap-search {
+  flex: 1 1 100%;
+  min-width: 0;
+  font-size: 16px; /* 16px stops iOS focus-zoom */
+  padding: 10px 12px;
+  border: 1px solid var(--clr-line);
+  border-radius: var(--r-sm);
+  background: var(--clr-card);
+  color: var(--clr-ink);
+}
+.dec-swap-search:focus {
+  outline: 2px solid var(--clr-brand);
+  outline-offset: 1px;
+}
+.dec-picker {
+  flex-basis: 100%;
+}
+.dec-picker .px-chip {
+  min-height: var(--tap);
+} /* full tap targets on phones */
+.dec-suggest {
+  flex-basis: 100%;
+}
+@media (max-width: 560px) {
+  .missing-line {
+    font-size: 0.9rem;
+  }
+  .dec-row-qty {
+    flex: 0 0 auto;
+  }
+  .dec-row-actions {
+    margin-left: 0;
+  }
+  .dec-step-move {
+    display: inline-flex;
+    gap: 2px;
+  }
+  .dec-step-rm {
+    flex: 0 0 auto;
+  }
 }
 
 /* P-417/P-418: ingredient compare modal — compacted per owner review */
