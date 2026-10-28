@@ -827,8 +827,11 @@
           </p>
         </header>
         <div class="pantry-layout">
-          <div class="panel pantry-search-panel">
-            <div class="panel-title"><h2>Add ingredients</h2></div>
+          <details class="panel pantry-search-panel" id="pantry-add-panel">
+            <summary class="panel-title pantry-add-summary">
+              <h2>Add ingredients</h2>
+              <span class="apa-caret" aria-hidden="true">&#9662;</span>
+            </summary>
             <div class="search-field">
               <input
                 type="search"
@@ -838,26 +841,12 @@
                 aria-label="Search ingredients" />
             </div>
             <div id="pantry-suggestions" class="section-gap"></div>
-          </div>
+          </details>
           <div class="pantry-main">
             <div class="pantry-counter" id="pantry-counter"></div>
             <div class="panel section-gap pantry-panel">
               <div class="panel-title pantry-title-row">
                 <h2>In your kitchen</h2>
-                <div class="pantry-viewtools" id="pantry-viewtools" hidden>
-                  <button
-                    type="button"
-                    class="ghost small"
-                    id="pantry-expand-all">
-                    Expand all
-                  </button>
-                  <button
-                    type="button"
-                    class="ghost small"
-                    id="pantry-collapse-all">
-                    Collapse all
-                  </button>
-                </div>
               </div>
               <div class="pantry-filterbar" id="pantry-filterbar" hidden>
                 <span class="pf-icon" aria-hidden="true">

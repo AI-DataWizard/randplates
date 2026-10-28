@@ -423,6 +423,16 @@ async function boot() {
     );
     $$(".view").forEach((v) => (v.hidden = v.id !== `view-${target}`));
     if (target === "pantry") renderPantry();
+    // P-612: Add-ingredients panel — folded by default on phones (your kitchen
+    // first), open on desktop where space is not a fight. User choice sticks
+    // for the session; we never fight a manual toggle.
+    if (target === "pantry") {
+      const ap = $("#pantry-add-panel");
+      if (ap && !ap.dataset.seeded) {
+        ap.dataset.seeded = "1";
+        ap.open = !matchMedia("(max-width: 560px)").matches;
+      }
+    }
     if (target === "matcher") runMatcher();
     if (target === "planner") renderPlanner();
     if (target === "settings") renderPulse();
@@ -1131,11 +1141,9 @@ function renderPantry() {
   const filterBar = $("#pantry-filterbar");
   const filterBox = $("#pantry-filter");
   const chipsBox = $("#pantry-chips");
-  const tools = $("#pantry-viewtools");
   const big = pantry.length > 8;
   filterBar.hidden = !big;
   chipsBox.hidden = !big;
-  tools.hidden = !big;
   if (!big) {
     pantryView.status = "all";
     if (filterBox) filterBox.value = "";
@@ -1226,25 +1234,6 @@ function renderPantry() {
     );
     // P-610: native <details> toggles must WRITE the state back, or the next
     // render (any qty edit) silently re-opens a group the user just closed.
-    $$("#pantry-list details.aisle-group").forEach((d) =>
-      d.addEventListener("toggle", () => {
-        const a = d.dataset.aisle;
-        if (d.open) pantryView.collapsed.delete(a);
-        else pantryView.collapsed.add(a);
-      }),
-    );
-    const collapseBtn = $("#pantry-collapse-all");
-    if (collapseBtn)
-      collapseBtn.onclick = () => {
-        const allCollapsed = collapseBtn.textContent
-          .trim()
-          .startsWith("Expand");
-        Object.keys(aisles).forEach((a) => {
-          if (allCollapsed) pantryView.collapsed.delete(a);
-          else pantryView.collapsed.add(a);
-        });
-        renderPantry();
-      };
     $("#pantry-filter-count").textContent =
       filterText || pantryView.status !== "all" || pantryView.aisle
         ? `${shownPantry.length} of ${pantry.length}`
@@ -1304,19 +1293,21 @@ function renderPantry() {
     // P-610: on phones the aisle groups start FOLDED — reaching your pantry
     // shouldn't be a scroll marathon. Seeded once per session; every manual
     // toggle updates the set below so a re-render never fights the user.
+    // P-612: on phones, new aisle groups arrive folded (items trickle in one
+    // search at a time, so "once" seeded too early). Stops the moment the
+    // user manually folds/unfolds anything — then their choice is law.
     if (
-      !pantryView.collapseSeeded &&
       matchMedia("(max-width: 560px)").matches &&
-      !searching
+      !searching &&
+      !pantryView.userTouched
     ) {
       Object.keys(aisles).forEach((a) => pantryView.collapsed.add(a));
-      pantryView.collapseSeeded = true;
     }
     const collapseAllState = Object.keys(aisles).every((a) =>
       pantryView.collapsed.has(a),
     );
     const collapseChip =
-      shownPantry.length > 2
+      shownPantry.length > 2 && !searching
         ? `<button type="button" class="ghost small" id="pantry-collapse-all">${collapseAllState ? "Expand all" : "Collapse all"}</button>`
         : "";
     list.innerHTML =
@@ -1370,12 +1361,31 @@ function renderPantry() {
 
     // remember which aisles the user folded (survives re-render / adding items)
     $$("details.aisle-group", list).forEach((d) =>
-      d.addEventListener("toggle", () => {
+      d.addEventListener("toggle", (ev) => {
+        if (!ev.isTrusted) return; // programmatic folds don't count as user intent
+        pantryView.userTouched = true; // stop auto-folding new groups
         if (searching) return;
         if (d.open) pantryView.collapsed.delete(d.dataset.aisle);
         else pantryView.collapsed.add(d.dataset.aisle);
       }),
     );
+    // P-612: the single fold control — DOM-only, survives re-render, no scope deps.
+    const foldChip = list.querySelector("#pantry-collapse-all");
+    if (foldChip)
+      foldChip.onclick = () => {
+        // state-driven, single source of truth: mutate the set, then re-render.
+        // (Reading group open-state here raced with the render loop; the set
+        // cannot.) Chip intent = user intent: stop auto-folding new groups.
+        pantryView.userTouched = true;
+        const keys = $$("details.aisle-group", list).map(
+          (d) => d.dataset.aisle,
+        );
+        const expand = keys.every((a) => pantryView.collapsed.has(a)); // all folded -> expand, else fold
+        keys.forEach((a) => {
+          expand ? pantryView.collapsed.delete(a) : pantryView.collapsed.add(a);
+        });
+        renderPantry();
+      };
     $("#pantry-clear-filter")?.addEventListener("click", () => {
       filterBox.value = "";
       pantryView.status = "all";
@@ -1486,21 +1496,6 @@ function renderPantry() {
         renderPantry();
       }
     });
-  }
-  const expandAll = $("#pantry-expand-all"),
-    collapseAll = $("#pantry-collapse-all");
-  if (expandAll && !expandAll.dataset.wired) {
-    expandAll.dataset.wired = "1";
-    expandAll.onclick = () => {
-      pantryView.collapsed.clear();
-      renderPantry();
-    };
-    collapseAll.onclick = () => {
-      $$("#pantry-list details.aisle-group").forEach((d) =>
-        pantryView.collapsed.add(d.dataset.aisle),
-      );
-      renderPantry();
-    };
   }
   renderPantrySuggestions($("#pantry-search").value);
 }
@@ -5894,6 +5889,32 @@ function renderDecodeOutput() {
     el.scrollIntoView({ behavior: motionBehavior(), block: "start" });
   }
 
+  outEl.onkeydown = (ev) => {
+    // P-611: Enter/Go on the swap-search renders chips immediately and scrolls to them (mobile keyboards need a submit affordance)
+    const t = ev.target;
+    if (
+      ev.key === "Enter" &&
+      t.classList &&
+      t.classList.contains("dec-swap-search")
+    ) {
+      ev.preventDefault();
+      const box = $(`.dec-picker[data-idx="${t.dataset.idx}"]`);
+      if (box) {
+        const hits = t.value.trim()
+          ? searchIngredients(t.value, store.get().ingredients).slice(0, 6)
+          : [];
+        box.innerHTML = hits.length
+          ? hits
+              .map(
+                (h) =>
+                  `<button type="button" class="px-chip dec-pick" data-idx="${t.dataset.idx}" data-ing="${esc(h.id)}">→ ${esc(h.name)}</button>`,
+              )
+              .join("")
+          : '<span class="muted">nothing sounds like that — try another spelling</span>';
+        box.scrollIntoView({ behavior: motionBehavior(), block: "nearest" });
+      }
+    }
+  };
   // P-446: live-edit wiring. Silent updates on typing (no re-render = no focus
   // loss); structural changes re-render via the click delegation above.
   outEl.oninput = (ev) => {

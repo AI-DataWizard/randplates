@@ -265,6 +265,12 @@ export const PIECE_WEIGHTS_G = {
   "sweet-potatoes": 150,
   bananas: 120,
   lemons: 110, // [corpus]
+  peaches: 170,
+  pears: 180,
+  pineapples: 1200,
+  kiwis: 75,
+  guavas: 100,
+  litchis: 20, // [corpus P-611] fresh-fruit piece classes (spot-verify vs produce scales)
   broccoli: 350, // P-517: the priced Checkers 350 g pack IS one head [pack=1]
   "green-chillies": 5,
   beetroot: 120,

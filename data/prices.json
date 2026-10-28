@@ -5566,8 +5566,96 @@
       "source": "verified",
       "last_verified": "2026-10-27",
       "url": ""
+    },
+    {
+      "ingredient_id": "strawberries",
+      "store": "estimate",
+      "brand": "",
+      "price_cents": 2999,
+      "pack_qty": 250,
+      "pack_unit": "g",
+      "source": "estimated",
+      "last_verified": "2026-10-28",
+      "url": "https://www.facebook.com/harvestplacemall/posts/1047911604668298 (FLM 250g punnets 3-for-R50 promo anchor)"
+    },
+    {
+      "ingredient_id": "grapes",
+      "store": "estimate",
+      "brand": "M&R",
+      "price_cents": 3499,
+      "pack_qty": 500,
+      "pack_unit": "g",
+      "source": "estimated",
+      "last_verified": "2026-10-28",
+      "url": "https://www.mrd.com/delivery/groceries/products/320175_EA/mr-seedless-grapes-500g"
+    },
+    {
+      "ingredient_id": "peaches",
+      "store": "estimate",
+      "brand": "",
+      "price_cents": 3999,
+      "pack_qty": 1000,
+      "pack_unit": "g",
+      "source": "estimated",
+      "last_verified": "2026-10-28",
+      "url": ""
+    },
+    {
+      "ingredient_id": "pears",
+      "store": "estimate",
+      "brand": "",
+      "price_cents": 3499,
+      "pack_qty": 1000,
+      "pack_unit": "g",
+      "source": "estimated",
+      "last_verified": "2026-10-28",
+      "url": ""
+    },
+    {
+      "ingredient_id": "pineapples",
+      "store": "estimate",
+      "brand": "",
+      "price_cents": 2999,
+      "pack_qty": 1,
+      "pack_unit": "unit",
+      "source": "estimated",
+      "last_verified": "2026-10-28",
+      "url": ""
+    },
+    {
+      "ingredient_id": "kiwis",
+      "store": "estimate",
+      "brand": "",
+      "price_cents": 2999,
+      "pack_qty": 6,
+      "pack_unit": "unit",
+      "source": "estimated",
+      "last_verified": "2026-10-28",
+      "url": ""
+    },
+    {
+      "ingredient_id": "guavas",
+      "store": "estimate",
+      "brand": "",
+      "price_cents": 2499,
+      "pack_qty": 1000,
+      "pack_unit": "g",
+      "source": "estimated",
+      "last_verified": "2026-10-28",
+      "url": ""
+    },
+    {
+      "ingredient_id": "litchis",
+      "store": "estimate",
+      "brand": "",
+      "price_cents": 5999,
+      "pack_qty": 1000,
+      "pack_unit": "g",
+      "source": "estimated",
+      "last_verified": "2026-10-28",
+      "url": ""
     }
   ],
-  "last_updated": "2026-10-27",
+  "last_updated": "2026-10-28",
   "note": " P-434 (Oct 20): 171 estimate-tier rows promoted from P-433 candidates (owner-authorized); last_verified=null marks them UNVERIFIED - the till pass upgrades them. P-434 (Oct 20): 171 estimate-tier rows promoted from P-433 candidates (owner-authorized); last_verified=null marks them UNVERIFIED - the till pass upgrades them."
 }
