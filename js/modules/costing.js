@@ -441,6 +441,8 @@ export const TBSP_WEIGHTS_G = {
  * appear in the editor dropdowns. The engine audit test keeps this list
  * exactly in sync with qtyInPackBasis/canonBasis branches.
  */
+// P-613: 'packet','tub','bar','tube' were missing while 19 registry rows use them
+// as their purchase form, so those items could not be declared in their own unit.
 export const PRICED_UNITS = [
   "g",
   "kg",
@@ -459,10 +461,14 @@ export const PRICED_UNITS = [
   "can",
   "tin",
   "pack",
+  "packet",
   "jar",
   "box",
   "bottle",
   "brick",
+  "tub",
+  "bar",
+  "tube",
 ];
 
 export function spoonGrams(id, unit) {

@@ -5339,3 +5339,95 @@ button:disabled {
   min-height: var(--tap);
   box-sizing: border-box;
 }
+
+/* ==========================================================================
+   P-613 — SPACING PASS (owner report: "boxes and buttons feel clustered")
+   Three concrete causes, not a vague feeling:
+   1. #pantry-collapse-all was injected as the first child of #pantry-list with
+      no margin of its own, so its bottom border sat on the first <summary>.
+   2. details > summary.aisle-h had margin-bottom --sp-2 and ZERO vertical
+      padding, so the label, the hairline rule and the count badge all pressed
+      against the row above and below.
+   3. .pi-controls packed four tap targets (badge, stepper, unit select, remove)
+      into one line at --sp-2 = 8px apart, which is below the visual grouping
+      threshold at phone widths.
+   All values are tokens, so the compact themes (tokens.css:101) scale down
+   automatically instead of needing a second override block.
+   ========================================================================== */
+
+/* 1. Collapse-all chip gets air under it */
+#pantry-collapse-all {
+  display: inline-flex;
+  align-items: center;
+  margin: 0 0 var(--sp-4);
+}
+
+/* 2. Aisle sections and their headers */
+#pantry-list {
+  padding-bottom: var(--sp-4);
+}
+.aisle-group {
+  margin-bottom: var(--sp-6);
+}
+.aisle-group:last-child {
+  margin-bottom: var(--sp-2);
+}
+details.aisle-group > summary.aisle-h {
+  padding: var(--sp-2) 0;
+  margin-bottom: var(--sp-3);
+  min-height: var(--tap); /* 44px target for the fold control */
+}
+details.aisle-group > .pantry-item:first-of-type {
+  margin-top: var(--sp-1);
+}
+
+/* 3. Rows: a touch more inner padding and a wider column gap */
+.pantry-item {
+  padding: var(--sp-3) var(--sp-3) calc(var(--sp-3) + 2px);
+  gap: var(--sp-3) var(--sp-3);
+}
+.pantry-item + .pantry-item {
+  margin-top: var(--sp-2);
+}
+
+/* 4. The row control cluster */
+.pi-controls {
+  gap: var(--sp-3);
+}
+.pantry-item .stepper {
+  margin-right: var(--sp-1);
+}
+.pi-packs {
+  margin-right: var(--sp-1);
+}
+
+/* 5. Phones: wrap earlier, never shrink a target below --tap */
+@media (max-width: 560px) {
+  #pantry-collapse-all {
+    margin-bottom: var(--sp-3);
+  }
+  .aisle-group {
+    margin-bottom: var(--sp-4);
+  }
+  .pi-controls {
+    gap: var(--sp-2);
+    row-gap: var(--sp-3);
+  }
+  .pantry-item {
+    padding: var(--sp-3);
+  }
+  details.aisle-group > summary.aisle-h {
+    margin-bottom: var(--sp-2);
+  }
+}
+
+/* 6. Same clustering elsewhere: one consistent gap for button rows/footers */
+.btn-row,
+.row-actions,
+.card-actions {
+  gap: var(--sp-3);
+}
+.btn-row + *,
+.row-actions + * {
+  margin-top: var(--sp-3);
+}

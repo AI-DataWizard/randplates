@@ -79,6 +79,8 @@ import {
   packLabel,
   badgeWord,
   packsCount,
+  pantryUnitOptions,
+  pantryBadge,
   stepSizeFor as stepForBasis,
   pantryBasis,
   expiringThisWeek,
@@ -356,6 +358,32 @@ async function boot() {
   // the teaching affordance must appear on its own (desktop
   // stays hidden until beforeinstallprompt says otherwise).
 
+  /* P-613 ANALYTICS. Cloudflare Web Analytics (cookieless, P-412) records page
+   * views from navigations it can see: a document load, a History API call, or
+   * popstate. This app routes on the hash, which fires ONLY `hashchange`, so
+   * every in-app screen was invisible — the dashboard showed one pageview ("/")
+   * per visitor and nothing about Pantry, Matcher or Planner usage.
+   * Re-emitting the resolved URL through the (beacon-patched) history API gives
+   * it a navigation to count. replaceState cannot re-fire `hashchange`, so this
+   * cannot loop; wrapped in try/catch because a sandboxed frame can throw. */
+  let trackedOnce = false;
+  function trackView(view) {
+    try {
+      // First load with no hash: the beacon already counted this pageview, and
+      // rewriting the URL to add "#home" would be a visible side effect.
+      if (!trackedOnce && !location.hash) {
+        trackedOnce = true;
+        return;
+      }
+      trackedOnce = true;
+      // Re-announce through the (beacon-patched) history API. Same-URL
+      // replaceState cannot re-fire hashchange, so this cannot loop.
+      history.replaceState({ view }, "", location.href);
+    } catch {
+      /* analytics must never break routing */
+    }
+  }
+
   // router
   const route = () => {
     const view = (location.hash.replace("#", "") || "home").split("?")[0];
@@ -417,6 +445,7 @@ async function boot() {
       "RandPlates - dinner, planned by rands";
     const md = document.querySelector('meta[name="description"]');
     if (md && META[target]) md.setAttribute("content", META[target][1]);
+    trackView(target); // P-613: one pageview per screen
     store.set({ view: target });
     $$("#nav a").forEach((a) =>
       a.classList.toggle("active", a.dataset.view === target),
@@ -567,6 +596,9 @@ function toast(message, undoFn = null, ms = 4000) {
   }
   const el = document.createElement("div");
   el.className = "toast-item";
+  // CONTRACT: `message` is RAW text. toast() escapes it here, once. Callers must
+  // NOT pre-escape — esc(esc(x)) renders as visible "&#39;" (P-613b: "Added
+  // Lay&#39;s Chips" was exactly that, on every apostrophe name).
   el.innerHTML =
     esc(message) +
     (undoFn
@@ -746,7 +778,7 @@ function renderHome() {
         if (hint)
           hint.textContent =
             'In your pantry for real. Now tap "Show me dinners" — your matches are already live.';
-        toast(`Added ${esc(ingredientMeta(id).name)} to your pantry`);
+        toast(`Added ${ingredientMeta(id).name} to your pantry`);
       }),
   );
 
@@ -906,7 +938,20 @@ function convertPantryQty(id, from, to, qty) {
   const packQty = pack?.pack_qty || 0;
   const gPerPiece = PIECE_WEIGHTS_G[id] || 0;
   const isG = (u) => u === "g" || u === "ml";
-  const isPack = (u) => u === "tin" || u === "can";
+  // P-613: every countable purchase form the registry actually uses, not just tins.
+  const isPack = (u) =>
+    [
+      "tin",
+      "can",
+      "pack",
+      "packet",
+      "jar",
+      "box",
+      "bottle",
+      "tub",
+      "bar",
+      "tube",
+    ].includes(u);
   if (isG(from) && isG(to)) return qty; // 1 ml ≈ 1 g convention
   if (isG(from) && isPack(to) && packQty > 0)
     return +(qty / packQty).toFixed(3) / 1; // 410 g -> 1 tin
@@ -916,6 +961,12 @@ function convertPantryQty(id, from, to, qty) {
     return +(qty / gPerPiece).toFixed(2) / 1;
   if ((from === "unit" || from === "bunch") && isG(to) && gPerPiece > 0)
     return +(qty * gPerPiece).toFixed(1) / 1;
+  // P-613: multi-piece packs (stock cubes: 6 units in the box).
+  const pieces = pack?.pack_unit === "unit" ? packQty : 0;
+  if (pieces > 0 && isPack(from) && to === "unit")
+    return +(qty * pieces).toFixed(3) / 1;
+  if (pieces > 0 && from === "unit" && isPack(to))
+    return +(qty / pieces).toFixed(3) / 1;
   return null;
 }
 
@@ -938,14 +989,12 @@ async function stepQty(
     if (st) killStepTimers(id);
     return;
   }
-  const unitSel = $(".unit-sel", rowEl).value;
+  // P-613: the RECORD's unit is the truth. Reading the <select> here was the
+  // data-corrupting path: for 178 ingredients the select had no matching
+  // <option>, so it reported 'g' and a single "＋" rewrote "1 pack" as "2 g".
+  const unitSel = item.unit;
   const step = stepSizeFor(id, unitSel); // adapter below: override-aware basis lookup
 
-  /** P-536: adapter — basis comes from the pantry record's pack override first. */
-  function stepSizeFor(id, unit) {
-    const rec = store.get().pantry.find((p) => p.id === id);
-    return stepForBasis(pantryBasis(rec, ingredientMeta(id)), unit);
-  }
   const next = clear
     ? 0
     : Math.max(0, (parseFloat(input.value) || 0) + (isMinus ? -step : step));
@@ -956,6 +1005,27 @@ async function stepQty(
   return next;
 }
 
+/** P-613: the pantry row's unit menu, derived from the record + the priced pack.
+ *  Always contains the record's current unit so the <select> can never show a
+ *  value the data doesn't have (that mismatch WAS the bug). */
+function unitOptionsFor(id, p) {
+  const meta = ingredientMeta(id);
+  const opts = pantryUnitOptions(
+    pantryBasis(p, meta),
+    defaultPrice(id, store.get().prices),
+  );
+  if (p.unit && !opts.includes(p.unit)) opts.unshift(p.unit);
+  return opts
+    .map((u) => `<option ${u === p.unit ? "selected" : ""}>${u}</option>`)
+    .join("");
+}
+
+/** P-536: adapter — basis comes from the pantry record's pack override first. */
+function stepSizeFor(id, unit) {
+  const rec = store.get().pantry.find((p) => p.id === id);
+  return stepForBasis(pantryBasis(rec, ingredientMeta(id)), unit);
+}
+
 /** P-534: "≈ 1.5 tins" — the pantry amount said the way the shopper thinks.
  *  Only shown when the entry unit matches the usual-buy unit (same-unit math,
  *  no cross-unit guessing); wordless items say "packs". */
@@ -963,25 +1033,23 @@ async function stepQty(
  *  else "packs" ("1.5 packs" — honest when the shelf form is a plain pack). */
 function packsBadgeHtml(id, qty, unit) {
   const meta = ingredientMeta(id);
-  const basis = pantryBasis(
-    store.get().pantry.find((p) => p.id === id),
+  const text = pantryBadge(
+    qty,
+    unit,
     meta,
-  ); // P-535 override
-  if (!basis || basis.unit !== unit) return "";
-  return `<span class="pi-packs">≈ ${packsCount(qty, basis.qty)} ${badgeWord(meta, qty / basis.qty)}</span>`;
+    defaultPrice(id, store.get().prices),
+  ); // P-613: priced pack, not basis.qty
+  return text ? `<span class="pi-packs">${text}</span>` : "";
 }
 function packssBadge(el, id, qty, unit) {
   // live update during held steps (repaint catches up at gesture end)
   const meta = ingredientMeta(id);
-  const basis = pantryBasis(
-    store.get().pantry.find((p) => p.id === id),
+  el.textContent = pantryBadge(
+    qty,
+    unit,
     meta,
-  ); // P-535 override
-  if (!basis || basis.unit !== unit) {
-    el.textContent = "";
-    return;
-  }
-  el.textContent = `≈ ${packsCount(qty, basis.qty)} ${badgeWord(meta, qty / basis.qty)}`;
+    defaultPrice(id, store.get().prices),
+  );
 }
 
 function killStepTimers(id) {
@@ -1046,7 +1114,7 @@ function wireSteppers(list) {
           const prev = st.startQty; // qty from BEFORE the gesture — repeat ticks may have drained some already
           await stepQty(id, isMinus, { clear: true, st });
           toast(
-            `Cleared ${esc(ingredientMeta(id)?.name || id)} — undo?`,
+            `Cleared ${ingredientMeta(id)?.name || id} — undo?`,
             async () => {
               await setPantryQty(id, prev, { silent: false }); // restore + repaint
               toast(`Back to ${prev} ✓`);
@@ -1332,8 +1400,8 @@ function renderPantry() {
             // gone so the row can never contradict the chip counts.
             return `<div class="pantry-item${p.running_low ? " is-low" : ""}${soon ? " is-soon" : ""}" data-id="${p.id}">
             <div class="pi-main" role="button" tabindex="0" aria-label="Open ${name} dossier" data-dossier="${p.id}">
-              <div class="pi-line"><strong class="pi-name" title="${esc(dispName)}">${dispName}</strong>${p.nickname ? ` <span class="pi-nick-tag" title="your nickname">${esc(name)}</span>` : ""}${soon ? ` <span class="pi-tag" data-dossier="${p.id}" title="Why use-soon — open the dossier">use soon</span>` : ""}</div>
-              <span class="pi-hint">${p.pack_override ? "You buy" : "Usually bought as"} ${esc(packLabel(basis, meta))}</span>
+              <div class="pi-line"><strong class="pi-name" title="${dispName}">${dispName}</strong>${p.nickname ? ` <span class="pi-nick-tag" title="your nickname">${name}</span>` : ""}${soon ? ` <span class="pi-tag" data-dossier="${p.id}" title="Why use-soon — open the dossier">use soon</span>` : ""}</div>
+              <span class="pi-hint">${p.pack_override ? "You buy" : "Usually bought as"} ${esc(packLabel(basis, meta, defaultPrice(p.id, store.get().prices)))}</span>
             </div>
             <div class="pi-controls">
               ${packsBadgeHtml(p.id, p.qty, p.unit)}
@@ -1343,7 +1411,7 @@ function renderPantry() {
                 <button type="button" class="step-btn" data-dir="plus" aria-label="Increase ${name} (hold to repeat)">＋</button>
               </div>
               <select class="unit-sel" aria-label="${name} unit">
-                ${["g", "ml", "unit", "tin", "can", "bunch", "slice"].map((u) => `<option ${u === p.unit ? "selected" : ""}>${u}</option>`).join("")}
+                ${unitOptionsFor(p.id, p)}
               </select>
               <button type="button" class="pantry-remove" aria-label="Remove ${name}" title="Remove">✕</button>
             </div>
@@ -1457,10 +1525,13 @@ function renderPantry() {
                 `Now ${+converted.toFixed(2)} ${to} — same amount, measured the way you buy it`,
               );
             } else {
-              await db.putPantryItem({ ...item, unit: to }); // no safe conversion — keep the number, say so
+              // P-613: the old code kept the number and swapped the unit, which is
+              // how "1 pack of Lay's" became "1 g". Refuse, revert the control, say why.
+              e.target.value = item.unit;
               toast(
-                `No exact ${item.unit} → ${to} conversion for this one — check the amount`,
+                `Can't express ${item.qty} ${item.unit} as ${to} — staying in ${item.unit}`,
               );
+              return;
             }
           }
           // unit changes can flip auto running-low (coverage is unit-aware) — same
@@ -1553,7 +1624,7 @@ function renderPantrySuggestions(query) {
           running_low: false,
         });
         await refreshPantry();
-        toast(`Added ${esc(ingredientMeta(id).name)}`);
+        toast(`Added ${ingredientMeta(id).name}`);
         $("#pantry-search").focus();
       }),
   );

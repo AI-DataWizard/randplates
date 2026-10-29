@@ -1,5 +1,6 @@
 {
   "name": "RandPlates \u2014 Budget-first cooking engine",
+  "id": "/",
   "short_name": "RandPlates",
   "description": "Tell us your kitchen. We'll tell you dinner \u2014 in rands, per plate, for the week.",
   "start_url": ".",

@@ -67,6 +67,26 @@
     </script>
     <script type="application/ld+json">
       {
+        "@type": "WebApplication",
+        "name": "RandPlates",
+        "url": "https://randplates.co.za/",
+        "applicationCategory": "LifestyleApplication",
+        "operatingSystem": "Any (web app, installable PWA)",
+        "offers": { "@type": "Offer", "price": "0", "priceCurrency": "ZAR" },
+        "description": "Free offline budget cooking app for South Africa: plans dinners around your pantry and weekly budget with real Checkered, Pick n Pay and Shoprite shelf prices.",
+        "featureList": [
+          "Offline-first PWA",
+          "Real South African shelf prices",
+          "Pantry matcher",
+          "Weekly dinner planner",
+          "Priced shopping list",
+          "Recipe text decoder",
+          "PDF export"
+        ]
+      }
+    </script>
+    <script type="application/ld+json">
+      {
         "@context": "https://schema.org",
         "@type": "FAQPage",
         "mainEntity": [
@@ -114,7 +134,34 @@
       }
     </script>
     <link rel="manifest" href="manifest.json" />
+    <!-- P-613 ICONS. Why the icon was missing:
+       (1) Google Search only shows a favicon that is SQUARE and a MULTIPLE OF
+           48px (48/96/144/192). The old set declared 32px, which it rejects
+           outright — hence no icon in search results.
+       (2) There was no /favicon.ico. Safari, older Android WebViews and several
+           crawlers ignore <link> tags and probe /favicon.ico directly, so they
+           got a 404 and drew a generic globe.
+       (3) Safari does not support SVG favicons at all, so the only vector
+           declaration was invisible to it.
+       Order matters: .ico first (legacy probe), then SVG (modern), then the
+       PNG ladder Google actually reads. -->
+    <link rel="icon" href="favicon.ico" sizes="any" />
     <link rel="icon" href="assets/icon.svg" type="image/svg+xml" />
+    <link
+      rel="icon"
+      href="assets/icons/icon-48.png"
+      sizes="48x48"
+      type="image/png" />
+    <link
+      rel="icon"
+      href="assets/icons/icon-96.png"
+      sizes="96x96"
+      type="image/png" />
+    <link
+      rel="icon"
+      href="assets/icons/icon-192.png"
+      sizes="192x192"
+      type="image/png" />
     <link
       rel="icon"
       href="assets/icons/favicon-32.png"
@@ -145,10 +192,15 @@
     <link rel="stylesheet" href="css/themes.css" />
     <link id="gfonts-link" rel="stylesheet" href="" media="all" />
     <!-- Cloudflare Web Analytics (P-412: cookieless, aggregate-only; GA4 rejected to keep the privacy statement literally true) -->
+    <!-- P-613: `defer` is Cloudflare's documented form (a module script is
+       deferred too, but this removes a module/CORS failure mode on old
+       WebViews). `"spa": true` makes the beacon record History-API
+       navigations — see trackView() in main.js, which re-emits the current
+       URL after every hash route so each screen counts instead of only "/". -->
     <script
-      type="module"
+      defer
       src="https://static.cloudflareinsights.com/beacon.min.js"
-      data-cf-beacon='{"token": "e20980713e7741829a553b69b62965eb"}'></script>
+      data-cf-beacon='{"token": "e20980713e7741829a553b69b62965eb", "spa": true}'></script>
     <!-- End Cloudflare Web Analytics -->
   </head>
   <body>
