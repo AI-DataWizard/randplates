@@ -615,7 +615,20 @@ export function qtyInPackBasis(qty, unit, packUnit, opts = {}) {
       // 'unit' line that used to silently vanish from the recipe cost.
       if (id !== null && UNIT_SEMANTICS_PACK.has(id) && packQty > 0)
         return qty * packQty;
+      // P-621 NOTE: do NOT credit packQty here. Without a piece weight the
+      // registry genuinely does not know what "1 unit" of this item is, and
+      // guessing a whole pack is the dishonesty the B07 contract guards. The
+      // label is what changes instead (pantryMath.packLabel no longer claims
+      // a pack you own).
       return null;
+    }
+    // P-621: bunch lines against a weight-priced pack had NO bridge at all, so
+    // "1 bunch spinach" (priced 250 g) returned null and fell to a count
+    // compare. PIECE_WEIGHTS_G already holds the market bunch weights.
+    if (unit === "bunch") {
+      const bw = id !== null ? PIECE_WEIGHTS_G[id] : undefined;
+      if (bw !== undefined) return qty * bw; // real market bunch weight only
+      return null; // unknown bunch → unconvertible, never guessed
     }
     // P-538: spoons against a WEIGHT-priced pack need the ingredient's real
     // density (1 tbsp cocoa ≈ 6 g, not 15 g of water). Unknown id → the

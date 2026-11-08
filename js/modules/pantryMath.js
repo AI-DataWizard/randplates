@@ -5,7 +5,7 @@
  * NO DOM, NO store, NO fetch: everything arrives as arguments.
  * ========================================================================== */
 
-import { qtyInPackBasis } from "./costing.js";
+import { qtyInPackBasis, PIECE_WEIGHTS_G } from "./costing.js";
 
 export const STEP_BY_UNIT = { g: 50, ml: 100 }; // fallback only (no unit_basis known)
 export const NICE_STEPS = [25, 50, 100, 150, 200, 250, 500, 1000]; // real SA kitchen measures
@@ -76,6 +76,13 @@ export function packLabel(basis, meta, priceEntry) {
   ) {
     const size = packSizeLabel(_pq, _pu);
     const noun = unitNounFor(meta, priceEntry, qty, unit);
+    // P-621 FIX: when a real piece weight exists, state the PIECE, not the
+    // whole pack. "1 × 1 kg item" for one onion claimed 6.7× what the matcher
+    // credits (150 g) — the label was the lie, not the math.
+    const piece = meta ? PIECE_WEIGHTS_G[meta.id] : undefined;
+    if (piece !== undefined && Math.abs(piece - _pq) > 0.5) {
+      return `${qty} × ~${piece} ${_pu} ${noun} (${size} pack)`;
+    }
     return `${qty} × ${size} ${noun}`;
   }
   if (unit === "g" || unit === "ml") {
