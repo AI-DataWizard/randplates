@@ -4,7 +4,7 @@
 // CACHE BUMP POLICY (P-310, documented): EVERY deploy that changes ANY precached
 // asset bumps VERSION. The activate handler deletes every cache that doesn't
 // match, so stale shells self-heal on the first activate after update.
-const VERSION = "randplates-v1.0.9-p613b"; // P-613b: unit logic, icons, analytics
+const VERSION = "randplates-v1.10-p614"; // P-614: Pantry unit fixes
 const SHELL_CACHE = `${VERSION}-shell`;
 const DATA_CACHE = `${VERSION}-data`;
 
